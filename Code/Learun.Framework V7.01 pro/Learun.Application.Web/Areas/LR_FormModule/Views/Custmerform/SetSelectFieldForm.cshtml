@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "表格选择项字段选择";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">字段ID</div>
+        <input id="name" type="text" readonly class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">字段名</div>
+        <input id="label" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">对应字段</div>
+        <div id="value"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">宽度<font face="宋体">*</font></div>
+        <input id="width" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">对齐方式<font face="宋体">*</font></div>
+        <div id="align" isvalid="yes" checkexpession="NotNull">
+            <ul>
+                <li data-value="left">left</li>
+                <li data-value="center">center</li>
+                <li data-value="right">right</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">是否隐藏<font face="宋体">*</font></div>
+        <div id="hide" isvalid="yes" checkexpession="NotNull">
+            <ul>
+                <li data-value="0">否</li>
+                <li data-value="1">是</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">排序号<font face="宋体">*</font></div>
+        <input id="sort" type="text" class="form-control" isvalid="yes" checkexpession="isNum" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_FormModule/Views/Custmerform/SetSelectFieldForm.js")

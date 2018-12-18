@@ -1,0 +1,134 @@
+﻿/*
+ * 版 本 Learun-ADMS V7.0.0 力软敏捷开发框架(http://www.learun.cn)
+ * Copyright (c) 2013-2018 上海力软信息技术有限公司
+ * 创建人：力软-前端开发组
+ * 日 期：2017.03.16
+ * 描 述：树组件样式
+ */
+.lr-tree {
+    /*overflow-y: auto;*/
+}
+
+.lr-tree ul,
+.lr-tree li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.lr-tree-icon,
+.lr-tree-ec-icon,
+.lr-tree-node-cb,
+.lr-tree-node-icon {
+    border: 0 none;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+    margin-top: 3px;
+    vertical-align: top;
+    width: 16px;
+    background-repeat: no-repeat;
+}
+.lr-tree-node-cb {
+    height: 16px;
+    padding: 2px;
+    margin-top: 4.5px;
+    margin-right: 5px;
+}
+
+ul.lr-tree-node-ct {
+    line-height: 0;
+    zoom: 1;
+}
+
+.lr-tree-node-expanded > .lr-tree-ec-icon {
+    background-image: url(/Content/images/learuntree/arrows.gif) !important;
+    background: transparent no-repeat -16px 0;
+}
+
+.lr-tree-node-expanded > .lr-tree-ec-icon:hover {
+    background: transparent no-repeat -48px 0;
+}
+
+.lr-tree-node-collapsed > .lr-tree-ec-icon {
+    background-image: url(/Content/images/learuntree/arrows.gif) !important;
+    background: transparent no-repeat 0px 0;
+}
+
+.lr-tree-node-collapsed > .lr-tree-ec-icon:hover {
+    background: transparent no-repeat -32px 0;
+}
+
+.lr-tree-node {
+    white-space: nowrap;
+    color: #000;
+}
+
+.lr-tree-node {
+    color: #000;
+}
+
+.lr-tree-node i {
+    font-size: 13px;
+    width: 13px;
+    color: #666666;
+}
+
+.lr-tree-node a {
+    text-decoration: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
+    -kthml-user-focus: normal;
+    -moz-user-focus: normal;
+    -moz-outline: 0 none;
+    outline: 0 none;
+}
+
+.lr-tree-node a span {
+    text-decoration: none;
+    padding: 1px 3px 1px 2px;
+}
+
+.lr-tree-node a:hover {
+    text-decoration: none;
+}
+
+    .lr-tree-node .lr-tree-selected {
+        background-color: #2F94EE !important;
+        color: #fff;
+    }
+
+.lr-tree-node .lr-tree-selected a span {
+    color: #fff;
+}
+
+.lr-tree-node .lr-tree-selected i {
+    color: #fff;
+}
+
+.lr-tree-node-el {
+    position:relative;
+    line-height: 25px;
+    cursor: default;
+    cursor: pointer;
+}
+
+.lr-tree-node-el:hover {
+    background-color: #eee;
+}
+
+.lr-tree-loading {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    display:none;
+}
+.lr-tree-loading > img {
+    height: 14px;
+    width: 14px;
+}
+

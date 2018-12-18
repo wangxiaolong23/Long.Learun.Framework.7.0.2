@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "区域添加";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">编号<font face="宋体">*</font></div>
+        <input id="F_AreaCode" type="text" class="form-control" placeholder="请输入编号" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">名称<font face="宋体">*</font></div>
+        <input id="F_AreaName" type="text" class="form-control" placeholder="请输入名称" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">排序<font face="宋体">*</font></div>
+        <input id="F_SortCode" type="text" class="form-control" placeholder="请输入排序号" isvalid="yes" checkexpession="Num" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">描述</div>
+        <textarea id="F_Description" type="text" class="form-control" style="height:80px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_SystemModule/Views/Area/Form.js")

@@ -1,0 +1,87 @@
+﻿@{
+    ViewBag.Title = "客户添加";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">客户编号<font face="宋体">*</font></div>
+        <input id="F_EnCode" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">客户名称<font face="宋体">*</font></div>
+        <input id="F_FullName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">客户简称<font face="宋体">*</font></div>
+        <input id="F_ShortName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">客户级别<font face="宋体">*</font></div>
+        <div id="F_CustLevelId" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">客户类别<font face="宋体">*</font></div>
+        <div id="F_CustTypeId" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">客户程度<font face="宋体">*</font></div>
+        <div id="F_CustDegreeId" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">跟进人员<font face="宋体">*</font></div>
+        <div id="F_TraceUserId"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">公司行业<font face="宋体">*</font></div>
+        <div id="F_CustIndustryId"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">公司网站</div>
+        <input id="F_CompanySite" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">公司情况</div>
+        <input id="F_CompanyDesc" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">公司地址</div>
+        <input id="F_CompanyAddress" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">联系人</div>
+        <input id="F_Contact" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">手机</div>
+        <input id="F_Mobile" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">电话</div>
+        <input id="F_Tel" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">传真</div>
+        <input id="F_Fax" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">QQ</div>
+        <input id="F_QQ" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">Email</div>
+        <input id="F_Email" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">微信</div>
+        <input id="F_Wechat" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">爱好</div>
+        <input id="F_Hobby" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="F_Description" class="form-control" style="height: 50px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CRMModule/Views/Customer/Form.js")

@@ -1,0 +1,23 @@
+﻿.tab-pane {
+    margin: 10px 0px 0px 15px;
+}
+
+.alert {
+    text-align: left;
+    margin: 0px;
+    border-radius: 0px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    margin-bottom:10px;
+}
+
+.fa-question-circle {
+    position: relative;
+    top: 1px;
+    font-size: 15px;
+    padding-right: 5px;
+}
+.lr-form-tab {
+    margin:0px 10px;
+}

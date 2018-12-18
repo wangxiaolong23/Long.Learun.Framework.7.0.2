@@ -1,0 +1,79 @@
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Redis.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Redis.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Base.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Common.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Interfaces.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Redis.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Text.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Base.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Common.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Interfaces.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Redis.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Text.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\obj\Debug\Learun.Cache.Redis.csprojResolveAssemblyReference.cache
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\obj\Debug\Learun.Cache.Redis.csproj.CoreCompileInputs.cache
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\obj\Debug\Learun.Cache.Redis.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\obj\Debug\Learun.Cache.Redis.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Redis.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Redis.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Base.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Common.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Interfaces.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Redis.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Text.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Base.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Common.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Interfaces.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Redis.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Text.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\obj\Debug\Learun.Cache.Redis.csprojAssemblyReference.cache
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\obj\Debug\Learun.Cache.Redis.csproj.CoreCompileInputs.cache
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\obj\Debug\Learun.Cache.Redis.csproj.CopyComplete
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\obj\Debug\Learun.Cache.Redis.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\obj\Debug\Learun.Cache.Redis.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Redis.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Redis.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Base.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Common.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Interfaces.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Redis.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Text.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Base.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Common.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Interfaces.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Redis.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Text.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\obj\Debug\Learun.Cache.Redis.csprojResolveAssemblyReference.cache
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\obj\Debug\Learun.Cache.Redis.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\obj\Debug\Learun.Cache.Redis.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Redis.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Redis.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Base.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Common.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Interfaces.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Redis.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Text.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Base.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Common.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Interfaces.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Redis.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Text.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\obj\Debug\Learun.Cache.Redis.csprojResolveAssemblyReference.cache
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\obj\Debug\Learun.Cache.Redis.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\obj\Debug\Learun.Cache.Redis.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Redis.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Redis.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Base.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Common.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Interfaces.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Redis.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Text.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\Learun.Cache.Base.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Common.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Interfaces.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Redis.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\bin\Debug\ServiceStack.Text.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\obj\Debug\Learun.Cache.Redis.csprojResolveAssemblyReference.cache
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\obj\Debug\Learun.Cache.Redis.csproj.CoreCompileInputs.cache
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\obj\Debug\Learun.Cache.Redis.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\obj\Debug\Learun.Cache.Redis.pdb

@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "导入配置";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Areas/LR_SystemModule/Views/ExcelImport/Form.css")
+<div class="lr-form-layout">
+    <div class="lr-form-layout-left1">
+        <div class="lr-form-layout-title">
+            数据库表
+        </div>
+        <div class="lr-form-layout-body" id="lr_dbtree">
+
+        </div>
+    </div>
+    <div class="lr-form-layout-left2">
+        <div class="lr-form-layout-title">
+            数据表字段
+        </div>
+        <div class="lr-form-layout-body" id="lr_filedtree">
+
+        </div>
+    </div>
+    <div class="lr-form-layout-center">
+        <div class="lr-form-layout-title">
+            导入配置区域
+        </div>
+        <div class="lr-form-layout-header">
+            <input id="F_ModuleId" type="hidden" />
+            <div class="col-xs-4 lr-form-item">
+                <div class="lr-form-item-title">模板名称<font face="宋体">*</font></div>
+                <input id="F_Name" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+            </div>
+            <div class="col-xs-4 lr-form-item">
+                <div class="lr-form-item-title">绑定按钮<font face="宋体">*</font></div>
+                <div id="F_ModuleBtnId" isvalid="yes" checkexpession="NotNull"></div>
+            </div>
+            <div class="col-xs-4 lr-form-item">
+                <div class="lr-form-item-title">错误机制<font face="宋体">*</font></div>
+                <div id="F_ErrorType" isvalid="yes" checkexpession="NotNull">
+                    <ul>
+                        <li data-value="1">跳过</li>
+                        <li data-value="0">终止</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="lr-form-layout-body" id="gridtable"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_SystemModule/Views/ExcelImport/Form.js")
+

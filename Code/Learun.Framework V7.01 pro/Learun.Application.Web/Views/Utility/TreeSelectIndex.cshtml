@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "树形选择";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Views/Utility/TreeSelectIndex.css")
+<div class="form-warp">
+    <div class="form-warp-left">
+        <div class="tree" id="tree" ></div>
+    </div>
+    <div class="form-warp-main">
+        <div class="item-search">
+            <input id="txt_keyword" type="text" class="form-control" placeholder="请输入要查询关键字">
+            <span class="input-query" title="Search"><i class="fa fa-search"></i></span>
+            <div class="item-selected-btn" id="item_selected_btn">已选项</div>
+        </div>
+        <div class="item-list"><div id="gridtable"></div></div>
+    </div>
+    <div class="form-warp-right" id="form_warp_right">
+        <div class="form-warp-right-title">已选项<span class="form-warp-right-close" id="item_selected_btn_close" title="关闭"></span></div>
+        <div class="selected-item-list-warp">
+            <div id="selected_item_list"></div>
+        </div>
+    </div>
+</div>
+
+@Html.AppendJsFile("/Views/Utility/TreeSelectIndex.js")

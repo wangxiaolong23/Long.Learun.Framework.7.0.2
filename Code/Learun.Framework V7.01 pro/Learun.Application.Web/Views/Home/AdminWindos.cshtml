@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "炫动版风格";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+@Html.AppendCssFile("/Views/Home/AdminWindos/index.css")
+<div class="lr-frame-top">
+    <a class="lr-logo-title">
+        <img src="~/Content/images/logo_long.png" />    </a>
+</div>
+
+<div class="lr-applist-btn off" id="lr_applist_btn">应用列表</div>
+<div class="lr-applist-content" id="lr_applist_content">
+    <div class="lr-applist-slidebox-slider">
+        <ul class="lr-applist-slidebox-slider-content"></ul>
+    </div>
+    <div class="lr-applist-slidebox" id="lr_applist_slidebox"></div>
+</div>
+<div class="lr-windows-bottom-bar">
+    <div class="lr-windows-start" id="lr_windows_start" title="开始菜单"><i class="fa fa-windows"></i><span>开始菜单</span></div>
+    <div class="lr-im-bell" title="消息中心">
+        <span class="point"></span>
+        <i class="fa fa-bell"></i>
+    </div>
+</div>
+
+<div class="lr-im-body">
+    <div class="lr-im-title">
+        <div class="title-item active" data-value="lr_im_msglist">
+            消息
+        </div>
+        <div class="title-item title-item-two" data-value="lr_im_userlist">
+            联系人
+        </div>
+    </div>
+    <div id="lr_im_msglist" class="lr-im-content lr-im-msglist active">
+        <div class="lr-im-msg-list" id="lr_immsg_userlist">
+        </div>
+    </div>
+    <div id="lr_im_userlist" class="lr-im-content lr-im-userlist">
+        <div class="lr-im-search">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="搜索（Enter回车）">
+        </div>
+        <div class="lr-im-content-userlist" id="lr_im_content_userlist">
+
+        </div>
+    </div>
+</div>
+
+<div class="lr-im-black-overlay">
+    <div class="lr-im-dialog">
+        <div class="lr-im-header">
+            <span class="im-title"></span>
+            <div class="im-close">
+                <i class="fa fa-close"></i>
+            </div>
+        </div>
+        <div class="lr-im-msgcontent">
+        </div>
+        <div class="lr-im-msgcontent-tool"><span id="lr_im_look_msg_btn">查看消息记录</span></div>
+        <div class="lr-im-input">
+            <textarea id="lr_im_input" type="text" class="inp"></textarea>
+        </div>
+    </div>
+</div>
+
+@Html.AppendJsFile("/Views/Home/AdminWindos/index.js")
+

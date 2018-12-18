@@ -1,0 +1,115 @@
+﻿@{
+    ViewBag.Title = "流程模板设计";
+    Layout = "~/Views/Shared/_WorkFlowForm.cshtml";
+}
+@Html.AppendCssFile("/Areas/LR_WorkFlowModule/Views/WfScheme/Form.css")
+<div class="widget-body">
+    <div id="wizard" class="wizard" data-target="#wizard-steps">
+        <ul class="steps">
+            <li data-target="#step-1" class="active"><span class="step">1</span>基本配置<span class="chevron"></span></li>
+            <li data-target="#step-2" class="active"><span class="step">2</span>权限设置<span class="chevron"></span></li>
+            <li data-target="#step-3"><span class="step">3</span>模板设计<span class="chevron"></span></li>
+        </ul>
+    </div>
+    <div class="step-content" id="wizard-steps">
+        <div class="step-pane step-pane-base active" id="step-1">
+            <div class="lr-alert">
+                <div class="alert alert-danger">
+                    <i class="fa fa-warning alert-dismissible"></i>
+                    请你填写模板信息，用于创建或修改模板！
+                </div>
+            </div>
+
+            <div class="panel panel-default lr-panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">模板基本信息配置</h3>
+                </div>
+                <div class="panel-body">
+                    <input id="F_SchemeId" type="hidden" />
+                    <div class="col-xs-12 lr-form-item" style="top:15px;">
+                        <div class="lr-form-item-title">模板编号<font face="宋体">*</font></div>
+                        <input id="F_Code" type="text" class="form-control" placeholder="请输入编号" isvalid="yes" checkexpession="NotNull" />
+                    </div>
+                    <div class="col-xs-12 lr-form-item" style="top:53px;">
+                        <div class="lr-form-item-title">模板名称<font face="宋体">*</font></div>
+                        <input id="F_Name" type="text" class="form-control" placeholder="请输入名称" isvalid="yes" checkexpession="NotNull" />
+                    </div>
+                    <div class="col-xs-12 lr-form-item" style="top:91px;">
+                        <div class="lr-form-item-title">模板分类<font face="宋体">*</font></div>
+                        <div id="F_Category" isvalid="yes" checkexpession="NotNull"></div>
+                    </div>
+                    <div class="col-xs-12 lr-form-item" style="top:129px;">
+                        <div class="lr-form-item-title">模板类型<font face="宋体">*</font></div>
+                        <div class="radio">
+                            <label>
+                                <input name="F_Kind" id="F_Kind1" type="radio" value="1" checked="checked" />
+                                自定义流程
+                            </label>
+                            <label>
+                                <input name="F_Kind" id="F_Kind2" type="radio" value="0" />
+                                系统流程
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 lr-form-item" style="top:167px;">
+                        <div class="lr-form-item-title">是否移动端显示<font face="宋体">*</font></div>
+                        <div class="radio">
+                            <label>
+                                <input name="F_IsApp" id="F_IsApp1" type="radio" value="0" checked="checked" />
+                                否
+                            </label>
+                            <label>
+                                <input name="F_IsApp" id="F_IsApp2" type="radio" value="1" />
+                                是
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 lr-form-item" style="position:relative;width:100%;height:100%;">
+                        <div class="lr-form-item-title">备注</div>
+                        <textarea id="F_Description" class="form-control" style="height: 100%;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step-pane" id="step-2" style="padding:5px;padding-top:40px;">
+            <div style="position:absolute;height:40px;width:100%;left:0;top:0;">
+                <div class="col-xs-12 lr-form-item" style="padding:0px;padding-left:10px;padding-top: 8px;">
+                    <div class="radio">
+                        <label>
+                            <input name="authorizeType" id="authorizeType1" type="radio" value="1" checked="checked" />
+                            所有成员
+                        </label>
+                        <label>
+                            <input name="authorizeType" id="authorizeType2" type="radio" value="2" />
+                            指定成员
+                        </label>
+                    </div>
+                </div>
+                
+            </div>
+            <div style="position:relative;width:100%;height:100%;border:1px solid #ddd;padding-bottom:30px;">
+                <div style="bottom:0;border-bottom:0px;border-top:1px solid #ddd;position: absolute;left: 0;width: 100%;height: 30px;line-height: 29px;background-color: #F5F5F5;border-bottom: 1px solid #ddd;text-align: right;padding-right: 10px;font-weight: bold;color: #676a6c;">
+                    <div class="lr-form-jfgrid-btns">
+                        <a id="lr_post_authorize" class="btn btn-success"><i class="fa fa-graduation-cap"></i>&nbsp;添加岗位</a>
+                        <a id="lr_role_authorize" class="btn btn-info"><i class="fa fa-paw"></i>&nbsp;添加角色</a>
+                        <a id="lr_user_authorize" class="btn btn-primary"><i class="fa fa-user"></i>&nbsp;添加人员</a>
+
+                        <a id="lr_delete_authorize" class="btn btn-danger"><i class="fa fa-trash-o"></i>&nbsp;移除</a>
+                    </div>
+                </div>
+                <div id="authorize_girdtable"></div>
+                <div id="shcemeAuthorizeBg" style="z-index:10;position:absolute;left:0;top:0;width:100%;height:100%;background:#000;filter:alpha(opacity=10); opacity: 0.1;"></div>
+            </div>
+        </div>
+        <div class="step-pane" id="step-3"></div>
+    </div>
+
+    <div class="lr-form-bottom-button" id="wizard-actions">
+        <a id="btn_prev" class="btn btn-default btn-prev" disabled>上一步</a>
+        <a id="btn_next" class="btn btn-default btn-next">下一步</a>
+        <a id="btn_draft" class="btn btn-warning">保存草稿</a>
+        <a id="btn_finish" class="btn btn-success" disabled>保存</a>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_WorkFlowModule/Views/WfScheme/Form.js")

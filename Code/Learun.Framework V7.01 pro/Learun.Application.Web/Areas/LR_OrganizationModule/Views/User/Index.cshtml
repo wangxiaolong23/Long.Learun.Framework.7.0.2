@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "人员管理";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+<div class="lr-layout lr-layout-left-center " id="lr_layout">
+    <div class="lr-layout-left">
+        <div class="lr-layout-wrap">
+            <div class="lr-layout-title lrlg ">公司信息</div>
+            <div id="companyTree" class="lr-layout-body"></div>
+        </div>
+    </div>
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap">
+            <div class="lr-layout-title">
+                <span id="titleinfo" class="lrlg">未选择公司</span> - <span class="lrlg">用户信息</span>
+            </div>
+
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                    <div class="lr-layout-tool-item" style="width: 160px;">
+                        <div id="department_select" style="border-radius: 4px;"></div>
+                    </div>
+                    <div class="lr-layout-tool-item">
+                        <input id="txt_Keyword" type="text" class="form-control" placeholder="请输入要查询关键字" />
+                    </div>
+                    <div class="lr-layout-tool-item">
+                        <a id="btn_Search" class="btn btn-primary btn-sm"><i class="fa fa-search"></i>&nbsp;<span class="lrlg">查询</span></a>
+                    </div>
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
+                    </div>
+                    <div class=" btn-group btn-group-sm" learun-authorize="yes">
+                        <a id="lr_add" class="btn btn-default"><i class="fa fa-plus"></i>&nbsp;<span class="lrlg">新增</span></a>
+                        <a id="lr_edit" class="btn btn-default"><i class="fa fa-pencil-square-o"></i>&nbsp;<span class="lrlg">编辑</span></a>
+                        <a id="lr_delete" class="btn btn-default"><i class="fa fa-trash-o"></i>&nbsp;<span class="lrlg">删除</span></a>
+                        <a id="lr_more" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-reorder"></i>&nbsp;<span class="lrlg">更多</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li id="lr_export"><a><i></i>&nbsp;<span class="lrlg">导出Excel</span></a></li>
+                            <li id="lr_disabled"><a><i></i>&nbsp;<span class="lrlg">禁用账户</span></a></li>
+                            <li id="lr_enabled"><a><i></i>&nbsp;<span class="lrlg">启用账户</span></a></li>
+                            <li id="lr_resetpassword"><a><i></i>&nbsp;<span class="lrlg">重置密码</span></a></li>
+                            <li id="lr_authorize"><a><i></i>&nbsp;<span class="lrlg">功能授权</span></a></li>
+                            <li id="lr_dataauthorize"><a><i></i>&nbsp;<span class="lrlg">数据授权</span></a></li>
+                            <li id="lr_appauthorize"><a><i></i>&nbsp;<span class="lrlg">移动功能授权</span></a></li>
+                            <li id="lr_lookinfo"><a><i></i>&nbsp;<span class="lrlg">关联信息</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group btn-group-sm" learun-authorize="yes">
+                        <a id="lr_appfilter" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-filter"></i>&nbsp;<span class="lrlg">访问过滤</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li id="lr_ipfilter"><a><i></i>&nbsp;<span class="lrlg">IP过滤</span></a></li>
+                            <li id="lr_timefilter"><a><i></i>&nbsp;<span class="lrlg">时段过滤</span></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="lr-layout-body" id="gridtable">
+            </div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_OrganizationModule/Views/User/Index.js")

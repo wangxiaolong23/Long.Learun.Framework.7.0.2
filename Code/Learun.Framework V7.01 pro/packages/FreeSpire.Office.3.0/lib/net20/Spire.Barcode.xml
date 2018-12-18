@@ -1,0 +1,1970 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Spire.Barcode</name>
+    </assembly>
+    <members>
+        <member name="T:Spire.Barcode.Forms.BarCodeControlDesigner">
+            <summary>
+            Designer class for the <see cref="T:Spire.Barcode.Forms.BarCodeControl"/> class.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.Forms.BarCodeControlDesigner.PostFilterProperties(System.Collections.IDictionary)">
+            <summary>
+            Remove some basic properties that are not supported by the 
+            <see cref="T:Spire.Barcode.Forms.BarCodeControl"/>.
+            </summary>
+            <param name="properties">Collection of the control's properties.</param>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControlDesigner.SelectionRules">
+            <summary>
+            Defines the selection rules for the <see cref="T:Spire.Barcode.Forms.BarCodeControl"/>.
+            In particular, does not allow any resizing to occur.
+            </summary>
+        </member>
+        <member name="T:Spire.Barcode.BarCodeFormatException">
+            <summary>
+            The exception thrown when the barcode has an incorrect format.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.BarCodeFormatException.#ctor">
+            <overloads>
+            <summary>
+            Creates a new instance of the <see cref="T:Spire.Barcode.BarCodeFormatException"/> class.
+            </summary>
+            </overloads>
+            <summary>
+            Creates a new instance of the <see cref="T:Spire.Barcode.BarCodeFormatException"/> class.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.BarCodeFormatException.#ctor(System.String)">
+            <summary>
+            Creates a new instance of the <see cref="T:Spire.Barcode.BarCodeFormatException"/> class with the given message.
+            </summary>
+            <param name="message">Error message of the exception.</param>
+        </member>
+        <member name="M:Spire.Barcode.BarCodeFormatException.#ctor(System.String,System.Exception)">
+            <summary>
+            Creates a new instance of the <see cref="T:Spire.Barcode.BarCodeFormatException"/> class with the given message and 
+            the given inner exception.
+            </summary>
+            <param name="message">Error message of the exception.</param>
+            <param name="innerException">Inner exception.</param>
+        </member>
+        <member name="T:Spire.Barcode.StringHelper">
+            <summary>
+            Utility class for common string operations.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.StringHelper.IsNullOrEmpty(System.String)">
+            <summary>
+            Determines if a string is null of empty. It's emptiness is
+            determined by first trimming it.
+            </summary>
+            <param name="stringToCheck">String to check for nullness or emptiness.</param>
+            <returns><c>True</c> if the string is null or empty, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:Spire.Barcode.Forms.BarCodeControl">
+            <summary>
+            Control to render bar codes.
+            </summary>
+        </member>
+        <member name="T:Spire.Barcode.IBarcodeSettings">
+            <summary>
+            Defines barcode settings.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.AutoResize">
+            <summary>
+            The size of image automatically.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.Type">
+            <summary>
+            The type of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.Data">
+            <summary>
+            The data to render with the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.Data2D">
+            <summary>
+            The data to render with the 2D barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.TopText">
+            <summary>
+            Top text;
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.TopTextColor">
+            <summary>
+            Text color of top text;
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.TopTextFont">
+            <summary>
+            Text font of top text;
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.ShowTopText">
+            <summary>
+            Indicates whether shows top text.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.TopTextAligment">
+            <summary>
+            Indicate top text aligment.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.Unit">
+            <summary>
+            The unit of measure of the barcode's measurable properties.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.TextRenderingHint">
+            <summary>
+            Quality of text rendering. 
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.Rotate">
+            <summary>
+            Rotation angle of Barcode image. 
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.BackColor">
+            <summary>
+            The back color of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.ForeColor">
+            <summary>
+            The fore color of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.ShowText">
+            <summary>
+            Indicates whether display barcode data text.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.ShowTextOnBottom">
+            <summary>
+            Indicates whether display barcode data text on bottom.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.TextColor">
+            <summary>
+            The color of the bar of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.BarHeight">
+            <summary>
+            The height of the barcode. Affected by <see cref="P:Spire.Barcode.IBarcodeSettings.Unit"/>.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.TopMargin">
+            <summary>
+            The vertical top  offset height of the barcode to the border.
+            Affected by <see cref="P:Spire.Barcode.IBarcodeSettings.Unit"/>.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.BottomMargin">
+            <summary>
+            The vertical bottom offset height of the barcode to the border.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.TextMargin">
+            <summary>
+            Space between barcode and text.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.LeftMargin">
+            <summary>
+            The horizontal left offset width of the barcode to the border.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.RightMargin">
+            <summary>
+            The horizontal right offset width of the barcode to the border.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.TextFont">
+            <summary>
+            The font used to render the text inside the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.TextAlignment">
+            <summary>
+            The position of the text rendered in the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.UseChecksum">
+            <summary>
+            Whether the barcode will use an (optional) checksum.
+            Not every barcode requires a checksum, and others mandate it.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.UseAntiAlias">
+            <summary>
+            Inidcates whether use anti alias mode to render image.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.ImageHeight">
+            <summary>
+            Height of Barcode image.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.ImageWidth">
+            <summary>
+            Width of Barcode image.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.ColumnCount">
+            <summary>
+            Columns of 2D Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.RowCount">
+            <summary>
+            Rows of 2D Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.DpiX">
+            <summary>
+            Gets or sets the horizontal resolution.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.DpiY">
+            <summary>
+            Gets or sets the horizontal resolution.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.ResolutionType">
+            <summary>
+            Gets or sets the resolution.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.ShowCheckSumChar">
+            <summary>
+            Indicates whether shows checksum digit in Code128 and EAN128 Barcodes.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.CodabarStartChar">
+            <summary>
+            Start character of codabar barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.CodabarStopChar">
+            <summary>
+            Stop character of codabar barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.SupData">
+            <summary>
+            Supplement data.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.SupSpace">
+            <summary>
+            Space between main and supplement Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.WideNarrowRatio">
+            <summary>
+            Wide/narrow ratio.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.HasBorder">
+            <summary>
+            Indicates whether has border;
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.BorderWidth">
+            <summary>
+            Borders's width of barcode image.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.BorderColor">
+            <summary>
+            Border's color
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.BorderDashStyle">
+            <summary>
+            Border's Dash style.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.X">
+            <summary>
+            Width of barcode bar module.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.Y">
+            <summary>
+            Height of 2D barcode bar module.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.XYRatio">
+            <summary>
+             height/width ratio of 2D Barcode's module.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.Code128SetMode">
+            <summary>
+            Gets or sets code set of Pdf417 barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.Pdf417DataMode">
+            <summary>
+             Gets or sets data mode of Pdf417 barcode. 
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.Pdf417ECL">
+            <summary>
+            Error correction level of pdf417 Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.Pdf417Truncated">
+            <summary>
+            Indicates wheter has been truncated of pdf 417 Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.MacroFileIndex">
+            <summary>
+            Gets or sets macro pdf417 Barcode's file index.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.MacroSegmentIndex">
+            <summary>
+            Gets or sets macro pdf417 Barcode's segment index.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.QRCodeDataMode">
+            <summary>
+             Gets or sets of QRCode Barcode. 
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IBarcodeSettings.QRCodeECL">
+            <summary>
+            Error correction level of QRCode Barcode.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.Forms.BarCodeControl.#ctor">
+            <summary>
+            Creates a new instance of the <see cref="T:Spire.Barcode.Forms.BarCodeControl"/>.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.Forms.BarCodeControl.#ctor(System.String)">
+            <summary>
+             Creates a new instance of the <see cref="T:Spire.Barcode.Forms.BarCodeControl"/>.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.Forms.BarCodeControl.#ctor(System.String,Spire.Barcode.BarCodeType)">
+            <summary>
+            Creates a new instance of the <see cref="T:Spire.Barcode.Forms.BarCodeControl"/>.
+            </summary>
+            <param name="text">text</param>
+            <param name="barcodeType">barcode type </param>
+        </member>
+        <member name="M:Spire.Barcode.Forms.BarCodeControl.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Renders the barcode.
+            </summary>
+            <param name="e">Paint event arguments.</param>
+        </member>
+        <member name="M:Spire.Barcode.Forms.BarCodeControl.DrawBarCode(System.Drawing.Graphics)">
+            <summary>
+            Draws the barcode in the canvas passed.
+            </summary>
+            <param name="canvas">Canvas to draw barcode into.</param>
+        </member>
+        <member name="M:Spire.Barcode.Forms.BarCodeControl.GenerateImage">
+            <summary>
+            Generate barcode image.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Spire.Barcode.Forms.BarCodeControl.SaveToFile(System.String)">
+            <summary>
+            Save image to disk file.
+            </summary>
+            <param name="filename">file name</param>
+        </member>
+        <member name="M:Spire.Barcode.Forms.BarCodeControl.SaveToStream(System.IO.Stream,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Save image to stream.
+            </summary>
+            <param name="stream">stream</param>
+            <param name="format">image format</param>
+        </member>
+        <member name="M:Spire.Barcode.Forms.BarCodeControl.SaveToFile(System.String,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Save image to disk file.
+            </summary>
+            <param name="filename">file name</param>
+            <param name="format">image format</param>
+        </member>
+        <member name="M:Spire.Barcode.Forms.BarCodeControl.print(System.String)">
+            <summary>
+            Print barcode.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.Forms.BarCodeControl.print">
+            <summary>
+            Print barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.Type">
+            <summary>
+            The type of barcode to render.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.Data">
+            <summary>
+            The data to render in the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.Unit">
+            <summary>
+            The unit to use when rendering the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.BackColor">
+            <summary>
+            The back color of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.TextColor">
+            <summary>
+            The color of the bar of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.BarHeight">
+            <summary>
+            The height of the bar.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.TopMargin">
+            <summary>
+            The top margin of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.LeftMargin">
+            <summary>
+            The width offset of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.TextFont">
+            <summary>
+            The font of the barcode text.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.TextAlignment">
+            <summary>
+            The position of the text.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.UseChecksum">
+            <summary>
+            Indicates whether to use a checksum on barcodes where it is optional.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.AutoResize">
+            <summary>
+            The size of image automatically.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.Data2D">
+            <summary>
+             The data to render with the 2D barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.TopText">
+            <summary>
+            Text above barcode. 
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.TopTextColor">
+            <summary>
+            Text above barcode style. 
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.TopTextFont">
+            <summary>
+            Text above barcode style. 
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.ShowTopText">
+            <summary>
+            Indicates whether shows top text.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.TextRenderingHint">
+             <summary>
+            Quality of text rendering. 
+             </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.Rotate">
+            <summary>
+            Rotation angle of Barcode image. 
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.ForeColor">
+            <summary>
+            The fore color of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.ShowText">
+            <summary>
+            Indicates whether display barcode data text.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.ShowTextOnBottom">
+            <summary>
+            Indicates whether display barcode data text on bottom.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.BottomMargin">
+            <summary>
+            The bottom margin of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.TextMargin">
+            <summary>
+            Space between barcode and text.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.RightMargin">
+            <summary>
+            The right margin of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.UseAntiAlias">
+            <summary>
+            Inidcates whether use anti alias mode to render image.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.ImageHeight">
+            <summary>
+            Height of Barcode image.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.ImageWidth">
+            <summary>
+            Width of Barcode image.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.ColumnCount">
+            <summary>
+            Columns of 2D Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.RowCount">
+            <summary>
+            Rows of 2D Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.DpiX">
+            <summary>
+            Gets or sets the horizontal resolution.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.DpiY">
+            <summary>
+            Gets or sets the horizontal resolution.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.ResolutionType">
+            <summary>
+            Gets or sets the resolution.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.ShowCheckSumChar">
+            <summary>
+            Indicates whether shows checksum digit in Code128 and EAN128 Barcodes.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.CodabarStartChar">
+            <summary>
+            Start character of codabar barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.CodabarStopChar">
+            <summary>
+            Stop character of codabar barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.SupData">
+            <summary>
+            Supplement data.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.SupSpace">
+            <summary>
+            Space between main and supplement Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.WideNarrowRatio">
+            <summary>
+            Wide/narrow ratio.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.HasBorder">
+            <summary>
+            Indicates whether has border;
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.BorderWidth">
+            <summary>
+            Borders's width of barcode image.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.BorderColor">
+            <summary>
+            Border's color.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.BorderDashStyle">
+            <summary>
+            Border's Dash style.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.X">
+            <summary>
+            Width of barcode bar module.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.Y">
+            <summary>
+            Height of 2D barcode bar module.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.XYRatio">
+            <summary>
+            Height/width ratio of 2D Barcode's module.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.Code128SetMode">
+            <summary>
+            Gets or sets code set of Pdf417 barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.Pdf417DataMode">
+            <summary>
+            Gets or sets data mode of Pdf417 barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.Pdf417ECL">
+            <summary>
+            Error correction level of pdf417 Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.Pdf417Truncated">
+            <summary>
+            Indicates wheter has been truncated of pdf 417 Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.MacroFileIndex">
+            <summary>
+            Gets or sets macro pdf417 Barcode's file index.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.MacroSegmentIndex">
+            <summary>
+            Gets or sets macro pdf417 Barcode's segment index.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.QRCodeDataMode">
+            <summary>
+            Gets or sets of QRCode Barcode. 
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Forms.BarCodeControl.QRCodeECL">
+            <summary>
+            Error correction level of QRCode Barcode.
+            </summary>
+        </member>
+        <member name="T:Spire.Barcode.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.CheckSumMode.Auto">
+            <summary>
+            Enable or disable checksum according barcode type.
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.CheckSumMode.ForceEnable">
+            <summary>
+            Force enable checksum.
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.CheckSumMode.ForceDisable">
+            <summary>
+            Force disable checksum.
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.Forms.KeyRequirementForm2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.Forms.KeyRequirementForm2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Spire.Barcode.Forms.KeyRequirementForm2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Spire.Barcode.IChecksum">
+            <summary>
+            Interface to calculate checksums on barcode data.
+            </summary>
+            <remarks>
+            Classes that calculate checksums on barcode data should implement this interface.
+            It makes for a pluggable checksum architecture.
+            </remarks>
+        </member>
+        <member name="M:Spire.Barcode.IChecksum.Calculate(System.String)">
+            <summary>
+            Calculates the checksum of a string of data.
+            </summary>
+            <param name="data">The data to calculate the checksum for.</param>
+            <returns>The calculated checksum.</returns>
+        </member>
+        <member name="T:Spire.Barcode.IOptionalChecksum">
+            <summary>
+            Determines whether the checksum calculation in a barcode is optional.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.IOptionalChecksum.UseChecksum">
+            <summary>
+            Determines whether the barcode will calculate a checksum on its data.
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.Codes.NewRowToSeparator">
+            For RSS.When 2D part finished and need to change to draw the separator part
+        </member>
+        <member name="T:Spire.Barcode.BarCodeType">
+            <summary>
+            Identifies the barcode types.
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.BarCodeType.Codabar">
+            <summary>
+            Code bar Barcode. 
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.BarCodeType.Code11">
+            <summary>
+            Code 1 of 1 Barcode. 
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.BarCodeType.Code25">
+            <summary>
+            Standard 2 of 5 barcode.
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.BarCodeType.Interleaved25">
+            <summary>
+            Interleaved 2 of 5 barcode.
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.BarCodeType.Code39">
+            <summary>
+            Code 3 of 9 barcode.
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.BarCodeType.Code39Extended">
+            <summary>
+            Extended Code 3 of 9 barcode.
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.BarCodeType.Code93">
+            <summary>
+            Code 9 of 3 Barcode. 
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.BarCodeType.Code93Extended">
+            <summary>
+            Extended Code 9 of 3 Barcode. 
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.BarCodeType.Code128">
+            <summary>
+            Code 128 barcode.
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.BarCodeType.EAN8">
+            <summary>
+            EAN-8 barcode.
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.BarCodeType.EAN13">
+            <summary>
+            EAN-13 barcode.
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.BarCodeType.EAN128">
+            <summary>
+            EAN-128 barcode. 
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.BarCodeType.EAN14">
+            <summary>
+            EAN-14 barcode
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.BarCodeType.QRCode">
+            <summary>
+            QR Code barcode.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.BarcodeBuilder.System#IDisposable#Dispose">
+            <summary>
+            BarcodeBuilder's constructer, default SymbologyType is Code128, 
+            default CodeText is 12345678
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeBuilder.SecondaryCodeText">
+            <summary>
+            For GS1 DataBar Barcode with linkage flag(contains 2D Barcode). The secondary CodeText to be encoded in the 2D part. <br></br>
+            The DataBar Barcode will contain 2D part and separator part if SecondaryCodeText did not equal to string.Empty.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeBuilder.MacroPdf417FileID">
+            <summary>
+            Gets or sets macro pdf417 Barcode's segment count.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeBuilder.WideNarrowRatio">
+            <summary>
+            Gets or sets macro pdf417 Barcode's address attribute.
+            </summary>
+        </member>
+        <member name="T:Spire.Barcode.BitArrayHelper">
+            <summary>
+            Utility class for BitArray operations.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.BitArrayHelper.PopFront(System.Collections.BitArray[]@)">
+            <summary>
+            Removes the first <see cref="T:System.Collections.BitArray"/> of an array of
+            BitArrays and returns it.
+            </summary>
+            <param name="bits">Array of bit arrays to work on. On return, will lack the first element.</param>
+            <returns>The first element of the BitArray array parameter.</returns>
+        </member>
+        <member name="M:Spire.Barcode.BitArrayHelper.PopBack(System.Collections.BitArray[]@)">
+            <summary>
+            Removes the last <see cref="T:System.Collections.BitArray"/> of an array of
+            BitArrays and returns it.
+            </summary>
+            <param name="bits">Array of bit arrays to work on. On return, will lack the last element.</param>
+            <returns>The last element of the BitArray array parameter.</returns>
+        </member>
+        <member name="M:Spire.Barcode.BitArrayHelper.ToBitArray(System.String)">
+            <summary>
+            Converts a string of data consisting of '1's and '0's
+            into a <see cref="T:System.Collections.BitArray"/>.
+            </summary>
+            <param name="data">Input data.</param>
+            <returns>BitArray of input data.</returns>
+        </member>
+        <member name="M:Spire.Barcode.BitArrayHelper.ToBitMatrix(System.String[])">
+            <summary>
+            Converts an array of strings of data consisting of '1's and '0's
+            into an array of corresponding <see cref="T:System.Collections.BitArray"/>s.
+            </summary>
+            <param name="data">Input strings.</param>
+            <returns>Bit matrix (array of BitArrays) created.</returns>
+        </member>
+        <member name="T:Spire.Barcode.IDataEncoder">
+            <summary>
+            Encoder interface for barcode symbols.
+            </summary>
+            <remarks>
+            Classes that encode barcode data into arrays of bits (<see cref="T:System.Collections.BitArray"/>) should
+            implement this interface.
+            </remarks>
+        </member>
+        <member name="M:Spire.Barcode.IDataEncoder.Encode(System.String)">
+            <summary>
+            Encodes a string of barcode data.
+            </summary>
+            <param name="data">The string of data to be encoded.</param>
+            <returns>The encoded data.</returns>
+        </member>
+        <member name="M:Spire.Barcode.IDataEncoder.Encode(System.Char)">
+            <summary>
+            Encodes a character of barcode data.
+            </summary>
+            <param name="datum">The character of data to be encoded.</param>
+            <returns>The encoded data.</returns>
+        </member>
+        <member name="M:Spire.Barcode.Scanner.BarcodeReader.GetCodeBytes">
+            <summary>
+            Gets the encoded code bytes.
+            </summary>
+            <returns>The code bytes of the Barcode.</returns>
+        </member>
+        <member name="M:Spire.Barcode.Scanner.BarcodeReader.BarcodeReaderImplementation.GetCodeBytes">
+            <summary>
+            Gets the encoded code bytes.
+            </summary>
+            <returns>The code bytes of the Barcode.</returns>
+        </member>
+        <member name="T:Spire.Barcode.WebUI.QueryStringSerializer">
+            <summary>
+            Parses and formats bar code settings (<see cref="T:Spire.Barcode.IBarcodeSettings"/>)
+            as query strings.
+            </summary>
+        </member>
+        <member name="F:Spire.Barcode.WebUI.QueryStringSerializer.TYPE_KEY">
+            <summary>Type of barcode key.</summary>
+        </member>
+        <member name="F:Spire.Barcode.WebUI.QueryStringSerializer.DATA_KEY">
+            <summary>Data key.</summary>
+        </member>
+        <member name="F:Spire.Barcode.WebUI.QueryStringSerializer.UNIT_KEY">
+            <summary>Unit key.</summary>
+        </member>
+        <member name="F:Spire.Barcode.WebUI.QueryStringSerializer.BACKCOLOR_KEY">
+            <summary>Back color key.</summary>
+        </member>
+        <member name="F:Spire.Barcode.WebUI.QueryStringSerializer.TEXTCOLOR_KEY">
+            <summary>Bar color key.</summary>
+        </member>
+        <member name="F:Spire.Barcode.WebUI.QueryStringSerializer.BARHEIGHT_KEY">
+            <summary>Bar haight key.</summary>
+        </member>
+        <member name="F:Spire.Barcode.WebUI.QueryStringSerializer.TOPMARGIN_KEY">
+            <summary>Offset height key.</summary>
+        </member>
+        <member name="F:Spire.Barcode.WebUI.QueryStringSerializer.LEFTMARGIN_KEY">
+            <summary>Offset width key.</summary>
+        </member>
+        <member name="F:Spire.Barcode.WebUI.QueryStringSerializer.TEXTFONT_KEY">
+            <summary>Font key.</summary>
+        </member>
+        <member name="F:Spire.Barcode.WebUI.QueryStringSerializer.TEXTALIGN_KEY">
+            <summary>Text position key.</summary>
+        </member>
+        <member name="F:Spire.Barcode.WebUI.QueryStringSerializer.USECHECKSUM_KEY">
+            <summary>Use checksum key.</summary>
+        </member>
+        <member name="M:Spire.Barcode.WebUI.QueryStringSerializer.ParseQueryString(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Parses a querystring-type parameter for <see cref="T:Spire.Barcode.IBarcodeSettings"/> properties.
+            The minimum properties expected are "Type", for the type of the barcode,
+            and "Data", for the data to render with the barcode.
+            </summary>
+            <param name="queryString">The collection of key-value pairs for parsing.</param>
+            <returns>The assembled <see cref="T:Spire.Barcode.IBarcodeSettings"/>.</returns>
+            <exception cref="T:System.ArgumentNullException">
+            If the querystring parameter is <c>null</c>.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            If the querystring parameter has any invalid property for the settings.
+            </exception>
+        </member>
+        <member name="M:Spire.Barcode.WebUI.QueryStringSerializer.ToQueryString(Spire.Barcode.IBarcodeSettings)">
+            <summary>
+            Formats and returns a query string for the input settings (<see cref="T:Spire.Barcode.IBarcodeSettings"/>).
+            </summary>
+            <param name="settings">Input settings.</param>
+            <returns>Assembled querystring.</returns>
+        </member>
+        <member name="M:Spire.Barcode.WebUI.QueryStringSerializer.UrlEncode(System.Object)">
+            <summary>
+            Url-encodes the input data.
+            </summary>
+            <param name="dataToEncode">Data to encode.</param>
+            <returns>Encoded data.</returns>
+        </member>
+        <member name="T:Spire.Barcode.BarcodeSettings">
+            <summary>
+            Packages settings for barcodes.
+            Canonical implementation of <see cref="T:Spire.Barcode.IBarcodeSettings"/>.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.BarcodeSettings.ApplyKey(System.String)">
+            <summary>
+            Provide a valid key to remove the logo of E-iceblue in
+            the barcode view or image generated by this component
+            </summary>
+            <param name="key">Barcode key</param>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.Type">
+            <summary>
+            The type of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.Data">
+            <summary>
+            The data to render with the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.BackColor">
+            <summary>
+            The back color of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.TextColor">
+            <summary>
+            The color of the bar of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.BarHeight">
+            <summary>
+            The height of the barcode. Affected by <see cref="P:Spire.Barcode.BarcodeSettings.Unit"/>.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.FontColor">
+            <summary>
+            The color of the font to render text in the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.TopMargin">
+            <summary>
+            The vertical top  offset height of the barcode to the border.
+            Affected by <see cref="P:Spire.Barcode.BarcodeSettings.Unit"/>.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.LeftMargin">
+            <summary>
+            The horizontal (left and right) offset width of the barcode to the border.
+            Affected by <see cref="P:Spire.Barcode.BarcodeSettings.Unit"/>.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.TextFont">
+            <summary>
+            The font used to render the text inside the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.UseChecksum">
+            <summary>
+            Whether the barcode will use an (optional) checksum.
+            Not every barcode requires a checksum, and others mandate it.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.AutoResize">
+            <summary>
+            Gets or sets adjust size of barcode image automatically.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.Data2D">
+            <summary>
+            Gets or sets text of 2D barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.TopText">
+            <summary>
+            Top text of barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.TopTextColor">
+            <summary>
+            Top text color of barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.TopTextFont">
+            <summary>
+            Top text font of barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.ShowTopText">
+            <summary>
+            Indicates whether displays top text.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.Unit">
+            <summary>
+            Measurement unit.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.TextRenderingHint">
+            <summary>
+            Gets or sets quality of barcode text rendering.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.Rotate">
+            <summary>
+            Gets or set rotation angle of BarCode image.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.ForeColor">
+            <summary>
+            Gets or sets foreground color of the barcode image.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.ShowText">
+            <summary>
+            Indicates whether display barcode's text.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.ShowTextOnBottom">
+            <summary>
+            Indicates whether display barcode's text on bottom.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.BottomMargin">
+            <summary>
+            The vertical bottom offset height of the barcode to the border.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.TextMargin">
+            <summary>
+            Space between barcode and text.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.RightMargin">
+            <summary>
+            The horizontal right offset width of the barcode to the border.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.TextAlignment">
+            <summary>
+            The position of the text rendered in the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.UseAntiAlias">
+            <summary>
+            Inidcates whether use anti alias mode to render image.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.ImageHeight">
+            <summary>
+             Height of Barcode image.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.ImageWidth">
+            <summary>
+            Width of Barcode image.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.ColumnCount">
+            <summary>
+            Columns of 2D Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.RowCount">
+            <summary>
+            Rows of 2D Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.DpiX">
+            <summary>
+            Gets or sets the horizontal resolution.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.DpiY">
+            <summary>
+            Gets or sets the horizontal resolution.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.ResolutionType">
+            <summary>
+            Gets or sets the resolution.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.ShowCheckSumChar">
+            <summary>
+            Indicates whether shows checksum digit in Code128 and EAN128 Barcodes.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.CodabarStartChar">
+            <summary>
+            Start character of codabar barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.CodabarStopChar">
+            <summary>
+            Stop character of codabar barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.SupData">
+            <summary>
+            Supplement data.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.SupSpace">
+            <summary>
+            Space between main and supplement Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.WideNarrowRatio">
+            <summary>
+            Wide/narrow ratio.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.HasBorder">
+            <summary>
+            Indicates whether has border;
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.BorderWidth">
+            <summary>
+            Borders's width of barcode image.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.BorderColor">
+            <summary>
+            Border's color
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.BorderDashStyle">
+            <summary>
+            Border's Dash style.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.X">
+            <summary>
+            Width of barcode bar module.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.Y">
+            <summary>
+            Height of 2D barcode bar module.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.XYRatio">
+            <summary>
+            height/width ratio of 2D Barcode's module.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.Code128SetMode">
+            <summary>
+            Gets or sets code set of Pdf417 barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.Pdf417DataMode">
+            <summary>
+            Gets or sets data mode of Pdf417 barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.Pdf417ECL">
+            <summary>
+            Error correction level of pdf417 Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.Pdf417Truncated">
+            <summary>
+            Indicates wheter has been truncated of pdf 417 Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.MacroFileIndex">
+            <summary>
+            Gets or sets macro pdf417 Barcode's file index.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.MacroSegmentIndex">
+            <summary>
+            Gets or sets macro pdf417 Barcode's segment index.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.QRCodeDataMode">
+            <summary>
+            Gets or sets of QRCode Barcode. 
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.BarcodeSettings.QRCodeECL">
+            <summary>
+            Error correction level of QRCode Barcode.
+            </summary>
+        </member>
+        <member name="T:Spire.Barcode.TableEncoder">
+            <summary>
+            Encoder base class for table-lookup like encoders.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.TableEncoder.LookUp(System.Int32)">
+            <summary>
+            Looks up the sought value and returns its encoded equivalent.
+            Should be properly overriden in derived classes.
+            </summary>
+            <param name="index">Index of the value to look up.</param>
+            <returns>The encoded data.</returns>
+        </member>
+        <member name="M:Spire.Barcode.TableEncoder.Encode(System.String)">
+            <summary>
+            Encodes a string of barcode data.
+            </summary>
+            <param name="data">The string of data to be encoded.</param>
+            <returns>The encoded data.</returns>
+        </member>
+        <member name="M:Spire.Barcode.TableEncoder.Encode(System.Char)">
+            <summary>
+            Encodes a character of barcode data. 
+            </summary>
+            <remarks>
+            This method uses the <see cref="M:Spire.Barcode.TableEncoder.LookUp(System.Int32)"/> method to resolve 
+            the character of data to an encoded entity (<see cref="T:System.Collections.BitArray"/>).
+            It assumes the datum passed represents a number and converts it before
+            looking it up.
+            </remarks>
+            <param name="datum">The character of data to be encoded.</param>
+            <returns>The encoded data.</returns>
+        </member>
+        <member name="M:Spire.Barcode.WebUI.BarCodeControl.#ctor">
+            <summary>
+            Creates a new instance of the <see cref="T:Spire.Barcode.WebUI.BarCodeControl"/> class.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.WebUI.BarCodeControl.Render(System.Web.UI.HtmlTextWriter)">
+            <summary> 
+            Render this control to the output parameter specified.
+            </summary>
+            <param name="output">The HTML writer to write out to.</param>
+        </member>
+        <member name="M:Spire.Barcode.WebUI.BarCodeControl.OnInit(System.EventArgs)">
+            <summary>
+            init function
+            </summary>
+            <param name="e">EventArgs</param>
+        </member>
+        <member name="M:Spire.Barcode.WebUI.BarCodeControl.GenerateImage">
+            <summary>
+            Generate barcode image.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Spire.Barcode.WebUI.BarCodeControl.SaveToFile(System.String)">
+            <summary>
+            Save image to disk file.
+            </summary>
+            <param name="filename">file name</param>
+        </member>
+        <member name="M:Spire.Barcode.WebUI.BarCodeControl.SaveToStream(System.IO.Stream,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Save image to stream.
+            </summary>
+            <param name="stream">stream</param>
+            <param name="format">image format</param>
+        </member>
+        <member name="M:Spire.Barcode.WebUI.BarCodeControl.SaveToFile(System.String,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Save image to disk file.
+            </summary>
+            <param name="filename">file name</param>
+            <param name="format">image format</param>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.ImageFormat">
+            <summary>
+            Gets and sets the format of the rendered barcode image
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.Type">
+            <summary>
+            The type of the barcode to render.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.Data">
+            <summary>
+            The data to render with the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.Unit">
+            <summary>
+            The unit to use when rendering the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.BackColor">
+            <summary>
+            The back color of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.TextColor">
+            <summary>
+            The color of the text of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.BarHeight">
+            <summary>
+            The height of the bar.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.FontColor">
+            <summary>
+            The font color of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.TopMargin">
+            <summary>
+            The top margin of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.LeftMargin">
+            <summary>
+            The width offset of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.TextFont">
+            <summary>
+            The font of the barcode text.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.TextAlignment">
+            <summary>
+            The position of the text.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.UseChecksum">
+            <summary>
+            Indicates whether to use a checksum on barcodes where it is optional.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.BarCodeHandlerUrl">
+            <summary>
+            Barcode HTTP handler URL.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.AutoResize">
+            <summary>
+            The size of image automatically.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.Data2D">
+            <summary>
+             The data to render with the 2D barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.TopText">
+            <summary>
+            Text above barcode. 
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.TopTextColor">
+            <summary>
+            Text above barcode style. 
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.TopTextFont">
+            <summary>
+            Text above barcode style. 
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.ShowTopText">
+            <summary>
+            Indicates whether shows top text.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.TextRenderingHint">
+             <summary>
+            Quality of text rendering. 
+             </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.Rotate">
+            <summary>
+            Rotation angle of Barcode image. 
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.ForeColor">
+            <summary>
+            The fore color of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.ShowText">
+            <summary>
+            Indicates whether display barcode data text.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.ShowTextOnBottom">
+            <summary>
+            Indicates whether display barcode data text on bottom.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.BottomMargin">
+            <summary>
+            The bottom margin of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.TextMargin">
+            <summary>
+            Space between barcode and text.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.RightMargin">
+            <summary>
+            The right margin of the barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.UseAntiAlias">
+            <summary>
+            Inidcates whether use anti alias mode to render image.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.ImageHeight">
+            <summary>
+            Height of Barcode image.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.ImageWidth">
+            <summary>
+            Width of Barcode image.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.ColumnCount">
+            <summary>
+            Columns of 2D Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.RowCount">
+            <summary>
+            Rows of 2D Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.DpiX">
+            <summary>
+            Gets or sets the horizontal resolution.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.DpiY">
+            <summary>
+            Gets or sets the horizontal resolution.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.ResolutionType">
+            <summary>
+            Gets or sets the resolution.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.UseHttpHandlerMode">
+            <summary>
+            Indicates whether use httphandler mode to render barcode.
+            <code>
+            <system.web>
+                <httpHandlers>
+                     <add verb="*" path ="BarCodeHandler.axd" type="Spire.Barcode.WebUI.BarCodeHandler,Spire.Barcode"/>
+                 </httpHandlers>
+            </system.web>
+            </code>
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.ShowCheckSumChar">
+            <summary>
+            Indicates whether shows checksum digit in Code128 and EAN128 Barcodes.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.CodabarStartChar">
+            <summary>
+            Start character of codabar barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.CodabarStopChar">
+            <summary>
+            Stop character of codabar barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.SupData">
+            <summary>
+            Supplement data.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.SupSpace">
+            <summary>
+            Space between main and supplement Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.WideNarrowRatio">
+            <summary>
+            Wide/narrow ratio.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.HasBorder">
+            <summary>
+            Indicates whether has border;
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.BorderWidth">
+            <summary>
+            Borders's width of barcode image.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.BorderColor">
+            <summary>
+            Border's color.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.BorderDashStyle">
+            <summary>
+            Border's Dash style.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.X">
+            <summary>
+            Width of barcode bar module.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.Y">
+            <summary>
+            Height of 2D barcode bar module.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.XYRatio">
+            <summary>
+            Height/width ratio of 2D Barcode's module.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.Code128SetMode">
+            <summary>
+            Gets or sets code set of Pdf417 barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.Pdf417DataMode">
+            <summary>
+            Gets or sets data mode of Pdf417 barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.Pdf417ECL">
+            <summary>
+            Error correction level of pdf417 Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.Pdf417Truncated">
+            <summary>
+            Indicates wheter has been truncated of pdf 417 Barcode.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.MacroFileIndex">
+            <summary>
+            Gets or sets macro pdf417 Barcode's file index.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.MacroSegmentIndex">
+            <summary>
+            Gets or sets macro pdf417 Barcode's segment index.
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.QRCodeDataMode">
+            <summary>
+            Gets or sets of QRCode Barcode. 
+            </summary>
+        </member>
+        <member name="P:Spire.Barcode.WebUI.BarCodeControl.QRCodeECL">
+            <summary>
+            Error correction level of QRCode Barcode.
+            </summary>
+        </member>
+        <member name="T:Spire.Barcode.BarcodeScanner">
+            <summary>
+             Provide barcode scanning services.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.BarcodeScanner.Scan(System.String,Spire.Barcode.BarCodeType)">
+            <summary>
+            Scans barcode from image file.
+            </summary>
+            <param name="fileName">file Name</param>
+            <param name="barcodeType">barcode type</param>
+            <returns>barcode text list</returns>
+        </member>
+        <member name="M:Spire.Barcode.BarcodeScanner.Scan(System.Drawing.Bitmap,Spire.Barcode.BarCodeType)">
+            <summary>
+            Scan barcode from image.
+            </summary>
+            <param name="image">image object</param>
+            <param name="barcodeType">barcode type</param>
+            <returns>Barcode text list</returns>
+        </member>
+        <member name="M:Spire.Barcode.BarcodeScanner.Scan(System.String)">
+            <summary>
+            Scan barcode from image file.
+            </summary>
+            <param name="fileName">Image file path.</param>
+            <returns>Barcode text list.</returns>
+        </member>
+        <member name="M:Spire.Barcode.BarcodeScanner.Scan(System.String,System.Boolean)">
+            <summary>
+            Scan barcode from image file.
+            </summary>
+            <param name="fileName">Image file path.</param>
+            <returns>Barcode text list.</returns>
+        </member>
+        <member name="M:Spire.Barcode.BarcodeScanner.ScanOne(System.String)">
+            <summary>
+            Scan barcode from image file.
+            </summary>
+            <param name="fileName">Image file path.</param>
+            <returns>Barcode text list.</returns>
+        </member>
+        <member name="M:Spire.Barcode.BarcodeScanner.ScanOne(System.String,System.Boolean)">
+            <summary>
+            Scan barcode from image file.
+            </summary>
+            <param name="fileName">Image file path.</param>
+            <returns>Barcode text list.</returns>
+        </member>
+        <member name="M:Spire.Barcode.BarcodeScanner.Scan(System.IO.Stream)">
+            <summary>
+            Scan barcode from image stream.
+            </summary>
+            <param name="stream">Image stream.</param>
+            <returns>Barcode text list.</returns>
+        </member>
+        <member name="M:Spire.Barcode.BarcodeScanner.Scan(System.IO.Stream,System.Boolean)">
+            <summary>
+            Scan barcode from image stream.
+            </summary>
+            <param name="stream">Image stream.</param>
+            <returns>Barcode text list.</returns>
+        </member>
+        <member name="M:Spire.Barcode.BarcodeScanner.ScanOne(System.IO.Stream)">
+            <summary>
+            Scan barcode from image stream.
+            </summary>
+            <param name="stream">Image stream.</param>
+            <returns>Barcode text list.</returns>
+        </member>
+        <member name="M:Spire.Barcode.BarcodeScanner.ScanOne(System.IO.Stream,System.Boolean)">
+            <summary>
+            Scan barcode from image stream.
+            </summary>
+            <param name="stream">Image stream.</param>
+            <returns>Barcode text list.</returns>
+        </member>
+        <member name="M:Spire.Barcode.BarcodeScanner.Scan(System.Drawing.Bitmap)">
+            <summary>
+            Scan barcode from bitmap.
+            </summary>
+            <param name="bitmap">Bitmap object.</param>
+            <returns>Barcode text list.</returns>
+        </member>
+        <member name="M:Spire.Barcode.BarcodeScanner.ScanOne(System.Drawing.Bitmap)">
+            <summary>
+            Scan barcode from bitmap.
+            </summary>
+            <param name="bitmap">Bitmap object.</param>
+            <returns>Barcode text list.</returns>
+        </member>
+        <member name="M:Spire.Barcode.BarcodeScanner.Scan(System.Drawing.Bitmap,System.Drawing.Rectangle,Spire.Barcode.BarCodeType)">
+            <summary>
+            Scans barcode from bitmap.
+            </summary>
+            <param name="bitmap">Bitmap object.</param>
+            <param name="rect">Scan rectangle</param>
+            <param name="barcodeType">Barcode Type</param>
+            <returns>Barcode text list.</returns>
+        </member>
+        <member name="T:Spire.Barcode.BarCodeGenerator">
+            <summary>
+            Operates on <see cref="T:Spire.Barcode.IBarcodeSettings"/>
+            to provide barcode rendering and conversion services.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.BarCodeGenerator.#ctor(Spire.Barcode.IBarcodeSettings)">
+            <summary>
+            Creates a new instance of the <see cref="T:Spire.Barcode.BarCodeGenerator"/> class.
+            </summary>
+            <param name="settings">The settings to use.</param>
+            <exception cref="T:System.ArgumentNullException">
+            If the settings passed are <c>null</c>.
+            </exception>
+        </member>
+        <member name="M:Spire.Barcode.BarCodeGenerator.GenerateImage">
+            <summary>
+            Generates an image with the rendered barcode based on the settings (<see cref="T:Spire.Barcode.IBarcodeSettings"/>).
+            </summary>
+            <returns>The generated barcode image.</returns>
+            <exception cref="T:Spire.Barcode.BarCodeFormatException">
+            If the data in the settings can't be rendered by the selected barcode.
+            </exception>
+        </member>
+        <member name="M:Spire.Barcode.BarCodeGenerator.GetBarCodeType(Spire.Barcode.BarCodeType)">
+            <summary>
+            Instantiates the barcode type asked by the settings.
+            </summary>
+            <returns>The instantiated barcode type.</returns>
+            <exception cref="T:System.InvalidOperationException">
+            If the settings contain an invalid barcode type.
+            </exception>
+        </member>
+        <member name="M:Spire.Barcode.BarCodeGenerator.AssembleBarCode">
+            <summary>
+            Instantiates and sets the barcode properties based on the settings.
+            </summary>
+            <returns>Instantiated and set up barcode.</returns>
+        </member>
+        <member name="M:Spire.Barcode.BarCodeGenerator.CopySettings(Spire.Barcode.IBarcodeSettings,Spire.Barcode.IBarcodeSettings)">
+            <summary>
+            Copy settings between <see cref="T:Spire.Barcode.IBarcodeSettings"/>.
+            </summary>
+            <param name="srcSetting">Settings to copy from.</param>
+            <param name="settingsCopyTo">Settings to copy to.</param>
+        </member>
+        <member name="T:Spire.Barcode.WebUI.BarCodeHandler">
+            <summary>
+            Http handler to generate bar code images.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.Scanner.BarcodeRegion.#ctor(System.Drawing.Point[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Spire.Barcode.Scanner.BarcodeRegion"/> class.
+            </summary>
+            <param name="polygon">The polygon.</param>
+        </member>
+        <member name="T:Spire.Barcode.WebUI.BarCodeHtmlHelper">
+            <summary>
+            Helper class to render HTML tags for barcodes. Useful from ASP.NET MVC.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.WebUI.BarCodeHtmlHelper.BarCode(Spire.Barcode.IBarcodeSettings,System.String)">
+            <summary>
+            Generates the barcode tags to render to barcode expressed in the input <paramref name="settings"/>.
+            </summary>
+            <param name="settings">Settings for the barcode to render.</param>
+            <param name="barCodeHandlerUrl">
+            URL for the barcode image rendering HTTP handler. 
+            Must be registered in web.config, pointing to <see cref="T:Spire.Barcode.WebUI.BarCodeHandler"/>.
+            </param>
+            <returns></returns>
+        </member>
+        <member name="T:Spire.Barcode.DebugStream">
+            <summary>
+            A <see cref="T:System.IO.Stream"/> decorator used to trace stream reads and writes.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.DebugStream.#ctor(System.String,System.IO.Stream)">
+            <summary>
+            Creates a new instance of the <see cref="T:Spire.Barcode.DebugStream"/> class.
+            </summary>
+            <param name="title">A name to distinguish this stream.</param>
+            <param name="baseStream">The stream to be decorated by this stream.</param>
+            <exception cref="T:System.ArgumentNullException">
+            If the title or the base stream are null or the title is empty.
+            </exception>
+        </member>
+        <member name="M:Spire.Barcode.DebugStream.Flush">
+            <summary>
+            Flushes the base stream's contents.
+            </summary>
+        </member>
+        <member name="M:Spire.Barcode.DebugStream.Read(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Reads a chunk from the base stream.
+            </summary>
+            <param name="buffer">Buffer to store bytes read.</param>
+            <param name="offset">Offset into buffer to begin storing bytes read.</param>
+            <param name="count">Number of bytes to read.</param>
+            <returns>Number of bytes actually read.</returns>
+        </member>
+        <member name="M:Spire.Barcode.DebugStream.Seek(System.Int64,System.IO.SeekOrigin)">
+            <summary>
+            Sets the position within the base stream.
+            </summary>
+            <param name="offset">Size of the position seek operation.</param>
+            <param name="origin">Where to seek from.</param>
+            <returns>The position set on the base stream.</returns>
+        </member>
+        <member name="M:Spire.Barcode.DebugStream.SetLength(System.Int64)">
+            <summary>
+            Sets the length of the base stream.
+            </summary>
+            <param name="value">New length to set.</param>
+        </member>
+        <member name="M:Spire.Barcode.DebugStream.Write(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Writes a number of bytes to the base stream.
+            </summary>
+            <param name="buffer">Buffer with bytes for writing.</param>
+            <param name="offset">Offset into the buffer.</param>
+            <param name="count">Number of bytes to read from the buffer and write to the stream.</param>
+        </member>
+        <member name="M:Spire.Barcode.DebugStream.LogMessage(System.String,System.Object[])">
+            <summary>
+            Logs a message to the <see cref="T:System.Diagnostics.Debug"/> class.
+            </summary>
+            <param name="message">Message to log, in the format of <see cref="M:System.String.Format(System.String,System.Object)"/>.</param>
+            <param name="parameters">Parameters to the positional elements of the message.</param>
+        </member>
+        <member name="F:Spire.Barcode.DebugStream._baseStream">
+            <summary>The decorated base stream.</summary>
+        </member>
+        <member name="F:Spire.Barcode.DebugStream._title">
+            <summary>The title of this stream.</summary>
+        </member>
+        <member name="P:Spire.Barcode.DebugStream.CanRead">
+            <summary>Determines whether the stream supports reading.</summary>
+        </member>
+        <member name="P:Spire.Barcode.DebugStream.CanSeek">
+            <summary>Determines whether the stream supports seeking.</summary>
+        </member>
+        <member name="P:Spire.Barcode.DebugStream.CanWrite">
+            <summary>Determines whether the stream supports writing.</summary>
+        </member>
+        <member name="P:Spire.Barcode.DebugStream.Length">
+            <summary>The length of the stream.</summary>
+        </member>
+        <member name="P:Spire.Barcode.DebugStream.Position">
+            <summary>The current position of the stream.</summary>
+        </member>
+        <member name="M:Spire.Barcode.GF256Poly.#ctor(System.Int32[])">
+            @param field the {@link GF256} instance representing the field to use
+            to perform computations
+            @param coefficients coefficients as ints representing elements of GF(256), arranged
+            from most significant (highest-power term) coefficient to least significant
+            @throws IllegalArgumentException if argument is null or empty,
+            or if leading coefficient is 0 and this is not a
+            constant polynomial (that is, it is not the monomial "0")
+        </member>
+        <member name="M:Spire.Barcode.GF256Poly.evaluateAt(System.Int32)">
+            @return evaluation of this polynomial at a given point
+        </member>
+        <member name="M:Spire.Barcode.GF256Poly.IsZero">
+            @return true iff this polynomial is the monomial "0"
+        </member>
+        <member name="M:Spire.Barcode.GF256Poly.GetCoefficient(System.Int32)">
+            @return coefficient of x^degree term in this polynomial
+        </member>
+        <member name="P:Spire.Barcode.GF256Poly.Degree">
+            @return degree of this polynomial
+        </member>
+        <member name="M:Spire.Barcode.GF256.#ctor(System.Int32)">
+             Create a representation of GF(256) using the given primitive polynomial.
+            
+             @param primitive irreducible polynomial whose coefficients are represented by
+              the bits of an int, where the least-significant bit represents the constant
+              coefficient
+        </member>
+        <member name="M:Spire.Barcode.GF256.BuildMonomial(System.Int32,System.Int32)">
+            @return the monomial representing coefficient * x^degree
+        </member>
+        <member name="M:Spire.Barcode.GF256.AddOrSubtract(System.Int32,System.Int32)">
+             Implements both addition and subtraction -- they are the same in GF(256).
+            
+             @return sum/difference of a and b
+        </member>
+        <member name="M:Spire.Barcode.GF256.Exp(System.Int32)">
+            @return 2 to the power of a in GF(256)
+        </member>
+        <member name="M:Spire.Barcode.GF256.Log(System.Int32)">
+            @return base 2 log of a in GF(256)
+        </member>
+        <member name="M:Spire.Barcode.GF256.Inverse(System.Int32)">
+            @return multiplicative inverse of a
+        </member>
+        <member name="M:Spire.Barcode.GF256.Multiply(System.Int32,System.Int32)">
+            @param a
+            @param b
+            @return product of a and b in GF(256)
+        </member>
+    </members>
+</doc>

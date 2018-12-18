@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+
+  <!-- remove existing entry -->
+  <connectionStrings>
+    <add name="OracleDbContext" providerName="Oracle.ManagedDataAccess.Client" connectionString="User Id=oracle_user;Password=oracle_user_password;Data Source=oracle" xdt:Transform="Remove" xdt:Locator="Match(name)" />
+  </connectionStrings>
+
+  <!-- remove if section is empty -->
+  <connectionStrings xdt:Transform="RemoveAll" xdt:Locator="Condition(count(*)=0)" />
+
+  <!-- remove existing entry -->  
+  <entityFramework>
+    <providers>
+      <provider invariantName="Oracle.ManagedDataAccess.Client" type="Oracle.ManagedDataAccess.EntityFramework.EFOracleProviderServices, Oracle.ManagedDataAccess.EntityFramework, Version=6.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342"  xdt:Transform="Remove" xdt:Locator="Match(invariantName)" /> 
+    </providers>
+  </entityFramework>
+
+  <!-- remove if section is empty -->
+  <entityFramework>
+    <providers xdt:Transform="RemoveAll" xdt:Locator="Condition(count(*)=0)" />
+  </entityFramework>
+  <entityFramework xdt:Transform="RemoveAll" xdt:Locator="Condition(count(*)=0)" />
+
+</configuration>

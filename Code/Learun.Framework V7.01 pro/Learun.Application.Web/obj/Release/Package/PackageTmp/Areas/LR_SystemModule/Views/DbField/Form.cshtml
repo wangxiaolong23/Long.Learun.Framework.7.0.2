@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "新增";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">列名<font face="宋体">*</font></div>
+        <input id="F_Name" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">描述<font face="宋体">*</font></div>
+        <input id="F_Remark" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">数据类型<font face="宋体">*</font></div>
+        <div id="F_DataType" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">数据长度<font face="宋体">*</font></div>
+        <input id="F_Length" type="text" class="form-control" isvalid="yes" checkexpession="Num" />
+    </div>
+
+</div>
+@Html.AppendJsFile("/Areas/LR_SystemModule/Views/DbField/Form.js")

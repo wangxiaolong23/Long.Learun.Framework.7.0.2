@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "数据库表编辑";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Areas/LR_SystemModule/Views/DatabaseTable/EditTableForm.css")
+
+<div class="lr-form-layout">
+    <div class="lr-form-layout-header" id="form">
+        <div class="col-xs-12 lr-form-item">
+            <div class="lr-form-item-title">表名<font face="宋体">*</font></div>
+            <input id="tableName" type="text" class="form-control lr-input-underline" placeholder="请输入表名" isvalid="yes" checkexpession="NotNull" />
+        </div>
+        <div class="col-xs-12 lr-form-item">
+            <div class="lr-form-item-title">表备注<font face="宋体">*</font></div>
+            <input id="remark" type="text" class="form-control lr-input-underline" placeholder="添加表备注"  isvalid="yes" checkexpession="NotNull"/>
+        </div>
+    </div>
+    <div class="lr-form-layout-body">
+        <div class="lr-form-layout-body-title">
+            <div class="lr-form-jfgrid-btns">
+                <a id="lr_copytable" class="btn btn-primary">复制表</a>
+                <a id="lr_copyrow" class="btn btn-info">复制行</a>
+                <a id="lr_commonfield" class="btn btn-primary">常用字段</a>
+                <a id="lr_draft" class="btn btn-danger">导入草稿</a>
+
+                <a id="lr_savedraft" class="btn btn-warning">保存草稿</a>
+                <a id="lr_release" class="btn btn-success">发布</a>
+            </div>
+            <span>表字段设置</span>
+        </div>
+        <div id="gridtable"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_SystemModule/Views/DatabaseTable/EditTableForm.js")

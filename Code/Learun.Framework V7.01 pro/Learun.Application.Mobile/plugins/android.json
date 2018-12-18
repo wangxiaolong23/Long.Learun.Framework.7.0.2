@@ -1,0 +1,61 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-background-mode": {
+            "PACKAGE_NAME": "io.cordova.learun.adms"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "io.cordova.learun.adms"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "io.cordova.learun.adms"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "io.cordova.learun.adms"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "io.cordova.learun.adms"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "io.cordova.learun.adms"
+        },
+        "cordova-plugin-http": {
+            "PACKAGE_NAME": "io.cordova.learun.adms"
+        },
+        "cordova-plugin-ImagePicker": {
+            "PACKAGE_NAME": "io.cordova.learun.adms"
+        },
+        "cordova-plugin-keyboard": {
+            "PACKAGE_NAME": "io.cordova.learun.adms"
+        },
+        "cordova-plugin-photo-library": {
+            "PACKAGE_NAME": "io.cordova.learun.adms"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "io.cordova.learun.adms"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "io.cordova.learun.adms"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.cordova.learun.adms"
+        },
+        "cordova.custom.plugins.exitapp": {
+            "PACKAGE_NAME": "io.cordova.learun.adms"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "io.cordova.learun.adms"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "io.cordova.learun.adms"
+        }
+    }
+}

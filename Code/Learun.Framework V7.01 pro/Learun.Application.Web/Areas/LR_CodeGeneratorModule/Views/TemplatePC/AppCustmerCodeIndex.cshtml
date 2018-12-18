@@ -1,0 +1,310 @@
+﻿@{
+    ViewBag.Title = "自定义表单开发模板";
+    Layout = "~/Views/Shared/_CodeBulidForm.cshtml";
+}
+
+@Html.AppendCssFile("/Areas/LR_CodeGeneratorModule/Views/TemplatePC/AppCustmerCodeIndex.css")
+
+<div class="widget-body">
+    <input id="rootDirectory" type="hidden" value="@ViewBag.rootDirectory" />
+    <input id="_mappingDirectory" type="hidden" value="@ViewBag.mappingDirectory" />
+    <input id="_serviceDirectory" type="hidden" value="@ViewBag.serviceDirectory" />
+    <input id="_webDirectory" type="hidden" value="@ViewBag.webDirectory" />
+    <input id="_apiDirectory" type="hidden" value="@ViewBag.apiDirectory" />
+    <input id="_appDirectory" type="hidden" value="@ViewBag.appDirectory" />
+
+    <div id="wizard" class="wizard" data-target="#wizard-steps">
+        <ul class="steps">
+            <li data-target="#step-1" class="active"><span class="step">1</span>数据表设置<span class="chevron"></span></li>
+            <li data-target="#step-2"><span class="step">2</span>表单页面<span class="chevron"></span></li>
+            <li data-target="#step-3"><span class="step">3</span>条件配置<span class="chevron"></span></li>
+            <li data-target="#step-4"><span class="step">4</span>列表页面<span class="chevron"></span></li>
+            <li data-target="#step-5"><span class="step">5</span>信息配置<span class="chevron"></span></li>
+            <li data-target="#step-6"><span class="step">6</span>查看代码<span class="chevron"></span></li>
+            <li data-target="#step-7"><span class="step">7</span>发布功能<span class="chevron"></span></li>
+        </ul>
+    </div>
+    <div class="step-content" id="wizard-steps">
+        <div class="step-pane active" id="step-1" style="position:relative;height:100%;width:100%;padding:5px;">
+            <div style="position:relative;height:100%;width:100%;border:1px solid #ccc;padding-left:200px;">
+                <div style="position:absolute;width:200px;height:100%;border-right:1px solid #ccc;top:0;left:0;" id="dbTree"></div>
+                <div style="position:relative;height:100%;width:100%;padding-top:50px;">
+                    <div style="position:absolute;width:100%;height:50px;border-bottom:1px solid #ccc;top:0;left:0; ">
+                        <div class="lr-layout-tool-item">
+                            <input id="txt_Keyword" type="text" class="form-control" placeholder="请输入要查询的表名" />
+                        </div>
+                        <div class="lr-layout-tool-item">
+                            <a id="btn_Search" class="btn btn-primary btn-sm"><i class="fa fa-search"></i>&nbsp;查询</a>
+                        </div>
+                    </div>
+                    <div style="position:relative;height:50%;width:100%;border-bottom:1px solid #ccc;">
+                        <div id="dbtableGrid1"></div>
+                    </div>
+                    <div style="position:relative;width:100%;height:50%;">
+                        <div id="dbtableGrid2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step-pane" id="step-2">
+        </div>
+        <div class="step-pane lr-rblock" id="step-3" style="padding:5px;">
+            <div class="lr-rblock" style="border:1px solid #ccc;padding-top:85px;">
+                <div class="lr-form-layout-header" style="position:absolute;width:100%;height:85px;border-bottom:1px solid #ccc;padding:0 10px;z-index:3;">
+                    <div class="col-xs-6 lr-form-item">
+                        <div class="lr-form-item-title">时间查询</div>
+                        <div class="radio">
+                            <label>
+                                <input name="queryDatetime" type="radio" value="1" />
+                                启用
+                            </label>
+                            <label>
+                                <input name="queryDatetime" type="radio" value="0" checked="checked" />
+                                停用
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 lr-form-item">
+                        <div class="lr-form-item-title">时间字段</div>
+                        <div id="queryDatetime" class="lr-select-underline"></div>
+                    </div>
+                    <div class="col-xs-6 lr-form-item">
+                        <div class="lr-form-item-title">搜索框宽</div>
+                        <input id="queryWidth" type="text" class="form-control lr-input-underline" placeholder="请输入宽" isvalid="yes" checkexpession="NotNull" value="400" />
+                    </div>
+                    <div class="col-xs-6 lr-form-item">
+                        <div class="lr-form-item-title">搜索框高</div>
+                        <input id="queryHeight" type="text" class="form-control lr-input-underline" placeholder="请输入高" isvalid="yes" checkexpession="NotNull" value="220" />
+                    </div>
+                </div>
+
+                <div class="lr-rblock">
+                    <div id="query_girdtable"></div>
+                </div>
+            </div>
+        </div>
+        <div class="step-pane" id="step-4" style="padding:5px;">
+            <div class="lr-rblock" style="border:1px solid #ddd;padding-top:50px;">
+                <div style="position:absolute;top:0;left:0;height:50px;width:100%;border-bottom:1px solid #ddd;padding:10px 10px 0 0;text-align:right;">
+                    <div class="btn-group" id="btnlist">
+                        <div class="lbtn active" data-value="add"><i class="fa fa-plus"></i>&nbsp;新增</div>
+                        <div class="lbtn active" data-value="edit"><i class="fa fa-pencil-square-o"></i>&nbsp;编辑</div>
+                        <div class="lbtn active" data-value="delete"><i class="fa fa-trash-o"></i>&nbsp;删除</div>
+                        <div class="lbtn active" data-value="print"><i class="fa fa-print"></i>&nbsp;打印</div>
+                    </div>
+
+                    <div class="btn-group" id="btnlistex"></div>
+
+                    <div class="btn-group btn-group-sm">
+                        <a id="lr_btnlistex_add" class="btn btn-default"><i class="fa fa-plus"></i></a>
+                    </div>
+                </div>
+                <div class="lr-rblock" style="padding-left:200px;">
+                    <div style="position:absolute;top:0;left:0;width:200px;height:100%;border-right:1px solid #ccc;padding-top:28px;">
+                        <div style="position:absolute;height:28px;line-height:28px;width:100%;border-bottom:1px solid #ccc;color: #666;text-overflow:ellipsis;white-space: nowrap;font-weight: bold;padding-left: 9px;font-size: 12px;top:0;">列表左侧树形数据设置</div>
+                        <div class="lr-rblock" style="padding:5px;padding-bottom:0;" id="treesetting">
+                            <div class="lr-component-control">
+                                <div class="radio" style="margin:0;">
+                                    <label>
+                                        <input name="isViewTree" id="isViewTree1" type="radio" value="1" />
+                                        显示
+                                    </label>
+                                    <label>
+                                        <input name="isViewTree" id="isViewTree0" type="radio" value="0" checked="checked" />
+                                        不显示
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="lr-component-title  treesetting ">数据来源</div>
+                            <div class="lr-component-control treesetting"><div id="treeDataSource"></div></div>
+                            <div class="lr-component-title treesetting DataSourceType1">SQL语句</div>
+                            <div class="lr-component-control treesetting DataSourceType1"><textarea type="text" id="treesql" style="height:100px;" class="form-control"></textarea></div>
+                            <div class="lr-component-control treesetting DataSourceType1" style="text-align: center;padding-top: 10px;"><a id="lr_treesql_set" class="btn btn-primary btn-block">验证语句</a></div>
+                            <div class="lr-component-title treesetting DataSourceType2">数据源选择</div>
+                            <div class="lr-component-control treesetting DataSourceType2"><div id="treeDataSourceId"></div></div>
+                            <div class="lr-component-title treesetting">字段ID</div>
+                            <div class="lr-component-control treesetting"><div id="treefieldId"></div></div>
+                            <div class="lr-component-title treesetting">父级字段</div>
+                            <div class="lr-component-control treesetting"><div id="treefieldParentId"></div></div>
+                            <div class="lr-component-title treesetting">显示字段</div>
+                            <div class="lr-component-control treesetting"><div id="treefieldShow"></div></div>
+                            <div class="lr-component-title treesetting">关联字段</div>
+                            <div class="lr-component-control treesetting"><div id="treefieldRe"></div></div>
+
+                        </div>
+                    </div>
+                    <div class="lr-rblock" style="padding-bottom:40px;">
+                        <div class="lr-rblock"><div id="col_gridtable"></div></div>
+                        <div style="position:absolute;height:40px;width:100%;left:0;bottom:0;border-top:1px solid #ccc;">
+                            <div class="col-xs-12 lr-form-item" style="padding:0px;padding-left:10px;padding-top: 3px;">
+                                <div class="radio">
+                                    <label>
+                                        <input name="isPage" id="isPage1" type="radio" value="1" checked="checked" />
+                                        分页
+                                    </label>
+                                    <label>
+                                        <input name="isPage" id="isPage0" type="radio" value="0" />
+                                        不分页
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="step-pane step-pane-base" id="step-5">
+            <div class="step-pane-base-top">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">功能信息配置</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-xs-6 lr-form-item">
+                            <div class="lr-form-item-title">创建人员</div>
+                            <input id="createUser" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+                        </div>
+                        <div class="col-xs-6 lr-form-item">
+                            <div class="lr-form-item-title">功能类名</div>
+                            <input id="name" type="text" class="form-control" placeholder="请输入功能类名" isvalid="yes" checkexpession="NotNull" />
+                        </div>
+                        <div class="col-xs-6 lr-form-item">
+                            <div class="lr-form-item-title">功能描述</div>
+                            <input id="describe" type="text" class="form-control" placeholder="请输入功能描述" isvalid="yes" checkexpession="NotNull" />
+                        </div>
+                        <div class="col-xs-6 lr-form-item">
+                            <div class="lr-form-item-title">输出区域</div>
+                            <div id="outputArea" isvalid="yes" checkexpession="NotNull"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default lr-panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">输出目录</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-xs-12 lr-form-item">
+                        <div class="lr-form-item-title">映射类输出目录</div>
+                        <input id="mappingDirectory" type="text" class="form-control" readonly />
+                    </div>
+                    <div class="col-xs-12 lr-form-item">
+                        <div class="lr-form-item-title">后端类输出目录</div>
+                        <input id="serviceDirectory" type="text" class="form-control" readonly />
+                    </div>
+                    <div class="col-xs-12 lr-form-item">
+                        <div class="lr-form-item-title">前端项输出目录</div>
+                        <input id="webDirectory" type="text" class="form-control" readonly />
+                    </div>
+                    <div class="col-xs-12 lr-form-item">
+                        <div class="lr-form-item-title">api接口输出目录</div>
+                        <input id="apiDirectory" type="text" class="form-control" readonly />
+                    </div>
+                    <div class="col-xs-12 lr-form-item">
+                        <div class="lr-form-item-title">移动端输出目录</div>
+                        <input id="appDirectory" type="text" class="form-control" readonly />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step-pane" id="step-6" style="padding-top:49px;">
+            <ul class="nav nav-tabs lr-form-tab" id="nav_tabs">
+                <li class="active"><a data-value="entityCodediv">实体类</a></li>
+                <li><a data-value="mapCodediv">实体映射类</a></li>
+                <li><a data-value="serviceCodediv">服务类</a></li>
+                <li><a data-value="bllCodediv">业务类</a></li>
+                <li><a data-value="ibllCodediv">业务接口类</a></li>
+                <li><a data-value="controllerCodediv">控制器</a></li>
+                <li><a data-value="indexCodediv">主页面</a></li>
+                <li><a data-value="indexJsCodediv">主页面JS</a></li>
+                <li><a data-value="formCodediv">表单页</a></li>
+                <li><a data-value="formJsCodediv">表单页JS</a></li>
+                <li><a data-value="apiCodediv">接口类</a></li>
+                <li><a data-value="appIndexCodediv">移动主页面</a></li>
+                <li><a data-value="appFormCodediv">移动表单页</a></li>
+            </ul>
+            <div class="tab-content" id="tab_content">
+                <div id="entityCodediv" class="tab-pane active"><div id="entityCode"></div></div>
+                <div id="mapCodediv" class="tab-pane"><div id="mapCode"></div></div>
+                <div id="serviceCodediv" class="tab-pane"><div id="serviceCode"></div></div>
+                <div id="bllCodediv" class="tab-pane"><div id="bllCode"></div></div>
+                <div id="ibllCodediv" class="tab-pane"><div id="ibllCode"></div></div>
+                <div id="controllerCodediv" class="tab-pane"><div id="controllerCode"></div></div>
+                <div id="indexCodediv" class="tab-pane"><div id="indexCode"></div></div>
+                <div id="indexJsCodediv" class="tab-pane"><div id="indexJsCode"></div></div>
+                <div id="formCodediv" class="tab-pane"><div id="formCode"></div></div>
+                <div id="formJsCodediv" class="tab-pane"><div id="formJsCode"></div></div>
+
+                <div id="apiCodediv" class="tab-pane"><div id="apiCode"></div></div>
+                <div id="appIndexCodediv" class="tab-pane"><div id="appIndexCode"></div></div>
+                <div id="appFormCodediv" class="tab-pane"><div id="appFormCode"></div></div>
+            </div>
+        </div>
+        <div class="step-pane lr-form-wrap" id="step-7">
+            <div class="col-xs-6 lr-form-item">
+                <div class="lr-form-item-title">编号<font face="宋体">*</font></div>
+                <input id="F_EnCode" type="text" class="form-control" placeholder="请输入编号" isvalid="yes" checkexpession="NotNull" />
+            </div>
+            <div class="col-xs-6 lr-form-item">
+                <div class="lr-form-item-title">名称<font face="宋体">*</font></div>
+                <input id="F_FullName" type="text" class="form-control" placeholder="请输入名称" isvalid="yes" checkexpession="NotNull" />
+            </div>
+            <div class="col-xs-6 lr-form-item">
+                <div class="lr-form-item-title">上级</div>
+                <div id="F_ParentId"></div>
+            </div>
+            <div class="col-xs-6 lr-form-item">
+                <div class="lr-form-item-title">移动分类</div>
+                <div id="F_Type" isvalid="yes" checkexpession="NotNull"></div>
+            </div>
+            <div class="col-xs-6 lr-form-item">
+                <div class="lr-form-item-title">图标</div>
+                <input id="F_Icon" type="text" class="form-control" placeholder="请选择图标" isvalid="yes" checkexpession="NotNull" />
+                <span id="selectIcon" class="lr-input-button" title="选取图标">...</span>
+            </div>
+            <div class="col-xs-6 lr-form-item">
+                <div class="lr-form-item-title">移动图标图标</div>
+                <input id="F_appIcon" type="text" class="form-control" placeholder="请选择图标" isvalid="yes" checkexpession="NotNull" />
+                <span id="appselectIcon" class="lr-input-button" title="选取图标">...</span>
+            </div>
+            <div class="col-xs-6 lr-form-item">
+                <div class="lr-form-item-title">排序<font face="宋体">*</font></div>
+                <input id="F_SortCode" type="text" class="form-control" placeholder="请输入排序号" isvalid="yes" checkexpession="Num" />
+            </div>
+            <div class="col-xs-6 lr-form-item">
+                <div class="lr-form-item-title">选项</div>
+                <div class="checkbox">
+                    <label>
+                        <input id="F_IsMenu" type="checkbox" checked="checked" />
+                        菜单
+                    </label>
+                    <label>
+                        <input id="F_IsPublic" type="checkbox" />
+                        公共
+                    </label>
+                </div>
+            </div>
+            <div class="col-xs-12 lr-form-item">
+                <div class="lr-form-item-title">描述</div>
+                <textarea id="F_Description" class="form-control" style="height: 180px;"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="lr-form-bottom-button" id="wizard-actions">
+        <a id="btn_prev" class="btn btn-default btn-prev" disabled>上一步</a>
+        <a id="btn_next" class="btn btn-default btn-next">下一步</a>
+        <a id="btn_finish" class="btn btn-success" disabled>完成</a>
+    </div>
+</div>
+
+@Html.AppendJsFile("/Areas/LR_CodeGeneratorModule/Views/TemplatePC/AppCustmerCodeIndex.js")
+
+
+
+
+
+
+

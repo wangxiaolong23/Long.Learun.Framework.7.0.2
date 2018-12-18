@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "PC端代码生成器";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+@Html.AppendCssFile("/Areas/LR_CodeGeneratorModule/Views/TemplatePC/Index.css")
+<div class="lr-layout">
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap">
+            <div class="lr-cover-box">
+                <div class="lr-cover-img">
+                    <img src="~/Content/images/codeGenerator/singletable.png" />
+                </div>
+                <div class="lr-cover-info">
+                    <h4>单表开发模板（A）</h4>
+                    <small>单表开发功能。</small>
+                </div>
+                <div class="lr-cover-button">
+                    <a class="btn btn-default"><i class="fa fa-eye"></i>&nbsp;效果</a>
+                    <a class="btn btn-default"><i class="fa fa-bug"></i>&nbsp;开发</a>
+                </div>
+            </div>
+            <div class="lr-cover-box">
+                <div class="lr-cover-img">
+                    <img src="~/Content/images/codeGenerator/multitable.png" />
+                </div>
+                <div class="lr-cover-info">
+                    <h4>多表开发模板（B）</h4>
+                    <small>多表开发功能。</small>
+                </div>
+                <div class="lr-cover-button">
+                    <a class="btn btn-default"><i class="fa fa-eye"></i>&nbsp;效果</a>
+                    <a class="btn btn-default"><i class="fa fa-bug"></i>&nbsp;开发</a>
+                </div>
+            </div>
+            <div class="lr-cover-box">
+                <div class="lr-cover-img">
+                    <img src="~/Content/images/codeGenerator/serviceCode.png" />
+                </div>
+                <div class="lr-cover-info">
+                    <h4>自定义开发模板（C）</h4>
+                    <small>生成必要的类和页面</small>
+                </div>
+                <div class="lr-cover-button">
+                    <a class="btn btn-default"><i class="fa fa-bug"></i>&nbsp;开发</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeGeneratorModule/Views/TemplatePC/Index.js")

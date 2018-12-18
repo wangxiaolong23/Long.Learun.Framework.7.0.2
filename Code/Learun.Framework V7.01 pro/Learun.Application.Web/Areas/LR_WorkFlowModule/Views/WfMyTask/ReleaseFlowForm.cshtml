@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "提交发起流程";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">流程标题<font face="宋体">*</font></div>
+        <input id="processName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">重要等级<font face="宋体">*</font></div>
+        <div class="radio">
+            <label>
+                <input name="processLevel" id="processLevel1" type="radio" value="0" checked="checked" />
+                普通
+            </label>
+            <label>
+                <input name="processLevel" id="processLevel2" type="radio" value="1" />
+                重要
+            </label>
+            <label>
+                <input name="processLevel" id="processLevel3" type="radio" value="2" />
+                紧急
+            </label>
+        </div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="description" class="form-control" style="height: 160px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_WorkFlowModule/Views/WfMyTask/ReleaseFlowForm.js")

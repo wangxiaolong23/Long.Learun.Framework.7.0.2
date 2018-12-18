@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "编辑表格";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Views/Utility/EditGridForm.css")
+<div class="lr-rblock" style="padding:5px;">
+    <div class="lr-rblock">
+        <div class="lr-rblock" style="border:1px solid #ccc;">
+            <div id="edit_grid"></div>
+            <div id="layerop" style="position:absolute;bottom:0;left:0;width:100%;height:240px;border-top:1px solid #ccc;display:none;" ><div id="layerGrid" ></div></div>
+        </div>
+        <div id="colopWrap" style="position:absolute;border:1px solid #ccc;border-left:0;top:0; right:0;width:240px;height:100%;display:none;">
+            <div id="colop" style="padding:5px;padding-bottom:0;">
+                <div class="lr-component-title">显示名称</div>
+                <div class="lr-component-control"><input id="name" type="text" class="form-control" placeholder="必填项" /></div>
+                <div class="lr-component-title">上级列头</div>
+                <div class="lr-component-control"><div id="parentId"></div></div>
+                <div class="lr-component-title field">绑定字段</div>
+                <div class="lr-component-control field"><div id="field"></div></div>
+
+                <div class="lr-component-title lastcol">对齐方式</div>
+                <div class="lr-component-control lastcol"><div id="align"></div></div>
+                <div class="lr-component-title lastcol">宽度</div>
+                <div class="lr-component-control lastcol"><input id="width" type="text" class="form-control" placeholder="必填项" value="100" /></div>
+
+                <div class="lr-component-title lastcol">类型</div>
+                <div class="lr-component-control lastcol"><div id="type"></div></div>
+
+                <div class="lr-component-title  datasource">数据来源</div>
+                <div class="lr-component-control  datasource"><div id="dataSource"></div></div>
+                <div class="lr-component-title  datasource">数据选项</div>
+                <div class="lr-component-control datasource"><div id="dataItemId"></div><div id="dataSourceId" style="display:none;"></div></div>
+                <div class="lr-component-title datasource1">显示字段</div>
+                <div class="lr-component-control   datasource1"><div id="showField"></div></div>
+                <div class="lr-component-title   datasource1">保存字段</div>
+                <div class="lr-component-control   datasource1"><div id="saveField"></div></div>
+                <div class="lr-component-title  datasource dfvalue">默认值</div>
+                <div class="lr-component-control  datasource dfvalue"><div id="dfvalue"></div></div>
+
+
+                <div class="lr-component-title datetime">日期格式</div>
+                <div class="lr-component-control datetime"><div id="datetime"></div></div>
+
+                <div class="lr-component-title layer">窗口宽</div>
+                <div class="lr-component-control layer"><input id="layerW" type="text" class="form-control" /></div>
+
+                <div class="lr-component-title layer">窗口高</div>
+                <div class="lr-component-control layer"><input id="layerH" type="text" class="form-control"/></div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+@Html.AppendJsFile("/Views/Utility/EditGridForm.js")

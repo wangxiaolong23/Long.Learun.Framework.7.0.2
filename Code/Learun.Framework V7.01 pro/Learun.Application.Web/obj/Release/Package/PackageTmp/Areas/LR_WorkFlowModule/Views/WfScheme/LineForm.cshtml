@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "流程线条设置";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">线条名称</div>
+        <input id="name" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">条件设置<font face="宋体">*</font></div>
+        <div id="wftype"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_WorkFlowModule/Views/WfScheme/LineForm.js")
+

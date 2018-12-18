@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "列表选择";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Views/Utility/GirdSelectIndex.css")
+<div class="lr-form-layout">
+    <div class="lr-form-layout-top">
+        <div class="lr-item">
+            <input id="txt_Keyword" type="text" class="form-control" placeholder="请输入要查询关键字" style="width:240px;" />
+        </div>
+        <div class="lr-item">
+            <a id="btn_Search" class="btn btn-primary btn-sm"><i class="fa fa-search"></i>&nbsp;查询</a>
+        </div>
+    </div>
+    <div id="gridtable"></div>
+</div>
+@Html.AppendJsFile("/Views/Utility/GirdSelectIndex.js")

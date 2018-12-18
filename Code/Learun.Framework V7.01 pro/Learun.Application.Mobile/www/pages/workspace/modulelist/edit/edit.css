@@ -1,0 +1,36 @@
+﻿.lr-modulelist-page .appitem .operation {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: #fff;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    margin: 0;
+}
+    .lr-modulelist-page .appitem .operation.minus {
+        background: #E31111;
+        font-size: 36px;
+        line-height: 7px;
+    }
+
+    .lr-modulelist-page .appitem .operation.plus {
+        background: #0C86D8;
+        font-size:18px;
+    }
+
+.lr-modulelistedit-header .f-page-backbtn {
+    font-size:14px;
+}
+.lr-modulelistedit-header #lr_modulelist_finish {
+    position:absolute;
+    top:0;
+    right:0;
+    text-align:center;
+    width:36px;
+    height:44px;
+    line-height:44px;
+    color:#fff;
+    font-size: 14px;
+}

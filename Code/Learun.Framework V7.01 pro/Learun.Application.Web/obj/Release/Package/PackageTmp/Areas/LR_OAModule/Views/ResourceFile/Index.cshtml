@@ -1,0 +1,78 @@
+﻿@{
+    ViewBag.Title = "文件管理";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+<div id="lr_layout" class="lr-layout lr-layout-left-center">
+    <div class="lr-layout-left">
+        <div class="lr-layout-wrap lr-layout-wrap-notitle" style="padding-top:10px;">
+            <div class="lr-layout-body">
+                <ul class="lr-left-list" id="lr_left_list">
+                    <li data-value="allFile" class="lrlg active">所有文件</li>
+                    <li data-value="allDocument" class="lrlg">文档</li>
+                    <li data-value="allImage" class="lrlg">图片</li>
+                    <li data-value="recycledFile" class="lrlg">回收站</li>
+                    <li data-value="myShare" class="lrlg">我的共享</li>
+                    <li data-value="othersShare" class="lrlg">他人共享</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap">
+            <div class="lr-layout-title">
+                <div class="crumb-path">
+                    <span class="back lrlg" data-folderid="back" style="display: none;cursor:pointer;text-decoration:underline">返回上一级</span>
+                    <span class="path-item lrlg" data-folderid="allfile" style="cursor:pointer;text-decoration:underline">所有文件</span>
+                </div>
+            </div>
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                    <div class="lr-layout-tool-item">
+                        <div id="datesearch" class="datetime"></div>
+                    </div>
+                    <div class="lr-layout-tool-item">
+                        <input id="txt_Keyword" type="text" class="form-control" placeholder="请输入要查询关键字" />
+                    </div>
+                    <div class="lr-layout-tool-item">
+                        <a id="btn_Search" class="btn btn-primary btn-sm"><i class="fa fa-search"></i>&nbsp;<span class="lrlg">查询</span></a>
+                    </div>
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class="btn-group btn-group-sm">
+                        <a id="lr_refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
+                    </div>
+                    <div class="btn-group btn-group-sm">
+                        <a id="lr-uploadify" class="btn btn-success"><i class="fa fa-upload"></i>&nbsp;<span class="lrlg">上传文件</span></a>
+                    </div>
+                    <div class="btn-group btn-group-sm">
+                        <a id="lr-addfolder" class="btn btn-default"><i class="fa fa-plus"></i>&nbsp;<span class="lrlg">新建文件夹</span></a>
+                    </div>
+                    <div class="btn-group btn-group-sm">
+                        <a id="lr-download" class="btn btn-default"><i class="fa fa-download"></i>&nbsp;<span class="lrlg">下载</span></a>
+                        <a id="lr-preview" class="btn btn-default"><i class="fa fa-eye"></i>&nbsp;<span class="lrlg">预览</span></a>
+                        <a id="lr-delete" class="btn btn-default"><i class="fa fa-trash-o"></i>&nbsp;<span class="lrlg">删除</span></a>
+                        <a id="lr-share" class="btn btn-default"><i class="fa fa-share-alt"></i>&nbsp;<span class="lrlg">共享</span></a>
+                        <a id="lr-cancelshare" class="btn btn-default" style="display: none;"><i class="fa fa-share-alt"></i>&nbsp;<span class="lrlg">取消共享</span></a>
+                        <a id="lr_more" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-reorder"></i>&nbsp;<span class="lrlg">更多</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li id="lr-rename"><a>&nbsp;<span class="lrlg">重命名</span></a></li>
+                            <li id="lr-move"><a>&nbsp;<span class="lrlg">移动</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group btn-group-sm">
+                        <a id="lr-restoreFile" style="display: none;" class="btn btn-default"><i class="fa fa-rotate-left"></i>&nbsp;<span class="lrlg">还原文件</span></a>
+                        <a id="lr-thoroughDelete" style="display: none;" class="btn btn-default"><i class="fa fa-trash-o"></i>&nbsp;<span class="lrlg">彻底删除</span></a>
+                        <a id="lr-emptyRecycled" style="display: none;" class="btn btn-default"><i class="fa fa-eraser"></i>&nbsp;<span class="lrlg">清空回收站</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-body" id="gridTable">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@Html.AppendJsFile("/Areas/LR_OAModule/Views/ResourceFile/Index.js")

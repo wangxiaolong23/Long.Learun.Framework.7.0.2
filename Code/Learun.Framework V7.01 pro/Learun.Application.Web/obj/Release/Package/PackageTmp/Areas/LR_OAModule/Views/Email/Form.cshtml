@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "写邮件";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">收件人<font face="宋体">*</font></div>
+        <input id="F_To" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">抄送人</div>
+        <input id="F_CC" type="text" class="form-control" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">密送人</div>
+        <input id="F_BCC" type="text" class="form-control" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">主题</div>
+        <input id="F_Subject" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">附件</div>
+        <div class="lr-portal-panel-content">
+            <div id="F_Attachment"></div>
+        </div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">邮件内容</div>
+        <div id="F_BodyText" type="text/plain" style="height:270px;"/>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_OAModule/Views/Email/Form.js")

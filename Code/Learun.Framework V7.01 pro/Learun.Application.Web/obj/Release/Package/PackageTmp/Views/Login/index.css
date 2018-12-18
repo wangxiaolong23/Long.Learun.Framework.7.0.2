@@ -1,0 +1,42 @@
+﻿
+/* * 版 本 Learun-ADMS V7.0.0 力软敏捷开发框架(http://www.learun.cn) * Copyright (c) 2013-2018 上海力软信息技术有限公司 * 创建人：力软-前端开发组 * 日 期：2017.03.16 * 描 述：登录页样式表*/html{height: 100%;width: 100%;}
+body{overflow: hidden;margin: 0px;font: 12px/1.5 Lucida Grande,Lucida Sans Unicode,Helvetica Neue,Hiragino Sans GB,Microsoft Yahei,sans-serif;color: #4b4b4b;height: 100%;background-color: #fbfcf8;-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;-khtml-user-select: none;user-select: none;}
+input{font-family: '\5b8b\4f53';}
+input:focus, button:focus{outline: none;-moz-outline: none;}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{-webkit-box-shadow: 0 0 0px 1000px white inset;-webkit-text-fill-color: #757575;}
+input:disabled{background-color:#fff;}
+button{background-color: #427fed;width: 100%;border-radius: 2px;height: 40px;font-size: 16px;color: #fff;border: 0;cursor: pointer;}
+button[disabled]{border: 1px solid #bdbdbd;background-color: #eeecec;color: #9f9f9f;text-shadow: 0 1px 0 #fff;cursor: default;}
+button.active{background-image: url(/Content/images/Login/loading.gif);background-repeat: no-repeat;background-position: center 10px;z-index: 10;}
+.lr-layout-block{position: relative;width: 1024px;margin: auto;top: 50%;}
+.lr-layout-block.top{margin-top: -308px;height: 56px;}
+.lr-layout-block.middle{position: relative;width: 100%;}
+.lr-layout-block.bottom{width: 1024px;margin: auto;text-align: right;margin-top: 20px;color: #828282;}
+.lr-layout-side{position: absolute;top: 0;width: 50%;height: 524px;z-index: 0;}
+.lr-layout-side img{width: 100%;height: 100%;}
+.lr-layout-side.left{left: 0;}
+.lr-layout-side.right{right: 0;}
+.lr-layout-side.center{position: relative;margin: auto;width: 1024px;background: url(/Content/images/Login/bg_02.jpg);z-index: 1;}
+.lr-login-form{position: absolute;right: 57px;top: 80px;height: 300px;width: 306px;background: #fff;padding: 70px 20px 0px 20px;box-shadow: 5px 10px 20px 2px rgba(0,0,0,.27);}
+.lr-input-item{width: 100%;height: 38px;margin-bottom: 20px;border: 1px solid #bdbdbd;position: relative;}
+.lr-input-item.focus{border: 1px solid #bbb;}
+.lr-input-item > label{position: absolute;top: 0;left: 0;z-index: 1;width: 38px;height: 100%;border-right: 1px solid #bdbdbd;background: url(/Content/images/Login/pwd-icons-new.png) no-repeat;}
+.lr-input-item > .name-label{background-position: 0 0;}
+.lr-input-item.focus > .name-label{background-position: 0 -48px;border-color: #bbb;}
+.lr-input-item > .pwd-label{background-position: -48px 0;}
+.lr-input-item.focus > .pwd-label{background-position: -48px -48px;border-color: #bbb;}
+
+.lr-input-item > .code-label{background-position:0px -96px;}
+.lr-input-item.focus > .code-label{background-position: -48px -96px;border-color: #bbb;}
+
+.lr-input-item > input{height: 20px;line-height: 20px;border: 0;padding: 9px 0 9px 50px;width: 256px;font-size: 16px;}
+.lr-verifycode-item{position: relative;height: 36px;width: 100%;margin-bottom: 13px;}
+.lr-verifycode-item > input{position: absolute;left: 0;width: 180px;line-height: 18px;height: 18px;overflow: hidden;font-family: '\5b8b\4f53';border: 1px solid #bdbdbd;font-size: 14px;padding: 7px 5px;vertical-align: middle;margin-right: 10px;}
+.lr-verifycode-item > div{position: absolute;right: 0px;width: 99px;height: 33px;}
+.lr-verifycode-item > div > img{width: 100%;height: 100%;cursor: pointer;}
+.lr-login-links{height: 20px;line-height: 20px;margin: 10px 0px auto 0px;}
+.lr-login-links a{float: right;color: #000;text-decoration: none;outline: 0;-moz-outline: none;}
+.lr-login-links a:hover{color: #427fed;}
+.lr-version{position: absolute;bottom: 15px;width: 306px;text-align: center;}
+.lr-tips{position: absolute;top: 20px;text-indent: 3px;height: 30px;line-height: 33px;width: 276px;color: #a94442;background-color: #f2dede;border: 1px solid #ebccd1;border-radius: 2px;display: none;padding-left: 30px;}
+.lr-tips b{position: absolute;top: 50%;left: 10px;display: block;margin-top: -8px;width: 16px;height: 16px;overflow: hidden;background: url(/Content/images/Login/pwd-icons-new.png) -104px -49px no-repeat;}

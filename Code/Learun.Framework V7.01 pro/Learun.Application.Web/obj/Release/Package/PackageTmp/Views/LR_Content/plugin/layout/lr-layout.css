@@ -1,0 +1,138 @@
+﻿/*
+ * 版 本 Learun-ADMS V7.0.0 力软敏捷开发框架(http://www.learun.cn)
+ * Copyright (c) 2013-2018 上海力软信息技术有限公司
+ * 创建人：力软-前端开发组
+ * 日 期：2017.04.12
+ * 描 述：lrLayout 页面布局样式（目前支持左右布局，新的布局请联系力软售后人员）
+ */
+.lr-layout {
+    position:relative;
+    height:100%;
+    width:100%;
+    padding:5px;
+}
+.lr-layout.lr-layout-left-center {
+    padding-left:203px;
+}
+
+.lr-layout-left {
+    position:absolute;
+    top:0;
+    left:0;
+    width:203px;
+    height:100%;
+    padding:10px 0px 10px 10px;
+}
+.lr-layout-center {
+    position:relative;
+    width:100%;
+    height:100%;
+    padding:5px;
+}
+
+
+.lr-layout-wrap {
+    position:relative;
+    width:100%;
+    height:100%;
+    background-color:#fff;
+    border:1px solid #ccc;
+   
+    padding-top:32px;
+    border-radius: 3px;
+
+    -webkit-transition: opacity 0.25s ease-out;
+    -moz-transition: opacity 0.25s ease-out;
+    transition: opacity 0.25s ease-out;
+
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.lr-layout-center .lr-layout-wrap{
+    padding-top:87px;
+}
+.lr-layout-center .lr-layout-wrap.lr-layout-wrap-notitle {
+    padding-top:55px;
+}
+.lr-layout-left .lr-layout-wrap.lr-layout-wrap-notitle {
+    padding-top:0px;
+}
+
+.lr-uitheme-accordion .lr-layout-wrap {
+    border-radius: 0px;
+}
+
+.lr-layout-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    line-height: 32px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    color: #666;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+    padding-left: 9px;
+    font-size: 12px;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    -khtml-user-select: text;
+    user-select: text;
+}
+.lr-layout-tool {
+    position:absolute;
+    top:32px;
+    left:0;
+    width:100%;
+    height:55px;
+    border-bottom:1px solid #ccc;
+    z-index:3;
+}
+.lr-layout-center .lr-layout-wrap.lr-layout-wrap-notitle .lr-layout-tool {
+    top:0px;
+}
+
+.lr-layout-tool-left {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    height:100%;
+}
+.lr-layout-tool-left .lr-layout-tool-item {
+    position:relative;
+    float:left;
+    padding-top:13px;
+    padding-left:5px;
+}
+
+
+
+.lr-layout-tool-right {
+    position:absolute;
+    right:15px;
+    top:0;
+    height:100%;
+    padding-top:12px;
+}
+
+.lr-layout-body {
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+
+.lr-layout-move {
+    position:absolute;
+    top:0;
+    z-index:1;
+}
+.lr-layout-move-right {
+    right:-8px;
+    width:8px;
+    height:100%;
+    cursor:col-resize;
+}

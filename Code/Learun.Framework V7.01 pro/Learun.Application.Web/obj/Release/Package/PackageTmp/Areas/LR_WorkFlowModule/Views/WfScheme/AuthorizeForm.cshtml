@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "表单权限添加";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <input id="formId" type="hidden" />
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">表单名称<font face="宋体">*</font></div>
+        <input id="formName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">字段名称<font face="宋体">*</font></div>
+        <input id="fieldName" type="text" class="form-control"  isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">字段ID<font face="宋体">*</font></div>
+        <input id="fieldId" type="text" class="form-control"   isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">是否可查看<font face="宋体">*</font></div>
+        <div id="isLook"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">是否可编辑<font face="宋体">*</font></div>
+        <div id="isEdit"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_WorkFlowModule/Views/WfScheme/AuthorizeForm.js")
+

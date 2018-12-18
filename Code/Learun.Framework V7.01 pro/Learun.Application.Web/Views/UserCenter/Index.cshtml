@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "个人中心";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+@Html.AppendCssFile("/Views/UserCenter/Index.css")
+<div id="lr_layout" class="lr-layout lr-layout-left-center">
+    <div class="lr-layout-left">
+        <div class="lr-layout-wrap lr-layout-wrap-notitle" style="padding-top:10px;">
+            <div class="lr-layout-body">
+                <ul class="lr-left-list" id="lr_left_list">
+                    <li class="active" data-value="1">基本信息</li>
+                    <li data-value="2">联系方式</li>
+                    <li data-value="3">我的头像</li>
+                    <li data-value="4">修改密码</li>
+                    <li data-value="5">我的日志</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap">
+            <div class="lr-layout-wrap-item active" id="lr_layout_item1">
+                <div class="title">
+                    <div>基本信息</div>
+                </div>
+                <div class="content" style="padding-top:20px;">
+                    <div class="lr-form-item">
+                        <div class="lr-form-item-title">账号</div>
+                        <input id="F_Account" type="text" class="form-control" readonly />
+                    </div>
+                    <div class="lr-form-item">
+                        <div class="lr-form-item-title">工号</div>
+                        <input id="F_EnCode" type="text" class="form-control" readonly />
+                    </div>
+                    <div class="lr-form-item">
+                        <div class="lr-form-item-title">姓名</div>
+                        <input id="F_RealName" type="text" class="form-control" readonly />
+                    </div>
+                    <div class="lr-form-item">
+                        <div class="lr-form-item-title">性别</div>
+                        <input id="F_Gender" type="text" class="form-control" readonly />
+                    </div>
+                    <div class="lr-form-item">
+                        <div class="lr-form-item-title">公司</div>
+                        <input id="F_Company" type="text" class="form-control" readonly />
+                    </div>
+                    <div class="lr-form-item">
+                        <div class="lr-form-item-title">部门</div>
+                        <input id="F_Department" type="text" class="form-control" readonly />
+                    </div>
+                    <div class="lr-form-item">
+                        <div class="lr-form-item-title">岗位</div>
+                        <input id="Post" type="text" class="form-control" readonly />
+                    </div>
+                    <div class="lr-form-item">
+                        <div class="lr-form-item-title">角色</div>
+                        <input id="Role" type="text" class="form-control" readonly />
+                    </div>
+                    <div class="lr-form-item">
+                        <div class="lr-form-item-title">自我介绍</div>
+                        <textarea id="F_Description" class="form-control" style="height:100px;" readonly></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-wrap-item" id="lr_layout_item2">
+                <div class="title">
+                    <div>联系方式</div>
+                </div>
+                <div class="content" style="padding-top:20px;">
+                    <iframe class="lr-layout-iframe" frameborder="0" src="~/UserCenter/ContactForm"></iframe>
+                </div>
+            </div>
+            <div class="lr-layout-wrap-item" id="lr_layout_item3">
+                <div class="title">
+                    <div>我的头像</div>
+                </div>
+                <div class="content" style="padding-top:20px;">
+                    <iframe class="lr-layout-iframe" frameborder="0" src="~/UserCenter/HeadForm"></iframe>
+                </div>
+            </div>
+            <div class="lr-layout-wrap-item" id="lr_layout_item4">
+                <div class="title">
+                    <div>修改密码</div>
+                </div>
+                <div class="content" style="padding-top:20px;">
+                    <iframe class="lr-layout-iframe" frameborder="0" src="~/UserCenter/PassWordForm"></iframe>
+                </div>
+            </div>
+            <div class="lr-layout-wrap-item" id="lr_layout_item5" style="padding:0;">
+                <iframe class="lr-layout-iframe" frameborder="0" src="~/UserCenter/LogIndex"></iframe>
+            </div>
+
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Views/UserCenter/Index.js")

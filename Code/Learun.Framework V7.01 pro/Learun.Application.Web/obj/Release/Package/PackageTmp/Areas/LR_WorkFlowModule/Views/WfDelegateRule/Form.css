@@ -1,0 +1,129 @@
+﻿body {
+    padding:5px;
+}
+.form-warp {
+    position:relative;
+    width:100%;
+    height:100%;
+    padding-top:128px;
+    border:1px solid #ddd;
+}
+.form-warp-top {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:128px;
+    padding: 10px;
+}
+.form-warp-main {
+    position:relative;
+    height:100%;
+    width:100%;
+    padding-bottom:28px;
+    padding-top:30px;
+}
+.form-warp-main-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 29px;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+    color: #676a6c;
+}
+
+.input-search {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:28px;
+    border-top:1px solid #ddd;
+}
+.input-search .form-control {
+    border:0px;
+    height:100%;
+}
+.input-query {
+    position: absolute;
+    right: 8px;
+    top: 2px;
+    color: #ccc;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.main-list {
+    position:relative;
+    height:100%;
+    width:100%;
+}
+
+.card-box {
+    position:relative;
+    float: left;
+    width: 195px;
+    height: 60px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 10px 0 0 10px;
+    padding-left:65px;
+    padding-top:4px;
+    overflow: hidden;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.card-box.active {
+    border: 1px solid #ff5d5b;
+    background: url(/Content/images/selected_red.png) right top no-repeat;
+}
+.card-box-img {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 60px;
+    height: 58px;
+    border-right: 1px solid #ccc;
+}
+.card-box-img img {
+    width: 59px;
+    height: 58px;
+}
+.card-box-content p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin:0;
+}
+
+
+
+.lr-form-item {
+    padding-left: 58px;
+}
+.lr-form-item-title {
+    width: 58px;
+    padding-right: 0;
+    text-align: left;
+}
+
+
+
+

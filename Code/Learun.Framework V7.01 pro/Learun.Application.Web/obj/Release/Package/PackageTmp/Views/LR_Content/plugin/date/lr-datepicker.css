@@ -1,0 +1,115 @@
+﻿/*
+ * 版 本 Learun-ADMS V7.0.0 力软敏捷开发框架(http://www.learun.cn)
+ * Copyright (c) 2013-2018 上海力软信息技术有限公司
+ * 创建人：力软-前端开发组
+ * 日 期：2017.03.22
+ * 描 述：learundate 时间段选择器 @YY@-当年 @MM@-当月 @DD@-当天 @JJ@-当季度
+ */
+.lr-search-date {
+    position:relative;
+    float:left;
+    width:200px;
+    height:28px;
+}
+.lr-search-date-text {
+    position:relative;
+    float:left;
+    width:100%;
+    height:100%;
+    line-height:26px;
+    cursor:pointer;
+    border: 1px solid #ccc;
+    border-radius:4px;
+    padding-left:25px;
+    background: url(/Content/images/datepicker_icon.png) left 0 no-repeat #FFF;
+}
+.lr-search-date-text:hover {
+    color:#3498DB;
+    border: 1px solid #3498DB;
+}
+
+.lr-search-date-container {
+    display:none;
+    position:absolute;
+    top:30px;
+    left:0;
+    z-index:10;
+    padding:15px;
+    background: #fff;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.15);
+    border-radius:3px;
+}
+.lr-search-date-container.width {
+    width:610px;
+}
+
+.lr-search-date-arrow {
+    position:absolute;
+    top: -16px;
+    left: 53px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #d6e1ee;
+}
+.lr-search-date-inside {
+    position:absolute;
+    top: -6px;
+    left: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent #fff;
+}
+
+.lr-search-date-content-btns {
+    position:relative;
+    float:left;
+}
+
+.lr-search-date-btn-block {
+    margin-bottom: 6px;
+}
+.lr-search-date-btn-block > a {
+    display:block;
+    width:140px;
+    line-height: 28px;
+    height: 28px;
+    text-align: center;
+    color: #fff;
+    background: #9da6bd;
+    border-bottom: 1px solid #afb8cc;
+}
+.lr-search-date-btn-block > a:hover {
+    background: #00aaef;
+}
+.lr-search-date-btn-block > a.active {
+    background: #00aaef;
+}
+
+.lr-search-date-datepicker-content {
+    position: relative;
+    width:420px;
+    float:left;
+    margin-left:20px;
+    display:none;
+}
+
+.lr-search-date-datepicker-container {
+    position: relative;
+    float: left;
+    z-index:1;
+    width:202px;
+    height:203px;
+}
+.lr-search-date-datepicker-container iframe {
+    width:202px;
+    height:203px;
+}
+
+.lr-search-date-datepicker-container.first {
+    margin-right:15px;
+}
+.lr-search-date-datepicker-btn {
+    position:relative;
+    width:100%;
+    text-align:right;
+}

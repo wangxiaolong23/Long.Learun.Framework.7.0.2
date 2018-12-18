@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "区域添加";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <input id="F_ModuleId" type="hidden" />
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">绑定按钮<font face="宋体">*</font></div>
+        <div id="F_ModuleBtnId" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">导出名称<font face="宋体">*</font></div>
+        <input id="F_Name" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">表格ID<font face="宋体">*</font></div>
+        <input id="F_GridId" type="text" class="form-control" value="gridtable" isvalid="yes" checkexpession="NotNull" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_SystemModule/Views/ExcelExport/Form.js")
+

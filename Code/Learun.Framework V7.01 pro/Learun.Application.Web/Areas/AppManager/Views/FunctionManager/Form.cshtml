@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "功能添加";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Areas/AppManager/Views/FunctionManager/Form.css")
+
+
+<div class="lr-form-wrap" id="form">
+    <input id="F_SchemeId" type="hidden" />
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">功能名称<font face="宋体">*</font></div>
+        <input id="F_Name" type="text" class="form-control" placeholder="请输入名称" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">功能图标<font face="宋体">*</font></div>
+        <input id="F_Icon" type="text" class="form-control" placeholder="请选择图标" isvalid="yes" checkexpession="NotNull" />
+        <span id="selectIcon" class="lr-input-button" title="选取图标">...</span>
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">功能分类<font face="宋体">*</font></div>
+        <div id="F_Type" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">排序<font face="宋体">*</font></div>
+        <input id="F_SortCode" type="text" class="form-control" placeholder="请输入排序号" isvalid="yes" checkexpession="Num" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">类型</div>
+        <div class="radio">
+            <label>
+                <input name="F_IsSystem" type="radio" value="2" checked="checked">
+                自定义表单
+            </label>
+            <label>
+                <input name="F_IsSystem" type="radio" value="1" >
+                代码开发
+            </label>
+        </div>
+    </div>
+    <div class="col-xs-12 lr-form-item system " style="display:none;" >
+        <div class="lr-form-item-title">功能地址</div>
+        <input id="F_Url" type="text" class="form-control" placeholder="请输入功能地址" />
+    </div>
+
+    <div class="col-xs-12 lr-form-item lr-form-btnitem nosystem">
+        <div class="lr-form-item-title">表单选择</div>
+        <div id="F_FormId"></div>
+        <a id="lr_preview" class="btn btn-default lr-form-item-btn">预览表单</a>
+    </div>
+    <div class="col-xs-12 lr-form-item nosystem">
+        <div class="lr-form-item-title">列表展示</div>
+        <div class="lr-tableshow">
+            <div class="col-xs-12" style="padding-bottom:10px;">
+                <div id="listTitle"></div>
+            </div>
+            <div class="col-xs-4" style="padding-right:6px;">
+                <div id="listContent1"></div>
+            </div>
+            <div class="col-xs-4" style="padding:0 3px;">
+                <div id="listContent2"></div>
+            </div>
+            <div class="col-xs-4" style="padding-left:6px;">
+                <div id="listContent3"></div>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/AppManager/Views/FunctionManager/Form.js")
+

@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "IP添加";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="alert alert-danger" style="margin: 5px;">
+    <i class="fa fa-question-circle" style="position: relative; top: 1px; font-size: 15px; padding-right: 5px;"></i>
+    声明：IP地址格式：192.168.0.1；192.168.0.*
+</div>
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">起始IP<font face="宋体">*</font></div>
+        <input id="F_StartIP" type="text" class="form-control" isvalid="yes" checkexpession="IsIP" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">结束IP<font face="宋体">*</font></div>
+        <input id="F_EndIP" type="text" class="form-control" isvalid="yes" checkexpession="IsIP" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_AuthorizeModule/Views/FilterIP/Form.js")

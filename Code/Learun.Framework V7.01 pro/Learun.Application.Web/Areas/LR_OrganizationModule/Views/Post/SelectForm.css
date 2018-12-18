@@ -1,0 +1,45 @@
+﻿.lr-form-layout {
+    padding-left:240px;
+}
+.form-company-list {
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:240px;
+    border-right:1px solid #ddd;
+    padding:5px;
+}
+
+.form-post-list {
+    position:relative;
+    width:100%;
+    height:100%;
+   padding-bottom:30px;
+}
+.form-post-search {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:30px;
+    border-top:1px solid #ddd;
+}
+.form-post-search input {
+    border:0;
+}
+.form-post-search .input-query {
+    position: absolute;
+    right: 4px;
+    top: 0;
+    color: #ccc;
+    font-size: 16px;
+    cursor: default;
+    line-height:29px;
+}
+.form-post-list-content {
+    position:relative;
+    width:100%;
+    height:100%;
+    padding:5px;
+}

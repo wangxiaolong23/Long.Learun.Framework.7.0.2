@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Form";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Areas/LR_FormModule/Views/Custmerform/SetFieldForm.css")
+<div class="lr-form-layout">
+    <div class="lr-form-layout-header" id="form">
+        <div class="col-xs-6 lr-form-item">
+            <div class="lr-form-item-title">上级列头</div>
+            <div id="parentId" class="lr-select-underline"></div>
+        </div>
+        <div class="col-xs-6 lr-form-item">
+            <div class="lr-form-item-title">显示名称<font face="宋体">*</font></div>
+            <input id="name" type="text" class="form-control lr-input-underline" isvalid="yes" checkexpession="NotNull" />
+        </div>
+        <div class="col-xs-6 lr-form-item">
+            <div class="lr-form-item-title">绑定字段</div>
+            <div id="field" class="lr-select-underline"></div>
+        </div>
+        <div class="col-xs-6 lr-form-item">
+            <div class="lr-form-item-title">编辑类型<font face="宋体">*</font></div>
+            <div id="type" isvalid="yes" class="lr-select-underline" checkexpession="NotNull"></div>
+        </div>
+        <div class="col-xs-4 lr-form-item">
+            <div class="lr-form-item-title">显示宽度<font face="宋体">*</font></div>
+            <input id="width" type="text" class="form-control lr-input-underline" isvalid="yes" checkexpession="NotNull" />
+        </div>
+        <div class="col-xs-4 lr-form-item">
+            <div class="lr-form-item-title">对齐方式<font face="宋体">*</font></div>
+            <div id="align" class="lr-select-underline" isvalid="yes" checkexpession="NotNull">
+                <ul>
+                    <li data-value="left">left</li>
+                    <li data-value="center">center</li>
+                    <li data-value="right">right</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-4 lr-form-item">
+            <div class="lr-form-item-title">排序号<font face="宋体">*</font></div>
+            <input id="sort" type="text" class="form-control lr-input-underline" isvalid="yes" checkexpession="isNum" />
+        </div>
+
+
+
+        <div class="col-xs-6 lr-form-item data-edit-select">
+            <div class="lr-form-item-title">数据来源<font face="宋体">*</font></div>
+            <div id="dataSource" class="lr-select-underline" ></div>
+        </div>
+        <div class="col-xs-6 lr-form-item data-edit-select">
+            <div class="lr-form-item-title">数据选项<font face="宋体">*</font></div>
+            <div id="dataItemId" class="lr-select-underline" ></div>
+            <div id="dataSourceId" class="lr-select-underline"  style="display:none;"></div>
+        </div>
+        <div class="col-xs-6 lr-form-item data-edit-select">
+            <div class="lr-form-item-title">窗口宽</div>
+            <input id="dataSourceWidth" type="text" class="form-control lr-input-underline" />
+        </div>
+        <div class="col-xs-6 lr-form-item data-edit-select">
+            <div class="lr-form-item-title">窗口高</div>
+            <input id="dataSourceHeight" type="text" class="form-control lr-input-underline" />
+        </div>
+    </div>
+    <div class="lr-form-layout-body data-edit-select">
+        <div class="lr-form-layout-body-title">
+            <div class="lr-form-jfgrid-btns">
+                <a id="lr_edit_datasource" class="btn btn-success"><i class="fa fa-pencil-square-o"></i>&nbsp;修改</a>
+            </div>
+            <span>数据源字段设置</span>
+        </div>
+        <div id="gridtable"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_FormModule/Views/Custmerform/SetFieldForm.js")

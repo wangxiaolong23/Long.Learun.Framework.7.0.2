@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "表单添加";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">表单类型</div>
+        <div id="type"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item lr-form-btnitem custmer-form">
+        <div class="lr-form-item-title">表单选择</div>
+        <div id="formId"></div>
+        <a id="lr_preview" class="btn btn-default lr-form-item-btn">预览表单</a>
+    </div>
+    <div class="col-xs-12 lr-form-item custmer-form">
+        <div class="lr-form-item-title">关联字段</div>
+        <div id="field"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">表单名称<font face="宋体">*</font></div>
+        <input id="name" type="text" class="form-control" placeholder="请输入名称" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">表单地址<font face="宋体">*</font></div>
+        <input id="url" type="text" class="form-control" placeholder="请输入名称" isvalid="yes" checkexpession="NotNull" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_WorkFlowModule/Views/WfScheme/WorkformForm.js")

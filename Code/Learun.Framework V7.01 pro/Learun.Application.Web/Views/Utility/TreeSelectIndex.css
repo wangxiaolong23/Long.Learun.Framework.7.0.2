@@ -1,0 +1,155 @@
+﻿.form-warp {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-left: 180px;
+}
+
+.form-warp-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 180px;
+    height: 100%;
+}
+
+
+.tree {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-right: 1px solid #ddd;
+}
+
+.form-warp-main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top: 28px;
+}
+
+.item-search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-list {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.form-warp-right {
+    position: absolute;
+    top: 0;
+    right: -180px;
+    height: 100%;
+    width: 180px;
+    border-left: 1px solid #ddd;
+    padding-top: 28px;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.form-warp-right-close {
+    position: absolute;
+    top: 7px;
+    right: 4px;
+    width: 12px;
+    height: 13px;
+    display: block;
+    background: url(/Content/images/tab_close.png) no-repeat;
+    cursor: pointer;
+}
+
+    .form-warp-right-close:hover {
+        background-position: 0 -12px;
+    }
+
+.form-warp-right-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 28px;
+    line-height: 27px;
+    padding-left: 10px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding-right: 80px;
+}
+
+.selected-item-list-warp {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.item-selected-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 80px;
+    line-height: 27px;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    cursor: pointer;
+    background-color: #eee;
+    color: #666;
+}
+
+    .item-selected-btn:hover {
+        color: #333;
+    }
+
+.form-control {
+    border: 0px;
+    height: 100%;
+}
+
+.input-query {
+    position: absolute;
+    right: 86px;
+    top: 2px;
+    color: #ccc;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.item-selected-box {
+    position: relative;
+    width: 160px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px 0 0 10px;
+}
+
+    .item-selected-box p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin: 0;
+    }
+
+.item-reomve {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 12px;
+    height: 13px;
+    display: block;
+    background: url(/Content/images/tab_close.png) no-repeat;
+    cursor: pointer;
+}
+
+    .item-reomve:hover {
+        background-position: 0 -12px;
+    }

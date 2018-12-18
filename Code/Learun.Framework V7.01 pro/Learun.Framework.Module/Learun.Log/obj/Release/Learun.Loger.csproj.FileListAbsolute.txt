@@ -1,0 +1,7 @@
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\bin\Release\Learun.Loger.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\bin\Release\Learun.Loger.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\bin\Release\log4net.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\bin\Release\log4net.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\obj\Release\Learun.Loger.csprojResolveAssemblyReference.cache
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\obj\Release\Learun.Loger.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\obj\Release\Learun.Loger.pdb

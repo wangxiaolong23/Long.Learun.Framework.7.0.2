@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Form";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Areas/LR_SystemModule/Views/Interface/Form.css")
+<div class="lr-form-layout">
+    <div class="lr-form-layout-header" id="form1">
+        <div class="col-xs-12 lr-form-item">
+            <div class="lr-form-item-title">接口名称<font face="宋体">*</font></div>
+            <input id="F_Name" type="text" class="form-control lr-input-underline" placeholder="接口名称" isvalid="yes" checkexpession="NotNull" />
+        </div>
+        <div class="col-xs-12 lr-form-item">
+            <div class="lr-form-item-title">接口地址<font face="宋体">*</font></div>
+            <input id="F_Address" type="text" class="form-control lr-input-underline" placeholder="接口地址" isvalid="yes" checkexpession="NotNull" />
+        </div>
+    </div>
+    <div class="lr-form-layout-body">
+        <div class="lr-form-layout-body-title">
+            <div class="lr-form-jfgrid-btns">
+                <a id="lr_add_field" class="btn btn-success"><i class="fa fa-plus"></i>&nbsp;<span class="lrlg">添加</span></a>
+                <a id="lr_edit_field" class="btn btn-info"><i class="fa fa-pencil-square-o"></i>&nbsp;<span class="lrlg">修改</span></a>
+                <a id="lr_delete_field" class="btn btn-danger"><i class="fa fa-trash-o"></i>&nbsp;<span class="lrlg">移除</span></a>
+            </div>
+            <span class="lrlg" >数据权限过滤字段维护</span>
+        </div>
+        <div id="gridtable"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_SystemModule/Views/Interface/Form.js")

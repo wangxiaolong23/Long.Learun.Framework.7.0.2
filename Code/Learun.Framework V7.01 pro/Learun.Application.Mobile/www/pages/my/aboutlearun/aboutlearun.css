@@ -1,0 +1,41 @@
+﻿.lr-about-page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+    .lr-about-page > div {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        margin-top: -250px;
+    }
+
+    .lr-about-page .title {
+        color: #000;
+        font-size: 14px;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .lr-about-page .img {
+        text-align: center;
+    }
+
+    .lr-about-page .des {
+        color: #666;
+        margin: auto;
+        width: 100%;
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+
+    .lr-about-page .ver {
+        text-align: center;
+        font-size: 12px;
+        color: #999;
+        padding-top: 20px;
+    }

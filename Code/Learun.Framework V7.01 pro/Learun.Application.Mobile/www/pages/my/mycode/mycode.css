@@ -1,0 +1,57 @@
+﻿.lr-mycode-page {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #2f2d2d;
+    padding: 80px 20px;
+}
+.lr-mycode-page-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius:4px;
+    padding:20px;
+    padding-top:80px;
+}
+.lr-mycode-title {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    top:20px;
+    left:0;
+    padding-left:90px;
+    padding-top:10px;
+}
+.lr-mycode-title img{
+    position:absolute;
+    top:10px;
+    left:20px;
+    width:60px;
+    height:60px;
+    border-radius:5px;
+}
+    .lr-mycode-title .content {
+        position: relative;
+    }
+    .lr-mycode-title .name {
+        font-size: 16px;
+        margin-bottom: 2px;
+        color: #000;
+    }
+
+    .lr-mycode-title .subname {
+        font-size: 12px;
+        color:#999;
+    }
+
+.lr-mycode-code {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align:center;
+    padding-top:20px;
+}
+    .lr-mycode-code img {
+        width: 100%;
+    }

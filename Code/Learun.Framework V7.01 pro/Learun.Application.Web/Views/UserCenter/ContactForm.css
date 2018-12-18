@@ -1,0 +1,16 @@
+﻿.lr-form-wrap {
+    padding: 0;
+}
+.lr-form-item {
+    width:500px;
+    padding: 5px 0 5px 80px;
+    float:initial;
+}
+.lr-form-item-title {
+    width: 80px;
+    text-align: left;
+    padding-right: 10px;
+}
+.form-control {
+    border-radius:4px;
+}

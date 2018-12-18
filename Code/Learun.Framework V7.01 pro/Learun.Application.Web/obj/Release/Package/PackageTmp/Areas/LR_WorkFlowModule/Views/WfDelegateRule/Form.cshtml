@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "工作委托";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Areas/LR_WorkFlowModule/Views/WfDelegateRule/Form.css")
+<div class="form-warp">
+    <div class="form-warp-top">
+        <div class="col-xs-12 lr-form-item">
+            <div class="lr-form-item-title">被委托人<font face="宋体">*</font></div>
+            <div id="F_ToUserId" class="lr-select-underline" isvalid="yes" checkexpession="NotNull"></div>
+            </div>
+        <div class="col-xs-6 lr-form-item">
+            <div class="lr-form-item-title">开始时间<font face="宋体">*</font></div>
+            <input id="F_BeginDate" type="text" class="form-control lr-input-wdatepicker lr-input-underline" onfocus="WdatePicker()" isvalid="yes" checkexpession="NotNull" />
+        </div>
+        <div class="col-xs-6 lr-form-item">
+            <div class="lr-form-item-title">结束时间<font face="宋体">*</font></div>
+            <input id="F_EndDate" type="text" class="form-control lr-input-wdatepicker lr-input-underline" onfocus="WdatePicker()" isvalid="yes" checkexpession="NotNull" />
+        </div>
+        <div class="col-xs-12 lr-form-item">
+            <div class="lr-form-item-title">委托说明</div>
+            <input id="F_Description" type="text" class="form-control lr-input-underline" placeholder="添加说明" />
+        </div>
+    </div>
+    <div class="form-warp-main">
+        <div class="form-warp-main-title">流程模板选择</div>
+        <div class="input-search">
+            <input id="txt_keyword" type="text" class="form-control" placeholder="请输入要查询关键字">
+            <span class="input-query" title="Search"><i class="fa fa-search"></i></span>
+        </div>
+        <div class="main-list" id="main_list_warp"><div id="main_list"></div></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_WorkFlowModule/Views/WfDelegateRule/Form.js")

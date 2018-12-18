@@ -1,0 +1,35 @@
+﻿.lr-wrap {
+    width:300px;
+    position:relative;
+}
+.lr-wrap .text
+{
+    margin-top: 30px; 
+    line-height: 14px; 
+    color: #75777A;
+    text-align: center;
+}
+.lr-wrap .text div {
+    margin-top:10px;
+}
+.lr-wrap .file {
+    width: 100px;
+    height: 100px;
+    margin:auto;
+    position:relative;
+    overflow: hidden;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer !important;
+}
+.lr-wrap img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 100px;
+    cursor:pointer;
+}

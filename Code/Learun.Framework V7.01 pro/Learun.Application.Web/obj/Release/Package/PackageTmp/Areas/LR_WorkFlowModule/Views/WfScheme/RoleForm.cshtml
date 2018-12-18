@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "角色添加";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">角色选择</div>
+        <div id="auditorId"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">附加条件</div>
+        <div id="condition"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_WorkFlowModule/Views/WfScheme/RoleForm.js")

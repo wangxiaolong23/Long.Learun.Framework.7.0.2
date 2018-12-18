@@ -1,0 +1,216 @@
+﻿.form-warp {
+    position:relative;
+    width:100%;
+    height:100%;
+    padding-left:200px;
+}
+.form-warp-left {
+    position:absolute;
+    left:0;
+    top:0;
+    width:200px;
+    height:100%;
+    padding-top:28px;
+}
+.company-select {
+    position:absolute;
+    top:0;
+    left:0;
+    height:28px;
+    width:100%;
+    border:1px solid #ddd;
+    border-top:0px;
+    border-left:0px;
+}
+.learun-select.learun-select-focus {
+    border: 1px solid #ddd;
+    border-top:0px;
+    border-left:0px;
+}
+.learun-select-placeholder {
+    padding-left:15px;
+}
+.learun-select-option {
+    border:0px;
+    border-bottom:1px solid #ddd;
+}
+
+
+.department-tree {
+    position:relative;
+    height:100%;
+    width:100%;
+    border-right:1px solid #ddd;
+}
+.form-warp-main {
+    position:relative;
+    height:100%;
+    width:100%;
+    padding-top:28px;
+
+}
+.user-search {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:28px;
+    border-bottom:1px solid #ddd;
+}
+.user-list {
+    position:relative;
+    height:100%;
+    width:100%;
+}
+
+.card-box {
+    position:relative;
+    float: left;
+    width: 185px;
+    height: 60px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 10px 0 0 10px;
+    padding-left:65px;
+    padding-top:4px;
+    overflow: hidden;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.card-box.active {
+    border: 2px solid #ff5d5b;
+    background: url(/Content/images/selected_red.png) right top no-repeat;
+}
+.card-box-img {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 59px;
+    height: 58px;
+    line-height:58px;
+    padding-left:9px;
+    background-color: #ebebeb;
+    border-right: 1px solid #ccc;
+}
+.card-box-img img {
+    border-radius: 45px;
+}
+.card-box-content p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin:0;
+}
+.form-warp-right {
+    position:absolute;
+    top:0;
+    right:-180px;
+    height:100%;
+    width:180px;
+    border-left:1px solid #ddd;
+    padding-top:28px;
+    background-color:#fff;
+    z-index:10;
+}
+.form-warp-right-close {
+    position: absolute;
+    top: 7px;
+    right: 4px;
+    width: 12px;
+    height: 13px;
+    display: block;
+    background: url(/Content/images/tab_close.png) no-repeat;
+    cursor:pointer;
+}
+.form-warp-right-close:hover {
+    background-position: 0 -12px;
+}
+
+.form-warp-right-title {
+    position:absolute;
+    top:0;
+    left:0;
+    height:28px;
+    line-height:27px;
+    padding-left:10px;
+    width:100%;
+    border-bottom:1px solid #ddd;
+    padding-right:80px;
+}
+.selected-user-list-warp {
+    position:relative;
+    height:100%;
+    width:100%;
+}
+
+.user-selected-box {
+     position:relative;
+     width:160px;
+     height:44px;
+     border:1px solid #ccc;
+     border-radius:4px;
+     margin:auto;
+     margin-top:10px;
+     padding:5px 0 0 10px;
+     
+}
+.user-selected-box p { 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin:0;
+}
+
+.user-reomve {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 12px;
+    height: 13px;
+    display: block;
+    background: url(/Content/images/tab_close.png) no-repeat;
+    cursor:pointer;
+}
+.user-reomve:hover {
+    background-position: 0 -12px;
+}
+
+
+.user-selected-btn {
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width:80px;
+    line-height:27px;
+    text-align:center;
+    border-left:1px solid #ddd;
+    cursor:pointer;
+
+    background-color:#eee;
+    color:#666;
+}
+.user-selected-btn:hover {
+    color:#333;
+}
+
+.form-control {
+    border:0px;
+    height:100%;
+
+}
+.input-query {
+    position: absolute;
+    right: 86px;
+    top: 2px;
+    color: #ccc;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+

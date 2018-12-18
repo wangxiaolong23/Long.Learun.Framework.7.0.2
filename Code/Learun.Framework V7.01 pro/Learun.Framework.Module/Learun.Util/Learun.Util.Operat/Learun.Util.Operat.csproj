@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD556B7A-E0D1-41BD-9D5B-18F8502E9F33}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Learun.Util.Operat</RootNamespace>
+    <AssemblyName>Learun.Util.Operat</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OperateLogModel.cs" />
+    <Compile Include="OperationType.cs" />
+    <Compile Include="Operator.cs" />
+    <Compile Include="OperatorHelper.cs" />
+    <Compile Include="OperatorResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Learun.Application.Organization\Learun.Application.Organization.csproj">
+      <Project>{e9877a25-801b-4605-ad35-e6306916513c}</Project>
+      <Name>Learun.Application.Organization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Learun.Application.Module\Learun.Application.Base\Learun.Application.Base.csproj">
+      <Project>{0cdd0dc8-74cf-4c71-923c-66204a8923d3}</Project>
+      <Name>Learun.Application.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Learun.Cache\Learun.Cache.Base\Learun.Cache.Base.csproj">
+      <Project>{975f2cb8-605c-4add-b365-b97bf844f0fe}</Project>
+      <Name>Learun.Cache.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Learun.Cache\LeaRun.Cache.Factory\Learun.Cache.Factory.csproj">
+      <Project>{68902fcf-c439-4010-b17b-2499c972ee33}</Project>
+      <Name>Learun.Cache.Factory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Learun.Cache\Learun.Cache.Redis\Learun.Cache.Redis.csproj">
+      <Project>{13808645-2013-4896-8ee2-65144e222c69}</Project>
+      <Name>Learun.Cache.Redis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Util\Learun.Util.csproj">
+      <Project>{cf8ae293-88ab-436c-9720-a8386ba5d7b7}</Project>
+      <Name>Learun.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

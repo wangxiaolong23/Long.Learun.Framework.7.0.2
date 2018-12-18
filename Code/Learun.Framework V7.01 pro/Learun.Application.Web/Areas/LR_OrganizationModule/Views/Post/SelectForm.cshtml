@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "岗位选择";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Areas/LR_OrganizationModule/Views/Post/SelectForm.css")
+<div class="lr-form-layout">
+    <div class="form-company-list" id="form_company_list"></div>
+    <div class="form-post-list">
+        <div class="form-post-list-content" id="form_post_list"></div>
+        <div class="form-post-search"><input type="text" class="form-control" /><span class="input-query" title="查询"><i class="fa fa-search"></i></span></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_OrganizationModule/Views/Post/SelectForm.js")

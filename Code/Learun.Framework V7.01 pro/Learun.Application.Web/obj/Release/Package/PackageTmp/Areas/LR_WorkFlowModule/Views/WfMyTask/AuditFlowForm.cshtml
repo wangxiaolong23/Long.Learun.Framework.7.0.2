@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "审核流程";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">审核结果<font face="宋体">*</font></div>
+        <div class="radio">
+            <label>
+                <input name="verifyType" id="verifyType1" type="radio" value="1" />
+                同意
+            </label>
+            <label>
+                <input name="verifyType" id="verifyType2" type="radio" value="2" />
+                不同意
+            </label>
+        </div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="description" class="form-control" style="height: 200px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_WorkFlowModule/Views/WfMyTask/AuditFlowForm.js")
+
+

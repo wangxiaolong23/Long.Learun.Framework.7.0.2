@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "报表配置";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="widget-body">
+    <div id="wizard" class="wizard" data-target="#wizard-steps">
+        <ul class="steps">
+            <li data-target="#step-1" class="active"><span class="step">1</span>基本信息<span class="chevron"></span></li>
+            <li data-target="#step-2"><span class="step">2</span>数据配置<span class="chevron"></span></li>
+        </ul>
+    </div>
+    <div class="step-content" id="wizard-steps">
+        <div class="step-pane lr-form-wrap active" id="step-1">
+            <div class="col-xs-12 lr-form-item">
+                <div class="lr-form-item-title">报表编号<font face="宋体">*</font></div>
+                <input id="F_EnCode" type="text" class="form-control" placeholder="请输入编号" isvalid="yes" checkexpession="NotNull" />
+            </div>
+            <div class="col-xs-12 lr-form-item">
+                <div class="lr-form-item-title">报表名称<font face="宋体">*</font></div>
+                <input id="F_FullName" type="text" class="form-control" placeholder="请输入名称" isvalid="yes" checkexpession="NotNull" />
+            </div>
+            <div class="col-xs-12 lr-form-item">
+                <div class="lr-form-item-title">报表分类<font face="宋体">*</font></div>
+                <div id="F_TempCategory" isvalid="yes" checkexpession="NotNull"></div>
+            </div>
+            <div class="col-xs-12 lr-form-item">
+                <div class="lr-form-item-title">报表风格<font face="宋体">*</font></div>
+                <div class="radio">
+                    <label>
+                        <input name="F_TempStyle" type="radio" value="1">
+                        列表
+                    </label>
+                    <label>
+                        <input name="F_TempStyle" type="radio" value="2" checked="checked">
+                        图表
+                    </label>
+                    <label title="(列表+图表)">
+                        <input name="F_TempStyle" type="radio" value="3">
+                        混合
+                    </label>
+                </div>
+            </div>
+            <div class="col-xs-12 lr-form-item F_TempType">
+                <div class="lr-form-item-title">图表类型<font face="宋体">*</font></div>
+                <div id="F_TempType" isvalid="yes" checkexpession="NotNull">
+                    <ul>
+                        <li data-value="line">折线图</li>
+                        <li data-value="bar">柱形图</li>
+                        <li data-value="pie">饼图</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 lr-form-item">
+                <div class="lr-form-item-title">报表介绍</div>
+                <textarea id="F_Description" class="form-control" style="height: 150px;"></textarea>
+            </div>
+        </div>
+        <div class="step-pane" id="step-2">
+            <div class="alert alert-danger" style="text-align: left; margin: 5px; margin-bottom: 10px;">
+                <i class="fa fa-question-circle alert-dismissible" style="position: relative; top: 1px; font-size: 15px; padding-right: 5px;"></i>
+                注意：必须要开发人员指导下进行配置SQL语句，有可能没有配置好SQL语句会导致该功能崩溃！
+            </div>
+            <div class="lr-form-wrap">
+                <div class="col-xs-12 lr-form-item">
+                    <div class="lr-form-item-title">数据库</div>
+                    <div id="F_DataSourceId" isvalid="yes" checkexpession="NotNull"></div>
+                </div>
+                <div class="col-xs-12 lr-form-item chart-pane">
+                    <div class="lr-form-item-title">图表SQL</div>
+                    <textarea id="F_ChartSqlString" class="form-control" style="height: 110px;"></textarea>
+                </div>
+                <div class="col-xs-12 lr-form-item list-pane" style="display:none;">
+                    <div class="lr-form-item-title">列表SQL</div>
+                    <textarea id="F_ListSqlString" class="form-control" style="height: 110px;"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lr-form-bottom-button" id="wizard-actions">
+        <a id="btn_prev" class="btn btn-default btn-prev" disabled>上一步</a>
+        <a id="btn_next" class="btn btn-default btn-next">下一步</a>
+        <a id="btn_finish" class="btn btn-success" disabled>完成</a>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportManage/Form.js")

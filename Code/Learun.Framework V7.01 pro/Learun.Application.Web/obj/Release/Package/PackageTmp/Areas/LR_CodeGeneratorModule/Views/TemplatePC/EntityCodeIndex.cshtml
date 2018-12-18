@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "自定义开发模板";
+    Layout = "~/Views/Shared/_CodeBulidForm.cshtml";
+}
+
+@Html.AppendCssFile("/Areas/LR_CodeGeneratorModule/Views/TemplatePC/EntityCodeIndex.css")
+
+<div class="widget-body">
+    <input id="rootDirectory" type="hidden" value="@ViewBag.rootDirectory" />
+    <input id="_mappingDirectory" type="hidden" value="@ViewBag.mappingDirectory" />
+    <input id="_serviceDirectory" type="hidden" value="@ViewBag.serviceDirectory" />
+    <div id="wizard" class="wizard" data-target="#wizard-steps">
+        <ul class="steps">
+            <li data-target="#step-1" class="active"><span class="step">1</span>选择数据表<span class="chevron"></span></li>
+            <li data-target="#step-2"><span class="step">2</span>信息配置<span class="chevron"></span></li>
+            <li data-target="#step-3"><span class="step">3</span>查看代码<span class="chevron"></span></li>
+        </ul>
+    </div>
+    <div class="step-content" id="wizard-steps">
+        <div class="step-pane step-gird-pane active" id="step-1">
+            <div class="btn-tool-bar">
+                <div class="lr-layout-tool-item" style="line-height: 28px;">
+                    数据库:
+                </div>
+                <div class="lr-layout-tool-item" style="width: 180px;">
+                    <div id="dbId" style="border-radius: 4px;"></div>
+                </div>
+                <div class="lr-layout-tool-item">
+                    <input id="txt_Keyword" type="text" class="form-control" placeholder="请输入要查询关键字" />
+                </div>
+                <div class="lr-layout-tool-item">
+                    <a id="btn_Search" class="btn btn-primary btn-sm"><i class="fa fa-search"></i>&nbsp;查询</a>
+                </div>
+            </div>
+            <div id="dbtablegird"></div>
+        </div>
+        <div class="step-pane step-pane-base" id="step-2">
+            <div class="step-pane-base-top">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">功能信息配置</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-xs-6 lr-form-item">
+                            <div class="lr-form-item-title">创建人员</div>
+                            <input id="createUser" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+                        </div>
+                        <div class="col-xs-6 lr-form-item">
+                            <div class="lr-form-item-title">功能类名</div>
+                            <input id="name" type="text" class="form-control" placeholder="请输入功能类名" isvalid="yes" checkexpession="NotNull" />
+                        </div>
+                        <div class="col-xs-6 lr-form-item">
+                            <div class="lr-form-item-title">功能描述</div>
+                            <input id="describe" type="text" class="form-control" placeholder="请输入功能描述" isvalid="yes" checkexpession="NotNull" />
+                        </div>
+                        <div class="col-xs-6 lr-form-item">
+                            <div class="lr-form-item-title">输出区域</div>
+                            <div id="outputArea" isvalid="yes" checkexpession="NotNull"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default lr-panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">输出目录</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-xs-12 lr-form-item">
+                        <div class="lr-form-item-title">映射类输出目录</div>
+                        <input id="mappingDirectory" type="text" class="form-control" readonly />
+                    </div>
+                    <div class="col-xs-12 lr-form-item">
+                        <div class="lr-form-item-title">后端类输出目录</div>
+                        <input id="serviceDirectory" type="text" class="form-control" readonly />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step-pane" id="step-3" style="padding-top:49px;">
+            <ul class="nav nav-tabs lr-form-tab" id="nav_tabs">
+                <li class="active"><a data-value="entityCodediv">实体类</a></li>
+                <li><a data-value="mapCodediv">实体映射类</a></li>
+            </ul>
+            <div class="tab-content" id="tab_content">
+                <div id="entityCodediv" class="tab-pane active"><div id="entityCode"></div></div>
+                <div id="mapCodediv" class="tab-pane"><div id="mapCode"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lr-form-bottom-button" id="wizard-actions">
+        <a id="btn_prev" class="btn btn-default btn-prev" disabled>上一步</a>
+        <a id="btn_next" class="btn btn-default btn-next">下一步</a>
+        <a id="btn_finish" class="btn btn-success" disabled>完成</a>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeGeneratorModule/Views/TemplatePC/EntityCodeIndex.js")
+
+
+

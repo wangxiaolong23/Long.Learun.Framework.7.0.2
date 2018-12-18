@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+
+  <!-- If connectionStrings tag is absent -->
+  <connectionStrings xdt:Transform="InsertIfMissing">
+  </connectionStrings>
+
+  <!-- add entry if missing -->
+  <connectionStrings>
+    <add name="OracleDbContext" providerName="Oracle.ManagedDataAccess.Client" connectionString="User Id=oracle_user;Password=oracle_user_password;Data Source=oracle" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)" />
+  </connectionStrings>
+
+  <!-- If entityFramework tag is absent -->
+  <entityFramework xdt:Transform="InsertIfMissing">
+  </entityFramework>
+
+  <!-- If entityFramework tag is present but if providers tag is absent -->
+  <entityFramework>
+    <providers xdt:Transform="InsertIfMissing">
+    </providers>
+  </entityFramework>
+
+  <!-- remove existing entry -->  
+  <entityFramework>
+    <providers>
+      <provider invariantName="Oracle.ManagedDataAccess.Client" type="Oracle.ManagedDataAccess.EntityFramework.EFOracleProviderServices, Oracle.ManagedDataAccess.EntityFramework, Version=6.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342"  xdt:Transform="Remove" xdt:Locator="Match(invariantName)" /> 
+    </providers>
+  </entityFramework>
+
+  <!-- insert new entry -->
+  <entityFramework>
+    <providers>
+      <provider invariantName="Oracle.ManagedDataAccess.Client" type="Oracle.ManagedDataAccess.EntityFramework.EFOracleProviderServices, Oracle.ManagedDataAccess.EntityFramework, Version=6.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342" xdt:Transform="Insert" />      
+    </providers>
+  </entityFramework> 
+
+</configuration>

@@ -1,0 +1,1 @@
+You have downloaded Oracle Data Provider for .NET from Oracle, the license agreement to which is available at http://www.oracle.com/technetwork/licenses/distribution-license-152002.html

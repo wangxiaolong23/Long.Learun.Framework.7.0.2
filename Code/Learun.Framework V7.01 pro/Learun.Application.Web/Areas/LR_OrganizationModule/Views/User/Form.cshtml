@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "账号添加";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <input id="F_CompanyId" type="hidden" />
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">账号<font face="宋体">*</font></div>
+        <input id="F_Account" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">密码<font face="宋体">*</font></div>
+        <input id="F_Password" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">姓名<font face="宋体">*</font></div>
+        <input id="F_RealName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">部门<font face="宋体">*</font></div>
+        <div id="F_DepartmentId" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">工号</div>
+        <input id="F_EnCode" type="text" class="form-control" />
+    </div>
+
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">性别</div>
+        <div id="F_Gender"><ul><li data-value="1">男</li><li data-value="0">女</li></ul></div>
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">生日</div>
+        <input id="F_Birthday" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker()" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">邮箱</div>
+        <input id="F_Email" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">手机</div>
+        <input id="F_Mobile" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">电话</div>
+        <input id="F_Telephone" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">QQ</div>
+        <input id="F_OICQ" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">微信</div>
+        <input id="F_WeChat" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="F_Description" class="form-control" style="height:100px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_OrganizationModule/Views/User/Form.js")

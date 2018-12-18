@@ -1,0 +1,905 @@
+﻿/*
+ * 版 本 Learun-ADMS V7.0.0 力软敏捷开发框架(http://www.learun.cn)
+ * Copyright (c) 2013-2018 上海力软信息技术有限公司
+ * 创建人：力软-前端开发组
+ * 日 期：2017.03.16
+ * 描 述：window窗口皮肤	
+ */
+.lr-logo-title {
+    position: relative;
+    margin-left:10px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+/*顶部*/
+.lr-frame-top {
+    background: #24A1E7;
+    height: 50px;
+    line-height: 50px;
+}
+
+/*菜单*/
+.lr-frame-menu {
+    left: 0;
+    bottom: 30px !important;
+    height: 100%;
+    height: calc(100% - 110px);
+    width: 100%;
+    max-height: 450px;
+    max-width: 380px;
+    z-index: 4;
+    background-color: #F7FEFF;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: #D2D8D9 0px 0px 10px 1px;
+    display: none;
+    overflow:hidden;
+}
+.lr-frame-menu-overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    filter: alpha(opacity=1);
+    opacity: 0.01;
+    -moz-opacity: 0.01;
+    z-index:-1;
+}
+.lr-frame-menu-wrap {
+    position: absolute;
+    width: 160px;
+    background-color: #24A1E7;
+    border-top-left-radius: 5px;
+    padding-top: 10px;
+}
+.lr-first-menu-list > li > .lr-menu-item {
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 10px 0px 20px;
+}
+    .lr-first-menu-list > li > .lr-menu-item:hover {
+        background: #178cce;
+    }
+.lr-first-menu-list> li > .lr-menu-item > .lr-menu-item-arrow{
+    display: block;
+    position: absolute;
+    text-indent: 0;
+    font-weight: bold;
+}
+.lr-first-menu-list > li.active .lr-menu-item-arrow{
+    width: 0;
+    height: 0;
+    right:0;
+    top: 50%;
+    margin-top: -8px;
+    text-indent: -99999px;
+    border-style: solid;
+    border-width: 8px;
+    border-color: transparent;
+    border-right-color: #f7feff;
+    border-left: none;
+}
+
+
+.lr-second-menu-wrap {
+    position:absolute;
+    top:0;
+    right:0;
+    width: 220px;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top:10px;
+}
+.lr-second-menu-list .lr-menu-item {
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    padding: 0px 15px 0px 20px;
+    cursor:pointer;
+}
+.lr-second-menu-list .lr-menu-item:hover {
+    background-color: #dfe5e6;
+}
+.lr-three-menu-list .lr-menu-item {
+    padding-left:50px;
+}
+.lr-second-menu-list  .lr-menu-item-arrow .fa-angle-left {
+    position: absolute;
+    right: 15px;
+    top: 16px;
+}
+.lr-second-menu-list .open  .lr-menu-item-arrow .fa-angle-left {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+
+/*tabs条*/
+.lr-frame-tabs {
+    padding: 0px 55px 0px 88px;
+    background: #24A1E7;
+    top: 50px;
+}
+.lr-frame-tabs-wrap {
+    height:30px;
+}
+.lr-frame-tabItem {
+    height: 29px;
+    line-height: 29px;
+    background: #24A1E7;
+    color: #fff;
+    border-radius: 4px 4px 0 0;
+}
+.lr-frame-tabItem i {
+    display:none;
+}
+
+.lr-frame-tabItem.active {
+    border-bottom:0px;
+    height:30px;
+    background:#F7FEFF;
+    color:#2e99d4;
+    font-weight:bold;
+}
+.lr-frame-tabItem .reomve{
+    top: 8px;
+    right: 4px;
+}
+/*功能窗口*/
+.lr-frame-main {
+    padding:80px 0px 30px 0px;
+    background:#F7FEFF;
+}
+/*个人设置和头像*/
+.lr-frame-personCenter {
+    top:0;
+    right:10px;
+    height:40px;
+    line-height:40px;
+}
+.lr-frame-personCenter > a {
+    color:#fff;
+}
+.lr-frame-personCenter >.dropdown-toggle> img {
+    border: 2px solid #fff;
+}
+/*全屏按钮*/
+.lr_frame_fullscreen{
+    top:50px;
+}
+.lr_frame_fullscreen a {
+    color: #fff;
+}
+.lr_frame_fullscreen a:hover {
+    color: #96CCE9;
+}
+
+
+/*炫动版独有*/
+/*应用列表按钮*/
+.lr-applist-btn {
+    position:absolute;
+    left:10px;
+    top:51px;
+    background: #F7FEFF;
+    padding:0px 15px;
+    line-height:29px;
+    height:29px;
+    color: #2e99d4;
+    font-weight: bold;
+    border-radius:4px 4px 0 0;
+    cursor:pointer;
+    z-index:3;
+}
+    .lr-applist-btn.off {
+        background: #24A1E7;
+        color: #fff;
+        font-weight: initial;
+    }
+/*开始菜单按钮*/
+.lr-windows-bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    background: #24A1E7;
+    z-index:3;
+}
+.lr-windows-start {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    height: 29px;
+    line-height: 29px;
+    z-index: 5;
+    color: #fff;
+    cursor: pointer;
+}
+    .lr-windows-start > i {
+       font-size:16px;
+    }
+    .lr-windows-start > span {
+        margin-left:5px;
+    }
+.lr-windows-start:hover {
+    color:#96CCE9;
+}
+/*应用列表*/
+.lr-applist-content {
+    position:absolute;
+    padding:80px 0px 68px 0px;
+    height:100%;
+    width:100%;
+    z-index:1;
+}
+
+.lr-applist-slidebox-slider {
+    position:absolute;
+    left:0;
+    bottom:45px;
+    height: 23px;
+    width: 100%;
+}
+.lr-applist-slidebox-slider-content {
+    display: table; /*重点就是这个属性,这个样式会告知浏览器当前元素的宽度,采用最小的宽度.不是默认全宽*/
+    margin: 0 auto; 
+}
+.lr-applist-slidebox-slider li {
+    position: relative;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    margin: 10px;
+}
+    .lr-applist-slidebox-slider li.active i {
+        color: #24A1E7;
+    }
+
+    .lr-applist-slidebox-slider li:first-child i {
+        margin-left: 3px;
+    }
+
+    .lr-applist-slidebox-slider li i {
+        color: #B3E1F9;
+    }
+
+
+.lr-applist-slidebox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+    .lr-applist-slidebox ul {
+        display: none;
+    }
+
+        .lr-applist-slidebox ul.active {
+            display: block;
+        }
+
+    .lr-applist-slidebox .appItem {
+        position: relative;
+        float: left;
+        margin: 30px;
+        /*width: 130px;*/
+        /*padding: 20px 10px 10px 10px;*/
+        /*margin:5px 15px 15px 15px;*/
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+        .lr-applist-slidebox .appItem .icon {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            border-radius: 3px;
+            text-align: center;
+        }
+
+         .lr-applist-slidebox .appItem:nth-of-type(7n+1) .icon {
+            background-color: #68ADEA;
+        }
+
+         .lr-applist-slidebox .appItem:nth-of-type(7n+1):hover .icon {
+            background-color: #429BE9;
+        }
+
+         .lr-applist-slidebox .appItem:nth-of-type(7n+2) .icon {
+            background-color: #C96BF0;
+        }
+
+         .lr-applist-slidebox .appItem:nth-of-type(7n+2):hover .icon {
+            background-color: #AD27E5;
+        }
+
+        .lr-applist-slidebox .appItem:nth-of-type(7n+3) .icon {
+            background-color: #58DFE7;
+        }
+
+        .lr-applist-slidebox .appItem:nth-of-type(7n+3):hover .icon {
+            background-color: #3DC8D0;
+        }
+
+       .lr-applist-slidebox .appItem:nth-of-type(7n+4) .icon {
+            background-color: #FADD1B;
+        }
+
+        .lr-applist-slidebox .appItem:nth-of-type(7n+4):hover .icon {
+            background-color: #F3C60A;
+        }
+
+        .lr-applist-slidebox .appItem:nth-of-type(7n+5) .icon {
+            background-color: #D775E1;
+        }
+
+        .lr-applist-slidebox .appItem:nth-of-type(7n+5):hover .icon {
+            background-color: #E44BF3;
+        }
+
+        .lr-applist-slidebox .appItem:nth-of-type(7n+6) .icon {
+            background-color: #F4A944;
+        }
+
+        .lr-applist-slidebox .appItem:nth-of-type(7n+6):hover .icon {
+            background-color: #E7890C;
+        }
+
+        .lr-applist-slidebox .appItem:nth-of-type(7n) .icon {
+            background-color: #F37E8D;
+        }
+
+        .lr-applist-slidebox .appItem:nth-of-type(7n):hover .icon {
+            background-color: #F4485D;
+        }
+
+        .lr-applist-slidebox .appItem .icon i {
+            text-align: center;
+            line-height: 80px;
+            font-size: 45px;
+            color: #fff;
+        }
+
+        .lr-applist-slidebox .appItem .icon-text {
+            position: relative;
+            margin: 0 auto;
+            line-height: 20px;
+            text-align: center;
+            text-align: center;
+            margin-top: -24px;
+            color: #fff;
+        }
+
+/*即时通讯*/
+
+.lr-im-bell {
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: none;
+}
+    .lr-im-bell > .point {
+        background: #D71012;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        display: none;
+    }
+
+.lr-im-body {
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    width: 248px;
+    height: 400px;
+    z-index: 50;
+    padding-top: 40px;
+    background: #fff;
+    border-radius: 3px;
+    display: none;
+}
+
+    .lr-im-body.open {
+        display: block;
+    }
+.lr-im-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #24A1E7;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px 3px 0 0;
+}
+
+    .lr-im-title .title-item {
+        position: absolute;
+        width: 80px;
+        height: 30px;
+        top: 10px;
+        left: 30px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 3px 3px 0 0;
+    }
+
+        .lr-im-title .title-item.active {
+            color: #24A1E7;
+            background: #fff;
+        }
+
+        .lr-im-title .title-item.title-item-two {
+            left: 139px;
+        }
+
+.lr-im-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-left: 0;
+    border: 1px solid #E5E5E5;
+    border-top:0;
+}
+
+    .lr-im-content.active {
+        display: block;
+    }
+
+.lr-im-msg-list {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+    .lr-im-msg-list .msg-item {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        cursor: pointer;
+    }
+
+        .lr-im-msg-list .msg-item:after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            background: #F8F8F8;
+            bottom: 0;
+            left: 0;
+        }
+
+        .lr-im-msg-list .msg-item .photo {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 3px;
+            top: 10px;
+            left: 10px;
+        }
+
+        .lr-im-msg-list .msg-item .icon {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 3px;
+            background-color: #2B97DF;
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .lr-im-msg-list .msg-item .point {
+            width: 8px;
+            height: 8px;
+            background: #DB3702;
+            border-radius: 50%;
+            position: absolute;
+            right: -4px;
+            top: -2px;
+            display:none;
+        }
+
+        .lr-im-msg-list .msg-item img {
+            width: 100%;
+            height: 100%;
+            border-radius: 3px;
+        }
+
+        .lr-im-msg-list .msg-item .name {
+            position: absolute;
+            top: 8px;
+            left: 50px;
+            height: 16px;
+            color: #333333;
+            font-size: 12px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .lr-im-msg-list .msg-item .msg {
+            position: absolute;
+            top: 24px;
+            left: 50px;
+            height: 16px;
+            width: 188px;
+            color: #999;
+            font-size: 12px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .lr-im-msg-list .msg-item .date {
+            position: absolute;
+            right: 10px;
+            top: 8px;
+            height: 16px;
+            color: #666;
+            font-size: 12px;
+            text-align: right;
+        }
+
+
+.lr-im-userlist {
+    padding-top: 40px;
+}
+
+.lr-im-search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    font-size: 0;
+    padding: 10px;
+}
+
+    .lr-im-search i {
+        position: absolute;
+        left: 15px;
+        top: 14px;
+        font-size: 12px;
+        font-weight: 100;
+        color: #999;
+        z-index: 1;
+    }
+
+    .lr-im-search input {
+        position: relative;
+        text-align: left;
+        border: 1px solid transparent;
+        font-size: 12px;
+        width: 100%;
+        height: 100%;
+        background: #F8F8F8;
+        border-radius: 3px;
+        box-sizing: border-box;
+        color: #999;
+        outline: none;
+        text-indent: 20px;
+    }
+
+        .lr-im-search input::-webkit-input-placeholder {
+            text-align: center;
+        }
+
+        .lr-im-search input::-moz-placeholder { /* Mozilla Firefox 19+ */
+            text-align: center;
+        }
+
+        .lr-im-search input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            text-align: center;
+        }
+
+        .lr-im-search input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            text-align: center;
+        }
+
+
+.lr-im-content-userlist {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+    .lr-im-content-userlist .lr-scroll-box {
+        padding: 0 10px;
+    }
+
+.lr-im-item-name {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #666;
+}
+
+    .lr-im-item-name > i {
+        color: #999;
+        font-size: 14px;
+        margin: 3px;
+    }
+
+
+    .lr-im-item-name.open > i {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+.lr-im-user-list {
+    position: relative;
+    width: 100%;
+}
+
+.lr-im-user {
+    position: relative;
+    height: 43px;
+    line-height: 43px;
+    padding-left: 40px;
+}
+
+    .lr-im-user > img {
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+
+.lr-im-black-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(51,51,51,0.4);
+    z-index: 52;
+    display: none;
+}
+
+    .lr-im-black-overlay.open {
+        display: block;
+    }
+
+.lr-im-dialog {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -270px;
+    margin-top: -240px;
+    width: 540px;
+    height: 480px;
+    background: #f3f3f3;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.50);
+    padding-top: 40px;
+    padding-bottom: 135px;
+}
+
+.lr-im-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #E5E5E5;
+    line-height: 39px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #fff;
+    background: #24A1E7;
+    text-align:center;
+}
+
+    .lr-im-header .im-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 12px;
+        color: #fff;
+        font-weight: 100;
+    }
+
+.lr-im-msgcontent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.lr-im-msgcontent-tool {
+    position: absolute;
+    height: 25px;
+    line-height: 24px;
+    text-align: right;
+    width: 100%;
+    left: 0;
+    bottom: 110px;
+    padding-right: 10px;
+    border-top: 1px solid #E5E5E5;
+    background: #F8F8F8;
+}
+
+    .lr-im-msgcontent-tool > span {
+        cursor: pointer;
+    }
+
+.lr-im-input {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    border-top: 1px solid #E5E5E5;
+}
+
+    .lr-im-input .inp {
+        width: 100%;
+        height: 100%;
+        resize: none;
+        border: 0;
+        outline: 0;
+        padding: 5px;
+        background: transparent;
+    }
+
+.lr-im-msgcontent .im-time {
+    position: relative;
+    font-size: 12px;
+    color: #999;
+    width: 100%;
+    height: 15px;
+    line-height: 15px;
+    text-align: left;
+    padding: 0 50px;
+}
+
+.lr-im-msgcontent .me.im-time {
+    text-align: right;
+}
+
+.lr-im-msgcontent .im-me,
+.lr-im-msgcontent .im-other {
+    position: relative;
+    word-break: break-all;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 50px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.lr-im-msgcontent .im-other {
+    text-align: left;
+}
+
+    .lr-im-msgcontent .im-other .headimg {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .lr-im-msgcontent .im-me img,
+    .lr-im-msgcontent .im-other img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .lr-im-msgcontent .im-me .content,
+    .lr-im-msgcontent .im-other .content {
+        display: inline-block;
+        background: #FFFFFF;
+        border: 1px solid #E5E5E5;
+        padding: 5px 13px 6px 19px;
+        font-size: 12px;
+        color: #333333;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        max-width: 100%;
+        text-align: left;
+        line-height: 20px;
+    }
+
+.lr-im-msgcontent .im-me .content {
+    float: right;
+}
+
+.lr-im-msgcontent .im-other .arrow {
+    width: 8px;
+    height: 8px;
+    border: 1px solid #E5E5E5;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background: #fff;
+    position: absolute;
+    top: 11px;
+    left: 46px;
+    z-index: 1;
+    clip: rect(0,8px,8px,0);
+    border-bottom: 0;
+    border-right: 0;
+}
+
+.lr-im-msgcontent .im-me .headimg {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+.lr-im-msgcontent .im-me .arrow {
+    width: 8px;
+    height: 8px;
+    border: 1px solid #E5E5E5;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background: #fff;
+    position: absolute;
+    top: 11px;
+    right: 46px;
+    z-index: 1;
+    clip: rect(0,8px,8px,0);
+    border-top: 0;
+    border-left: 0;
+}
+
+.imHasMsg .point {
+    display: block;
+}

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9877A25-801B-4605-AD35-E6306916513C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Learun.Application.Organization</RootNamespace>
+    <AssemblyName>Learun.Application.Organization</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Company\CompanyBLL.cs" />
+    <Compile Include="Company\CompanyEntity.cs" />
+    <Compile Include="Company\CompanyIBLL.cs" />
+    <Compile Include="Company\CompanyModel.cs" />
+    <Compile Include="Company\CompanyService.cs" />
+    <Compile Include="Department\DepartmentBLL.cs" />
+    <Compile Include="Department\DepartmentEntity.cs" />
+    <Compile Include="Department\DepartmentIBLL.cs" />
+    <Compile Include="Department\DepartmentModel.cs" />
+    <Compile Include="Department\DepartmentService.cs" />
+    <Compile Include="Post\PostBLL.cs" />
+    <Compile Include="Post\PostEntity.cs" />
+    <Compile Include="Post\PostIBLL.cs" />
+    <Compile Include="Post\PostService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Role\RoleBLL.cs" />
+    <Compile Include="Role\RoleEntity.cs" />
+    <Compile Include="Role\RoleIBLL.cs" />
+    <Compile Include="Role\RoleService.cs" />
+    <Compile Include="User\UserBLL.cs" />
+    <Compile Include="User\UserEntity.cs" />
+    <Compile Include="User\UserIBLL.cs" />
+    <Compile Include="User\UserModel.cs" />
+    <Compile Include="User\UserService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.WeChat\Learun.Application.WeChat.csproj">
+      <Project>{36fa9414-767e-4806-9e45-2075216b1070}</Project>
+      <Name>Learun.Application.WeChat</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Cache\Learun.Cache.Base\Learun.Cache.Base.csproj">
+      <Project>{975f2cb8-605c-4add-b365-b97bf844f0fe}</Project>
+      <Name>Learun.Cache.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Cache\LeaRun.Cache.Factory\Learun.Cache.Factory.csproj">
+      <Project>{68902fcf-c439-4010-b17b-2499c972ee33}</Project>
+      <Name>Learun.Cache.Factory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\Learun.Cache.Redis.csproj">
+      <Project>{13808645-2013-4896-8ee2-65144e222c69}</Project>
+      <Name>Learun.Cache.Redis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Db\Learun.DataBase.Repository\Learun.DataBase.Repository.csproj">
+      <Project>{7f5e2a6c-c859-494a-8577-75bf9603a80c}</Project>
+      <Name>Learun.DataBase.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Log\Learun.Loger.csproj">
+      <Project>{d27e14dc-b68c-408d-a2e3-fdb38665ecbb}</Project>
+      <Name>Learun.Loger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Util\Learun.Util\Learun.Util.csproj">
+      <Project>{cf8ae293-88ab-436c-9720-a8386ba5d7b7}</Project>
+      <Name>Learun.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "表单设计数据表添加";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">数据表名<font face="宋体">*</font></div>
+        <div id="name" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">数据表字段<font face="宋体">*</font></div>
+        <div id="field" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">被关联表</div>
+        <div id="relationName"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">被关联表字段</div>
+        <div id="relationField"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_FormModule/Views/Custmerform/DataTableForm.js")

@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "添加项目";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">编号<font face="宋体">*</font></div>
+        <input id="code" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">名称<font face="宋体">*</font></div>
+        <input id="name" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">开始日期</div>
+        <input id="start" type="text" class="form-control lr-input-wdatepicker" name="beginday" onfocus="WdatePicker({ dateFmt: 'yyyy-MM-dd HH:mm:ss', maxDate: '#F{$dp.$D(\'end\')}' })" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">开始标记</div>
+        <input id="startIsMilestone" type="checkbox" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">结束日期</div>
+        <input id="end" type="text" class="form-control lr-input-wdatepicker" name="beginday" onfocus="WdatePicker({ dateFmt: 'yyyy-MM-dd HH:mm:ss', minDate: '#F{$dp.$D(\'start\')}' })" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">结束标记</div>
+        <input id="endIsMilestone" type="checkbox" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">工期</div>
+        <input id="duration" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">状态</div>
+        <div id="status" checkexpession="NotNull">
+            <ul style="display:none;">
+                <li data-value="STATUS_ACTIVE">进行</li>
+                <li data-value="STATUS_SUSPENDED">延期</li>
+                <li data-value="STATUS_DONE">完成</li>
+                <li data-value="STATUS_FAILED">失败</li>
+                <li data-value="STATUS_UNDEFINED">未定义</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">完成度</div>
+        <input id="progress" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">描述</div>
+        <textarea id="description" class="form-control" style="height:50px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_OAModule/Views/ProjectGantt/Form.js")

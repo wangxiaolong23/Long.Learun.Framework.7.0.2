@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "个人中心-联系方式";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Views/UserCenter/ContactForm.css")
+<div class="lr-form-wrap" id="form">
+    <div class="lr-form-item">
+        <div class="lr-form-item-title">手机</div>
+        <input id="F_Mobile" type="text" class="form-control" />
+    </div>
+    <div class="lr-form-item">
+        <div class="lr-form-item-title">电话</div>
+        <input id="F_Telephone" type="text" class="form-control" />
+    </div>
+    <div class=" lr-form-item">
+        <div class="lr-form-item-title">邮箱</div>
+        <input id="F_Email" type="text" class="form-control" />
+    </div>
+    <div class="lr-form-item">
+        <div class="lr-form-item-title">微信</div>
+        <input id="F_WeChat" type="text" class="form-control" />
+    </div>
+    <div class="lr-form-item">
+        <div class="lr-form-item-title">QQ</div>
+        <input id="F_OICQ" type="text" class="form-control" />
+    </div>
+    <div class="lr-form-item"><a class="btn btn-primary" id="lr_save_btn"><i class="fa fa-save"></i>&nbsp;保&nbsp;存</a></div>
+</div>
+@Html.AppendJsFile("/Views/UserCenter/ContactForm.js")

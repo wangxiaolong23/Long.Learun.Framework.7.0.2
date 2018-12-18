@@ -1,0 +1,128 @@
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Learun.Application.IMServer.exe.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Learun.Application.IMServer.exe
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Learun.Application.IMServer.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Learun.Util.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Cors.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Diagnostics.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Hosting.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Security.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Newtonsoft.Json.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Owin.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\System.Web.Cors.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\NPOI.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\NPOI.OOXML.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\LumiSoft.Net.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Yahoo.Yui.Compressor.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\NPOI.OpenXml4Net.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\EcmaScript.NET.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Learun.Util.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Learun.Util.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Cors.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Diagnostics.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Hosting.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Security.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Newtonsoft.Json.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\NPOI.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\LumiSoft.Net.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\obj\Debug\Learun.Application.IMServer.csprojResolveAssemblyReference.cache
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\obj\Debug\Learun.Application.IMServer.csproj.CoreCompileInputs.cache
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\obj\Debug\Learun.Application.IMServer.exe
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.IMServer\obj\Debug\Learun.Application.IMServer.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Learun.Application.IMServer.exe.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Learun.Application.IMServer.exe
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Learun.Application.IMServer.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Learun.Util.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Cors.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Diagnostics.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Hosting.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Owin.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\System.Web.Cors.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\NPOI.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\NPOI.OOXML.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\LumiSoft.Net.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Yahoo.Yui.Compressor.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\EcmaScript.NET.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Learun.Util.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Learun.Util.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Cors.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Diagnostics.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Hosting.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\NPOI.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\bin\Debug\LumiSoft.Net.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\obj\Debug\Learun.Application.IMServer.csprojAssemblyReference.cache
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\obj\Debug\Learun.Application.IMServer.csproj.CoreCompileInputs.cache
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\obj\Debug\Learun.Application.IMServer.csproj.CopyComplete
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\obj\Debug\Learun.Application.IMServer.exe
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.IMServer\obj\Debug\Learun.Application.IMServer.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Learun.Application.IMServer.exe.config
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Learun.Application.IMServer.exe
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Learun.Application.IMServer.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Learun.Util.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Cors.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Diagnostics.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Hosting.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Security.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Newtonsoft.Json.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Owin.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\System.Web.Cors.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\NPOI.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\LumiSoft.Net.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Yahoo.Yui.Compressor.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\NPOI.OOXML.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\EcmaScript.NET.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\NPOI.OpenXml4Net.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Learun.Util.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Cors.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Diagnostics.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Hosting.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Microsoft.Owin.Security.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Newtonsoft.Json.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\NPOI.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\LumiSoft.Net.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\obj\Debug\Learun.Application.IMServer.csprojResolveAssemblyReference.cache
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\obj\Debug\Learun.Application.IMServer.exe
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.IMServer\obj\Debug\Learun.Application.IMServer.pdb

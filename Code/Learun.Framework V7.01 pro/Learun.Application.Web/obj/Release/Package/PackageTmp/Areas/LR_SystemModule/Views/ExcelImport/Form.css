@@ -1,0 +1,69 @@
+﻿.lr-form-layout {
+    padding-left:440px;
+}
+.lr-form-layout-left1,
+.lr-form-layout-left2
+{
+    position:absolute;
+    top:0;
+    left:0;
+    border-right:1px solid #ddd;
+    height:100%;
+    width:200px;
+    padding-top:32px;
+}
+.lr-form-layout-left2 {
+    left:200px;
+    width:240px;
+}
+.lr-form-layout-center {
+    position:relative;
+    height:100%;
+    width:100%;
+    padding-top:71px;
+}
+.lr-form-layout-header {
+    top:32px;
+    height:39px;
+    border-bottom:1px solid #ddd;
+    padding:0;
+    padding-right:10px;
+    z-index:2;
+}
+.lr-form-layout-title {
+    position:absolute;
+    top:0;
+    left:0;
+    height: 32px;
+    line-height: 32px;
+    width:100%;
+    border-bottom: 1px solid #ddd;
+    color: #666;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+    padding-left: 9px;
+    font-size:12px;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    -khtml-user-select: text;
+    user-select: text;
+}
+.lr-form-item {
+    padding-left:60px;
+}
+.lr-form-item-title {
+    text-align: left;
+    padding-left: 5px;
+    padding-right:0px;
+    width:60px;
+}
+.lr-form-item-title>font {
+    right: initial;
+}
+
+.jfgrid-data-cell {
+    border-bottom: 1px solid #ddd;
+    border-right:1px solid #ddd;
+}

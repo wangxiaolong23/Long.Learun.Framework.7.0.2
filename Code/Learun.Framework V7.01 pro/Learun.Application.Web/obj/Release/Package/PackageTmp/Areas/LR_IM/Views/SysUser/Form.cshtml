@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "即时通讯用户管理";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">用户名称<font face="宋体">*</font></div>
+        <input id="F_Name" type="text" class="form-control" placeholder="请输入名称" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">用户编码<font face="宋体">*</font></div>
+        <input id="F_Code" type="text" class="form-control" placeholder="请输入编码" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">图标</div>
+        <input id="F_Icon" type="text" class="form-control" placeholder="请选择图标" />
+        <span id="selectIcon" class="lr-input-button" title="选取图标">...</span>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="F_Description" type="text" class="form-control" style="height:160px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_IM/Views/SysUser/Form.js")
+

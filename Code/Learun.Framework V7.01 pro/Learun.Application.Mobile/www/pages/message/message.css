@@ -1,0 +1,12 @@
+﻿#lr_im_message_list .lr-list-item-media img {
+    border-radius:5px;
+}
+#lr_im_message_list .lr-list-item-media .date {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 400;
+    color: #8f8f94;
+}

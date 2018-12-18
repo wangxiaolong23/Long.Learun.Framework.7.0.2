@@ -1,0 +1,762 @@
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\libeay32.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\libgcc_s_dw2-1.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\mingwm10.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\ssleay32.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\wkhtmltox0.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Web.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Web.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Web.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\ClosedXML.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\DocumentFormat.OpenXml.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\EntityFramework.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\EntityFramework.SqlServer.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\ExcelNumberFormat.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\FastMember.Signed.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\ICSharpCode.SharpZipLib.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.AppMagager.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Base.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.CRM.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Excel.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Form.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.IM.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Mapping.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.OA.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Organization.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Report.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.TwoDevelopment.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.WeChat.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.WorkFlow.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Cache.Base.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Cache.Factory.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Cache.Redis.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.MySqlEx.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.Oracle.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.SqlServer.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Loger.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Util.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Util.Operat.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Practices.ServiceLocation.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\MySql.Data.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\MySql.Data.Entity.EF6.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Newtonsoft.Json.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\NPOI.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\NPOI.OOXML.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\NPOI.OpenXml4Net.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\NPOI.OpenXmlFormats.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Oracle.ManagedDataAccess.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\System.Web.Helpers.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\System.Web.Mvc.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\System.Web.Razor.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\System.Web.WebPages.Deployment.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\System.Web.WebPages.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\System.Web.WebPages.Razor.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.Repository.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Dapper.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Pechkin.Synchronized.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Pechkin.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Spire.XLS.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Spire.Doc.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Ioc.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\ServiceStack.Redis.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\ServiceStack.Interfaces.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\ServiceStack.Text.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\log4net.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.AspNet.SignalR.Client.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\LumiSoft.Net.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Yahoo.Yui.Compressor.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Spire.Pdf.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Spire.License.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\ServiceStack.Common.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\EcmaScript.NET.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.mshtml.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Organization.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Organization.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.AppMagager.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.AppMagager.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Base.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Base.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.CRM.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.CRM.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Excel.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Excel.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Form.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Form.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.IM.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.IM.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Mapping.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Mapping.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.OA.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.OA.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Report.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Report.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.TwoDevelopment.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.TwoDevelopment.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.WeChat.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.WeChat.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.WorkFlow.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.WorkFlow.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Cache.Base.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Cache.Factory.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Cache.Redis.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.Oracle.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.Oracle.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.SqlServer.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.SqlServer.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.MySqlEx.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.MySqlEx.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Loger.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Util.Operat.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Util.Operat.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Util.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Util.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\ClosedXML.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\DocumentFormat.OpenXml.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\EntityFramework.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\EntityFramework.SqlServer.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\ExcelNumberFormat.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Practices.ServiceLocation.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Newtonsoft.Json.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\NPOI.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\System.Web.Helpers.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\System.Web.Mvc.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\System.Web.Razor.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\System.Web.WebPages.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\System.Web.WebPages.Deployment.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\System.Web.WebPages.Razor.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.Repository.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.Repository.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Dapper.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Spire.XLS.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Spire.Doc.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Learun.Ioc.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\ServiceStack.Redis.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\ServiceStack.Interfaces.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\ServiceStack.Text.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\log4net.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.AspNet.SignalR.Client.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\LumiSoft.Net.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Spire.Pdf.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\Spire.License.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\ServiceStack.Common.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\obj\Debug\Learun.Application.Web.csprojResolveAssemblyReference.cache
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\obj\Debug\Learun.Application.Web.csproj.CoreCompileInputs.cache
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\obj\Debug\Learun.Application.Web.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.Web\obj\Debug\Learun.Application.Web.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\libeay32.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\libgcc_s_dw2-1.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\mingwm10.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\ssleay32.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\wkhtmltox0.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Web.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Web.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Web.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\ClosedXML.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\DocumentFormat.OpenXml.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\EntityFramework.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\ExcelNumberFormat.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\FastMember.Signed.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.AppMagager.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Base.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.CRM.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Excel.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Form.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.IM.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Mapping.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.OA.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Organization.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Report.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.TwoDevelopment.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.WeChat.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.WorkFlow.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Cache.Base.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Cache.Factory.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Cache.Redis.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.MySqlEx.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.Oracle.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.SqlServer.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Loger.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Util.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Util.Operat.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\MySql.Data.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\MySql.Data.Entity.EF6.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Newtonsoft.Json.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\NPOI.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\NPOI.OOXML.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\NPOI.OpenXml4Net.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\NPOI.OpenXmlFormats.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Oracle.ManagedDataAccess.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\System.Web.Helpers.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\System.Web.Mvc.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\System.Web.Razor.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\System.Web.WebPages.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.Repository.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Dapper.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Pechkin.Synchronized.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Pechkin.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Spire.XLS.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Spire.Doc.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Ioc.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\ServiceStack.Redis.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\ServiceStack.Interfaces.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\ServiceStack.Text.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\log4net.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.AspNet.SignalR.Client.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\LumiSoft.Net.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Yahoo.Yui.Compressor.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Spire.Pdf.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Spire.License.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\ServiceStack.Common.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\EcmaScript.NET.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.mshtml.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Organization.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Organization.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.AppMagager.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.AppMagager.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Base.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Base.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.CRM.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.CRM.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Excel.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Excel.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Form.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Form.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.IM.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.IM.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Mapping.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Mapping.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.OA.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.OA.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Report.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.Report.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.TwoDevelopment.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.TwoDevelopment.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.WeChat.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.WeChat.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.WorkFlow.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Application.WorkFlow.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Cache.Base.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Cache.Factory.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Cache.Redis.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.Oracle.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.Oracle.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.SqlServer.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.SqlServer.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.MySqlEx.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.MySqlEx.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Loger.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Util.Operat.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Util.Operat.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Util.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Util.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\ClosedXML.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\DocumentFormat.OpenXml.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\EntityFramework.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\ExcelNumberFormat.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Newtonsoft.Json.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\NPOI.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\System.Web.Helpers.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\System.Web.Mvc.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\System.Web.Razor.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\System.Web.WebPages.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.Repository.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.Repository.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Dapper.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.DataBase.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Spire.XLS.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Spire.Doc.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Learun.Ioc.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\ServiceStack.Redis.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\ServiceStack.Interfaces.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\ServiceStack.Text.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\log4net.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Microsoft.AspNet.SignalR.Client.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\LumiSoft.Net.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Spire.Pdf.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\Spire.License.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\ServiceStack.Common.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\obj\Debug\Learun.Application.Web.csprojAssemblyReference.cache
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\obj\Debug\Learun.Application.Web.csproj.CoreCompileInputs.cache
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\obj\Debug\Learun.Application.Web.csproj.CopyComplete
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\obj\Debug\Learun.Application.Web.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.Web\obj\Debug\Learun.Application.Web.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\libeay32.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\libgcc_s_dw2-1.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\mingwm10.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ssleay32.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\wkhtmltox0.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Web.dll.config
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Web.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Web.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ClosedXML.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\DocumentFormat.OpenXml.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\EntityFramework.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\EntityFramework.SqlServer.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ExcelNumberFormat.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\FastMember.Signed.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ICSharpCode.SharpZipLib.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.AppMagager.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Base.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.CRM.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Excel.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Form.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.IM.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Mapping.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.OA.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Organization.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Report.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.TwoDevelopment.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.WeChat.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.WorkFlow.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Cache.Base.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Cache.Factory.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Cache.Redis.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.MySqlEx.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.Oracle.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.SqlServer.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Loger.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Util.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Util.Operat.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.ServiceLocation.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\MySql.Data.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\MySql.Data.Entity.EF6.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Newtonsoft.Json.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\NPOI.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\NPOI.OOXML.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\NPOI.OpenXml4Net.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\NPOI.OpenXmlFormats.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Oracle.ManagedDataAccess.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.Helpers.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.Mvc.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.Razor.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.WebPages.Deployment.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.WebPages.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.WebPages.Razor.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.Repository.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Dapper.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Pechkin.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Pechkin.Synchronized.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.XLS.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.Doc.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Ioc.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Redis.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Interfaces.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Text.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\log4net.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\LumiSoft.Net.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Yahoo.Yui.Compressor.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.AspNet.SignalR.Client.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.Pdf.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.License.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Common.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\EcmaScript.NET.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Organization.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.AppMagager.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Base.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.CRM.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Excel.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Form.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.IM.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Mapping.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.OA.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Report.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.TwoDevelopment.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.WeChat.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.WorkFlow.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Cache.Base.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Cache.Factory.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Cache.Redis.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.Oracle.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.SqlServer.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.MySqlEx.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Loger.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Util.Operat.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Util.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ClosedXML.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\DocumentFormat.OpenXml.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\EntityFramework.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\EntityFramework.SqlServer.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ExcelNumberFormat.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.ServiceLocation.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Newtonsoft.Json.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\NPOI.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.Helpers.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.Mvc.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.Razor.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.WebPages.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.WebPages.Deployment.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.WebPages.Razor.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.Repository.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Dapper.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.XLS.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.Doc.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Ioc.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Redis.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Interfaces.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Text.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\log4net.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\LumiSoft.Net.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.AspNet.SignalR.Client.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.Pdf.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.License.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Common.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\zh-Hans\System.Web.Helpers.resources.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\zh-Hans\System.Web.Razor.resources.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\zh-Hans\System.Web.WebPages.resources.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\obj\Debug\Learun.Application.Web.csprojResolveAssemblyReference.cache
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\obj\Debug\Learun.Application.Web.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\obj\Debug\Learun.Application.Web.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\libeay32.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\libgcc_s_dw2-1.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\mingwm10.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ssleay32.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\wkhtmltox0.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Web.dll.config
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Web.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Web.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ClosedXML.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\DocumentFormat.OpenXml.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\EntityFramework.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\EntityFramework.SqlServer.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ExcelNumberFormat.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\FastMember.Signed.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ICSharpCode.SharpZipLib.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.AppMagager.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Base.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.CRM.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Excel.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Form.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.IM.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Mapping.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.OA.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Organization.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Report.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.TwoDevelopment.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.WeChat.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.WorkFlow.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Cache.Base.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Cache.Factory.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Cache.Redis.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.MySqlEx.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.Oracle.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.SqlServer.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Loger.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Util.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Util.Operat.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.ServiceLocation.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\MySql.Data.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\MySql.Data.Entity.EF6.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Newtonsoft.Json.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\NPOI.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\NPOI.OOXML.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\NPOI.OpenXml4Net.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\NPOI.OpenXmlFormats.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Oracle.ManagedDataAccess.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.Helpers.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.Mvc.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.Razor.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.WebPages.Deployment.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.WebPages.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.WebPages.Razor.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.Repository.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Dapper.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Pechkin.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Pechkin.Synchronized.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.XLS.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.Doc.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Ioc.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Redis.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Interfaces.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Text.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\log4net.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\LumiSoft.Net.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Yahoo.Yui.Compressor.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.AspNet.SignalR.Client.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.Pdf.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.License.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Common.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\EcmaScript.NET.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Organization.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.AppMagager.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Base.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.CRM.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Excel.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Form.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.IM.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Mapping.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.OA.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Report.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.TwoDevelopment.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.WeChat.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.WorkFlow.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Cache.Base.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Cache.Factory.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Cache.Redis.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.Oracle.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.SqlServer.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.MySqlEx.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Loger.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Util.Operat.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Util.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ClosedXML.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\DocumentFormat.OpenXml.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\EntityFramework.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\EntityFramework.SqlServer.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ExcelNumberFormat.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.ServiceLocation.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Newtonsoft.Json.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\NPOI.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.Helpers.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.Mvc.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.Razor.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.WebPages.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.WebPages.Deployment.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.WebPages.Razor.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.Repository.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Dapper.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.XLS.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.Doc.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Ioc.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Redis.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Interfaces.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Text.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\log4net.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\LumiSoft.Net.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.AspNet.SignalR.Client.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.Pdf.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.License.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Common.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\zh-Hans\System.Web.Helpers.resources.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\zh-Hans\System.Web.Razor.resources.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\zh-Hans\System.Web.WebPages.resources.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\obj\Debug\Learun.Application.Web.csprojResolveAssemblyReference.cache
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\obj\Debug\Learun.Application.Web.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Application.Web\obj\Debug\Learun.Application.Web.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\libeay32.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\libgcc_s_dw2-1.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\mingwm10.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ssleay32.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\wkhtmltox0.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Web.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Web.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Web.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ClosedXML.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\DocumentFormat.OpenXml.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\EntityFramework.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\EntityFramework.SqlServer.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ExcelNumberFormat.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\FastMember.Signed.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ICSharpCode.SharpZipLib.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.AppMagager.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Base.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.CRM.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Excel.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Form.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.IM.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Mapping.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.OA.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Organization.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Report.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.TwoDevelopment.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.WeChat.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.WorkFlow.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Cache.Base.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Cache.Factory.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Cache.Redis.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.MySqlEx.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.Oracle.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.SqlServer.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Loger.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Util.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Util.Operat.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.ServiceLocation.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\MySql.Data.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\MySql.Data.Entity.EF6.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Newtonsoft.Json.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\NPOI.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\NPOI.OOXML.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\NPOI.OpenXml4Net.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\NPOI.OpenXmlFormats.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Oracle.ManagedDataAccess.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.Helpers.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.Mvc.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.Razor.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.WebPages.Deployment.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.WebPages.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.WebPages.Razor.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.Repository.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Dapper.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Pechkin.Synchronized.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Pechkin.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.XLS.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.Doc.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Ioc.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Redis.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Interfaces.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Text.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\log4net.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.AspNet.SignalR.Client.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\LumiSoft.Net.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Yahoo.Yui.Compressor.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.Pdf.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.License.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Common.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\EcmaScript.NET.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.mshtml.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Organization.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Organization.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.AppMagager.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.AppMagager.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Base.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Base.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.CRM.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.CRM.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Excel.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Excel.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Form.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Form.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.IM.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.IM.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Mapping.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Mapping.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.OA.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.OA.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Report.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.Report.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.TwoDevelopment.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.TwoDevelopment.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.WeChat.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.WeChat.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.WorkFlow.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Application.WorkFlow.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Cache.Base.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Cache.Factory.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Cache.Redis.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.Oracle.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.Oracle.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.SqlServer.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.SqlServer.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.MySqlEx.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.MySqlEx.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Loger.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Util.Operat.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Util.Operat.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Util.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Util.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ClosedXML.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\DocumentFormat.OpenXml.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\EntityFramework.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\EntityFramework.SqlServer.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ExcelNumberFormat.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.ServiceLocation.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Newtonsoft.Json.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\NPOI.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.Helpers.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.Mvc.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.Razor.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.WebPages.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.WebPages.Deployment.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\System.Web.WebPages.Razor.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.Repository.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.Repository.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Dapper.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.DataBase.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.XLS.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.Doc.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Learun.Ioc.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Redis.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Interfaces.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Text.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\log4net.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Microsoft.AspNet.SignalR.Client.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\LumiSoft.Net.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.Pdf.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\Spire.License.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\ServiceStack.Common.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\obj\Debug\Learun.Application.Web.csprojResolveAssemblyReference.cache
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\obj\Debug\Learun.Application.Web.csproj.CoreCompileInputs.cache
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\obj\Debug\Learun.Application.Web.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Application.Web\obj\Debug\Learun.Application.Web.pdb

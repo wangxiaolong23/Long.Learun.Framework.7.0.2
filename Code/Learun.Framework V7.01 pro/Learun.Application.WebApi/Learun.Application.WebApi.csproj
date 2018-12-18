@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA8E854B-F41C-4554-A97E-8D6E076E3117}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Learun.Application.WebApi</RootNamespace>
+    <AssemblyName>Learun.Application.WebApi</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.Data.Entity.6.9.9\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="Nancy">
+      <HintPath>..\packages\Nancy.1.4.1\lib\net40\Nancy.dll</HintPath>
+    </Reference>
+    <Reference Include="Nancy.Hosting.Aspnet">
+      <HintPath>..\packages\Nancy.Hosting.Aspnet.1.4.1\lib\net40\Nancy.Hosting.Aspnet.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.24160719\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess.EntityFramework, Version=6.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Oracle.ManagedDataAccess.EntityFramework.12.1.2400\lib\net45\Oracle.ManagedDataAccess.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\images\head\on-boy.jpg" />
+    <Content Include="Content\images\head\on-girl.jpg" />
+    <Content Include="favicon.ico" />
+    <Content Include="index.html" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="port.png" />
+    <Content Include="XmlConfig\database.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XmlConfig\ioc.config" />
+    <Content Include="XmlConfig\log4net.config" />
+    <Content Include="XmlConfig\redis.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XmlConfig\system.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bootstraper.cs" />
+    <Compile Include="Modules\AnnexesApi.cs" />
+    <Compile Include="Modules\BaseApi.cs" />
+    <Compile Include="Modules\ClientDataApi.cs" />
+    <Compile Include="Modules\CodeRuleApi.cs" />
+    <Compile Include="Modules\CompanyApi.cs" />
+    <Compile Include="Modules\CustmerFormApi.cs" />
+    <Compile Include="Modules\DataItemApi.cs" />
+    <Compile Include="Modules\DataSourceApi.cs" />
+    <Compile Include="Modules\DepartmentApi.cs" />
+    <Compile Include="Modules\FormApi.cs" />
+    <Compile Include="Modules\FunctionApi.cs" />
+    <Compile Include="Modules\IMApi.cs" />
+    <Compile Include="Modules\Index.cs" />
+    <Compile Include="Modules\LR_Crm\CrmCustomer.cs" />
+    <Compile Include="Modules\LR_Crm\CrmOrder.cs" />
+    <Compile Include="Modules\LR_Crm\Invoice.cs" />
+    <Compile Include="Modules\UtilityApi.cs" />
+    <Compile Include="Modules\WorkFlowApi.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Modules\UserApi.cs" />
+    <Compile Include="Until\ReqEntity.cs" />
+    <Compile Include="Until\ReqPageParam.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Learun.Application.Organization\Learun.Application.Organization.csproj">
+      <Project>{e9877a25-801b-4605-ad35-e6306916513c}</Project>
+      <Name>Learun.Application.Organization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\Learun.Application.AppMagager.csproj">
+      <Project>{8f770f8b-06b3-43da-886f-15d41cec62ee}</Project>
+      <Name>Learun.Application.AppMagager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.Base\Learun.Application.Base.csproj">
+      <Project>{0cdd0dc8-74cf-4c71-923c-66204a8923d3}</Project>
+      <Name>Learun.Application.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.CRM\Learun.Application.CRM.csproj">
+      <Project>{81e208bc-39b6-4ca3-81f1-c847d47330d1}</Project>
+      <Name>Learun.Application.CRM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.Form\Learun.Application.Form.csproj">
+      <Project>{9164926b-150a-47d6-b384-a41aa4a7bc5d}</Project>
+      <Name>Learun.Application.Form</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.IM\Learun.Application.IM.csproj">
+      <Project>{db34dfc9-7227-41fa-88aa-832dbf247811}</Project>
+      <Name>Learun.Application.IM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.Mapping\Learun.Application.Mapping.csproj">
+      <Project>{79f8e2f1-08e7-4336-93e0-512b39f9dd54}</Project>
+      <Name>Learun.Application.Mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.TwoDevelopment\Learun.Application.TwoDevelopment.csproj">
+      <Project>{56f9a112-fd96-4809-98f4-0d7c5de0711b}</Project>
+      <Name>Learun.Application.TwoDevelopment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.WorkFlow\Learun.Application.WorkFlow.csproj">
+      <Project>{88d8e99d-df26-4506-83c5-51e354818bef}</Project>
+      <Name>Learun.Application.WorkFlow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Db\Learun.DataBase.EF.Oracle\Learun.DataBase.Oracle.csproj">
+      <Project>{82069f3a-ab45-4f8b-b2bf-a36b14208f41}</Project>
+      <Name>Learun.DataBase.Oracle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Db\Learun.DataBase.EF.Sqlserver\Learun.DataBase.SqlServer.csproj">
+      <Project>{890532f8-5205-4ee9-965c-84500cad24de}</Project>
+      <Name>Learun.DataBase.SqlServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Db\Learun.DataBase.MySql\Learun.DataBase.MySqlEx.csproj">
+      <Project>{fe4cb79e-7f98-4683-bc4a-5173a5bc5636}</Project>
+      <Name>Learun.DataBase.MySqlEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Log\Learun.Loger.csproj">
+      <Project>{d27e14dc-b68c-408d-a2e3-fdb38665ecbb}</Project>
+      <Name>Learun.Loger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Util\Learun.Util.Operat\Learun.Util.Operat.csproj">
+      <Project>{ad556b7a-e0d1-41bd-9d5b-18f8502e9f33}</Project>
+      <Name>Learun.Util.Operat</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Util\Learun.Util\Learun.Util.csproj">
+      <Project>{cf8ae293-88ab-436c-9720-a8386ba5d7b7}</Project>
+      <Name>Learun.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>31173</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Learun.Application.WebApi2</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。启用“NuGet 程序包还原”可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

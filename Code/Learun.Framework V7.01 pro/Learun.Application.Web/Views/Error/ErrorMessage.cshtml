@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>错误页面</title>
+</head>
+<body>
+    <div style="border: 2px solid #ddd; padding: 5px; margin: 5px;">
+        <h3><span style="color: Red">错误信息详细内容</span></h3>
+        <p style="padding: 5px; margin: 5px; font-size: 12px;color:#666;">
+            @foreach (var stakerholder in ViewData["Message"] as Dictionary<string, string>)
+            {
+                <b>@stakerholder.Key：</b>@stakerholder.Value;<br /><br />
+            }
+        </p>
+    </div>
+</body>
+</html>
+

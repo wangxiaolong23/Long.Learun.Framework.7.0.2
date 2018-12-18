@@ -1,0 +1,31 @@
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Log\bin\Debug\Learun.Loger.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Log\bin\Debug\Learun.Loger.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Log\bin\Debug\log4net.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Log\bin\Debug\log4net.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.csprojResolveAssemblyReference.cache
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.csproj.CoreCompileInputs.cache
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Log\bin\Debug\Learun.Loger.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Log\bin\Debug\Learun.Loger.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Log\bin\Debug\log4net.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Log\bin\Debug\log4net.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.csprojAssemblyReference.cache
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.csproj.CoreCompileInputs.cache
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.csproj.CopyComplete
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\bin\Debug\Learun.Loger.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\bin\Debug\Learun.Loger.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\bin\Debug\log4net.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\bin\Debug\log4net.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\bin\Debug\Learun.Loger.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\bin\Debug\Learun.Loger.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\bin\Debug\log4net.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\bin\Debug\log4net.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.csproj.CoreCompileInputs.cache
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.csprojResolveAssemblyReference.cache

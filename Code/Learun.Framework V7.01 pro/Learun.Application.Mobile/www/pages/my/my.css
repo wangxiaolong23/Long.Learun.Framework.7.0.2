@@ -1,0 +1,56 @@
+﻿.lr-my-page .userinfo {
+    position: relative;
+    background: #fff;
+    height: 120px;
+    padding: 40px 0 0 90px;
+    background: url(images/myCardBg.png) no-repeat;
+    background-size: 100%;
+}
+
+    .lr-my-page .userinfo img {
+        position: absolute;
+        left: 10px;
+        top: 30px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    .lr-my-page .userinfo .content {
+        position: relative;
+        color: #fff;
+    }
+
+    .lr-my-page .userinfo .name {
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+
+    .lr-my-page .userinfo .subname {
+        border-radius: 35px;
+        font-size: 12px;
+        background-color: #c6c6c6;
+        padding: 0 5px;
+    }
+
+    .lr-my-page .userinfo:after {
+        position: absolute;
+        top: 52px;
+        right: 15px;
+        font-family: "iconfont" !important;
+        font-size: 16px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\e6a3";
+        color: #fff;
+    }
+
+.lr-my-page .version {
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 12px;
+    color: #ccc;
+}

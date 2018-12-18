@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "流程模板选择";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Areas/LR_WorkFlowModule/Views/WfMyTask/ReleaseForm.css")
+<div class="form-warp">
+    <div class="form-warp-left">
+        <div id="lr_left_tree" class="lr-left-tree"></div>
+    </div>
+    <div class="form-warp-main">
+        <div class="input-search">
+            <input id="txt_keyword" type="text" class="form-control" placeholder="请输入要查询关键字">
+            <span class="input-query" title="Search"><i class="fa fa-search"></i></span>
+        </div>
+        <div class="main-list" id="main_list_warp"><div id="main_list"></div></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_WorkFlowModule/Views/WfMyTask/ReleaseForm.js")
+

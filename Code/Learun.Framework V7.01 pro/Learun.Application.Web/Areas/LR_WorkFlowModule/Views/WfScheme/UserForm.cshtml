@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "人员添加";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">部门选择</div>
+        <div id="department"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">人员选择</div>
+        <div id="auditorId"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_WorkFlowModule/Views/WfScheme/UserForm.js")
+

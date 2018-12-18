@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "数据源选择页面";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Areas/LR_SystemModule/Views/DataSource/SelectForm.css")
+<div class="lr-form-layout">
+    <div class="lr-form-layout-top">
+        <div class="lr-item">
+            <input id="txt_Keyword" type="text" class="form-control" placeholder="请输入要查询关键字" style="width:240px;" />
+        </div>
+        <div class="lr-item">
+            <a id="btn_Search" class="btn btn-primary btn-sm"><i class="fa fa-search"></i>&nbsp;查询</a>
+        </div>
+        <div class="lr-form-layout-top-right">
+            <div class="lr-item">
+                显示字段
+            </div>
+            <div class="lr-item">
+                <div id="lr_show_field" isvalid="yes" checkexpession="NotNull"></div>
+            </div>
+            <div class="lr-item">
+                保存字段
+            </div>
+            <div class="lr-item">
+                <div id="lr_save_field" isvalid="yes" checkexpession="NotNull"></div>
+            </div>
+        </div>
+    </div>
+    <div id="gridtable"></div>
+    <div class="lr-form-layout-bottom">
+        选择数据源:<span id="v0"></span>/显示字段:<span id="v1"></span>/保存字段:<span id="v2"></span>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_SystemModule/Views/DataSource/SelectForm.js")
+

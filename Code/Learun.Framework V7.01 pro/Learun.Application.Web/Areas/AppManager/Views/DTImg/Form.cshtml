@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "表单";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Areas/AppManager/Views/DTImg/Form.css")
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">说明<font face="宋体">*</font></div>
+        <input id="F_Des" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">排序码<font face="宋体">*</font></div>
+        <input id="F_SortCode" type="text" class="form-control" isvalid="yes" checkexpession="Num" />
+    </div>
+    <div class="col-xs-12" style="padding-left:100px;">
+        <div class="file">
+            <input type="file" name="uploadFile" id="uploadFile">
+        </div>
+        <div class="text">
+            上传图片尺寸为375x120，大小不超过1M。
+        </div>
+    </div>
+
+</div>
+@Html.AppendJsFile("/Views/LR_Content/script/lr-fileupload.js", "/Areas/AppManager/Views/DTImg/Form.js")

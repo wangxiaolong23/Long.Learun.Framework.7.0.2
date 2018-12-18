@@ -1,0 +1,9 @@
+﻿.lr-contactInfo-list .lr-list-item {
+    text-align: right;
+}
+
+.lr-contactInfo-list .lr-list-item > div {
+    position: absolute;
+    top: 0;
+    left: 14px;
+}

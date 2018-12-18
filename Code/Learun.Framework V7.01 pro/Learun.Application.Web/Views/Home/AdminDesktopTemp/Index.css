@@ -1,0 +1,139 @@
+﻿body {
+    padding:10px;
+    background: #f8f8f8;
+}
+
+.lr-desktop-panel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0px 22px;
+    border-radius: 2px;
+}
+.lr-uitheme-accordion .lr-desktop-panel {
+    border-radius: 0px;
+}
+.lr-uitheme-windos .lr-desktop-panel {
+    border-radius: 3px;
+}
+.lr-uitheme-default .lr-desktop-panel {
+    border-radius: 3px;
+}
+.portal-panel-title {
+    padding-top: 10px;
+    line-height: 45px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    color: #4a4a4a;
+    font-weight: 300;
+    font-size: 14px;
+}
+.portal-panel-content {
+    position:relative;
+    width:100%;
+    padding:20px 5px 5px 5px;
+}
+.lr-item-20 {
+    position:relative;
+    float:left;
+    width:20%;
+    padding:10px;
+}
+.task-stat {
+    position:relative;
+    height:104px;
+    width:100%;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    overflow: hidden;
+    color: #FFFFFF;
+    
+}
+.task-stat .visual {
+    position:absolute;
+    top:0;
+    left:0;
+    padding:10px 0 0 10px;
+}
+.task-stat .visual > i {
+    color: #FFFFFF;
+    opacity: 0.4;
+    filter: alpha(opacity=10);
+    font-size: 60px;
+    line-height: 65px;
+}
+.task-stat .details {
+    position: absolute;
+    right: 10px;
+    top:10px;
+}
+.task-stat .details .number {
+    text-align: right;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    margin-bottom: 0px;
+    font-weight: 300;
+}
+.task-stat .details .desc {
+    text-align: right;
+    font-size: 15px;
+    padding-top: 5px;
+}
+.task-stat .more {
+    display: block;
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    clear: both;
+    padding: 4px 10px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 0.8;
+    filter: alpha(opacity=70);
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.task-stat .more > i {
+    display: inline-block;
+    margin-top: 0px;
+    float: right;
+    font-size: 15px;
+    color: #fff;
+    opacity: 0.8;
+}
+.task-stat .more:hover {
+    text-decoration: none;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+.lr-msg-line {
+    position:relative;
+    width:100%;
+    line-height: 39px; 
+    border-bottom: 1px solid #ccc;
+}
+.lr-msg-line > a {
+    cursor:pointer;
+    color: #333;
+    font-size: 12px;
+}
+.lr-msg-line > label {
+    position:absolute;
+    top:0;
+    right:0;
+    margin-bottom: 0px;
+    color: #333;
+    font-size: 12px;
+    font-weight: 400;
+}
+.lr-chart-container {
+    position:relative;
+    height:400px;
+    width:100%;
+}

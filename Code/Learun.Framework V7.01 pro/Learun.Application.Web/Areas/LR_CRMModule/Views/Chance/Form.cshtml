@@ -1,0 +1,107 @@
+﻿@{
+    ViewBag.Title = "商机添加";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">商机编号<font face="宋体">*</font></div>
+        <input id="F_EnCode" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">商机名称<font face="宋体">*</font></div>
+        <input id="F_FullName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">预计金额<font face="宋体">*</font></div>
+        <input id="F_Amount" type="text" class="form-control" value="0.00" isvalid="yes" checkexpession="Double" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">预计利润<font face="宋体">*</font></div>
+        <input id="F_Profit" type="text" class="form-control" value="0.00" isvalid="yes" checkexpession="Double" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">预计成交</div>
+        <input id="F_DealDate" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker()" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">销售费用</div>
+        <input id="F_SaleCost" type="text" class="form-control" isvalid="yes" checkexpession="DoubleOrNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">商机类别<font face="宋体">*</font></div>
+        <div id="F_ChanceTypeId" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">商机来源<font face="宋体">*</font></div>
+        <div id="F_SourceId" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">商机阶段<font face="宋体">*</font></div>
+        <div id="F_StageId" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">成功率%</div>
+        <input id="F_SuccessRate" type="text" class="form-control" isvalid="yes" checkexpession="Double" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">公司名称</div>
+        <input id="F_CompanyName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">跟进人员</div>
+        <div id="F_TraceUserId" ></div>
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">公司行业</div>
+        <div id="F_CompanyNatureId"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">公司网站</div>
+        <input id="F_CompanySite" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">公司情况</div>
+        <input id="F_CompanyDesc" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">公司地址</div>
+        <input id="F_CompanyAddress" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">联系人</div>
+        <input id="F_Contacts" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">手机</div>
+        <input id="F_Mobile" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">电话</div>
+        <input id="F_Tel" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">传真</div>
+        <input id="F_Fax" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">QQ</div>
+        <input id="F_QQ" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">Email</div>
+        <input id="F_Email" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">微信</div>
+        <input id="F_Wechat" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">爱好</div>
+        <input id="F_Hobby" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">备注</div>
+        <input id="F_Description" type="text" class="form-control" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CRMModule/Views/Chance/Form.js")

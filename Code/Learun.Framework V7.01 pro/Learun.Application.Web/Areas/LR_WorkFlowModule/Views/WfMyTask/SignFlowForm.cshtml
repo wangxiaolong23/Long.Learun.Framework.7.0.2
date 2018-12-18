@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "流程加签";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">部门选择<font face="宋体">*</font></div>
+        <div id="department" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">加签人员<font face="宋体">*</font></div>
+        <div id="auditorId"  isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">备注<font face="宋体">*</font></div>
+        <textarea id="description" class="form-control" style="height: 200px;" isvalid="yes" checkexpession="NotNull"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_WorkFlowModule/Views/WfMyTask/SignFlowForm.js")
+

@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "经典版风格";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+@Html.AppendCssFile("/Views/Home/AdminDefault/index.css")
+<img class="lr-frame-vericon" src="~/Content/images/adminDefault.png" alt="经典风格">
+<div class="lr-frame-top">
+    <a class="lr-logo-title">
+        <img src="~/Content/images/logo_long_blue.png" />
+    </a>
+</div>
+@* 即时通讯窗体 *@
+<div class="lr-im-bell"  title="消息中心">
+    <span class="point" style="display:none;"></span>
+    <i class="fa fa-bell"></i>
+</div>
+
+<div class="lr-im-body">
+    <div class="lr-im-title">
+        <div class="title-item active" data-value="lr_im_msglist" >
+            <i class="fa fa-commenting"></i>
+        </div>
+        <div class="title-item title-item-two" data-value="lr_im_userlist">
+            <i class="fa fa-user"></i>
+        </div>
+    </div>
+    <div id="lr_im_msglist" class="lr-im-content lr-im-msglist active">
+        <div class="lr-im-left">
+            <div class="lr-msg-userlist" id="lr_immsg_userlist">
+            </div>
+        </div>
+        <div class="lr-im-right lr-im-nouser">
+            <div class="lr-im-touser"></div>
+            <div class="lr-im-msgcontent">
+            </div>
+            <div class="lr-im-msgcontent-tool"><span id="lr_im_look_msg_btn" >查看消息记录</span></div>
+            <div class="lr-im-input">
+                <textarea id="lr_im_input" type="text" class="inp" ></textarea>
+            </div>
+        </div>
+    </div>
+    <div id="lr_im_userlist" class="lr-im-content lr-im-userlist">
+        <div class="lr-im-search">
+            <i class="fa fa-search" ></i>
+            <input type="text" placeholder="搜索（Enter回车）">
+        </div>
+        <div class="lr-im-content-userlist" id="lr_im_content_userlist">
+            
+        </div>
+    </div>
+</div>
+
+@Html.AppendJsFile("/Views/Home/AdminDefault/index.js")

@@ -1,0 +1,30 @@
+﻿.lr-page-demo_icon .lr-page-content {
+    padding: 0px 10px;
+}
+
+.lr-icon-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+    .lr-icon-container a {
+        margin: 3px;
+        width: 50px;
+        height: 50px;
+        line-height: 48px;
+        display: inline-block;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 25px;
+        background-clip: padding-box;
+        color: #8F8F94;
+    }
+
+        .lr-icon-container a > i {
+            font-size: 24px;
+        }

@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "岗位添加";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <input id="F_CompanyId" type="hidden" />
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">岗位编号<font face="宋体">*</font></div>
+        <input id="F_EnCode" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">岗位名称<font face="宋体">*</font></div>
+        <input id="F_Name" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">所属部门<font face="宋体">*</font></div>
+        <div id="F_DepartmentId" class="form-control" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">上级岗位</div>
+        <div id="F_ParentId"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="F_Description" class="form-control" style="height:110px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_OrganizationModule/Views/Post/Form.js")

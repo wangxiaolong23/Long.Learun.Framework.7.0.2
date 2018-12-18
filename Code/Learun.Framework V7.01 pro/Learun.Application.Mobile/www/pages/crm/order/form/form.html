@@ -1,0 +1,68 @@
+﻿<div class="lr-form-container">
+    <div class="lr-form-row">
+        <font face="宋体">*</font>
+        <label>客户名称</label>
+        <div id="F_CustomerId" isvalid="yes" checkexpession="NotNull" errormsg="客户名称"></div>
+    </div>
+    <div class="lr-form-row">
+        <font face="宋体">*</font>
+        <label>销售人员</label>
+        <div id="F_SellerId" isvalid="yes" checkexpession="NotNull" errormsg="销售人员"></div>
+    </div>
+    <div class="lr-form-row">
+        <font face="宋体">*</font>
+        <label>单据日期</label>
+        <div id="F_OrderDate" isvalid="yes" checkexpession="NotNull" errormsg="单据日期"></div>
+    </div>
+    <div class="lr-form-row">
+        <font face="宋体">*</font>
+        <label>单据编号</label>
+        <input id="F_OrderCode" isvalid="yes" checkexpession="NotNull" errormsg="单据编号" readonly />
+    </div>
+    <div class="lr-form-row" id="productgird"></div>
+
+    <div class="lr-form-row lr-form-row-multi">
+        <label>备注信息</label>
+        <textarea id="F_Description" style="height:200px;"></textarea>
+    </div>
+    <div class="lr-form-row">
+        <font face="宋体">*</font>
+        <label>优惠金额</label>
+        <input  id="F_DiscountSum"  type="text" isvalid="yes" checkexpession="Double" errormsg="优惠金额" />
+    </div>
+    <div class="lr-form-row">
+        <font face="宋体">*</font>
+        <label>收款金额</label>
+        <input id="F_Accounts"  type="text" isvalid="yes" checkexpession="Double" errormsg="收款金额" />
+    </div>
+    <div class="lr-form-row">
+        <font face="宋体">*</font>
+        <label>收款日期</label>
+        <div id="F_PaymentDate" isvalid="yes" checkexpession="NotNull" errormsg="收款日期"></div>
+    </div>
+    <div class="lr-form-row">
+        <font face="宋体">*</font>
+        <label>收款方式</label>
+        <div id="F_PaymentMode" isvalid="yes" checkexpession="NotNull" errormsg="收款方式"></div>
+    </div>
+    <div class="lr-form-row ">
+        <font face="宋体">*</font>
+        <label>销售费用</label>
+        <input id="F_SaleCost"  type="text" isvalid="yes" checkexpession="Double" errormsg="销售费用" />
+    </div>
+    <div class="lr-form-row">
+        <font face="宋体">*</font>
+        <label>制单人员</label>
+        <input id="F_CreateUserName"  type="text" isvalid="yes" checkexpession="NotNull" errormsg="制单人员" />
+    </div>
+    <div class="lr-form-row">
+        <label>合同编号</label>
+        <input id="F_ContractCode"  type="text" />
+    </div>
+
+    <div class="lr-form-row lr-form-row-multi">
+        <label>摘要信息</label>
+        <textarea id="F_AbstractInfo" ></textarea>
+    </div>
+
+</div>

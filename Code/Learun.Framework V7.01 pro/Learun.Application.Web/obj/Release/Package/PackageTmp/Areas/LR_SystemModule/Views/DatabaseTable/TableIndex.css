@@ -1,0 +1,28 @@
+﻿.btn-tool-bar {
+    position:absolute;
+    top:0;
+    width:100%;
+    padding:5px;
+    border-bottom:1px solid #ddd;
+    z-index:2;
+}
+
+.tool-bar-item {
+    width:150px;
+    position:relative;
+    float:left;
+    line-height:26px;
+    height:28px;
+    margin-right:5px;
+}
+
+.tool-bar-item .btn {
+    height: 28px;
+    margin-bottom: 1px;
+    line-height: 14px;
+}
+
+body {
+    position:relative;
+    padding-top:39px;
+}

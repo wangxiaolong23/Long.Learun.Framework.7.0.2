@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "新增系统功能";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Areas/LR_SystemModule/Views/Module/Form.css")
+<div class="widget-body">
+    <div id="wizard" class="wizard" data-target="#wizard-steps">
+        <ul class="steps">
+            <li data-target="#step-1" class="active"><span class="step">1</span>基础信息<span class="chevron"></span></li>
+            <li data-target="#step-2"><span class="step">2</span>按钮信息<span class="chevron"></span></li>
+            <li data-target="#step-3"><span class="step">3</span>列表视图<span class="chevron"></span></li>
+            <li data-target="#step-4"><span class="step">4</span>表单视图<span class="chevron"></span></li>
+        </ul>
+    </div>
+    <div class="step-content" id="wizard-steps">
+        <div class="step-pane lr-form-wrap active" id="step-1">
+            <div class="col-xs-6 lr-form-item">
+                <div class="lr-form-item-title">编号<font face="宋体">*</font></div>
+                <input id="F_EnCode" type="text" class="form-control" placeholder="请输入编号" isvalid="yes" checkexpession="NotNull" />
+            </div>
+            <div class="col-xs-6 lr-form-item">
+                <div class="lr-form-item-title">名称<font face="宋体">*</font></div>
+                <input id="F_FullName" type="text" class="form-control" placeholder="请输入名称" isvalid="yes" checkexpession="NotNull" />
+            </div>
+            <div class="col-xs-6 lr-form-item">
+                <div class="lr-form-item-title">上级</div>
+                <div id="F_ParentId"></div>
+            </div>
+            <div class="col-xs-6 lr-form-item">
+                <div class="lr-form-item-title">图标</div>
+                <input id="F_Icon" type="text" class="form-control" placeholder="请选择图标" />
+                <span id="selectIcon" class="lr-input-button" title="选取图标">...</span>
+            </div>
+            <div class="col-xs-6 lr-form-item">
+                <div class="lr-form-item-title">目标<font face="宋体">*</font></div>
+                <div id="F_Target" isvalid="yes" checkexpession="NotNull">
+                    <ul style="display:none;">
+                        <li data-value="expand">expand</li>
+                        <li data-value="iframe">iframe</li>
+                        <li data-value="open">open</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 lr-form-item">
+                <div class="lr-form-item-title">排序<font face="宋体">*</font></div>
+                <input id="F_SortCode" type="text" class="form-control" placeholder="请输入排序号" isvalid="yes" checkexpession="Num" />
+            </div>
+            <div class="col-xs-12 lr-form-item">
+                <div class="lr-form-item-title">地址</div>
+                <input id="F_UrlAddress" type="text" class="form-control" placeholder="请输入URL地址" />
+            </div>
+            <div class="col-xs-12 lr-form-item">
+                <div class="lr-form-item-title">选项</div>
+                <div class="checkbox">
+                    <label>
+                        <input id="F_IsMenu" type="checkbox" />
+                        菜单
+                    </label>
+                    <label>
+                        <input id="F_AllowExpand" type="checkbox" />
+                        展开
+                    </label>
+                    @*<label>
+                        <input id="F_IsPublic" type="checkbox" />
+                        公共
+                    </label>*@
+                    <label>
+                        <input id="F_EnabledMark" type="checkbox" checked="checked" />
+                        有效
+                    </label>
+                </div>
+            </div>
+            <div class="col-xs-12 lr-form-item">
+                <div class="lr-form-item-title">描述</div>
+                <textarea id="F_Description" class="form-control" style="height: 80px;"></textarea>
+            </div>
+        </div>
+        <div class="step-pane lr-rblock" id="step-2" style="padding:5px;">
+            <div class="lr-rblock" style="border:1px solid #ccc;">
+                <div id="btns_girdtable"></div>
+            </div>
+        </div>
+        <div class="step-pane lr-rblock" id="step-3" style="padding:5px;">
+            <div class="lr-rblock" style="border:1px solid #ccc;">
+                <div id="view_girdtable"></div>
+            </div>
+        </div>
+        <div class="step-pane lr-rblock" id="step-4" style="padding:5px;">
+            <div class="lr-rblock" style="border:1px solid #ccc;">
+                <div id="form_girdtable"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lr-form-bottom-button" id="wizard-actions">
+        <a id="btn_prev" class="btn btn-default btn-prev" disabled>上一步</a>
+        <a id="btn_next" class="btn btn-default btn-next" disabled>下一步</a>
+        <a id="btn_finish" class="btn btn-success">完成</a>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_SystemModule/Views/Module/Form.js")

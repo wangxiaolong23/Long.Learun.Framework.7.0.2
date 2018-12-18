@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Spire.License</name>
+    </assembly>
+    <members>
+        <member name="P:Spire.License.LicenseInfo.IsUpdateRightExpired">
+            <summary>
+            Indicates whether the lincese puchase date is during one year.
+            </summary>
+        </member>
+        <member name="P:Spire.License.LicenseInfo.OriginalVersion">
+            <summary>
+            If current license object is converted from a previouse version license object,
+            this field will be set to the version of the original license object.
+            Otherwise it's null.
+            </summary>
+        </member>
+        <member name="M:Spire.License.LicenseProvider.SetLicenseFileFullPath(System.String)">
+            <summary>
+            Provides a license by a license file path, which will be used for loading license.
+            </summary>
+            <param name="licenseFileFullPath">License file full path.</param>
+        </member>
+        <member name="M:Spire.License.LicenseProvider.SetLicenseFileName(System.String)">
+            <summary>
+            Sets the license file name, which will be used for loading license.
+            </summary>
+            <param name="licenseFileName">License file name.</param>
+        </member>
+        <!-- 对于成员“M:Spire.License.LicenseProvider.GetLicenseFileName”忽略有格式错误的 XML 注释 -->
+        <member name="M:Spire.License.LicenseProvider.SetLicenseFile(System.IO.FileInfo)">
+            <summary>
+            Provides a license by a license file object, which will be used for loading license.
+            </summary>
+            <param name="licenseFile">License file object.</param>
+        </member>
+        <member name="M:Spire.License.LicenseProvider.SetLicenseFileStream(System.IO.Stream)">
+            <summary>
+            Provides a license by a license stream, which will be used for loading license.
+            </summary>
+            <param name="licenseFileStream">License data stream.</param>
+        </member>
+        <member name="M:Spire.License.LicenseProvider.SetLicenseKey(System.String)">
+            <summary>
+            Provides a license by a license key, which will be used for loading license.
+            </summary>
+            <param name="key">The value of the Key attribute of the element License of you license xml file.</param>
+        </member>
+        <member name="M:Spire.License.LicenseProvider.SetLicenseKey(System.String,System.Boolean)">
+            <summary>    
+            Provides a license by a license key, which will be used for loading license.
+            </summary>
+            <param name="key">The value of the Key attribute of the element License of you license xml file.</param> 
+            <param name="bIsSerialization">The serialization to verify license key.</param>
+        </member>
+        <member name="M:Spire.License.LicenseProvider.ClearLicense">
+            <summary>
+            Clear all cached license.
+            </summary>
+        </member>
+        <member name="M:Spire.License.LicenseProvider.LoadLicense">
+            <summary>
+            Load the license provided by current setting to the license cache.
+            </summary>
+        </member>
+        <member name="M:Spire.License.LicenseProvider.LoadLicense(System.Type)">
+            <summary>
+            Load the license provided by current setting to the license cache.
+            </summary>
+            <param name="type">Runtime product type</param>
+        </member>
+        <member name="M:Spire.License.LicenseProvider.GetLicense(System.ComponentModel.LicenseContext,System.Type,System.Object,System.Boolean)">
+            <param name="context"></param>
+            <param name="type"></param>
+            <param name="instance"></param>
+            <param name="allowExceptions"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Spire.License.V1_2.LicenseInfo.IsUpdateRightExpired">
+            <summary>
+            Indicates whether the lincese puchase date is during one year.
+            </summary>
+        </member>
+        <member name="P:Spire.License.V1_1.LicenseInfo.IsUpdateRightExpired">
+            <summary>
+            Indicates whether the lincese puchase date is during one year.
+            </summary>
+        </member>
+        <member name="P:Spire.License.V1_0.LicenseInfo.IsUpdateRightExpired">
+            <summary>
+            Indicates whether the lincese puchase date is during one year.
+            </summary>
+        </member>
+    </members>
+</doc>

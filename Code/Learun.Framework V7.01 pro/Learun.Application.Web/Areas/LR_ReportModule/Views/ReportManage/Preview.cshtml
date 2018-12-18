@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "预览页面";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+<script src="~/Content/echarts/echarts.min.js"></script>
+<script src="~/Content/echarts/charts_comm.js"></script>
+
+<div class="lr-layout ui-report">
+    <div class="lr-layout-center">
+        <div id="report-pane" class="lr-layout-wrap" style="overflow: auto;box-shadow: 0 1px 3px rgba(0,0,0,0.2);border-radius: 0;border: 1px solid #cfcfcf;padding: 30px;padding-top: 10px;background-color: #ffffff;">
+            <span id="moduleURL" style="display:none;"></span>
+        </div>
+    </div>
+</div>
+@Html.AppendCssFile("/Views/LR_Content/style/lr-reportTemplate.css")
+@Html.AppendJsFile("/Views/LR_Content/script/lr-chartshelper.js")
+<script>
+    $(document).ready(function () {
+        if (request('type') == "preview") {
+            $("#moduleURL").html("/LR_ReportModule/ReportManage/Preview?reportId=" + request('reportId')).show();
+        }
+        $.LoadReport({
+            url: top.$.rootUrl + "/LR_ReportModule/ReportManage/GetReportData?reportId=" + request('reportId'),
+            element: $("#report-pane")
+        });
+    });
+</script>

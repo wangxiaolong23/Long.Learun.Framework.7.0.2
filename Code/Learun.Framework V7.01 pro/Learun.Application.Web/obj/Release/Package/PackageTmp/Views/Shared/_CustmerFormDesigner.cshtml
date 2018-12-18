@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name=”renderer” content=”webkit|ie-comp|ie-stand” />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="icon" href="~/favicon.ico">
+
+    <title>@ViewBag.Title|力软信息|快速开发平台|Learun敏捷开发框架</title>
+    <link href="~/Content/font/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+
+    @Html.AppendCssFile(
+    "/Views/LR_Content/style/lr-common.css",
+    "/Views/LR_Content/plugin/scroll/scroll.css",
+    "/Views/LR_Content/style/lr-iframe-form.css",
+    
+    "/Views/LR_Content/plugin/wizard/wizard.css",       
+    "/Views/LR_Content/plugin/tree/lr-tree.css",
+    "/Views/LR_Content/plugin/select/lr-select.css",
+    "/Views/LR_Content/plugin/formselect/lr-formselect.css",
+    "/Views/LR_Content/plugin/inputsearch/lr-isearch.css",
+
+    "/Views/LR_Content/plugin/grid/jfgrid.css",
+    "/Views/LR_Content/plugin/custmerform/lr-formdesigner.css"
+    )
+    <script src="~/Content/datepicker/WdatePicker.js"></script>
+    <!--[if lt IE 9]>
+      <script src="~/Content/bootstrap/html5shiv.min.js"></script>
+      <script src="~/Content/bootstrap/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        function request(d) { for (var c = location.search.slice(1).split("&"), a = 0; a < c.length; a++) { var b = c[a].split("="); if (b[0] == d) if ("undefined" == unescape(b[1])) break; else return unescape(b[1]) } return "" };
+    </script>
+    
+</head>
+<body class="@Learun.Util.Net.Browser @Learun.Util.WebHelper.GetUITheme()">
+    <div id="lr_form_bg" class="lr-form-bg"></div>
+
+    <script src="~/Content/jquery/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="~/Content/jquery/jquery.md5.min.js"></script>
+
+    @RenderBody()
+    @Html.AppendJsFile(
+    "/Views/LR_Content/plugin/resize/resize.js",
+    "/Views/LR_Content/plugin/mousewheel/mousewheel.js",
+    "/Views/LR_Content/plugin/scroll/scroll.js",
+
+    "/Views/LR_Content/script/lr-validator.js",
+    "/Views/LR_Content/script/lr-form.js",
+    "/Views/LR_Content/plugin/wizard/wizard.js",
+    "/Views/LR_Content/plugin/tree/lr-tree.js",
+    "/Views/LR_Content/plugin/select/lr-select.js",
+    "/Views/LR_Content/plugin/formselect/lr-formselect.js",
+    "/Views/LR_Content/plugin/inputsearch/lr-isearch.js",
+
+    "/Views/LR_Content/plugin/grid/jfgrid.js",
+
+
+    "/Views/LR_Content/plugin/custmerform/lr-formcomponts.js",
+    "/Views/LR_Content/plugin/custmerform/lr-formdesigner.js"
+    )
+    <script>
+        $.lrToken = $('@Html.AntiForgeryToken()').val();
+        $(function () {
+            $('#lr_form_bg').fadeOut();
+
+            // 翻译指定标签
+            $('.lrlg').each(function () {
+                var $this = $(this);
+                top.learun.language.get($this.text(), function (text) {
+                    $this.text(text);
+                });
+            });
+            // 翻译表单标题
+            $('.lr-form-item-title').each(function () {
+                var $this = $(this);
+                var $font = $this.find('font');
+                $font.remove();
+                top.learun.language.get($this.text(), function (text) {
+                    if ($font.length > 0) {
+                        $this.html(text + '<font face="宋体">*</font>');
+                    }
+                    else {
+                        $this.text(text);
+                    }
+
+                });
+            });
+            // input placeholder 翻译
+            $('input[placeholder]').each(function () {
+                var $this = $(this);
+                var _text = $this.attr('placeholder');
+                top.learun.language.get(_text, function (text) {
+                    $this.attr('placeholder', text);
+                });
+            });
+
+            if (!!window.bootstrap) {
+                bootstrap(jQuery, top.learun);
+            }
+        });
+    </script>
+</body>
+</html>

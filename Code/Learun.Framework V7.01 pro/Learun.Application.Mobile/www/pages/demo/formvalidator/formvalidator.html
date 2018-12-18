@@ -1,0 +1,68 @@
+﻿<div style="margin-top:10px;" class="lr-form-container" id="formvalidtest">
+    <div class="lr-form-row">
+        <font face="宋体">*</font>
+        <label>普通输入框</label>
+        <input id="input1" type="text" isvalid="yes" checkexpession="NotNull" errormsg="普通输入框">
+    </div>
+    <div class="lr-form-row lr-form-row-multi">
+        <label>多行输入框</label>
+        <textarea id="input3" isvalid="yes" checkexpession="NotNull" errormsg="多行输入框"></textarea>
+    </div>
+    <div class="lr-form-row">
+        <font face="宋体">*</font>
+        <label>密码输入框</label>
+        <input id="input2" type="password" isvalid="yes" checkexpession="NotNull" errormsg="密码输入框">
+    </div>
+    <div class="lr-form-row">
+        <font face="宋体">*</font>
+        <label>一级选择</label>
+        <div id="select1" isvalid="yes" checkexpession="NotNull" errormsg="一级选择"></div>
+    </div>
+    <div class="lr-form-row">
+        <label>二级选择</label>
+        <div id="select2"></div>
+    </div>
+    <div class="lr-form-row">
+        <label>三级选择</label>
+        <div id="select3"></div>
+    </div>
+    <div class="lr-form-row">
+        <label>开关</label>
+        <div id="switch1"></div>
+    </div>
+    <div class="lr-form-row">
+        <font face="宋体">*</font>
+        <label>多选框</label>
+        <div id="checkbox1" isvalid="yes" checkexpession="NotNull" errormsg="多选框"></div>
+    </div>
+
+    <div class="lr-form-row">
+        <font face="宋体">*</font>
+        <label>日期</label>
+        <div id="date1" isvalid="yes" checkexpession="NotNull" errormsg="日期"></div>
+    </div>
+    <div class="lr-form-row">
+        <label>选择日期</label>
+        <div id="date2"></div>
+    </div>
+    <div class="lr-form-row">
+        <label>选择时间</label>
+        <div id="date3"></div>
+    </div>
+    <div class="lr-form-row">
+        <label>选择月份</label>
+        <div id="date4"></div>
+    </div>
+</div>
+
+<div style="padding:10px;">
+    <button id="btnvalid1" type="button" class="lr-btn-primary lr-btn-block">
+        验证表单
+    </button>
+    <button id="btnvalid2" type="button" class="lr-btn-primary lr-btn-block">
+        获取表单数据
+    </button>
+    <button id="btnvalid3" type="button" class="lr-btn-primary lr-btn-block">
+        设置表单数据
+    </button>
+</div>

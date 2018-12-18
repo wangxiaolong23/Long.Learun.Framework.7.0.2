@@ -1,0 +1,54 @@
+﻿.form-warp {
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.user-list {
+    position:relative;
+    height:100%;
+    width:100%;
+}
+
+.card-box {
+    position:relative;
+    float: left;
+    width: 185px;
+    height: 60px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 10px 0 0 10px;
+    padding-left:65px;
+    padding-top:4px;
+    overflow: hidden;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.card-box.active {
+    border: 2px solid #ff5d5b;
+    background: url(/Content/images/selected_red.png) right top no-repeat;
+}
+.card-box-img {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 59px;
+    height: 58px;
+    line-height:58px;
+    padding-left:9px;
+    background-color: #ebebeb;
+    border-right: 1px solid #ccc;
+}
+.card-box-img img {
+    border-radius: 45px;
+}
+.card-box-content p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin:0;
+}

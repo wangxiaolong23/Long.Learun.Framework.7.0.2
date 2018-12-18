@@ -1,0 +1,31 @@
+﻿.lr-userInfo-list .lr-list-item {
+    text-align:right;
+}
+.lr-userInfo-list .lr-list-item>div {
+    position:absolute;
+    top:0;
+    left:14px;
+}
+.lr-userInfo-list .lr-list-item-img {
+    height: 64px;
+    line-height:64px;
+}
+.lr-userInfo-list img {
+    position:absolute;
+    top:11px;
+    right:22px;
+    border-radius:5px;
+    height:42px;
+    width:42px;
+}
+.lr-userInfo-list .lr-list-item-img:before {
+    font-family: "iconfont" !important;
+    font-size: 14px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e6a3";
+    position: absolute;
+    right: 8px;
+    color: #c8c7cc;
+}

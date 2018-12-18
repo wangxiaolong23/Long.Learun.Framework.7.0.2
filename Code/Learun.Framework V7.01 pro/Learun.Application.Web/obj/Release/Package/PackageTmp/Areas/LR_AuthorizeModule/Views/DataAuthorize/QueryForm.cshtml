@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "数据权限添加条件";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<style>
+    .lr-field {
+        display:none;
+    }
+</style>
+
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">选择字段<font face="宋体">*</font></div>
+        <div id="F_FieldId" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">比较符<font face="宋体">*</font></div>
+        <div id="F_Symbol" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">字段值类型<font face="宋体">*</font></div>
+        <div id="F_FiledValueType" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">字段值<font face="宋体">*</font></div>
+        <input id="F_FiledValue" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_AuthorizeModule/Views/DataAuthorize/QueryForm.js")

@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "日志管理";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+<div id="lr_layout" class="lr-layout lr-layout-left-center">
+    <div class="lr-layout-left">
+        <div class="lr-layout-wrap lr-layout-wrap-notitle" style="padding-top:10px;">
+            <div class="lr-layout-body">
+                <ul class="lr-left-list" id="lr_left_list">
+                    <li class="active  lrlg" data-value="1">登录日志</li>
+                    <li data-value="2" class="lrlg" >访问日志</li>
+                    <li data-value="3" class="lrlg" >操作日志</li>
+                    <li data-value="4" class="lrlg" >异常日志</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap lr-layout-wrap-notitle">
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                    <div class="lr-layout-tool-item">
+                        <div id="datesearch" class="datetime"></div>
+                    </div>
+                    <div class="lr-layout-tool-item">
+                        <input id="txt_Keyword" type="text" class="form-control" placeholder="请输入要查询关键字" />
+                    </div>
+                    <div class="lr-layout-tool-item">
+                        <a id="btn_Search" class="btn btn-primary btn-sm"><i class="fa fa-search"></i>&nbsp;<span class="lrlg">查询</span></a>
+                    </div>
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
+                    </div>
+                    <div class=" btn-group btn-group-sm" learun-authorize="yes">
+                        <a id="lr_removelog" class="btn btn-default"><i class="fa fa-eraser"></i>&nbsp;<span class="lrlg">清空</span></a>
+                        <a id="lr_export" class="btn btn-default"><i class="fa fa-sign-out"></i>&nbsp;<span class="lrlg">导出</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-body" id="gridtable">
+            </div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_SystemModule/Views/Log/Index.js")
+

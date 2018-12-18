@@ -1,0 +1,287 @@
+﻿/*
+ * 版 本 Learun-ADMS V7.0.0 力软敏捷开发框架(http://www.learun.cn)
+ * Copyright (c) 2013-2018 上海力软信息技术有限公司
+ * 创建人：力 软-前端开 发组
+ * 日 期：2017.03.22
+ * 描 述：自定义表单设计
+ */
+.lr-custmerform-designer-layout {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
+    padding:0 0px 0 260px;
+}
+.lr-custmerform-designer-layout-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    border-right: 1px solid #ddd;
+    overflow:visible;
+}
+
+    .lr-custmerform-designer-layout-left .lr-scroll-box {
+        height: 320px;
+        overflow:visible;
+    }
+
+    .lr-custmerform-designer-layout-left .lr-scroll-vertical {
+        right: 255px;
+    }
+
+.lr-custmerform-designer-layout-right {
+    position:absolute;
+    top:0;
+    right:-240px;
+    height:100%;
+    width:240px;
+    border-left:1px solid #ddd;
+    background-color:#fff;
+    padding:6px 6px 0 6px;
+}
+
+.lr-custmerform-designer-layout-center {
+    position:relative;
+    height:100%;
+    width:100%;
+    padding:0 0 31px 0;
+}
+.lr-custmerform-designer-layout-center.hasTab {
+    padding-top:44px;
+}
+
+.lr-custmerform-designer-layout-header {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:44px;
+    padding: 5px 5px 0 5px;
+    display:none;
+}
+.lr-custmerform-designer-tabs .lr-scroll-box{
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    overflow:visible;
+}
+    .lr-custmerform-designer-tabs .lr-scroll-box > div  {
+        moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -khtml-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        position: relative;
+        padding: 10px 15px;
+        margin-right: 2px;
+        margin-bottom: -1px;
+        border: 1px solid transparent;
+        border-radius: 4px 4px 0 0;
+        display: inline-block;
+    }
+    .lr-custmerform-designer-tabs .lr-scroll-box > div:hover {
+        background-color: #eee;
+        border-color: #eee #eee #ccc;
+    }
+
+        .lr-custmerform-designer-tabs .lr-scroll-box > div.active {
+            color: #555;
+            cursor: default;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-bottom-color: transparent;
+        }
+
+.lr-custmerform-designer-layout-center.hasTab .lr-custmerform-designer-layout-header {
+    display: block;
+}
+/*.lr-form-tab {
+    white-space: nowrap;
+}
+.lr-form-tab>li {
+   white-space: nowrap;
+   display: inline-block !important;
+   float: initial;
+}*/
+
+
+
+
+.lr-custmerform-designer-layout-footer {
+    position:absolute;
+    bottom:0;
+    left:0;
+    height:31px;
+    width:100%;
+    border-top:1px solid #ddd;
+    z-index: 3;
+    background-color:#fff;
+}
+.lr-custmerform-designer-layout-footer-item {
+    position:relative;
+    float:left;
+    height:100%;
+    width:100px;
+    text-align:center;
+    color:#666;
+    cursor:pointer;
+    border-right:1px solid #ddd;
+    line-height:30px;
+}
+.lr-custmerform-designer-layout-footer-item:hover {
+    background-color: #eee;
+}
+.lr-custmerform-designer-layout-footer-item i {
+    width:17px;
+}
+
+.lr-custmerform-designer-layout-center-bg {
+    position:absolute;
+    top:44px;
+    left:0;
+    width:100%;
+    overflow-x:hidden;
+}
+
+.lr-custmerform-designer-layout-tabedit {
+    position: absolute;
+    bottom: -269px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 2;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+/*设计区域*/
+.lr-custmerform-designer-layout-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+    .lr-custmerform-designer-layout-area .lr-scroll-box {
+        position: relative;
+        min-height: 100%;
+        width: 100%;
+        z-index: 1;
+        padding: 8px;
+    }
+.ui-state-highlight {
+   position:relative;
+   width:100%;
+   height:39px;
+   line-height:37px;
+   margin:1px 0 2px 0;
+   background: #FAFAE9!important;
+   border: 2px dotted #d5d5d5;
+   text-align:center;
+   color: #9f9f9f;
+   float:left;
+}
+
+.lr-compont-item {
+    position: relative;
+    height:40px!important;
+    line-height:38px;
+    border-top: 1px solid #eeecec;
+    border-bottom: 1px solid #eeecec;
+    overflow: hidden;
+    cursor: move;
+    margin-top: -1px;
+    padding-left:110px;
+    float:left;
+    border-right: 1px solid #eeecec;
+}
+
+
+.lr-compont-title {
+    position:absolute;
+    top:0;
+    left:0;
+    width:110px;
+    height:100%;
+    padding-left:10px;
+    background-color:#f5f5f5;
+}
+.lr-compont-item.active .lr-compont-title{
+    background-color:#3498DB;
+    color:#fff;
+}
+.lr-compont-remove {
+    position:absolute;
+    top:0;
+    right:4px;
+    z-index:1;
+    cursor:pointer;
+    color:#cf5c60;
+    display:none;
+}
+.lr-compont-item.active .lr-compont-remove {
+    display:block;
+}
+
+.lr-compont-value {
+    padding-left:10px;
+    color: #9f9f9f;
+}
+
+
+
+/*表单设计组件*/
+.lr-custmerform-component {
+    position:relative;
+    width: 107px;
+    height: 30px;
+    line-height: 28px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 1px 1px 1px rgba(0,0,0,.05);
+    z-index:2;
+    margin:12px 0 0 15px;
+    float:left;
+}
+.lr-custmerform-component i {
+    padding-left: 10px;
+    width:28px;
+    color: #2c3849;
+    opacity: .9;
+}
+.lr-custmerform-designer-layout-left .lr-custmerform-component {
+    margin:10px 0 0 15px;
+}
+
+ 
+
+.lr-custmerform-designer-layout-left .lr-custmerform-component:hover {
+    color: #333;
+    background-color: #e6e6e6;
+}
+
+
+/*组件属性设置*/
+.lr-component-tips{
+    color: #9f9f9f;
+    padding-bottom: 5px;
+}
+.lr-component-tips i
+{
+    padding-right: 5px;
+    padding-left: 2px;
+}
+.lr-component-title
+{
+    height: 28px;
+    line-height: 28px;
+}
+.lr-component-title .help
+{
+    color: #9f9f9f;
+    cursor: help;
+    padding-left: 5px;
+}

@@ -1,0 +1,454 @@
+﻿.jfgrid-layout {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: #333;
+    overflow: hidden;
+    padding-top: 28px;
+}
+
+.jfgrid-move-line {
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background: #666;
+    top: 0;
+    left: 10px;
+    display: none;
+    z-index: 11;
+    cursor: col-resize;
+}
+
+/*表头区域*/
+.jfgrid-head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f8f8f8;
+}
+/*交界区域*/
+.jfgrid-border {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    height: 28px;
+    z-index: 2;
+    background-color: #f8f8f8;
+}
+.jfgrid-border-cell {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    border-right: 1px solid #ccc;
+}
+
+.jfgrid-border-cb {
+    text-align: center;
+}
+    .jfgrid-border-cb img {
+        cursor: pointer;
+    }
+
+/*头部显示区域*/
+.jfgrid-head-col {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+}
+
+.jfgrid-head-cell {
+    position: absolute;
+    line-height: 27px;
+    height: 28px;
+    width: 100px;
+    top: 0;
+    left: 0;
+    padding: 0px 3px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.jfgrid-heed-sort {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    width: 16px;
+    text-align: center;
+    line-height: initial;
+    margin-top: -12px;
+    display: none;
+}
+
+    .jfgrid-heed-sort > i {
+        font-size: 16px;
+        color: #B3B7BA;
+        display: block;
+    }
+
+        .jfgrid-heed-sort > i.active {
+            color: #475059;
+        }
+
+        .jfgrid-heed-sort > i.fa-caret-up {
+            margin-bottom: -8px;
+        }
+
+        .jfgrid-heed-sort > i.fa-caret-down {
+            margin-top: -8px;
+        }
+
+.jfgrid-heed-move {
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    top: 0;
+    right: -2px;
+    cursor: col-resize;
+    z-index: 10;
+}
+
+
+
+
+/*数据显示区域*/
+.jfgrid-body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+
+.jfgrid-left {
+    position: absolute;
+    min-height: 100%;
+    width: 30px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.jfgrid-right {
+    position: relative;
+    min-height: 100%;
+    background-color: #fff;
+    z-index:1;
+}
+
+/*单元格*/
+.jfgrid-data-cell {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    color: #333;
+    width: 30px;
+    line-height: 27px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 0px 3px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.jfgrid-layout:hover .jfgrid-data-cell-over {
+    background-color: #eee;
+}
+.jfgrid-selected {
+    background-color: #2F94EE !important;
+    border-bottom: 1px solid #2F94EE !important;
+    border-right: 1px solid #2F94EE !important;
+    color: #fff;
+}
+
+.jfgrid-data-cell .fa-toggle-on {
+    color: #039cfd;
+    font-size: 13pt;
+    vertical-align: middle;
+}
+
+    .jfgrid-data-cell .fa-toggle-off {
+        color: #aaa;
+        font-size: 13pt;
+        vertical-align: middle;
+    }
+
+
+.jfgrid-edit-cell {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+    .jfgrid-edit-cell > div {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border: 0 !important;
+    }
+
+    .jfgrid-edit-cell > input {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border: 0 !important;
+        outline:0;
+        padding-left:4px;
+        
+    }
+
+    .jfgrid-edit-cell .radio, .jfgrid-edit-cell .checkbox {
+        moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -khtml-user-select: none;
+        user-select: none;
+        margin-top: 6px;
+        margin-bottom: initial;
+    }
+
+        .jfgrid-edit-cell .checkbox input[type=checkbox], .jfgrid-edit-cell .radio input[type=radio] {
+            margin-top: 3px;
+            margin-left: -15px;
+        }
+
+
+    .jfgrid-data-cell > .fa-ellipsis-h {
+        display: block;
+        position: absolute;
+        top: 9px;
+        right: 4px;
+        color: #888;
+        cursor: pointer;
+    }
+
+
+/*子表展开项*/
+.jfgrid-sub {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 29px;
+    border-bottom: 1px solid #ccc;
+}
+    .jfgrid-sub > div {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-left: 1px solid #ccc;
+    }
+
+/*列表底部区域*/
+.jfgrid-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*翻页条*/
+.jfgrid-page-bar {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 0px 0px 3px 3px;
+    z-index: 5;
+}
+
+.jfgrid-page-bar-info {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 12px;
+    height: 100%;
+    line-height: 34px;
+    color: #475059;
+}
+
+    .jfgrid-page-bar-info > span {
+        position: relative;
+        top: -1px;
+        color: #475059;
+    }
+
+.jfgrid-page-bar .paginations {
+    margin: 0px;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    height: 26px;
+    line-height: 26px;
+}
+
+.jfgrid-page-bar .pagination input {
+    display: block;
+    top: 0;
+    left: 0;
+    height: 26px;
+    margin: 0;
+    top: 0;
+    border-radius: 4px;
+    width: 45px;
+    line-height: 1.5;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+
+
+.jfgrid-page-bar .pagination {
+    margin: 0px;
+}
+
+    .jfgrid-page-bar .pagination > li > a, .pagination > li > span {
+        color: #475059;
+    }
+
+.jfgrid-page-bar .pagination-sm > li > a {
+    padding: 3px 8px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.jfgrid-page-bar .pagination > li > span {
+    padding: 3px 0px;
+    font-size: 12px;
+    line-height: 1.5;
+    border: 0px;
+}
+
+.pagination > li > a.active,
+.pagination > li > a:focus {
+    color: #ffffff;
+    background-color: #3498DB;
+    border-color: #3498DB;
+}
+
+.pagination > li > span.active,
+.pagination > li > span:focus {
+    color: #475059;
+}
+
+.pagination > li > span:hover {
+    background-color: #fff;
+    color: #475059;
+}
+
+/*添加工具条*/
+.jfgrid-toolbar {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 29px;
+    width: 100%;
+    background: #f8f8f8;
+    border-top: 1px solid #ccc;
+    z-index: 2;
+}
+    .jfgrid-toolbar > span {
+        line-height: 28px;
+        margin-left: 10px;
+        cursor: pointer;
+        color: #555;
+    }
+        .jfgrid-toolbar > span:hover {
+            color: #000;
+        }
+
+
+/*树形*/
+.jfgrid-data-cell-expend {
+    position: relative;
+    float: left;
+    text-align: right;
+    height: 100%;
+}
+
+    .jfgrid-data-cell-expend > i {
+        width: 16px;
+        text-align: center;
+        height: 100%;
+        line-height: 28px;
+    }
+
+/*统计条*/
+.jfgrid-statistic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 29px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    background: #f8f8f8;
+}
+.jfgrid-statistic-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 28px;
+    background: #f8f8f8;
+    z-index:1;
+}
+.jfgrid-statistic-right {
+    position: relative;
+    height: 28px;
+}
+.jfGird-statistic-cell {
+    position:absolute;
+    border-right: 1px solid #ccc;
+    height: 100%;
+    line-height: 27px;
+    padding: 0px 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/**/
+.jfgrid-nodata-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 180px;
+    width: 380px;
+    margin: -90px 0px 0px -190px;
+    z-index: 1;
+}

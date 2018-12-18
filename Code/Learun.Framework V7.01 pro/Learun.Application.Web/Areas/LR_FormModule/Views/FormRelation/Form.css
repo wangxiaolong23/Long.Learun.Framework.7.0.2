@@ -1,0 +1,39 @@
+﻿.step-gird-pane {
+    padding-top:41px;
+}
+.lr-form-layout {
+    padding-top:81px;
+}
+.lr-form-layout-header {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 81px;
+    padding: 0px 10px 0px 10px;
+    border-bottom:1px solid #ccc;
+    z-index:10;
+}
+.lr-form-layout-header .lr-form-item-title {
+    width:58px;
+    padding-right:0px;
+    text-align:left;
+}
+.lr-form-layout-header .lr-form-item {
+    padding-left:58px;
+}
+.lr-form-layout-body
+{
+    padding-top:30px;
+    border:1px solid #ccc;
+    border-top:0px;
+}
+
+.btn-tool-bar {
+    position:absolute;
+    top:0;
+    width:100%;
+    text-align:right;
+    padding:5px;
+    border-bottom:1px solid #ddd;
+}

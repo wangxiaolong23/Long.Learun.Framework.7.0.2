@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "数据源数据查询";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Areas/LR_SystemModule/Views/DataSource/TestForm.css")
+<div class="btn-tool-bar">
+    @*<div class="tool-bar-item" style="width:60px;">查询条件:</div>
+    <div class="tool-bar-item"><div id="field"></div></div>
+    <div class="tool-bar-item">
+        <div id="logic">
+            <ul>
+                <li data-value="Equal">等于</li>
+                <li data-value="NotEqual">不等于</li>
+                <li data-value="Greater">大于</li>
+                <li data-value="GreaterThan">大于等于</li>
+                <li data-value="Less">小于</li>
+                <li data-value="LessThan">小于等于</li>
+                <li data-value="Null">为空</li>
+                <li data-value="NotNull">不为空</li>
+                <li data-value="Like">包含</li>
+            </ul>
+        </div>
+    </div>
+    <div class="tool-bar-item" style="width:200px;">
+        <input id="keyword" type="text" class="form-control" placeholder="请输入要查询关键字" />
+    </div>*@
+    <div class="tool-bar-item" style="width:60px;margin-left:5px;"><a id="btn_Search" class="btn btn-primary btn-sm"><i class="fa fa-search"></i>&nbsp;<span class="lrlg">查询</span></a></div>
+</div>
+<div id="gridtable"></div>
+
+@Html.AppendJsFile("/Areas/LR_SystemModule/Views/DataSource/TestForm.js")

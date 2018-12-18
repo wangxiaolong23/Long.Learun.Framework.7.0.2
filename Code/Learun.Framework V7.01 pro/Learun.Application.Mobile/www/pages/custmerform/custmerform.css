@@ -1,0 +1,107 @@
+﻿.lr-custmerformfn-page {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 54px;
+}
+
+    .lr-custmerformfn-page .lr-custmerformfn-addbtn {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 54px;
+        padding: 5px;
+        background-color: #eee;
+    }
+
+        .lr-custmerformfn-page .lr-custmerformfn-addbtn button {
+            margin: 0px;
+        }
+
+.lr-custmer-list {
+    padding: 8px;
+    background-color: #efeff4;
+
+}
+
+    .lr-custmer-list:before {
+        height: 0;
+    }
+
+    .lr-custmer-list .lr-page-item {
+        margin-bottom: 8px;
+        border-radius: 4px;
+    }
+    .lr-custmer-list .lr-list-item {
+        border: 0.5px solid #c8c7cc;
+        border-radius: 4px;
+        padding-top: 30px;
+        background-color: #fff;
+    }
+
+
+        .lr-custmer-list .lr-list-item:after {
+            height: 0;
+        }
+
+        .lr-custmer-list .lr-list-item .title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:100%;
+            height:30px;
+            line-height:30px;
+            padding-left:5px;
+        }
+
+            .lr-custmer-list .lr-list-item .title > span {
+                font-size: 14px;
+                color: #333;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+        .lr-custmer-list .lr-list-item .content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            font-size: 12px;
+            display: table;
+            overflow: hidden;
+            width: 100%;
+            table-layout: fixed;
+            background-color: transparent;
+            -webkit-touch-callout: none;
+            padding-bottom: 10px;
+        }
+
+            .lr-custmer-list .lr-list-item .content .one, .lr-custmer-list .lr-list-item .content .two, .lr-custmer-list .lr-list-item .content .three {
+                line-height: 20px;
+                display: table-cell;
+                overflow: hidden;
+                width: 1%;
+                -webkit-transition: background-color .1s linear;
+                transition: background-color .1s linear;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                height:40px;
+            }
+    .lr-custmer-list .lr-tag {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        margin-right: 5px;
+        margin-bottom: 2px;
+    }
+.one .lr-tag {
+    background-color: #488aff;
+}
+.two .lr-tag {
+    background-color: #8a6de9;
+}
+.three .lr-tag {
+    background-color: #dd524d;
+}

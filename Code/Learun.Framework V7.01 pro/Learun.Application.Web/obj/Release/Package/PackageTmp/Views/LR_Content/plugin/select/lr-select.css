@@ -1,0 +1,116 @@
+﻿/*
+ * 版 本 Learun-ADMS V7.0.0 力软敏捷开发框架(http://www.learun.cn)
+ * Copyright (c) 2013-2018 上海力软信息技术有限公司
+ * 创建人：力软-前端开发组
+ * 日 期：2017.03.16
+ * 描 述：选择框组件样式
+ */
+.lr-select {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 28px;
+    line-height: 26px;
+    border:1px solid #ccc;
+    background:#fff url(/Content/images/learunselect/icon.png) no-repeat right center;
+    padding-left:4px;
+    border-radius:2px;
+}
+.lr-select.lr-select-focus {
+    border:1px solid #039cfd;
+}
+.lr-select-placeholder {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    color:#999;
+    overflow:hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+}
+.lr-select-option {
+    position: absolute;
+    border: 1px solid #dedede;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
+    top: 28px;
+    border-radius: 2px;
+}
+.lr-select-option-content {
+    position:relative;
+    width:100%;
+}
+.lr-select-option .lr-selectitem-li {
+    min-height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+    cursor: pointer;
+    padding:0px 5px;
+    overflow:hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+}
+.lr-select-option .lr-selectitem-li:hover {
+    background-color:#eee;
+}
+.lr-selectitem-li.selected {
+     background-color:#3498DB!important;
+     color:#fff;
+}
+.lr-select-option-search {
+    border-top: 1px solid #ccc;
+    position:absolute;
+    border-bottom:0px;
+    left:0px;
+    height:25px;
+    width:100%;
+    line-height:24px;
+}
+.lr-select-option-search >input{
+    color: #000;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    font-size: 9pt;
+    height: 28px;
+    padding-top: 0;
+    padding-bottom: 1px;
+    padding-right: 0;
+    padding-left: 5px;
+    resize: none;
+    background-color: #fff;
+    background-image: none;
+    height: 24px;
+    line-height: 1.42857143;
+    margin: 0px;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+
+    width: 100%;
+    outline: none;
+    padding: 0;
+    padding-left: 10px;
+}
+.lr-select-option-search .input-query {
+    position:absolute;
+    right: 4px;
+    top: 0px;
+    color: #ccc;
+    font-size: 16px;
+    cursor:default;
+}
+.lr-select-node-cb {
+    border: 0 none;
+    margin: 0;
+    vertical-align: top;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    padding: 2px;
+    margin-top: 4.5px;
+    margin-right: 5px;
+}

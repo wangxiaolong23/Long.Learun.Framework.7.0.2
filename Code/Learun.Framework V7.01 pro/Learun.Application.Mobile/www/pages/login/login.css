@@ -1,0 +1,63 @@
+﻿.lr-login-page {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+    .lr-login-page .login-content {
+        position: absolute;
+        width: 100%;
+        height: 280px;
+        top: 50%;
+        margin-top: -210px;
+        text-align: center;
+    }
+
+        .lr-login-page .login-content > img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-bottom: 60px;
+        }
+
+    .lr-login-page .line {
+        position: relative;
+        margin: auto;
+        width: 92%;
+        height: 35px;
+        line-height: 35px;
+        border-bottom: 1px solid #eeeeee;
+        padding-left: 35px;
+    }
+
+        .lr-login-page .line i {
+            position: absolute;
+            left: 10px;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .lr-login-page .line input {
+            position: relative;
+            line-height: 20px;
+            width: 100%;
+            background: transparent;
+            border: none;
+            font-size: 14px;
+        }
+
+    .lr-login-page button {
+        margin: auto;
+        margin-top: 25px;
+        width: 92%;
+    }
+
+    .lr-login-page .version {
+        position: absolute;
+        width: 100%;
+        bottom: 5px;
+        text-align: center;
+        font-size: 12px;
+        color: #ccc;
+    }

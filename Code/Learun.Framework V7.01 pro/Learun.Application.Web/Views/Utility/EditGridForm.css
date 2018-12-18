@@ -1,0 +1,22 @@
+﻿.lr-component-title {
+    height: 28px;
+    line-height: 28px;
+}
+
+    .lr-component-title .help {
+        color: #9f9f9f;
+        cursor: help;
+        padding-left: 5px;
+    }
+
+.editopen {
+    padding-right:240px;
+}
+
+.layerop {
+    padding-bottom:240px;
+}
+.lastcol {
+    display: none;
+}
+

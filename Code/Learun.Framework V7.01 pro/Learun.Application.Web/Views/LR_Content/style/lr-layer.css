@@ -1,0 +1,72 @@
+﻿.lr-layer {
+    padding: 35px 0px 38px 0px !important;
+}
+
+.lr-layer-nobtn {
+    padding: 35px 0px 0px 0px !important;
+}
+
+.lr-layer-nobtn .layui-layer-title,
+.lr-layer .layui-layer-title {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 4px 4px 0 0;
+}
+
+.lr-layer-nobtn .layui-layer-setwin,
+.lr-layer .layui-layer-setwin {
+    top: 11.5px;
+    right: 11.5px;
+}
+
+.lr-layer-nobtn .layui-layer-content,
+.lr-layer .layui-layer-content {
+    height: 100%;
+    width: 100%;
+}
+.lr-layer-nobtn .layui-layer-content{
+    border-radius: 0 0 4px 4px;
+}
+
+.lr-layer-nobtn iframe,
+.lr-layer iframe {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.lr-layer .layui-layer-btn {
+    moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 38px;
+    border-radius: 0 0 4px 4px;
+    padding: 0px !important;
+    background-color: #F8f8f8;
+    border-top: 1px solid #eee;
+}
+
+.lr-layer .layui-layer-btn > a {
+    margin: 4px 6px 0px 0px;
+}
+
+.lr-layer-btn-cb {
+    position:absolute;
+    top:9px;
+    left:10px;
+    margin:0px;
+}
+.lr-layer-btn-cb input {
+    margin-top:3px!important;
+    margin-left:-15px!important;
+    cursor:pointer;
+}

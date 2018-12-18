@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "附件上传";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<link href="~/Content/webuploader/webuploader.css" rel="stylesheet" />
+@Html.AppendCssFile("/Areas/LR_SystemModule/Views/Annexes/UploadForm.css")
+<div class="lr-form-layout lr-form-layout-top-bottom">
+    <div class="lr-form-layout-header">
+        <div id="lr_add_file_btn"><i class="fa fa-cloud-upload"></i>添加文件</div>
+    </div>
+    <div class="lr-form-layout-body">
+        <div class="lr-form-file-queue-wrap" id="lr_form_file_queue" >
+            <div class="lr-form-file-queue" id="lr_form_file_queue_list">
+                
+            </div>
+            <div class="lr-form-file-queue-bg">
+                <h1>试试将电脑里的文件拖拽到此上传</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Content/webuploader/webuploader.nolog.min.js"></script>
+@Html.AppendJsFile(
+"/Areas/LR_SystemModule/Views/Annexes/UploadForm.js")

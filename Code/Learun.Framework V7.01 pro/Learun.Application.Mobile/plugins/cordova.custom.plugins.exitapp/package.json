@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-exitapp",
+  "version": "1.0.0",
+  "description": "Implements navigator.app.exitApp on WP8, Android",
+  "cordova": {
+    "id": "cordova.custom.plugins.exitapp",
+    "platforms": [
+      "wp8",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakesh-walisheter/cordova-plugin-exitapp.git"
+  },
+  "keywords": [
+    "cordova",
+	"exit",
+    "terminate",
+    "ecosystem:cordova",
+    "cordova-wp8",
+    "cordova-android"
+  ],
+  "author": "Rakesh Walisheter",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/rakesh-walisheter/cordova-plugin-exitapp/issues"
+  },
+  "homepage": "https://github.com/rakesh-walisheter/cordova-plugin-exitapp#readme"
+}

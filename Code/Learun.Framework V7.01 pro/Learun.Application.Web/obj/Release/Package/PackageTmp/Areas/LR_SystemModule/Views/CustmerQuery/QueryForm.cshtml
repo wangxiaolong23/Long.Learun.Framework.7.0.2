@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "自定义查询添加条件";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">选择字段<font face="宋体">*</font></div>
+        <div id="field" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">数值类型<font face="宋体">*</font></div>
+        <div id="type" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">比较符号<font face="宋体">*</font></div>
+        <div id="condition" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">数值</div>
+        <input id="value" type="text" class="form-control" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_SystemModule/Views/CustmerQuery/QueryForm.js")

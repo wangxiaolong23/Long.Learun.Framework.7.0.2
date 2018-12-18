@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "角色管理";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+<div class="lr-layout">
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap lr-layout-wrap-notitle">
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                    <div class="lr-layout-tool-item">
+                        <input id="txt_Keyword" type="text" class="form-control" placeholder="请输入要查询关键字" />
+                    </div>
+                    <div class="lr-layout-tool-item">
+                        <a id="btn_Search" class="btn btn-primary btn-sm"><i class="fa fa-search"></i>&nbsp;<span class="lrlg">查询</span></a>
+                    </div>
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
+                    </div>
+                    <div class=" btn-group btn-group-sm" learun-authorize="yes">
+                        <a id="lr_add" class="btn btn-default"><i class="fa fa-plus"></i>&nbsp;<span class="lrlg">新增</span></a>
+                        <a id="lr_edit" class="btn btn-default"><i class="fa fa-pencil-square-o"></i>&nbsp;<span class="lrlg">编辑</span></a>
+                        <a id="lr_delete" class="btn btn-default"><i class="fa fa-trash-o"></i>&nbsp;<span class="lrlg">删除</span></a>
+                        <a id="lr_more" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-reorder"></i>&nbsp;<span class="lrlg">更多</span><span class="caret"></span>
+</a>
+                        <ul class="dropdown-menu pull-right">
+                            <li id="lr_memberadd"><a><i></i>&nbsp;<span class="lrlg">添加成员</span></a></li>
+                            <li id="lr_memberlook"><a><i></i>&nbsp;<span class="lrlg">查看成员</span></a></li>
+                            <li id="lr_authorize"><a><i></i>&nbsp;<span class="lrlg">功能授权</span></a></li>
+                            <li id="lr_dataauthorize"><a><i></i>&nbsp;<span class="lrlg">数据授权</span></a></li>
+                            <li id="lr_appauthorize"><a><i></i>&nbsp;<span class="lrlg">移动功能授权</span></a></li>
+                        </ul>
+                    </div>
+                    
+
+                    <div class="btn-group btn-group-sm" learun-authorize="yes">
+                        <a id="lr_appfilter" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-filter"></i>&nbsp;<span class="lrlg">访问过滤</span><span class="caret"></span>
+</a>
+                        <ul class="dropdown-menu pull-right">
+                            <li id="lr_ipfilter"><a><i></i>&nbsp;<span class="lrlg">IP过滤</span></a></li>
+                            <li id="lr_timefilter"><a><i></i>&nbsp;<span class="lrlg">时段过滤</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lr-layout-body" id="gridtable"></div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_OrganizationModule/Views/Role/Index.js")

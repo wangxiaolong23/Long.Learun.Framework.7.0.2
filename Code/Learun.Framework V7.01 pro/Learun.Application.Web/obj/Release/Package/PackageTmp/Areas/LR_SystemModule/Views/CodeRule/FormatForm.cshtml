@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "单据规则";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">前缀<font face="宋体">*</font></div>
+        <div id="itemType" isvalid="yes" checkexpession="NotNull">
+            <ul>
+                <li data-value="0">自定义</li>
+                <li data-value="1">日期</li>
+                <li data-value="2">流水号</li>
+                <li data-value="3">公司</li>
+                <li data-value="4">部门</li>
+                <li data-value="5">用户</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">格式<font face="宋体">*</font></div>
+        <input id="formatStr" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">步长</div>
+        <input id="stepValue" type="text" readonly class="form-control" isvalid="no" checkexpession="isNum" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">初始</div>
+        <input id="initValue" type="text" readonly class="form-control" isvalid="no" checkexpession="isNum" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">说明</div>
+        <input id="description" type="text" class="form-control" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_SystemModule/Views/CodeRule/FormatForm.js")

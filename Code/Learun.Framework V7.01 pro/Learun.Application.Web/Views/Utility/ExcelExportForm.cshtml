@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "导出Excel数据";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div style="margin: 5px;">
+    <div class="alert alert-danger" style="margin-bottom: 5px;">
+        <i class="fa fa-question-circle" style="position: relative; top: 1px; font-size: 15px; padding-right: 5px;"></i>
+        注：请勾选需要导出的字段
+    </div>
+</div>
+<div style="margin: 5px;">
+    <ul class="sys_spec_text"></ul>
+</div>
+@Html.AppendJsFile("/Views/Utility/ExcelExportForm.js")

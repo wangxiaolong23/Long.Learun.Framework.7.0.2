@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "开票信息添加";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">客户名称<font face="宋体">*</font></div>
+        <div id="F_CustomerId"></div>
+        </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">开票信息<font face="宋体">*</font></div>
+        <textarea id="F_InvoiceContent" class="form-control" style="height: 230px;" isvalid="yes" checkexpession="NotNull"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CRMModule/Views/Invoice/Form.js")

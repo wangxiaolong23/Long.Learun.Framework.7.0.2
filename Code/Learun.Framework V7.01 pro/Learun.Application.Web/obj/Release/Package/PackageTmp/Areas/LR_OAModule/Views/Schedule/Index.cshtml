@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>日程管理</title>
+    <script src="~/Content/jquery/plugin/fullcalendar/js/jquery-1.7.2.min.js"></script>
+    <script src="~/Content/jquery/plugin/jquery-ui/jquery-ui.min.js"></script>
+    <script src="~/Content/jquery/plugin/fullcalendar/js/fullcalendar.min.js"></script>
+    <link href="~/Content/jquery/plugin/fullcalendar/css/fullcalendar.css" rel="stylesheet" />
+    @Html.AppendCssFile(
+    "/Views/LR_Content/style/lr-common.css",
+    "/Views/LR_Content/style/lr-iframe-index.css"
+    )
+
+    <script type='text/javascript'>
+        $(document).ready(function () {
+            resize();
+            $('.calendar').fullCalendar({
+                header: {
+                    left: 'prev,next',
+                    center: 'title',
+                    right: 'agendaDay,agendaWeek,month'
+                },
+                monthNamesShort: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+                dayNamesShort: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+                buttonText: {
+                    prev: '上一页',
+                    next: '下一页',
+                    month: '月视图',
+                    week: '周视图',
+                    day: '日视图'
+                },
+                titleFormat: "yyyy年MM月",
+                columnFormat: {
+                    month: 'ddd',
+                    week: 'MM月dd日 ddd',
+                    day: 'MM月dd日 ddd'
+                },
+                allDayText: '今天',
+                axisFormat: "HH:00",
+                height: $(window).height() - 55,
+                dayClick: function (date, allDay, jsEvent, view) {
+                    var _date = $.fullCalendar.formatDate(date, 'yyyy-MM-dd');
+                    var _time = $.fullCalendar.formatDate(date, 'HHmm');
+                    if (top.learun.formatDate(_date, 'yyyyMMdd') >= ('@Learun.Util.Time.GetToday("yyyyMMdd")')) {
+                        btn_add(_date, _time);
+                    }
+                },
+                editable: true,
+                eventLimit: true,
+                eventAfterRender: function (event, element, view) {//数据绑定上去后添加相应信息在页面上
+                    var fstart = $.fullCalendar.formatDate(event.start, "HH:mm");
+                    var fend = $.fullCalendar.formatDate(event.end, "HH:mm");
+
+                    if (view.name == "month") {//按月份
+                        var evtcontent = '<div class="fc-event-inner fc-event-skin">';
+                        evtcontent += '<span class="fc-event-time">' + fstart + " - " + fend + '</span>';
+                        evtcontent += '<span class="fc-event-title">: ' + event.title + '</span>';
+                        evtcontent += '</div><div class="ui-resizable-handle ui-resizable-e">&nbsp;&nbsp;&nbsp;</div>';
+
+                        element.html(evtcontent);
+                    } else {
+                        var evtcontent = '<div class="fc-event-inner fc-event-skin">';
+                        evtcontent += '<div class="fc-event-head fc-event-skin">';
+                        evtcontent += '<div class="fc-event-time">' + fstart + " - " + fend + event.title + '</div>';
+                        evtcontent += '</div>';
+                        evtcontent += '<div class="fc-event-content"></div>';
+                        evtcontent += '<div class="fc-event-bg"></div>';
+                        evtcontent += '</div>';
+                        element.html(evtcontent);
+                    }
+                },
+                events: (function () {
+                    var _data = [];
+                    $.ajax({
+                        url: top.$.rootUrl + '/LR_OAModule/Schedule/GetList',
+                        type: "get",
+                        dataType: "json",
+                        async: false,
+                        success: function (data) {
+                            _data = data;
+                        }
+                    });
+                    return _data;
+                })()
+            });
+        });
+        function resize() {
+            $('#pageayout').height($(window).height() - 20);
+            $(window).resize(function (e) {
+                window.setTimeout(function () {
+                    $('#pageayout').height($(window).height() - 20);
+                }, 200);
+                e.stopPropagation();
+            });
+        }
+        //添加日程
+        function btn_add(date, time) {
+            top.learun.layerForm({
+                id: 'form',
+                title: '添加日程',
+                url: '/LR_OAModule/Schedule/Form?startDate=' + escape(date) + '&startTime=' + time,
+                width: 500,
+                height: 350,
+                callBack: function (id) {
+                    return top[id].acceptClick();
+                }
+            });
+        };
+        function callback() {
+            learun.reload();
+        }
+    </script>
+</head>
+<body>
+    <div id="pageayout" class="border" style="overflow: auto; padding: 0px;">
+        <div id='calendar' class="calendar" style="margin: 10px;background: #fff; "></div>
+    </div>
+</body>
+</html>

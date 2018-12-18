@@ -1,0 +1,35 @@
+﻿.lr-layout {
+    padding:0;
+    padding-top:40px;
+}
+.lr-layout-center {
+    padding:0;
+}
+.lr-layout-wrap {
+    padding:0;
+    border:0;
+}
+.lr-nav-tabs
+{
+    position: absolute;
+    top: 0;
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+.lr-nav-tabs>li {
+    border: 0;
+    padding: 11px 15px;
+    cursor:pointer;
+}
+.lr-nav-tabs>li.active, 
+.lr-nav-tabs>li.active:focus, 
+.lr-nav-tabs>li.active:hover {
+    color: #555;
+    cursor: default;
+    padding-bottom:10px;
+    background-color: #fff;
+    border: 0;
+    border-bottom: 2px solid #3498DB;
+}
+

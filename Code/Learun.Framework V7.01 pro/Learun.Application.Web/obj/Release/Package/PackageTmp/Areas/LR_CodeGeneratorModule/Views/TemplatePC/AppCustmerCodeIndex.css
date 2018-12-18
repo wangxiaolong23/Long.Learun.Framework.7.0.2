@@ -1,0 +1,212 @@
+﻿.lr-layout-tool-item {
+    position: relative;
+    float: left;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+    .lr-layout-tool-item .btn {
+        position: relative;
+        display: inline-block;
+        height: 28px;
+        margin-bottom: 1px;
+        line-height: 14px;
+    }
+
+    .lr-layout-tool-item .form-control {
+        border-radius: 4px;
+        display: inline-block;
+        width: 300px;
+    }
+
+.step-pane-base {
+    padding: 10px;
+    padding-top: 168px;
+}
+
+.step-pane-base-top {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    width: 100%;
+    height: 166px;
+}
+
+
+.lr-panel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    padding-top: 38px;
+}
+
+    .lr-panel .panel-heading {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 38px;
+    }
+
+    .lr-panel .panel-body {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+.btn-tool-bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    z-index: 4;
+}
+
+.step-gird-pane {
+    padding-top: 41px;
+}
+
+.btn-tool-bar-left {
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    width: 300px;
+    height: 28px;
+    z-index: 4;
+    text-align: left;
+}
+
+.lr-form-layout-body {
+    padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lr-form-layout-header .lr-form-item-title {
+    width: 58px;
+    padding-right: 0;
+    text-align: left;
+}
+
+.lr-form-layout-header .lr-form-item {
+    padding-left: 58px;
+}
+
+.tab-btn {
+    position: relative;
+    float: left;
+    height: 25px;
+    padding: 0 8px;
+    line-height: 23px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+    .tab-btn:hover {
+        background-color: #eee;
+    }
+
+.tab-block {
+    min-width: 80px;
+    text-align: center;
+}
+
+    .tab-block.active {
+        background-color: #2F94EE;
+        border-color: #2F94EE;
+        color: #fff;
+    }
+
+.lbtn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color: #373a3c;
+    background-color: #fff;
+    border-color: #ccc;
+    position: relative;
+    float: left;
+    margin-left: -1px;
+}
+
+.btn-group > .lbtn:first-child {
+    margin-left: 0;
+}
+
+    .btn-group > .lbtn:first-child:not(:last-child) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+.btn-group > .lbtn:last-child:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.btn-group > .lbtn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+    border-radius: 0;
+}
+
+.lbtn.active {
+    border: 1px solid #ff5d5b;
+    z-index: 1;
+    background: url(/Content/images/selected_red.png) right top no-repeat;
+}
+
+.treesetting {
+    display: none;
+}
+
+
+.lr-form-tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    height: 49px;
+    background: #fff;
+}
+
+.tab-content, .tab-content .tab-pane {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+    .tab-content .tab-pane {
+        overflow-y: auto;
+    }

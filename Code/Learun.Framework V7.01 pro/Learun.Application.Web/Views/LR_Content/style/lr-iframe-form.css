@@ -1,0 +1,255 @@
+﻿/*
+ * 版 本 Learun-ADMS V7.0.0 力软敏捷开发框架(http://www.learun.cn)
+ * Copyright (c) 2013-2018 上海力软信息技术有限公司
+ * 创建人：力软-前端开发组
+ * 日 期：2017.03.16
+ * 描 述：iframe表单页面布局样式
+ */
+body {
+    background-color: initial;
+}
+
+.lr-form-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+}
+/*基本表单提交样式*/
+.lr-form-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 15px 30px 0px 0px;
+}
+    .lr-form-wrap.lr-scroll-wrap {
+        padding:0;
+    }
+        .lr-form-wrap.lr-scroll-wrap > .lr-scroll-box {
+            padding: 15px 30px 0px 0px;
+        }
+
+.lr-form-item {
+    position: relative;
+    min-height: 38px;
+    padding: 5px 0px 5px 100px;
+}
+.lr-form-item-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    line-height: 38px;
+    text-align: right;
+    padding-right: 10px;
+}
+.lr-form-item-title > font {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    color: red;
+}
+.lr-form-item .checkbox,.lr-form-item .radio {
+    moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+.lr-form-item .checkbox input[type=checkbox], .lr-form-item .radio input[type=radio] {
+    margin-top: 3px;
+    margin-left:-15px;
+}
+
+.lr-form-item-grid {
+    padding:10px 0 10px 40px;
+    z-index:0;
+}
+.lr-form-item-grid .jfgrid-layout {
+    border:1px solid #ddd;
+}
+
+.lr-input-underline {
+    border:0px;
+    border-bottom:1px solid #ccc;
+    border-radius:0px;
+}
+.lr-select-underline {
+    border-radius: 0px;
+    border-color: #fff !important;
+    border-bottom: 1px solid #ccc !important;
+}
+
+.lr-input-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 16px;
+    height: 100%;
+    line-height: 28px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 10;
+}
+.lr-input-wdatepicker {
+    background: url(/Content/images/datepicker_icon.png) right 0 no-repeat #FFF;
+}
+.lr-input-wdatepicker.lr-field-error {
+    background: none;
+}
+.lr-form-btnitem {
+    padding-right:80px;
+}
+.lr-form-item-btn {
+    position:absolute;
+    top:4px;
+    right:0;
+    padding:4px 8px;
+}
+
+
+.lr-form-layout {
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.lr-form-layout-top-bottom {
+    padding-top:44px;
+}
+.lr-form-layout-header {
+    position:absolute;
+    top:0;
+    left:0;
+    height:44px;
+    width:100%;
+
+    padding:5px;
+}
+.lr-form-layout-body {
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.lr-form-layout-body-title {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:30px;
+    line-height:29px;
+    background-color:#F5F5F5;
+    border-bottom:1px solid #ccc;
+    text-align:right;
+    padding-right:10px;
+    font-weight:bold;
+    color:#676a6c;
+}
+
+.lr-form-jfgrid-btns {
+    position:absolute;
+    height:100%;
+    line-height:24px;
+    top:0;
+    left:0;
+    padding-left:5px;
+}
+.lr-form-jfgrid-btns .btn {
+    padding: 1px 4px;
+}
+
+
+.lr-form-bottom-button {
+    moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    height: 39px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: right;
+    padding: 5px 5px 0px 0px;
+    border-top: 1px solid #eee;
+    border-radius: 0 0 4px 4px;
+    background-color: #F8f8f8;
+    z-index:2;
+}
+.lr-form-bottom-button > .btn {
+    padding: 3px 10px;
+}
+
+
+.lr-form-area > div {
+    padding-right:2px;
+}
+
+.lr-form-tab a {
+     moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    cursor:pointer!important;
+}
+
+.sys_spec_text{padding-left:15px;-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;-khtml-user-select: none;user-select: none;}
+.sys_spec_text li{position:relative;outline:none;display:inline;float:left;height:46px;position:relative;margin:10px 10px 0px 0;outline:none;}
+.sys_spec_text li a{cursor:pointer;vertical-align:middle;text-align:center;word-break:keep-all;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;height:39px;line-height:38px;width:100px;text-align:center;padding:0px 0px;border:1px solid #ccc;border-radius: 3px;background:#fff;display:inline-block;outline:none;}
+.sys_spec_text li a:hover{padding:0 0px;text-decoration:none;}
+.sys_spec_text li.active a{color: #ff5d5b;border: 1px solid #ff5d5b;padding:0 0px;background: url(/Content/images/selected_red.png) right top no-repeat;}
+
+
+/*表单验证显示错误字段信息*/
+.lr-field-error {
+    border-color:#ff5d48!important;
+}
+
+.lr-field-error-info {
+    position: absolute;
+    top: 8px;
+    right: 3px;
+    color: #ff5d48;
+    font-size: 16px;
+    background-color: #fff;
+    cursor:pointer;
+}
+.lr-form-btnitem .lr-field-error-info {
+     right: 83px;
+}
+
+/*选项卡设置*/
+.lr-form-tabs {
+    position:absolute;
+    width:100%;
+    height:44px;
+    top:0;
+    left:0;
+    padding:5px 5px 0px 5px;
+}
+.lr-form-tabs li {
+    white-space: nowrap;
+    display: inline-block!important;
+    float: initial;
+    cursor:pointer;
+}
+.lr-form-tabs .nav-tabs {
+    white-space: nowrap;
+}
+.lr-form-tabs .mCS-minimal-dark.mCSB_scrollTools_horizontal {
+    top:32px;
+}
+.lr-tab-content,.lr-tab-content>div {
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+

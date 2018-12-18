@@ -1,0 +1,40 @@
+﻿/*
+ * 版 本 Learun-ADMS V7.0.0 力软敏捷开发框架(http://www.learun.cn)
+ * Copyright (c) 2013-2018 上海力软信息技术有限公司
+ * 创建人：力软-前端开发组
+ * 日 期：2017.03.22
+ * 描 述：右键菜单样式表
+ */
+.lr-contextmenu-wrap {
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:#fff;
+    border:1px solid #ccc;
+    border-radius:4px;
+
+    min-width: 120px;
+    padding:5px 0px;
+
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+
+    z-index:1000;
+    display:none;
+}
+
+.lr-contextmenu-ul>li>a
+{
+    display: block;
+    padding: 2px 10px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #777;
+    white-space: nowrap;
+}
+.lr-contextmenu-ul>li>a:hover {
+    color: #262626;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}

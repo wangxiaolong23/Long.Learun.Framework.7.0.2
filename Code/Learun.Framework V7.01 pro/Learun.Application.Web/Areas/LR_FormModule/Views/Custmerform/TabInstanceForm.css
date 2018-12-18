@@ -1,0 +1,33 @@
+﻿body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+}
+.lr-form-tab {
+    margin: 0 10px;
+    margin-top: 10px;
+}
+.jfgrid-data-cell {
+    border-bottom: 1px solid #ddd;
+    border-right:1px solid #ddd;
+}
+.lr-form-wrap {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: #bdbdbd 0 0 10px;
+    padding-top:30px; 
+}
+.top-btn-tool {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 6px 6px;
+    padding: 8px;
+    z-index:1;
+}
+.lr-form-bg {
+    display:none;
+}

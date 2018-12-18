@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Form";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<link href="~/Content/webuploader/webuploader.css" rel="stylesheet" />
+<script src="~/Content/webuploader/webuploader.nolog.min.js"></script>
+@Html.AppendCssFile("/Areas/LR_SystemModule/Views/ExcelImport/ImportForm.css")
+
+<div class="lr-form-layout lr-form-layout-top-bottom">
+    <div class="lr-form-layout-header">
+        <div id="lr_add_file_btn"><i class="fa fa-cloud-upload"></i><span class="lrlg">上传文件</span></div>
+        <div class="webuploader-pick"  id="lr_down_file_btn"><i class="fa fa-download"></i><span class="lrlg">下载模板</span></div>
+    </div>
+    <div class="lr-form-layout-body">
+        <div class="lr-form-file-queue-wrap" id="lr_form_file_queue">
+            <div class="lr-form-file-queue" id="lr_form_file_queue_list">
+
+            </div>
+            <div class="lr-form-file-queue-bg">
+                <h1><span class="lrlg">试试将电脑里的文件拖拽到此上传</span></h1>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_SystemModule/Views/ExcelImport/ImportForm.js")

@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "自定义表单设计";
+    Layout = "~/Views/Shared/_CustmerFormDesigner.cshtml";
+}
+@Html.AppendCssFile("/Areas/LR_FormModule/Views/Custmerform/Form.css")
+<div class="widget-body">
+    <div id="wizard" class="wizard" data-target="#wizard-steps">
+        <ul class="steps">
+            <li data-target="#step-1" class="active"><span class="step">1</span>基本配置<span class="chevron"></span></li>
+            <li data-target="#step-2"><span class="step">2</span>数据表设置<span class="chevron"></span></li>
+            <li data-target="#step-3"><span class="step">3</span>表单设计<span class="chevron"></span></li>
+        </ul>
+    </div>
+    <div class="step-content" id="wizard-steps">
+        <div class="step-pane active step-pane-base" id="step-1">
+            <div class="lr-alert">
+                <div class="alert alert-danger">
+                    <i class="fa fa-warning alert-dismissible"></i>
+                    请你填写表单信息，用于创建或修改表单！
+                </div>
+            </div>
+            <div class="panel panel-default lr-panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">表单基本信息配置</h3>
+                </div>
+                <div class="panel-body">
+                    <input id="F_SchemeId" type="hidden"  />
+                    <div class="col-xs-12 lr-form-item" style="top:15px;">
+                        <div class="lr-form-item-title">表单名称<font face="宋体">*</font></div>
+                        <input id="F_Name" type="text" class="form-control" placeholder="请输入名称" isvalid="yes" checkexpession="NotNull" />
+                    </div>
+                    <div class="col-xs-12 lr-form-item" style="top:53px;">
+                        <div class="lr-form-item-title">表单分类<font face="宋体">*</font></div>
+                        <div id="F_Category" isvalid="yes" checkexpession="NotNull"></div>
+                    </div>
+                    <div class="col-xs-12 lr-form-item" style="position:relative;width:100%;height:100%;">
+                        <div class="lr-form-item-title">备注</div>
+                        <textarea id="F_Description" class="form-control" style="height: 100%;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step-pane step-gird-pane" id="step-2">
+            <div class="btn-tool-bar">
+                <div class="btn-tool-bar-left"><div id="F_DbId" isvalid="yes" checkexpession="NotNull"></div></div>
+
+                <div class="btn-group btn-group-sm">
+                    <a id="lr_db_add" class="btn btn-default"><i class="fa fa-plus"></i>&nbsp;新增</a>
+                    <a id="lr_db_edit" class="btn btn-default"><i class="fa fa-pencil-square-o"></i>&nbsp;编辑</a>
+                    <a id="lr_db_delete" class="btn btn-default"><i class="fa fa-trash-o"></i>&nbsp;删除</a>
+                </div>
+            </div>
+            <div id="gridtable"></div>
+        </div>
+        <div class="step-pane" id="step-3">
+        </div>
+    </div>
+
+    <div class="lr-form-bottom-button" id="wizard-actions">
+        <a id="btn_prev" class="btn btn-default btn-prev" disabled>上一步</a>
+        <a id="btn_next" class="btn btn-default btn-next">下一步</a>
+        <a id="btn_draft" class="btn btn-warning">保存草稿</a>
+        <a id="btn_finish" class="btn btn-success" disabled>保存</a>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_FormModule/Views/Custmerform/Form.js")

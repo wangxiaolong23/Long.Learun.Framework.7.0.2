@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+           id="cordova.custom.plugins.exitapp"
+           version="1.0.0">
+
+  <name>ExitApp</name>
+  <description>Implements navigator.app.exitApp on WP8, Android</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova,terminate</keywords>
+
+  <js-module src="www/ExitApp.js" name="exitApp">
+    <merges target="navigator.app" />
+  </js-module>
+
+  <!-- wp8 -->
+  <platform name="wp8">
+    <config-file target="config.xml" parent="/*">
+      <feature name="ExitApp">
+        <param name="wp-package" value="ExitApp" />
+      </feature>
+    </config-file>
+
+    <source-file src="src/wp/ExitApp.cs" />
+  </platform>
+  
+  <!-- android -->
+  <platform name="android">
+    <config-file target="config.xml" parent="/*">
+      <feature name="ExitApp">
+        <param name="android-package" value="cordova.custom.plugins.exitapp.ExitApp" />
+      </feature>
+    </config-file>
+    <source-file src="src/android/ExitApp.java" target-dir="src/cordova/custom/plugins/exitapp" />
+  </platform>
+</plugin>

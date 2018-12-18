@@ -1,0 +1,106 @@
+﻿@{
+    ViewBag.Title = "风尚版风格";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+@Html.AppendCssFile("/Views/Home/AdminAccordion/index.css")
+<div class="lr-frame-top">
+    <a class="lr-logo-title"><img src="~/Content/images/logo_long.png" /></a>
+</div>
+<div class="lr-frame-menu-btn" id="lr_frame_menu_btn"><i class="fa fa-fw fa-dedent"></i></div>
+
+
+@* 即时通讯窗体 *@
+@*<div class="lr-im-bell">
+    <i class="fa fa-commenting"></i>
+    消息中心
+</div>*@
+
+<div class="lr-im-bell" title="消息中心">
+    <span class="point" style="display:none;"></span>
+    <i class="fa fa-bell"></i>
+</div>
+
+<div class="lr-im-body">
+    <div class="lr-im-title">
+        <div class="title-item active" data-value="lr_im_msglist">
+            <i class="fa fa-commenting"></i>
+        </div>
+        <div class="title-item title-item-two" data-value="lr_im_userlist">
+            <i class="fa fa-user"></i>
+        </div>
+    </div>
+    <div id="lr_im_msglist" class="lr-im-content lr-im-msglist active">
+        <div class="lr-im-msg-list" id="lr_immsg_userlist">
+            @*<div class="msg-item">
+                <div class="photo">
+                    <img src="~/Content/images/head/on-boy.jpg">
+                    <div class="point"></div>
+                </div>
+                <div class="name">系统消息1</div>
+                <div class="msg">你已经被系统选为超级VIP成员了！</div>
+                <div class="date">2018-05-30</div>
+            </div>
+            <div class="msg-item">
+                <div class="icon">
+                    <i class="fa fa-bell"></i>
+                </div>
+                <div class="name">系统消息2</div>
+                <div class="msg">你已经被系统选为超级VIP成员了！</div>
+                <div class="date">05-30</div>
+            </div>
+            <div class="msg-item">
+                <div class="photo">
+                    <img src="~/Content/images/head/on-boy.jpg">
+                </div>
+                <div class="name">系统消息3</div>
+                <div class="msg">你已经被系统选为超级VIP成员了！</div>
+                <div class="date">14:01</div>
+            </div>*@
+        </div>
+    </div>
+    <div id="lr_im_userlist" class="lr-im-content lr-im-userlist">
+        <div class="lr-im-search">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="搜索（Enter回车）">
+        </div>
+        <div class="lr-im-content-userlist" id="lr_im_content_userlist">
+
+        </div>
+    </div>
+</div>
+
+<div class="lr-im-black-overlay">
+    <div class="lr-im-dialog">
+        <div class="lr-im-header">
+            <span class="im-title"></span>
+            <div class="im-close">
+                <i class="fa fa-close"></i>
+            </div>
+        </div>
+
+        <div class="lr-im-msgcontent">
+            @*<div class="im-time">09:55</div>
+            <div class="im-other">
+                <div class="headimg"><img src="~/Content/images/head/on-boy.jpg"></div>
+                <div class="arrow"></div>
+                <span class="content">大宝你好，我看了下2月份的考勤记录有异常，麻烦看看是什么问题？</span>
+            </div>
+            <div class="me im-time">09:55</div>
+            <div class="im-me">
+                <div class="headimg"><img src="~/Content/images/head/on-boy.jpg"></div>
+                <div class="arrow"></div>
+                <span class="content">没有问题</span>
+            </div>*@
+        </div>
+        <div class="lr-im-msgcontent-tool"><span id="lr_im_look_msg_btn">查看消息记录</span></div>
+        <div class="lr-im-input">
+            <textarea id="lr_im_input" type="text" class="inp"></textarea>
+        </div>
+    </div>
+</div>
+
+@Html.AppendJsFile("/Views/Home/AdminAccordion/index.js")
+
+
+
+

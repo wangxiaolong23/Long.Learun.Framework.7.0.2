@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "功能授权";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Areas/LR_AuthorizeModule/Views/Authorize/Form.css")
+<div class="widget-body">
+    <div id="wizard" class="wizard" data-target="#wizard-steps">
+        <ul class="steps">
+            <li data-target="#step-1" class="active"><span class="step">1</span>系统功能<span class="chevron"></span></li>
+            <li data-target="#step-2"><span class="step">2</span>系统按钮<span class="chevron"></span></li>
+            <li data-target="#step-3"><span class="step">3</span>系统视图<span class="chevron"></span></li>
+            <li data-target="#step-4"><span class="step">4</span>系统表单<span class="chevron"></span></li>
+        </ul>
+    </div>
+    <div class="step-content" id="wizard-steps">
+        <div class="step-pane  active" id="step-1">
+
+        </div>
+        <div class="step-pane" id="step-2">
+
+        </div>
+        <div class="step-pane" id="step-3">
+
+        </div>
+        <div class="step-pane" id="step-4">
+
+        </div>
+    </div>
+
+    <div class="lr-form-bottom-button" id="wizard-actions">
+        <a id="btn_prev" class="btn btn-default btn-prev" disabled>上一步</a>
+        <a id="btn_next" class="btn btn-default btn-next">下一步</a>
+        <a id="btn_finish" disabled class="btn btn-success">完成</a>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_AuthorizeModule/Views/Authorize/Form.js")

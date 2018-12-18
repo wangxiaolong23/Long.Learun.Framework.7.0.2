@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "个人中心-我的头像";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<link href="~/Content/webuploader/webuploader.css" rel="stylesheet" />
+@Html.AppendCssFile("/Views/UserCenter/HeadForm.css")
+<div class="lr-wrap" >
+    <div class="file" >
+        
+        <input type="file" name="uploadFile" id="uploadFile">
+    </div>
+    <div class="text">
+        建议上传图片尺寸为100x100，大小不超过2M。
+        <div><a class="btn btn-primary" id="lr_save_btn"><i class="fa fa-save"></i>&nbsp;保&nbsp;存</a></div>
+    </div>
+</div>
+<script src="~/Content/webuploader/webuploader.nolog.min.js"></script>
+@Html.AppendJsFile("/Views/LR_Content/script/lr-fileupload.js", "/Views/UserCenter/HeadForm.js")
+

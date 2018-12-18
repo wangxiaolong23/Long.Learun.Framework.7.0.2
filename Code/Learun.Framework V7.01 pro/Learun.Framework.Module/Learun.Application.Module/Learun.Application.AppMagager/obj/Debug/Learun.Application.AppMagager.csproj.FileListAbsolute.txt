@@ -1,0 +1,294 @@
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.AppMagager.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.AppMagager.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.AppMagager.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Base.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Base.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Factory.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Redis.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.Repository.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Ioc.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Util.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Newtonsoft.Json.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Redis.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Interfaces.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Text.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Dapper.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.OOXML.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\LumiSoft.Net.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Yahoo.Yui.Compressor.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Organization.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Common.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.OpenXml4Net.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\EcmaScript.NET.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Base.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Factory.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Redis.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.Repository.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.Repository.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Ioc.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Util.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Util.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Base.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Base.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Newtonsoft.Json.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Redis.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Interfaces.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Text.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Dapper.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\LumiSoft.Net.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Organization.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Organization.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Common.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.csprojResolveAssemblyReference.cache
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.csproj.CoreCompileInputs.cache
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.AppMagager.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.AppMagager.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.AppMagager.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Base.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Base.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Factory.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Redis.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.Repository.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Ioc.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Util.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Newtonsoft.Json.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Redis.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Interfaces.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Text.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Dapper.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.OOXML.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\LumiSoft.Net.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Yahoo.Yui.Compressor.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Organization.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Common.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\EcmaScript.NET.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Base.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Factory.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Redis.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.Repository.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.Repository.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Ioc.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Util.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Util.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Base.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Base.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Newtonsoft.Json.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Redis.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Interfaces.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Text.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Dapper.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\LumiSoft.Net.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Organization.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Organization.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Common.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.csprojAssemblyReference.cache
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.csproj.CoreCompileInputs.cache
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.csproj.CopyComplete
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.AppMagager.dll.config
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.AppMagager.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.AppMagager.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Base.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Base.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Factory.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Redis.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.Repository.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Ioc.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Util.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Newtonsoft.Json.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Redis.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Interfaces.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Text.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Dapper.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\LumiSoft.Net.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Yahoo.Yui.Compressor.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.OOXML.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Organization.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Common.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\EcmaScript.NET.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.OpenXml4Net.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Base.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Factory.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Redis.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.Repository.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Ioc.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Util.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Base.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Newtonsoft.Json.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Redis.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Interfaces.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Text.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Dapper.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\LumiSoft.Net.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Organization.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Common.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.csprojResolveAssemblyReference.cache
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.dll
+E:\Code\Backup\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.AppMagager.dll.config
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.AppMagager.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.AppMagager.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Base.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Base.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Factory.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Redis.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.Repository.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Ioc.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Util.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Newtonsoft.Json.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Redis.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Interfaces.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Text.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Dapper.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\LumiSoft.Net.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Yahoo.Yui.Compressor.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.OOXML.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Organization.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Common.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\EcmaScript.NET.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.OpenXml4Net.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Base.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Factory.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Redis.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.Repository.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Ioc.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Util.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Base.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Newtonsoft.Json.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Redis.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Interfaces.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Text.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Dapper.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\LumiSoft.Net.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Organization.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Common.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.csprojResolveAssemblyReference.cache
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.dll
+E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.AppMagager.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.AppMagager.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.AppMagager.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Base.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Base.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Factory.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Redis.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.Repository.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Ioc.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Util.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Newtonsoft.Json.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Redis.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Interfaces.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Text.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Dapper.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.OOXML.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\LumiSoft.Net.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Yahoo.Yui.Compressor.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Organization.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Common.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.OpenXml4Net.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\EcmaScript.NET.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Base.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Factory.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Cache.Redis.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.Repository.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.Repository.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Ioc.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Util.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Util.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Base.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Base.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Newtonsoft.Json.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Redis.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Interfaces.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Text.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.DataBase.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Dapper.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\NPOI.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\LumiSoft.Net.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Organization.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Learun.Application.Organization.dll.config
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Common.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.csproj.CoreCompileInputs.cache
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.dll
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.pdb
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.csprojResolveAssemblyReference.cache

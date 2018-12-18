@@ -1,0 +1,2455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F94FC64-4D55-4874-8A71-95E9DB1F2AAD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Learun.Application.Web</RootNamespace>
+    <AssemblyName>Learun.Application.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.93.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.93.0\lib\net40\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.3.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.3\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="FastMember.Signed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=9e8f22703bef9a29, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastMember.Signed.1.3.0\lib\net45\FastMember.Signed.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.Data.Entity.6.9.9\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.24160719\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess.EntityFramework, Version=6.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Oracle.ManagedDataAccess.EntityFramework.12.1.2400\lib\net45\Oracle.ManagedDataAccess.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\01 Handler\AjaxOnlyAttribute.cs" />
+    <Compile Include="App_Start\01 Handler\DepartAuthFillters.cs" />
+    <Compile Include="App_Start\01 Handler\HandlerErrorAttribute.cs" />
+    <Compile Include="App_Start\01 Handler\HandlerLoginAttribute.cs" />
+    <Compile Include="App_Start\01 Handler\HandlerValidateAntiForgeryTokenAttribute.cs" />
+    <Compile Include="App_Start\01 Handler\MvcControllerBase.cs" />
+    <Compile Include="App_Start\01 Handler\ResultFillters.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\AppManager\AppManagerAreaRegistration.cs" />
+    <Compile Include="Areas\AppManager\Controllers\DTImgController.cs" />
+    <Compile Include="Areas\AppManager\Controllers\FunctionManagerController.cs" />
+    <Compile Include="Areas\LR_AuthorizeModule\Controllers\AuthorizeController.cs" />
+    <Compile Include="Areas\LR_AuthorizeModule\Controllers\FilterIPController.cs" />
+    <Compile Include="Areas\LR_AuthorizeModule\Controllers\FilterTimeController.cs" />
+    <Compile Include="Areas\LR_AuthorizeModule\Controllers\UserRelationController.cs" />
+    <Compile Include="Areas\LR_AuthorizeModule\LR_AuthorizeModuleAreaRegistration.cs" />
+    <Compile Include="Areas\LR_CodeDemo\Controllers\GridDemoController.cs" />
+    <Compile Include="Areas\LR_CodeDemo\LR_CodeDemoAreaRegistration.cs" />
+    <Compile Include="Areas\LR_CodeGeneratorModule\Controllers\IconController.cs" />
+    <Compile Include="Areas\LR_CodeGeneratorModule\Controllers\PluginDemoController.cs" />
+    <Compile Include="Areas\LR_CodeGeneratorModule\Controllers\TemplateAPPController.cs" />
+    <Compile Include="Areas\LR_CodeGeneratorModule\Controllers\TemplatePCController.cs" />
+    <Compile Include="Areas\LR_CodeGeneratorModule\LR_CodeGeneratorModuleAreaRegistration.cs" />
+    <Compile Include="Areas\LR_CRMModule\Controllers\CashBalanceController.cs" />
+    <Compile Include="Areas\LR_CRMModule\Controllers\ChanceController.cs" />
+    <Compile Include="Areas\LR_CRMModule\Controllers\CrmOrderController.cs" />
+    <Compile Include="Areas\LR_CRMModule\Controllers\CustomerContactController.cs" />
+    <Compile Include="Areas\LR_CRMModule\Controllers\CustomerController.cs" />
+    <Compile Include="Areas\LR_CRMModule\Controllers\ExpensesController.cs" />
+    <Compile Include="Areas\LR_CRMModule\Controllers\InvoiceController.cs" />
+    <Compile Include="Areas\LR_CRMModule\Controllers\ReceivableController.cs" />
+    <Compile Include="Areas\LR_CRMModule\Controllers\TrailRecordController.cs" />
+    <Compile Include="Areas\LR_CRMModule\LR_CRMModuleAreaRegistration.cs" />
+    <Compile Include="Areas\LR_FormModule\Controllers\CustmerformController.cs" />
+    <Compile Include="Areas\LR_FormModule\Controllers\FormRelationController.cs" />
+    <Compile Include="Areas\LR_FormModule\LR_FormModuleAreaRegistration.cs" />
+    <Compile Include="Areas\LR_IM\Controllers\IMMsgController.cs" />
+    <Compile Include="Areas\LR_IM\Controllers\SysUserController.cs" />
+    <Compile Include="Areas\LR_IM\LR_IMAreaRegistration.cs" />
+    <Compile Include="Areas\LR_OAModule\Controllers\EmailController.cs" />
+    <Compile Include="Areas\LR_OAModule\Controllers\ModuleExportController.cs" />
+    <Compile Include="Areas\LR_OAModule\Controllers\NewsController.cs" />
+    <Compile Include="Areas\LR_OAModule\Controllers\NoticeController.cs" />
+    <Compile Include="Areas\LR_OAModule\Controllers\ProjectGanttController.cs" />
+    <Compile Include="Areas\LR_OAModule\Controllers\ResourceFileController.cs" />
+    <Compile Include="Areas\LR_OAModule\Controllers\ScheduleController.cs" />
+    <Compile Include="Areas\LR_OAModule\Controllers\SignetController.cs" />
+    <Compile Include="Areas\LR_OAModule\LR_OAModuleAreaRegistration.cs" />
+    <Compile Include="Areas\LR_OrganizationModule\Controllers\CompanyController.cs" />
+    <Compile Include="Areas\LR_OrganizationModule\Controllers\DepartmentController.cs" />
+    <Compile Include="Areas\LR_OrganizationModule\Controllers\PostController.cs" />
+    <Compile Include="Areas\LR_OrganizationModule\Controllers\RoleController.cs" />
+    <Compile Include="Areas\LR_OrganizationModule\Controllers\UserController.cs" />
+    <Compile Include="Areas\LR_OrganizationModule\LR_OrganizationModuleAreaRegistration.cs" />
+    <Compile Include="Areas\LR_ReportModule\Controllers\ReportManageController.cs" />
+    <Compile Include="Areas\LR_ReportModule\Controllers\ReportTemplateController.cs" />
+    <Compile Include="Areas\LR_ReportModule\LR_ReportModuleAreaRegistration.cs" />
+    <Compile Include="Areas\LR_SystemModule\Controllers\AnnexesController.cs" />
+    <Compile Include="Areas\LR_SystemModule\Controllers\AreaController.cs" />
+    <Compile Include="Areas\LR_SystemModule\Controllers\CodeRuleController.cs" />
+    <Compile Include="Areas\LR_SystemModule\Controllers\CustmerQueryController.cs" />
+    <Compile Include="Areas\LR_SystemModule\Controllers\DatabaseLinkController.cs" />
+    <Compile Include="Areas\LR_SystemModule\Controllers\DatabaseTableController.cs" />
+    <Compile Include="Areas\LR_SystemModule\Controllers\DataItemController.cs" />
+    <Compile Include="Areas\LR_SystemModule\Controllers\DataSourceController.cs" />
+    <Compile Include="Areas\LR_SystemModule\Controllers\DbFieldController.cs" />
+    <Compile Include="Areas\LR_SystemModule\Controllers\DesktopController.cs" />
+    <Compile Include="Areas\LR_SystemModule\Controllers\ExcelExportController.cs" />
+    <Compile Include="Areas\LR_SystemModule\Controllers\ExcelImportController.cs" />
+    <Compile Include="Areas\LR_SystemModule\Controllers\InterfaceController.cs" />
+    <Compile Include="Areas\LR_SystemModule\Controllers\LogController.cs" />
+    <Compile Include="Areas\LR_SystemModule\Controllers\ModuleController.cs" />
+    <Compile Include="Areas\LR_SystemModule\LR_SystemModuleAreaRegistration.cs" />
+    <Compile Include="Areas\LR_WebChatModule\Controllers\OrganizeController.cs" />
+    <Compile Include="Areas\LR_WebChatModule\Controllers\TokenController.cs" />
+    <Compile Include="Areas\LR_WebChatModule\Controllers\UserController.cs" />
+    <Compile Include="Areas\LR_WebChatModule\LR_WebChatModuleAreaRegistration.cs" />
+    <Compile Include="Areas\LR_WorkFlowModule\Controllers\WfEngineController.cs" />
+    <Compile Include="Areas\LR_WorkFlowModule\Controllers\WfMyTaskController.cs" />
+    <Compile Include="Areas\LR_WorkFlowModule\Controllers\WfDelegateRuleController.cs" />
+    <Compile Include="Areas\LR_WorkFlowModule\Controllers\WfMonitorController.cs" />
+    <Compile Include="Areas\LR_WorkFlowModule\Controllers\WfSchemeController.cs" />
+    <Compile Include="Areas\LR_WorkFlowModule\Controllers\WfSystemDemoController.cs" />
+    <Compile Include="Areas\LR_WorkFlowModule\LR_WorkFlowModuleAreaRegistration.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\UserCenterController.cs" />
+    <Compile Include="Controllers\UtilityController.cs" />
+    <Compile Include="Extensions\HtmlHelperExtensions.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Areas\LR_AuthorizeModule\Controllers\DataAuthorizeController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\AppManager\Views\DTImg\Form.css" />
+    <Content Include="Areas\AppManager\Views\DTImg\Form.js" />
+    <Content Include="Areas\AppManager\Views\DTImg\Index.js" />
+    <Content Include="Areas\AppManager\Views\FunctionManager\Form.css" />
+    <Content Include="Areas\AppManager\Views\FunctionManager\Form.js" />
+    <Content Include="Areas\AppManager\Views\FunctionManager\Index.js" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\Authorize\AppForm.js" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\Authorize\Form.css" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\Authorize\Form.js" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\DataAuthorize\Form.css" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\DataAuthorize\QueryForm.js" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\FilterIP\Form.js" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\FilterIP\Index.js" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\FilterTime\Form.css" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\FilterTime\Form.js" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\UserRelation\LookForm.css" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\UserRelation\LookForm.js" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\UserRelation\SelectForm.css" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\UserRelation\SelectForm.js" />
+    <Content Include="Areas\LR_CodeDemo\Views\GridDemo\CommonIndex.js" />
+    <Content Include="Areas\LR_CodeDemo\Views\GridDemo\EditIndex.js" />
+    <Content Include="Areas\LR_CodeDemo\Views\GridDemo\ReportIndex.js" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplateAPP\Index.css" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplateAPP\Index.js" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\AddBtnForm.js" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\AppCustmerCodeIndex.css" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\AppCustmerCodeIndex.js" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\EntityCodeIndex.css" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\EntityCodeIndex.js" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\FastCodeIndex.css" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\FastCodeIndex.js" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\Index.css" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\Index.js" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\CustmerCodeIndex.css" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\CustmerCodeIndex.js" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\WorkflowCodeIndex.css" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\WorkflowCodeIndex.js" />
+    <Content Include="Areas\LR_CRMModule\Views\CashBalance\Index.js" />
+    <Content Include="Areas\LR_CRMModule\Views\Chance\Detail.js" />
+    <Content Include="Areas\LR_CRMModule\Views\Chance\Form.js" />
+    <Content Include="Areas\LR_CRMModule\Views\Chance\Index.js" />
+    <Content Include="Areas\LR_CRMModule\Views\CrmOrder\Form.css" />
+    <Content Include="Areas\LR_CRMModule\Views\CrmOrder\Form.js" />
+    <Content Include="Areas\LR_CRMModule\Views\CrmOrder\Index.js" />
+    <Content Include="Areas\LR_CRMModule\Views\CustomerContact\ContactForm.js" />
+    <Content Include="Areas\LR_CRMModule\Views\CustomerContact\ContactIndex.js" />
+    <Content Include="Areas\LR_CRMModule\Views\Customer\Detail.js" />
+    <Content Include="Areas\LR_CRMModule\Views\Customer\Form.js" />
+    <Content Include="Areas\LR_CRMModule\Views\Customer\Index.js" />
+    <Content Include="Areas\LR_CRMModule\Views\Expenses\ExpensesForm.js" />
+    <Content Include="Areas\LR_CRMModule\Views\Expenses\Index.js" />
+    <Content Include="Areas\LR_CRMModule\Views\Invoice\Form.js" />
+    <Content Include="Areas\LR_CRMModule\Views\Invoice\Index.js" />
+    <Content Include="Areas\LR_CRMModule\Views\Receivable\Index.js" />
+    <Content Include="Areas\LR_CRMModule\Views\Receivable\ReceiptForm.js" />
+    <Content Include="Areas\LR_CRMModule\Views\Receivable\ReportIndex.js" />
+    <Content Include="Areas\LR_CRMModule\Views\TrailRecord\Index.js" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\DataTableForm.js" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\Form.css" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\Form.js" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\HistoryForm.js" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\Index.js" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\LayerInstanceForm.css" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\LayerInstanceForm.js" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\PreviewForm.css" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\PreviewForm.js" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\SetFieldForm.css" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\SetFieldForm.js" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\SetFieldIndex.js" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\SetSelectFieldForm.js" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\TabInstanceForm.css" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\TabInstanceForm.js" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\WorkflowInstanceForm.css" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\WorkflowInstanceForm.js" />
+    <Content Include="Areas\LR_FormModule\Views\FormRelation\ColFieldForm.js" />
+    <Content Include="Areas\LR_FormModule\Views\FormRelation\Form.css" />
+    <Content Include="Areas\LR_FormModule\Views\FormRelation\Form.js" />
+    <Content Include="Areas\LR_FormModule\Views\FormRelation\Index.js" />
+    <Content Include="Areas\LR_FormModule\Views\FormRelation\PreviewIndex.js" />
+    <Content Include="Areas\LR_FormModule\Views\FormRelation\QueryFieldForm.js" />
+    <Content Include="Areas\LR_IM\Views\IMMsg\Index.js" />
+    <Content Include="Areas\LR_IM\Views\SysUser\Form.js" />
+    <Content Include="Areas\LR_IM\Views\SysUser\Index.js" />
+    <Content Include="Areas\LR_OAModule\Views\Email\ConfigForm.js" />
+    <Content Include="Areas\LR_OAModule\Views\Email\DetailForm.js" />
+    <Content Include="Areas\LR_OAModule\Views\Email\Form.js" />
+    <Content Include="Areas\LR_OAModule\Views\Email\Index.js" />
+    <Content Include="Areas\LR_OAModule\Views\ModuleExport\Index.css" />
+    <Content Include="Areas\LR_OAModule\Views\ModuleExport\Index.js" />
+    <Content Include="Areas\LR_OAModule\Views\News\Form.js" />
+    <Content Include="Areas\LR_OAModule\Views\News\Index.js" />
+    <Content Include="Areas\LR_OAModule\Views\Notice\Form.js" />
+    <Content Include="Areas\LR_OAModule\Views\Notice\Index.js" />
+    <Content Include="Areas\LR_OAModule\Views\ProjectGantt\Form.js" />
+    <Content Include="Areas\LR_OAModule\Views\ResourceFile\FileForm.js" />
+    <Content Include="Areas\LR_OAModule\Views\ResourceFile\FolderForm.js" />
+    <Content Include="Areas\LR_OAModule\Views\ResourceFile\Index.js" />
+    <Content Include="Areas\LR_OAModule\Views\ResourceFile\MoveForm.js" />
+    <Content Include="Areas\LR_OAModule\Views\ResourceFile\UploadifyForm.css" />
+    <Content Include="Areas\LR_OAModule\Views\ResourceFile\UploadifyForm.js" />
+    <Content Include="Areas\LR_OAModule\Views\Schedule\Form.js" />
+    <Content Include="Areas\LR_OrganizationModule\Views\Company\Form.js" />
+    <Content Include="Areas\LR_OrganizationModule\Views\Company\Index.js" />
+    <Content Include="Areas\LR_OrganizationModule\Views\Department\Form.js" />
+    <Content Include="Areas\LR_OrganizationModule\Views\Department\Index.js" />
+    <Content Include="Areas\LR_OrganizationModule\Views\Post\Form.js" />
+    <Content Include="Areas\LR_OrganizationModule\Views\Post\Index.js" />
+    <Content Include="Areas\LR_OrganizationModule\Views\Post\SelectForm.css" />
+    <Content Include="Areas\LR_OrganizationModule\Views\Post\SelectForm.js" />
+    <Content Include="Areas\LR_OrganizationModule\Views\Role\Form.js" />
+    <Content Include="Areas\LR_OrganizationModule\Views\Role\Index.js" />
+    <Content Include="Areas\LR_OrganizationModule\Views\User\Form.js" />
+    <Content Include="Areas\LR_OrganizationModule\Views\User\Index.js" />
+    <Content Include="Areas\LR_OrganizationModule\Views\User\SelectForm.css" />
+    <Content Include="Areas\LR_OrganizationModule\Views\User\SelectForm.js" />
+    <Content Include="Areas\LR_OrganizationModule\Views\User\SelectOnlyForm.js" />
+    <Content Include="Areas\LR_ReportModule\Views\ReportManage\Form.js" />
+    <Content Include="Areas\LR_ReportModule\Views\ReportManage\Index.js" />
+    <Content Include="Areas\LR_ReportModule\Views\ReportTemplate\FinanceReport.js" />
+    <Content Include="Areas\LR_ReportModule\Views\ReportTemplate\PurchaseReport.js" />
+    <Content Include="Areas\LR_ReportModule\Views\ReportTemplate\SalesReport.js" />
+    <Content Include="Areas\LR_ReportModule\Views\ReportTemplate\StockReport.js" />
+    <Content Include="Areas\LR_SystemModule\Views\Annexes\DownForm.css" />
+    <Content Include="Areas\LR_SystemModule\Views\Annexes\DownForm.js" />
+    <Content Include="Areas\LR_SystemModule\Views\Annexes\UploadForm.css" />
+    <Content Include="Areas\LR_SystemModule\Views\Annexes\UploadForm.js" />
+    <Content Include="Areas\LR_SystemModule\Views\CodeRule\Form.css" />
+    <Content Include="Areas\LR_SystemModule\Views\CodeRule\Form.js" />
+    <Content Include="Areas\LR_SystemModule\Views\CodeRule\FormatForm.js" />
+    <Content Include="Areas\LR_SystemModule\Views\CodeRule\Index.js" />
+    <Content Include="Areas\LR_SystemModule\Views\CustmerQuery\Form.css" />
+    <Content Include="Areas\LR_SystemModule\Views\CustmerQuery\Form.js" />
+    <Content Include="Areas\LR_SystemModule\Views\CustmerQuery\Index.js" />
+    <Content Include="Areas\LR_SystemModule\Views\CustmerQuery\QueryForm.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DatabaseLink\Form.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DatabaseLink\Index.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DatabaseTable\CopyTableForm.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DatabaseTable\DraftForm.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DatabaseTable\EditTableForm.css" />
+    <Content Include="Areas\LR_SystemModule\Views\DatabaseTable\EditTableForm.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DatabaseTable\Form.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DatabaseTable\Index.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DatabaseTable\TableIndex.css" />
+    <Content Include="Areas\LR_SystemModule\Views\DatabaseTable\TableIndex.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DataItem\ClassifyForm.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DataItem\ClassifyIndex.css" />
+    <Content Include="Areas\LR_SystemModule\Views\DataItem\ClassifyIndex.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DataItem\DetailIndex.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DataItem\Form.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DataItem\Index.js" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\PluginDemo\index.css" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\PluginDemo\index.js" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\PluginDemo\listInfo.js" />
+    <Content Include="Areas\LR_SystemModule\Views\Area\Form.js" />
+    <Content Include="Areas\LR_SystemModule\Views\Area\Index.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DataSource\Form.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DataSource\Index.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DataSource\SelectForm.css" />
+    <Content Include="Areas\LR_SystemModule\Views\DataSource\SelectForm.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DataSource\TestForm.css" />
+    <Content Include="Areas\LR_SystemModule\Views\DataSource\TestForm.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DbField\Form.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DbField\Index.js" />
+    <Content Include="Areas\LR_SystemModule\Views\DbField\SelectForm.js" />
+    <Content Include="Areas\LR_SystemModule\Views\ExcelExport\Form.js" />
+    <Content Include="Areas\LR_SystemModule\Views\ExcelExport\Index.js" />
+    <Content Include="Areas\LR_SystemModule\Views\ExcelImport\Form.css" />
+    <Content Include="Areas\LR_SystemModule\Views\ExcelImport\Form.js" />
+    <Content Include="Areas\LR_SystemModule\Views\ExcelImport\ImportForm.css" />
+    <Content Include="Areas\LR_SystemModule\Views\ExcelImport\ImportForm.js" />
+    <Content Include="Areas\LR_SystemModule\Views\ExcelImport\Index.js" />
+    <Content Include="Areas\LR_SystemModule\Views\ExcelImport\SetFieldForm.js" />
+    <Content Include="Areas\LR_SystemModule\Views\Interface\FieldForm.js" />
+    <Content Include="Areas\LR_SystemModule\Views\Interface\Form.css" />
+    <Content Include="Areas\LR_SystemModule\Views\Interface\Form.js" />
+    <Content Include="Areas\LR_SystemModule\Views\Interface\Index.css" />
+    <Content Include="Areas\LR_SystemModule\Views\Interface\Index.js" />
+    <Content Include="Areas\LR_SystemModule\Views\Log\DetailForm.js" />
+    <Content Include="Areas\LR_SystemModule\Views\Log\Form.js" />
+    <Content Include="Areas\LR_SystemModule\Views\Log\Index.js" />
+    <Content Include="Areas\LR_SystemModule\Views\Module\Form.css" />
+    <Content Include="Areas\LR_SystemModule\Views\Module\Form.js" />
+    <Content Include="Areas\LR_SystemModule\Views\Module\Index.js" />
+    <Content Include="Areas\LR_WebChatModule\Views\Organize\Index.js" />
+    <Content Include="Areas\LR_WebChatModule\Views\Organize\MemberForm.js" />
+    <Content Include="Areas\LR_WebChatModule\Views\Token\Index.css" />
+    <Content Include="Areas\LR_WebChatModule\Views\Token\Index.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfDelegateRule\Form.css" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfDelegateRule\Form.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfDelegateRule\Index.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfMonitor\Index.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfMyTask\AuditFlowForm.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfMyTask\CustmerWorkFlowForm.css" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfMyTask\CustmerWorkFlowForm.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfMyTask\Index.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfMyTask\ReleaseFlowForm.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfMyTask\ReleaseForm.css" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfMyTask\ReleaseForm.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfMyTask\SignFlowForm.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfMyTask\WfNodeForm.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\AuthorizeForm.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\ConditionFieldForm.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\FieldSelectForm.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\Form.css" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\Form.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\HistoryForm.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\Index.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\LineForm.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\NodeForm.css" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\NodeForm.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\PostForm.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\PreviewForm.css" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\PreviewForm.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\RoleForm.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\UserForm.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\WorkformForm.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfSystemDemo\DemoLeaveForm.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfSystemDemo\DemoLeaveIndex.js" />
+    <Content Include="Content\bootstrap\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap\bootstrap.min.css" />
+    <Content Include="Content\bootstrap\html5shiv.min.js" />
+    <Content Include="Content\datepicker\calendar.js" />
+    <Content Include="Content\datepicker\lang\en.js" />
+    <Content Include="Content\datepicker\lang\zh-cn.js" />
+    <Content Include="Content\datepicker\lang\zh-tw.js" />
+    <Content Include="Content\datepicker\skin\datePicker.gif" />
+    <Content Include="Content\datepicker\skin\datePicker.png" />
+    <Content Include="Content\datepicker\skin\default\datepicker-dev.css" />
+    <Content Include="Content\datepicker\skin\default\datepicker.css" />
+    <Content Include="Content\datepicker\skin\default\img.gif" />
+    <Content Include="Content\datepicker\skin\default\img.png" />
+    <Content Include="Content\datepicker\skin\WdatePicker.css" />
+    <Content Include="Content\datepicker\skin\whyGreen\bg.jpg" />
+    <Content Include="Content\datepicker\skin\whyGreen\datepicker.css" />
+    <Content Include="Content\datepicker\skin\whyGreen\img.gif" />
+    <Content Include="Content\datepicker\WdatePicker.js" />
+    <Content Include="Content\datepicker\开发包\lang\en.js" />
+    <Content Include="Content\datepicker\开发包\lang\zh-cn.js" />
+    <Content Include="Content\datepicker\开发包\lang\zh-tw.js" />
+    <Content Include="Content\datepicker\开发包\readme.txt" />
+    <Content Include="Content\datepicker\开发包\skin\datePicker.gif" />
+    <Content Include="Content\datepicker\开发包\skin\default\datepicker.css" />
+    <Content Include="Content\datepicker\开发包\skin\default\img.gif" />
+    <Content Include="Content\datepicker\开发包\skin\WdatePicker.css" />
+    <Content Include="Content\datepicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="Content\datepicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="Content\datepicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="Content\echarts\charts_comm.js" />
+    <Content Include="Content\echarts\echarts.js" />
+    <Content Include="Content\echarts\echarts.min.js" />
+    <Content Include="Content\echarts\map\china.js" />
+    <Content Include="Content\echarts\map\china\anhui.js" />
+    <Content Include="Content\echarts\map\china\aomen.js" />
+    <Content Include="Content\echarts\map\china\beijing.js" />
+    <Content Include="Content\echarts\map\china\chongqing.js" />
+    <Content Include="Content\echarts\map\china\fujian.js" />
+    <Content Include="Content\echarts\map\china\gansu.js" />
+    <Content Include="Content\echarts\map\china\guangdong.js" />
+    <Content Include="Content\echarts\map\china\guangxi.js" />
+    <Content Include="Content\echarts\map\china\guizhou.js" />
+    <Content Include="Content\echarts\map\china\hainan.js" />
+    <Content Include="Content\echarts\map\china\hebei.js" />
+    <Content Include="Content\echarts\map\china\heilongjiang.js" />
+    <Content Include="Content\echarts\map\china\henan.js" />
+    <Content Include="Content\echarts\map\china\hubei.js" />
+    <Content Include="Content\echarts\map\china\hunan.js" />
+    <Content Include="Content\echarts\map\china\jiangsu.js" />
+    <Content Include="Content\echarts\map\china\jiangxi.js" />
+    <Content Include="Content\echarts\map\china\jilin.js" />
+    <Content Include="Content\echarts\map\china\liaoning.js" />
+    <Content Include="Content\echarts\map\china\neimenggu.js" />
+    <Content Include="Content\echarts\map\china\ningxia.js" />
+    <Content Include="Content\echarts\map\china\qinghai.js" />
+    <Content Include="Content\echarts\map\china\shandong.js" />
+    <Content Include="Content\echarts\map\china\shanghai.js" />
+    <Content Include="Content\echarts\map\china\shanxi.js" />
+    <Content Include="Content\echarts\map\china\shanxi1.js" />
+    <Content Include="Content\echarts\map\china\sichuan.js" />
+    <Content Include="Content\echarts\map\china\taiwan.js" />
+    <Content Include="Content\echarts\map\china\tianjin.js" />
+    <Content Include="Content\echarts\map\china\xianggang.js" />
+    <Content Include="Content\echarts\map\china\xinjiang.js" />
+    <Content Include="Content\echarts\map\china\xizang.js" />
+    <Content Include="Content\echarts\map\china\yunnan.js" />
+    <Content Include="Content\echarts\map\china\zhejiang.js" />
+    <Content Include="Content\echarts\map\world.js" />
+    <Content Include="Content\flow-ui\flow.css" />
+    <Content Include="Content\flow-ui\flow.js" />
+    <Content Include="Content\flow-ui\img\1.png" />
+    <Content Include="Content\flow-ui\img\10.png" />
+    <Content Include="Content\flow-ui\img\11.png" />
+    <Content Include="Content\flow-ui\img\2.png" />
+    <Content Include="Content\flow-ui\img\3.png" />
+    <Content Include="Content\flow-ui\img\4.png" />
+    <Content Include="Content\flow-ui\img\5.png" />
+    <Content Include="Content\flow-ui\img\6.png" />
+    <Content Include="Content\flow-ui\img\7.png" />
+    <Content Include="Content\flow-ui\img\9.png" />
+    <Content Include="Content\flow-ui\img\gooflow_blank.gif" />
+    <Content Include="Content\flow-ui\img\gooflow_blank2.gif" />
+    <Content Include="Content\flow-ui\img\gooflow_blank3.gif" />
+    <Content Include="Content\flow-ui\img\gooflow_bullet.png" />
+    <Content Include="Content\flow-ui\img\GooFlow_line_oper.png" />
+    <Content Include="Content\flow-ui\img\ui_close.png" />
+    <Content Include="Content\flow-ui\img\wallbg.png" />
+    <Content Include="Content\fontApp\iconfont.css" />
+    <Content Include="Content\fontApp\iconfont.js" />
+    <Content Include="Content\fontApp\iconfont.svg" />
+    <Content Include="Content\font\css\font-awesome.css" />
+    <Content Include="Content\font\css\font-awesome.min.css" />
+    <Content Include="Content\font\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\images\phone.png" />
+    <Content Include="Content\images\404.png" />
+    <Content Include="Content\images\add.jpg" />
+    <Content Include="Content\images\adminDefault.png" />
+    <Content Include="Content\images\arrow1.png" />
+    <Content Include="Content\images\codeGenerator\multitable0.png" />
+    <Content Include="Content\images\codeGenerator\multitable1.png" />
+    <Content Include="Content\images\codeGenerator\serviceCode0.png" />
+    <Content Include="Content\images\codeGenerator\serviceCode1.png" />
+    <Content Include="Content\images\codeGenerator\singletable0.png" />
+    <Content Include="Content\images\codeGenerator\singletable1.png" />
+    <Content Include="Content\images\codeGenerator\report1.png" />
+    <Content Include="Content\images\codeGenerator\report0.png" />
+    <Content Include="Content\images\codeGenerator\edit1.png" />
+    <Content Include="Content\images\codeGenerator\edit0.png" />
+    <Content Include="Content\images\codeGenerator\workflow0.png" />
+    <Content Include="Content\images\codeGenerator\workflow1.png" />
+    <Content Include="Content\images\dev.icon.png" />
+    <Content Include="Content\images\filetype\apk.png" />
+    <Content Include="Content\images\filetype\avi.png" />
+    <Content Include="Content\images\filetype\bmp.png" />
+    <Content Include="Content\images\filetype\cab.png" />
+    <Content Include="Content\images\filetype\cs.png" />
+    <Content Include="Content\images\filetype\doc.png" />
+    <Content Include="Content\images\filetype\docx.png" />
+    <Content Include="Content\images\filetype\file.png" />
+    <Content Include="Content\images\filetype\folder.png" />
+    <Content Include="Content\images\filetype\gif.png" />
+    <Content Include="Content\images\filetype\htm.png" />
+    <Content Include="Content\images\filetype\html.png" />
+    <Content Include="Content\images\filetype\ico.png" />
+    <Content Include="Content\images\filetype\java.png" />
+    <Content Include="Content\images\filetype\jpeg.png" />
+    <Content Include="Content\images\filetype\jpg.png" />
+    <Content Include="Content\images\filetype\log.png" />
+    <Content Include="Content\images\filetype\mp3.png" />
+    <Content Include="Content\images\filetype\mp4.png" />
+    <Content Include="Content\images\filetype\pdf.png" />
+    <Content Include="Content\images\filetype\png - 副本.png" />
+    <Content Include="Content\images\filetype\png.png" />
+    <Content Include="Content\images\filetype\ppt.png" />
+    <Content Include="Content\images\filetype\pptx.png" />
+    <Content Include="Content\images\filetype\psd.png" />
+    <Content Include="Content\images\filetype\rar.png" />
+    <Content Include="Content\images\filetype\Scheme.png" />
+    <Content Include="Content\images\filetype\swf.png" />
+    <Content Include="Content\images\filetype\txt.png" />
+    <Content Include="Content\images\filetype\xls.png" />
+    <Content Include="Content\images\filetype\xlsx.png" />
+    <Content Include="Content\images\filetype\xml.png" />
+    <Content Include="Content\images\filetype\zip.png" />
+    <Content Include="Content\images\guide\arrow.png" />
+    <Content Include="Content\images\guide\arrow1.png" />
+    <Content Include="Content\images\guide\arrow2.png" />
+    <Content Include="Content\images\head\off-boy.jpg" />
+    <Content Include="Content\images\head\off-girl.jpg" />
+    <Content Include="Content\images\head\on-boy.jpg" />
+    <Content Include="Content\images\head\on-girl.jpg" />
+    <Content Include="Content\images\ie-loader.gif" />
+    <Content Include="Content\images\arrow.png" />
+    <Content Include="Content\images\datepicker_icon.png" />
+    <Content Include="Content\images\iframebg.png" />
+    <Content Include="Content\images\jfgrid\nodata.jpg" />
+    <Content Include="Content\images\learunim\emotion\emotion.css" />
+    <Content Include="Content\images\learunim\emotion\emotion.html" />
+    <Content Include="Content\images\learunim\emotion\emotion.js" />
+    <Content Include="Content\images\learunim\emotion\images\0.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0001.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0002.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0003.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0004.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0005.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0006.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0007.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0008.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0009.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0010.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0011.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0012.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0013.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0014.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0015.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0016.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0017.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0018.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0019.gif" />
+    <Content Include="Content\images\learunim\emotion\images\babycat\C_0020.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bface.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0001.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0002.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0003.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0004.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0005.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0006.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0007.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0008.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0009.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0010.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0011.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0012.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0013.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0014.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0015.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0016.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0017.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0018.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0019.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0020.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0021.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0022.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0023.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0024.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0025.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0026.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0027.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0028.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0029.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0030.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0031.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0032.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0033.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0034.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0035.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0036.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0037.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0038.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0039.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0040.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0041.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0042.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0043.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0044.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0045.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0046.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0047.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0048.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0049.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0050.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0051.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0052.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0053.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0054.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0055.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0056.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0057.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0058.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0059.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0060.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0061.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0062.gif" />
+    <Content Include="Content\images\learunim\emotion\images\bobo\b_0063.gif" />
+    <Content Include="Content\images\learunim\emotion\images\cface.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f01.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f02.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f03.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f04.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f05.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f06.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f07.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f08.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f09.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f10.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f11.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f12.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f13.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f14.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f15.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f16.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f17.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f18.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f19.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f20.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f21.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f22.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f23.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f24.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f25.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f26.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f27.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f28.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f29.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f30.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f31.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f32.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f33.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f34.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f35.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f36.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f37.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f38.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f39.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f40.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f41.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f42.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f43.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f44.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f45.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f46.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f47.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f48.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f49.gif" />
+    <Content Include="Content\images\learunim\emotion\images\face\i_f50.gif" />
+    <Content Include="Content\images\learunim\emotion\images\fface.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0001.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0002.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0003.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0004.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0005.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0006.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0007.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0008.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0009.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0010.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0011.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0012.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0013.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0014.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0015.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0016.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0017.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0018.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0019.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0020.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0021.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0022.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0023.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0024.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0025.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0026.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0027.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0028.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0029.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0030.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0031.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0032.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0033.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0034.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0035.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0036.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0037.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0038.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0039.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0040.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0041.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0042.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0043.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0044.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0045.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0046.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0047.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0048.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0049.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0050.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0051.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0052.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0053.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0054.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0055.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0056.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0057.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0058.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0059.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0060.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0061.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0062.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0063.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0064.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0065.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0066.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0067.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0068.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0069.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0070.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0071.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0072.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0073.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0074.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0075.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0076.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0077.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0078.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0079.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0080.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0081.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0082.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0083.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jx2\j_0084.gif" />
+    <Content Include="Content\images\learunim\emotion\images\jxface2.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0001.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0002.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0003.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0004.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0005.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0006.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0007.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0008.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0009.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0010.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0011.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0012.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0013.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0014.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0015.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0016.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0017.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0018.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0019.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0020.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0021.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0022.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0023.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0024.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0025.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0026.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0027.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0028.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0029.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0030.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0031.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0032.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0033.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0034.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0035.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0036.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0037.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0038.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0039.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0040.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0041.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0042.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0043.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0044.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0045.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0046.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0047.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0048.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0049.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0050.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0051.gif" />
+    <Content Include="Content\images\learunim\emotion\images\ldw\w_0052.gif" />
+    <Content Include="Content\images\learunim\emotion\images\neweditor-tab-bg.png" />
+    <Content Include="Content\images\learunim\emotion\images\tface.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0001.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0002.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0003.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0004.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0005.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0006.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0007.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0008.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0009.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0010.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0011.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0012.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0013.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0014.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0015.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0016.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0017.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0018.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0019.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0020.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0021.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0022.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0023.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0024.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0025.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0026.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0027.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0028.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0029.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0030.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0031.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0032.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0033.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0034.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0035.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0036.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0037.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0038.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0039.gif" />
+    <Content Include="Content\images\learunim\emotion\images\tsj\t_0040.gif" />
+    <Content Include="Content\images\learunim\emotion\images\wface.gif" />
+    <Content Include="Content\images\learunim\emotion\images\yface.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0001.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0002.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0003.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0004.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0005.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0006.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0007.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0008.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0009.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0010.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0011.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0012.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0013.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0014.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0015.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0016.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0017.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0018.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0019.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0020.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0021.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0022.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0023.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0024.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0025.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0026.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0027.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0028.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0029.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0030.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0031.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0032.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0033.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0034.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0035.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0036.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0037.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0038.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0039.gif" />
+    <Content Include="Content\images\learunim\emotion\images\youa\y_0040.gif" />
+    <Content Include="Content\images\learunim\off-line.png" />
+    <Content Include="Content\images\learunim\on-line.png" />
+    <Content Include="Content\images\learuntree\checkbox_0.png" />
+    <Content Include="Content\images\learuntree\checkbox_1.png" />
+    <Content Include="Content\images\learuntree\checkbox_2.png" />
+    <Content Include="Content\images\learunworkflow\conditionnodediv.png" />
+    <Content Include="Content\images\learunworkflow\conditionnode.png" />
+    <Content Include="Content\images\learunworkflow\conditionnodediv1.png" />
+    <Content Include="Content\images\learunworkflow\cursor.png" />
+    <Content Include="Content\images\learunworkflow\startround.png" />
+    <Content Include="Content\images\learunworkflow\confluencenode.png" />
+    <Content Include="Content\images\learunworkflow\stepnode.png" />
+    <Content Include="Content\images\learunworkflow\childwfnode.png" />
+    <Content Include="Content\images\learunworkflow\endround.png" />
+    <Content Include="Content\images\learunworkflow\direct.png" />
+    <Content Include="Content\images\learunworkflow\GooFlow_line_oper.png" />
+    <Content Include="Content\images\learunworkflow\close.png" />
+    <Content Include="Content\images\learunworkflow\wallbg.png" />
+    <Content Include="Content\images\learunworkflow\auditornode.png" />
+    <Content Include="Content\images\Login\bgmask1.png" />
+    <Content Include="Content\images\Login\bgmask2.png" />
+    <Content Include="Content\images\Login\bgmask3.png" />
+    <Content Include="Content\images\Login\blue_code.png" />
+    <Content Include="Content\images\Login\blue_logo.png" />
+    <Content Include="Content\images\Login\blue_pc.png" />
+    <Content Include="Content\images\Login\defaultbg.png" />
+    <Content Include="Content\images\Login\default_account0.png" />
+    <Content Include="Content\images\Login\default_account1.png" />
+    <Content Include="Content\images\Login\default_code.png" />
+    <Content Include="Content\images\Login\default_left.png" />
+    <Content Include="Content\images\Login\default_psw0.png" />
+    <Content Include="Content\images\Login\default_psw1.png" />
+    <Content Include="Content\images\Login\default_reg0.png" />
+    <Content Include="Content\images\Login\default_reg1.png" />
+    <Content Include="Content\images\Login\error.png" />
+    <Content Include="Content\images\Login\psw0.png" />
+    <Content Include="Content\images\Login\psw1.png" />
+    <Content Include="Content\images\Login\qrcode.png" />
+    <Content Include="Content\images\Login\short_logo.png" />
+    <Content Include="Content\images\Login\topbg2.png" />
+    <Content Include="Content\images\Login\windos_arrow.png" />
+    <Content Include="Content\images\Login\windos_left.png" />
+    <Content Include="Content\images\Login\windos_pc.png" />
+    <Content Include="Content\images\Login\windowbg.png" />
+    <Content Include="Content\images\Login\topbg.png" />
+    <Content Include="Content\images\logo-head.png" />
+    <Content Include="Content\images\logo_long.png" />
+    <Content Include="Content\images\logo_long_blue.png" />
+    <Content Include="Content\images\selected_red.png" />
+    <Content Include="Content\images\learuntree\loading.gif" />
+    <Content Include="Content\images\tableform.png" />
+    <Content Include="Content\images\UserCard01.png" />
+    <Content Include="Content\images\UserCard02.png" />
+    <Content Include="Content\images\UserCard03.png" />
+    <Content Include="Content\jquery-ui-1.12.1.custom\AUTHORS.txt" />
+    <Content Include="Content\jquery-ui-1.12.1.custom\external\jquery\jquery.js" />
+    <Content Include="Content\jquery-ui-1.12.1.custom\images\ui-icons_444444_256x240.png" />
+    <Content Include="Content\jquery-ui-1.12.1.custom\images\ui-icons_555555_256x240.png" />
+    <Content Include="Content\jquery-ui-1.12.1.custom\images\ui-icons_777620_256x240.png" />
+    <Content Include="Content\jquery-ui-1.12.1.custom\images\ui-icons_777777_256x240.png" />
+    <Content Include="Content\jquery-ui-1.12.1.custom\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Content\jquery-ui-1.12.1.custom\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\jquery-ui-1.12.1.custom\index.html" />
+    <Content Include="Content\jquery-ui-1.12.1.custom\jquery-ui.css" />
+    <Content Include="Content\jquery-ui-1.12.1.custom\jquery-ui.js" />
+    <Content Include="Content\jquery-ui-1.12.1.custom\jquery-ui.min.css" />
+    <Content Include="Content\jquery-ui-1.12.1.custom\jquery-ui.min.js" />
+    <Content Include="Content\jquery-ui-1.12.1.custom\jquery-ui.structure.css" />
+    <Content Include="Content\jquery-ui-1.12.1.custom\jquery-ui.structure.min.css" />
+    <Content Include="Content\jquery-ui-1.12.1.custom\jquery-ui.theme.css" />
+    <Content Include="Content\jquery-ui-1.12.1.custom\jquery-ui.theme.min.css" />
+    <Content Include="Content\jquery-ui-1.12.1.custom\LICENSE.txt" />
+    <Content Include="Content\jquerygantt\bootstrap.min.js" />
+    <Content Include="Content\jquerygantt\css\bootstrap.min.css" />
+    <Content Include="Content\jquerygantt\css\gantt.css" />
+    <Content Include="Content\jquerygantt\css\ganttPrint.css" />
+    <Content Include="Content\jquerygantt\css\platform.css" />
+    <Content Include="Content\jquerygantt\ganttDrawerSVG.js" />
+    <Content Include="Content\jquerygantt\ganttGridEditor.js" />
+    <Content Include="Content\jquerygantt\ganttMaster.js" />
+    <Content Include="Content\jquerygantt\ganttTask.js" />
+    <Content Include="Content\jquerygantt\ganttTestSuite.js" />
+    <Content Include="Content\jquerygantt\ganttUtilities.js" />
+    <Content Include="Content\jquerygantt\jquery-ui.js" />
+    <Content Include="Content\jquerygantt\jquery-ui.min.js" />
+    <Content Include="Content\jquerygantt\jquery.form.js" />
+    <Content Include="Content\jquerygantt\jquery.min.js" />
+    <Content Include="Content\jquerygantt\libs\date.js" />
+    <Content Include="Content\jquerygantt\libs\dialogs.js" />
+    <Content Include="Content\jquerygantt\libs\forms.js" />
+    <Content Include="Content\jquerygantt\libs\i18nJs.js" />
+    <Content Include="Content\jquerygantt\libs\jquery\dateField\img\next.png" />
+    <Content Include="Content\jquerygantt\libs\jquery\dateField\img\prev.png" />
+    <Content Include="Content\jquerygantt\libs\jquery\dateField\img\today.png" />
+    <Content Include="Content\jquerygantt\libs\jquery\dateField\jquery.dateField.css" />
+    <Content Include="Content\jquerygantt\libs\jquery\dateField\jquery.dateField.js" />
+    <Content Include="Content\jquerygantt\libs\jquery\jquery.livequery.1.1.1.min.js" />
+    <Content Include="Content\jquerygantt\libs\jquery\jquery.timers.js" />
+    <Content Include="Content\jquerygantt\libs\jquery\JST\jquery.JST.js" />
+    <Content Include="Content\jquerygantt\libs\jquery\svg\jquery.svg.min.js" />
+    <Content Include="Content\jquerygantt\libs\jquery\svg\jquery.svgdom.1.8.js" />
+    <Content Include="Content\jquerygantt\libs\jquery\svg\jquery.svgdom.pack.js" />
+    <Content Include="Content\jquerygantt\libs\layout.js" />
+    <Content Include="Content\jquerygantt\libs\utilities.js" />
+    <Content Include="Content\jquerygantt\res\alert.gif" />
+    <Content Include="Content\jquerygantt\res\black_70.png" />
+    <Content Include="Content\jquerygantt\res\closeBig.png" />
+    <Content Include="Content\jquerygantt\res\ganttSplitterGrip.png" />
+    <Content Include="Content\jquerygantt\res\hasExternalDeps.png" />
+    <Content Include="Content\jquerygantt\res\icons.svg" />
+    <Content Include="Content\jquerygantt\res\indentIcon.png" />
+    <Content Include="Content\jquerygantt\res\linkArrow.png" />
+    <Content Include="Content\jquerygantt\res\milestone.png" />
+    <Content Include="Content\jquerygantt\res\toggle-expand.png" />
+    <Content Include="Content\jquerygantt\res\toggle_collapse.png" />
+    <Content Include="Content\jquerygantt\res\twBanner.jpg" />
+    <Content Include="Content\jquerygantt\res\twGanttLogo.png" />
+    <Content Include="Content\jquerygantt\res\twproject-badge.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\css\fullcalendar.css" />
+    <Content Include="Content\jquery\plugin\fullcalendar\css\fullcalendar.print.css" />
+    <Content Include="Content\jquery\plugin\fullcalendar\css\style.css" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\arrow-left.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\arrow-right.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\bg2.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\buttons-disabled.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\buttons.gif" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\buttons.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\chosen-sprite.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\dribble.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\facebook.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\forrst.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\glyphicons-halflings-white.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\glyphicons-halflings.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\light.jpg" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\magnifier_grey.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\natural_paper.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\preload.gif" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\slider.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\slider_hover.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\sort_asc.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\sort_asc_disabled.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\sort_both.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\sort_desc.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\sort_desc_disabled.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\spinner_arrows.gif" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\toggle-subnav-down.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\toggle-subnav-up-white.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\toolbar.gif" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\transp50.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\img\twitter.png" />
+    <Content Include="Content\jquery\plugin\fullcalendar\js\fullcalendar.min.js" />
+    <Content Include="Content\jquery\plugin\fullcalendar\js\jquery-1.7.2.min.js" />
+    <Content Include="Content\jquery\plugin\jfGrid\img\loading.gif" />
+    <Content Include="Content\jquery\plugin\jfGrid\img\nodata.jpg" />
+    <Content Include="Content\images\learunselect\icon.png" />
+    <Content Include="Content\images\Login\loading.gif" />
+    <Content Include="Content\images\loading.gif" />
+    <Content Include="Content\images\Login\pwd-icons-new.png" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\select.png" />
+    <Content Include="Content\images\Login\bg_01.png" />
+    <Content Include="Content\images\Login\bg_02.jpg" />
+    <Content Include="Content\images\Login\bg_03.png" />
+    <Content Include="Content\images\Login\logow.png" />
+    <Content Include="Content\images\tab_close.png" />
+    <Content Include="Content\images\learuntree\arrows.gif" />
+    <Content Include="Content\images\jfgrid\checkbox_0.png" />
+    <Content Include="Content\images\jfgrid\checkbox_1.png" />
+    <Content Include="Content\images\jfgrid\checkbox_2.png" />
+    <Content Include="Content\images\learuntree\s.gif" />
+    <Content Include="Content\jquery\jquery.md5.min.js" />
+    <Content Include="Content\jquery\plugin\jfGrid\img\close.png" />
+    <Content Include="Content\jquery\plugin\jfGrid\jfgrid.js" />
+    <Content Include="Content\jquery\plugin\jfGrid\jfgrid.min.js" />
+    <Content Include="Content\jquery\plugin\jqprint\jquery.jqprint-0.3.js" />
+    <Content Include="Content\jquery\plugin\jquery-ui\images\calendar.gif" />
+    <Content Include="Content\jquery\plugin\jquery-ui\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\jquery\plugin\jquery-ui\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\jquery\plugin\jquery-ui\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\jquery\plugin\jquery-ui\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\jquery\plugin\jquery-ui\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\jquery\plugin\jquery-ui\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\jquery\plugin\jquery-ui\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\jquery\plugin\jquery-ui\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\jquery\plugin\jquery-ui\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\jquery\plugin\jquery-ui\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\jquery\plugin\jquery-ui\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\jquery\plugin\jquery-ui\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\jquery\plugin\jquery-ui\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\jquery\plugin\jquery-ui\jquery-ui-1.11.4.js" />
+    <Content Include="Content\jquery\plugin\jquery-ui\jquery-ui.min.css" />
+    <Content Include="Content\jquery\plugin\jquery-ui\jquery-ui.min.js" />
+    <Content Include="Content\jquery\plugin\jquery.cookie.min.js" />
+    <Content Include="Content\jquery\plugin\jquery.cookie.js" />
+    <Content Include="Content\jquery\plugin\layer\layer.js" />
+    <Content Include="Content\jquery\plugin\layer\skin\default\icon-ext.png" />
+    <Content Include="Content\jquery\plugin\layer\skin\default\icon.png" />
+    <Content Include="Content\jquery\plugin\layer\skin\default\layer.css" />
+    <Content Include="Content\jquery\plugin\layer\skin\default\loading-0.gif" />
+    <Content Include="Content\jquery\plugin\layer\skin\default\loading-1.gif" />
+    <Content Include="Content\jquery\plugin\layer\skin\default\loading-2.gif" />
+    <Content Include="Content\jquery\plugin\scrollbar\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="Content\jquery\plugin\scrollbar\jquery.mCustomScrollbar.css" />
+    <Content Include="Content\jquery\plugin\scrollbar\jquery.mCustomScrollbar.js" />
+    <Content Include="Content\jquery\plugin\scrollbar\jquery.mCustomScrollbar.min.css" />
+    <Content Include="Content\jquery\plugin\scrollbar\mCSB_buttons.png" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shAutoloader.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushAppleScript.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushAS3.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushBash.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushColdFusion.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushCpp.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushCSharp.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushCss.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushDelphi.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushDiff.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushErlang.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushGroovy.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushJava.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushJavaFX.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushJScript.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushPerl.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushPhp.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushPlain.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushPowerShell.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushPython.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushRuby.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushSass.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushScala.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushSql.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushVb.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shBrushXml.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shCore.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\Scripts\shLegacy.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\src\shAutoloader.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\src\shCore.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\src\shLegacy.js" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\styles\shCore.css" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\styles\shCoreDefault.css" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\styles\shCoreDjango.css" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\styles\shCoreEclipse.css" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\styles\shCoreEmacs.css" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\styles\shCoreFadeToGrey.css" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\styles\shCoreMDUltra.css" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\styles\shCoreMidnight.css" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\styles\shCoreRDark.css" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\styles\shThemeDefault.css" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\styles\shThemeDjango.css" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\styles\shThemeEclipse.css" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\styles\shThemeEmacs.css" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\styles\shThemeFadeToGrey.css" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\styles\shThemeMDUltra.css" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\styles\shThemeMidnight.css" />
+    <Content Include="Content\jquery\plugin\syntaxhighlighter\styles\shThemeRDark.css" />
+    <Content Include="Content\jquery\plugin\toastr\toastr.css" />
+    <Content Include="Content\pace\pace.js" />
+    <Content Include="Content\pace\pace.min.js" />
+    <Content Include="Content\pace\pace-theme-loading-bar.css" />
+    <Content Include="Content\pace\pace-theme-minimal.css" />
+    <Content Include="Content\jquery\plugin\jfGrid\jfgrid.css" />
+    <Content Include="Content\signalr\jquery.signalR-2.2.2.js" />
+    <Content Include="Content\signalr\jquery.signalR-2.2.2.min.js" />
+    <Content Include="Content\signet\jquery.zsign.css" />
+    <Content Include="Content\signet\jquery.zsign.js" />
+    <Content Include="Content\signet\signet.gif" />
+    <Content Include="Content\ueditor\dialogs\anchor\anchor.html" />
+    <Content Include="Content\ueditor\dialogs\attachment\attachment.css" />
+    <Content Include="Content\ueditor\dialogs\attachment\attachment.html" />
+    <Content Include="Content\ueditor\dialogs\attachment\attachment.js" />
+    <Content Include="Content\ueditor\dialogs\attachment\fileTypeImages\icon_chm.gif" />
+    <Content Include="Content\ueditor\dialogs\attachment\fileTypeImages\icon_default.png" />
+    <Content Include="Content\ueditor\dialogs\attachment\fileTypeImages\icon_doc.gif" />
+    <Content Include="Content\ueditor\dialogs\attachment\fileTypeImages\icon_exe.gif" />
+    <Content Include="Content\ueditor\dialogs\attachment\fileTypeImages\icon_jpg.gif" />
+    <Content Include="Content\ueditor\dialogs\attachment\fileTypeImages\icon_mp3.gif" />
+    <Content Include="Content\ueditor\dialogs\attachment\fileTypeImages\icon_mv.gif" />
+    <Content Include="Content\ueditor\dialogs\attachment\fileTypeImages\icon_pdf.gif" />
+    <Content Include="Content\ueditor\dialogs\attachment\fileTypeImages\icon_ppt.gif" />
+    <Content Include="Content\ueditor\dialogs\attachment\fileTypeImages\icon_psd.gif" />
+    <Content Include="Content\ueditor\dialogs\attachment\fileTypeImages\icon_rar.gif" />
+    <Content Include="Content\ueditor\dialogs\attachment\fileTypeImages\icon_txt.gif" />
+    <Content Include="Content\ueditor\dialogs\attachment\fileTypeImages\icon_xls.gif" />
+    <Content Include="Content\ueditor\dialogs\attachment\images\alignicon.gif" />
+    <Content Include="Content\ueditor\dialogs\attachment\images\alignicon.png" />
+    <Content Include="Content\ueditor\dialogs\attachment\images\bg.png" />
+    <Content Include="Content\ueditor\dialogs\attachment\images\file-icons.gif" />
+    <Content Include="Content\ueditor\dialogs\attachment\images\file-icons.png" />
+    <Content Include="Content\ueditor\dialogs\attachment\images\icons.gif" />
+    <Content Include="Content\ueditor\dialogs\attachment\images\icons.png" />
+    <Content Include="Content\ueditor\dialogs\attachment\images\image.png" />
+    <Content Include="Content\ueditor\dialogs\attachment\images\progress.png" />
+    <Content Include="Content\ueditor\dialogs\attachment\images\success.gif" />
+    <Content Include="Content\ueditor\dialogs\attachment\images\success.png" />
+    <Content Include="Content\ueditor\dialogs\background\background.css" />
+    <Content Include="Content\ueditor\dialogs\background\background.html" />
+    <Content Include="Content\ueditor\dialogs\background\background.js" />
+    <Content Include="Content\ueditor\dialogs\background\images\bg.png" />
+    <Content Include="Content\ueditor\dialogs\background\images\success.png" />
+    <Content Include="Content\ueditor\dialogs\charts\chart.config.js" />
+    <Content Include="Content\ueditor\dialogs\charts\charts.css" />
+    <Content Include="Content\ueditor\dialogs\charts\charts.html" />
+    <Content Include="Content\ueditor\dialogs\charts\charts.js" />
+    <Content Include="Content\ueditor\dialogs\charts\images\charts0.png" />
+    <Content Include="Content\ueditor\dialogs\charts\images\charts1.png" />
+    <Content Include="Content\ueditor\dialogs\charts\images\charts2.png" />
+    <Content Include="Content\ueditor\dialogs\charts\images\charts3.png" />
+    <Content Include="Content\ueditor\dialogs\charts\images\charts4.png" />
+    <Content Include="Content\ueditor\dialogs\charts\images\charts5.png" />
+    <Content Include="Content\ueditor\dialogs\emotion\emotion.css" />
+    <Content Include="Content\ueditor\dialogs\emotion\emotion.html" />
+    <Content Include="Content\ueditor\dialogs\emotion\emotion.js" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\0.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bface.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\cface.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\fface.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jxface2.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\neweditor-tab-bg.png" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tface.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\wface.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\yface.gif" />
+    <Content Include="Content\ueditor\dialogs\gmap\gmap.html" />
+    <Content Include="Content\ueditor\dialogs\help\help.css" />
+    <Content Include="Content\ueditor\dialogs\help\help.html" />
+    <Content Include="Content\ueditor\dialogs\image\image.css" />
+    <Content Include="Content\ueditor\dialogs\image\image.html" />
+    <Content Include="Content\ueditor\dialogs\image\image.js" />
+    <Content Include="Content\ueditor\dialogs\image\images\alignicon.jpg" />
+    <Content Include="Content\ueditor\dialogs\image\images\bg.png" />
+    <Content Include="Content\ueditor\dialogs\image\images\icons.gif" />
+    <Content Include="Content\ueditor\dialogs\image\images\icons.png" />
+    <Content Include="Content\ueditor\dialogs\image\images\image.png" />
+    <Content Include="Content\ueditor\dialogs\image\images\progress.png" />
+    <Content Include="Content\ueditor\dialogs\image\images\success.gif" />
+    <Content Include="Content\ueditor\dialogs\image\images\success.png" />
+    <Content Include="Content\ueditor\dialogs\insertframe\insertframe.html" />
+    <Content Include="Content\ueditor\dialogs\internal.js" />
+    <Content Include="Content\ueditor\dialogs\link\link.html" />
+    <Content Include="Content\ueditor\dialogs\map\map.html" />
+    <Content Include="Content\ueditor\dialogs\map\show.html" />
+    <Content Include="Content\ueditor\dialogs\music\music.css" />
+    <Content Include="Content\ueditor\dialogs\music\music.html" />
+    <Content Include="Content\ueditor\dialogs\music\music.js" />
+    <Content Include="Content\ueditor\dialogs\preview\preview.html" />
+    <Content Include="Content\ueditor\dialogs\scrawl\images\addimg.png" />
+    <Content Include="Content\ueditor\dialogs\scrawl\images\brush.png" />
+    <Content Include="Content\ueditor\dialogs\scrawl\images\delimg.png" />
+    <Content Include="Content\ueditor\dialogs\scrawl\images\delimgH.png" />
+    <Content Include="Content\ueditor\dialogs\scrawl\images\empty.png" />
+    <Content Include="Content\ueditor\dialogs\scrawl\images\emptyH.png" />
+    <Content Include="Content\ueditor\dialogs\scrawl\images\eraser.png" />
+    <Content Include="Content\ueditor\dialogs\scrawl\images\redo.png" />
+    <Content Include="Content\ueditor\dialogs\scrawl\images\redoH.png" />
+    <Content Include="Content\ueditor\dialogs\scrawl\images\scale.png" />
+    <Content Include="Content\ueditor\dialogs\scrawl\images\scaleH.png" />
+    <Content Include="Content\ueditor\dialogs\scrawl\images\size.png" />
+    <Content Include="Content\ueditor\dialogs\scrawl\images\undo.png" />
+    <Content Include="Content\ueditor\dialogs\scrawl\images\undoH.png" />
+    <Content Include="Content\ueditor\dialogs\scrawl\scrawl.css" />
+    <Content Include="Content\ueditor\dialogs\scrawl\scrawl.html" />
+    <Content Include="Content\ueditor\dialogs\scrawl\scrawl.js" />
+    <Content Include="Content\ueditor\dialogs\searchreplace\searchreplace.html" />
+    <Content Include="Content\ueditor\dialogs\searchreplace\searchreplace.js" />
+    <Content Include="Content\ueditor\dialogs\snapscreen\snapscreen.html" />
+    <Content Include="Content\ueditor\dialogs\spechars\spechars.html" />
+    <Content Include="Content\ueditor\dialogs\spechars\spechars.js" />
+    <Content Include="Content\ueditor\dialogs\table\dragicon.png" />
+    <Content Include="Content\ueditor\dialogs\table\edittable.css" />
+    <Content Include="Content\ueditor\dialogs\table\edittable.html" />
+    <Content Include="Content\ueditor\dialogs\table\edittable.js" />
+    <Content Include="Content\ueditor\dialogs\table\edittd.html" />
+    <Content Include="Content\ueditor\dialogs\table\edittip.html" />
+    <Content Include="Content\ueditor\dialogs\template\config.js" />
+    <Content Include="Content\ueditor\dialogs\template\images\bg.gif" />
+    <Content Include="Content\ueditor\dialogs\template\images\pre0.png" />
+    <Content Include="Content\ueditor\dialogs\template\images\pre1.png" />
+    <Content Include="Content\ueditor\dialogs\template\images\pre2.png" />
+    <Content Include="Content\ueditor\dialogs\template\images\pre3.png" />
+    <Content Include="Content\ueditor\dialogs\template\images\pre4.png" />
+    <Content Include="Content\ueditor\dialogs\template\template.css" />
+    <Content Include="Content\ueditor\dialogs\template\template.html" />
+    <Content Include="Content\ueditor\dialogs\template\template.js" />
+    <Content Include="Content\ueditor\dialogs\video\images\bg.png" />
+    <Content Include="Content\ueditor\dialogs\video\images\center_focus.jpg" />
+    <Content Include="Content\ueditor\dialogs\video\images\file-icons.gif" />
+    <Content Include="Content\ueditor\dialogs\video\images\file-icons.png" />
+    <Content Include="Content\ueditor\dialogs\video\images\icons.gif" />
+    <Content Include="Content\ueditor\dialogs\video\images\icons.png" />
+    <Content Include="Content\ueditor\dialogs\video\images\image.png" />
+    <Content Include="Content\ueditor\dialogs\video\images\left_focus.jpg" />
+    <Content Include="Content\ueditor\dialogs\video\images\none_focus.jpg" />
+    <Content Include="Content\ueditor\dialogs\video\images\progress.png" />
+    <Content Include="Content\ueditor\dialogs\video\images\right_focus.jpg" />
+    <Content Include="Content\ueditor\dialogs\video\images\success.gif" />
+    <Content Include="Content\ueditor\dialogs\video\images\success.png" />
+    <Content Include="Content\ueditor\dialogs\video\video.css" />
+    <Content Include="Content\ueditor\dialogs\video\video.html" />
+    <Content Include="Content\ueditor\dialogs\video\video.js" />
+    <Content Include="Content\ueditor\dialogs\webapp\webapp.html" />
+    <Content Include="Content\ueditor\dialogs\wordimage\fClipboard_ueditor.swf" />
+    <Content Include="Content\ueditor\dialogs\wordimage\imageUploader.swf" />
+    <Content Include="Content\ueditor\dialogs\wordimage\tangram.js" />
+    <Content Include="Content\ueditor\dialogs\wordimage\wordimage.html" />
+    <Content Include="Content\ueditor\dialogs\wordimage\wordimage.js" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0001.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0002.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0003.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0004.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0005.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0006.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0007.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0008.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0009.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0010.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0011.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0012.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0013.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0014.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0015.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0016.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0017.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0018.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0019.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\babycat\C_0020.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0001.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0002.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0003.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0004.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0005.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0006.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0007.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0008.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0009.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0010.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0011.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0012.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0013.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0014.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0015.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0016.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0017.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0018.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0019.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0020.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0021.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0022.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0023.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0024.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0025.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0026.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0027.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0028.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0029.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0030.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0031.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0032.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0033.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0034.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0035.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0036.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0037.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0038.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0039.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0040.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0041.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0042.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0043.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0044.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0045.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0046.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0047.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0048.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0049.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0050.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0051.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0052.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0053.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0054.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0055.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0056.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0057.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0058.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0059.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0060.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0061.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0062.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\bobo\b_0063.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f01.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f02.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f03.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f04.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f05.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f06.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f07.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f08.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f09.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f10.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f11.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f12.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f13.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f14.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f15.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f16.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f17.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f18.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f19.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f20.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f21.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f22.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f23.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f24.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f25.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f26.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f27.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f28.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f29.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f30.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f31.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f32.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f33.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f34.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f35.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f36.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f37.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f38.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f39.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f40.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f41.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f42.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f43.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f44.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f45.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f46.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f47.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f48.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f49.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\face\i_f50.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0001.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0002.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0003.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0004.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0005.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0006.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0007.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0008.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0009.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0010.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0011.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0012.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0013.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0014.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0015.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0016.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0017.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0018.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0019.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0020.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0021.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0022.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0023.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0024.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0025.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0026.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0027.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0028.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0029.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0030.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0031.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0032.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0033.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0034.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0035.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0036.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0037.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0038.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0039.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0040.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0041.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0042.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0043.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0044.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0045.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0046.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0047.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0048.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0049.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0050.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0051.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0052.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0053.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0054.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0055.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0056.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0057.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0058.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0059.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0060.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0061.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0062.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0063.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0064.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0065.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0066.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0067.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0068.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0069.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0070.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0071.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0072.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0073.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0074.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0075.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0076.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0077.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0078.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0079.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0080.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0081.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0082.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0083.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\jx2\j_0084.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0001.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0002.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0003.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0004.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0005.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0006.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0007.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0008.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0009.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0010.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0011.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0012.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0013.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0014.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0015.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0016.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0017.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0018.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0019.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0020.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0021.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0022.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0023.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0024.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0025.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0026.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0027.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0028.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0029.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0030.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0031.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0032.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0033.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0034.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0035.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0036.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0037.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0038.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0039.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0040.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0041.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0042.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0043.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0044.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0045.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0046.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0047.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0048.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0049.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0050.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0051.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\ldw\w_0052.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0001.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0002.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0003.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0004.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0005.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0006.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0007.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0008.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0009.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0010.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0011.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0012.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0013.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0014.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0015.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0016.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0017.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0018.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0019.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0020.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0021.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0022.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0023.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0024.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0025.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0026.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0027.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0028.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0029.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0030.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0031.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0032.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0033.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0034.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0035.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0036.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0037.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0038.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0039.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\tsj\t_0040.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0001.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0002.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0003.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0004.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0005.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0006.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0007.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0008.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0009.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0010.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0011.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0012.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0013.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0014.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0015.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0016.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0017.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0018.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0019.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0020.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0021.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0022.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0023.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0024.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0025.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0026.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0027.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0028.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0029.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0030.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0031.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0032.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0033.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0034.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0035.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0036.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0037.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0038.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0039.gif" />
+    <Content Include="Content\ueditor\dialogs\emotion\images\youa\y_0040.gif" />
+    <Content Include="Content\ueditor\lang\en\en.js" />
+    <Content Include="Content\ueditor\lang\en\images\addimage.png" />
+    <Content Include="Content\ueditor\lang\en\images\alldeletebtnhoverskin.png" />
+    <Content Include="Content\ueditor\lang\en\images\alldeletebtnupskin.png" />
+    <Content Include="Content\ueditor\lang\en\images\background.png" />
+    <Content Include="Content\ueditor\lang\en\images\button.png" />
+    <Content Include="Content\ueditor\lang\en\images\copy.png" />
+    <Content Include="Content\ueditor\lang\en\images\deletedisable.png" />
+    <Content Include="Content\ueditor\lang\en\images\deleteenable.png" />
+    <Content Include="Content\ueditor\lang\en\images\listbackground.png" />
+    <Content Include="Content\ueditor\lang\en\images\localimage.png" />
+    <Content Include="Content\ueditor\lang\en\images\music.png" />
+    <Content Include="Content\ueditor\lang\en\images\rotateleftdisable.png" />
+    <Content Include="Content\ueditor\lang\en\images\rotateleftenable.png" />
+    <Content Include="Content\ueditor\lang\en\images\rotaterightdisable.png" />
+    <Content Include="Content\ueditor\lang\en\images\rotaterightenable.png" />
+    <Content Include="Content\ueditor\lang\en\images\upload.png" />
+    <Content Include="Content\ueditor\lang\zh-cn\images\copy.png" />
+    <Content Include="Content\ueditor\lang\zh-cn\images\localimage.png" />
+    <Content Include="Content\ueditor\lang\zh-cn\images\music.png" />
+    <Content Include="Content\ueditor\lang\zh-cn\images\upload.png" />
+    <Content Include="Content\ueditor\lang\zh-cn\zh-cn.js" />
+    <Content Include="Content\ueditor\themes\default\css\ueditor.css" />
+    <Content Include="Content\ueditor\themes\default\css\ueditor.min.css" />
+    <Content Include="Content\ueditor\themes\default\dialogbase.css" />
+    <Content Include="Content\ueditor\themes\default\images\anchor.gif" />
+    <Content Include="Content\ueditor\themes\default\images\arrow.png" />
+    <Content Include="Content\ueditor\themes\default\images\arrow_down.png" />
+    <Content Include="Content\ueditor\themes\default\images\arrow_up.png" />
+    <Content Include="Content\ueditor\themes\default\images\button-bg.gif" />
+    <Content Include="Content\ueditor\themes\default\images\cancelbutton.gif" />
+    <Content Include="Content\ueditor\themes\default\images\charts.png" />
+    <Content Include="Content\ueditor\themes\default\images\cursor_h.gif" />
+    <Content Include="Content\ueditor\themes\default\images\cursor_h.png" />
+    <Content Include="Content\ueditor\themes\default\images\cursor_v.gif" />
+    <Content Include="Content\ueditor\themes\default\images\cursor_v.png" />
+    <Content Include="Content\ueditor\themes\default\images\dialog-title-bg.png" />
+    <Content Include="Content\ueditor\themes\default\images\filescan.png" />
+    <Content Include="Content\ueditor\themes\default\images\highlighted.gif" />
+    <Content Include="Content\ueditor\themes\default\images\icons-all.gif" />
+    <Content Include="Content\ueditor\themes\default\images\icons.gif" />
+    <Content Include="Content\ueditor\themes\default\images\icons.png" />
+    <Content Include="Content\ueditor\themes\default\images\loaderror.png" />
+    <Content Include="Content\ueditor\themes\default\images\loading.gif" />
+    <Content Include="Content\ueditor\themes\default\images\lock.gif" />
+    <Content Include="Content\ueditor\themes\default\images\neweditor-tab-bg.png" />
+    <Content Include="Content\ueditor\themes\default\images\pagebreak.gif" />
+    <Content Include="Content\ueditor\themes\default\images\scale.png" />
+    <Content Include="Content\ueditor\themes\default\images\sortable.png" />
+    <Content Include="Content\ueditor\themes\default\images\spacer.gif" />
+    <Content Include="Content\ueditor\themes\default\images\sparator_v.png" />
+    <Content Include="Content\ueditor\themes\default\images\table-cell-align.png" />
+    <Content Include="Content\ueditor\themes\default\images\tangram-colorpicker.png" />
+    <Content Include="Content\ueditor\themes\default\images\toolbar_bg.png" />
+    <Content Include="Content\ueditor\themes\default\images\unhighlighted.gif" />
+    <Content Include="Content\ueditor\themes\default\images\upload.png" />
+    <Content Include="Content\ueditor\themes\default\images\videologo.gif" />
+    <Content Include="Content\ueditor\themes\default\images\word.gif" />
+    <Content Include="Content\ueditor\themes\default\images\wordpaste.png" />
+    <Content Include="Content\ueditor\themes\iframe.css" />
+    <Content Include="Content\ueditor\third-party\codemirror\codemirror.css" />
+    <Content Include="Content\ueditor\third-party\codemirror\codemirror.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\adapters\mootools-adapter.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\adapters\mootools-adapter.src.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\adapters\prototype-adapter.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\adapters\prototype-adapter.src.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\adapters\standalone-framework.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\adapters\standalone-framework.src.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\highcharts-more.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\highcharts-more.src.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\highcharts.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\highcharts.src.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\modules\annotations.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\modules\annotations.src.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\modules\canvas-tools.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\modules\canvas-tools.src.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\modules\data.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\modules\data.src.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\modules\drilldown.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\modules\drilldown.src.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\modules\exporting.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\modules\exporting.src.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\modules\funnel.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\modules\funnel.src.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\modules\heatmap.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\modules\heatmap.src.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\modules\map.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\modules\map.src.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\modules\no-data-to-display.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\modules\no-data-to-display.src.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\themes\dark-blue.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\themes\dark-green.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\themes\gray.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\themes\grid.js" />
+    <Content Include="Content\ueditor\third-party\highcharts\themes\skies.js" />
+    <Content Include="Content\ueditor\third-party\jquery-1.10.2.js" />
+    <Content Include="Content\ueditor\third-party\jquery-1.10.2.min.js" />
+    <Content Include="Content\ueditor\third-party\snapscreen\UEditorSnapscreen.exe" />
+    <Content Include="Content\ueditor\third-party\SyntaxHighlighter\shCore.js" />
+    <Content Include="Content\ueditor\third-party\SyntaxHighlighter\shCoreDefault.css" />
+    <Content Include="Content\ueditor\third-party\video-js\font\vjs.svg" />
+    <Content Include="Content\ueditor\third-party\video-js\video-js.css" />
+    <Content Include="Content\ueditor\third-party\video-js\video-js.min.css" />
+    <Content Include="Content\ueditor\third-party\video-js\video-js.swf" />
+    <Content Include="Content\ueditor\third-party\video-js\video.dev.js" />
+    <Content Include="Content\ueditor\third-party\video-js\video.js" />
+    <Content Include="Content\ueditor\third-party\webuploader\Uploader.swf" />
+    <Content Include="Content\ueditor\third-party\webuploader\webuploader.css" />
+    <Content Include="Content\ueditor\third-party\webuploader\webuploader.custom.js" />
+    <Content Include="Content\ueditor\third-party\webuploader\webuploader.custom.min.js" />
+    <Content Include="Content\ueditor\third-party\webuploader\webuploader.flashonly.js" />
+    <Content Include="Content\ueditor\third-party\webuploader\webuploader.flashonly.min.js" />
+    <Content Include="Content\ueditor\third-party\webuploader\webuploader.html5only.js" />
+    <Content Include="Content\ueditor\third-party\webuploader\webuploader.html5only.min.js" />
+    <Content Include="Content\ueditor\third-party\webuploader\webuploader.js" />
+    <Content Include="Content\ueditor\third-party\webuploader\webuploader.min.js" />
+    <Content Include="Content\ueditor\third-party\webuploader\webuploader.withoutimage.js" />
+    <Content Include="Content\ueditor\third-party\webuploader\webuploader.withoutimage.min.js" />
+    <Content Include="Content\ueditor\third-party\xss.min.js" />
+    <Content Include="Content\ueditor\third-party\zeroclipboard\ZeroClipboard.js" />
+    <Content Include="Content\ueditor\third-party\zeroclipboard\ZeroClipboard.min.js" />
+    <Content Include="Content\ueditor\third-party\zeroclipboard\ZeroClipboard.swf" />
+    <Content Include="Content\ueditor\ueditor.all.js" />
+    <Content Include="Content\ueditor\ueditor.all.min.js" />
+    <Content Include="Content\ueditor\ueditor.config.js" />
+    <Content Include="Content\ueditor\ueditor.parse.js" />
+    <Content Include="Content\ueditor\ueditor.parse.min.js" />
+    <Content Include="Content\uploadify\Change Log.txt" />
+    <Content Include="Content\uploadify\check-exists.php" />
+    <Content Include="Content\uploadify\index.php" />
+    <Content Include="Content\uploadify\jquery.uploadify.js" />
+    <Content Include="Content\uploadify\jquery.uploadify.min.js" />
+    <Content Include="Content\uploadify\license.txt" />
+    <Content Include="Content\uploadify\uploadify-cancel.png" />
+    <Content Include="Content\uploadify\uploadify.css" />
+    <Content Include="Content\uploadify\uploadify.php" />
+    <Content Include="Content\uploadify\uploadify.swf" />
+    <Content Include="Content\uploadify\__MACOSX\._Change Log.txt" />
+    <Content Include="Content\uploadify\__MACOSX\._uploadify.swf" />
+    <Content Include="Content\webuploader\Uploader.swf" />
+    <Content Include="Content\webuploader\webuploader.css" />
+    <Content Include="Content\webuploader\webuploader.custom.js" />
+    <Content Include="Content\webuploader\webuploader.custom.min.js" />
+    <Content Include="Content\webuploader\webuploader.fis.js" />
+    <Content Include="Content\webuploader\webuploader.flashonly.js" />
+    <Content Include="Content\webuploader\webuploader.flashonly.min.js" />
+    <Content Include="Content\webuploader\webuploader.html5only.js" />
+    <Content Include="Content\webuploader\webuploader.html5only.min.js" />
+    <Content Include="Content\webuploader\webuploader.js" />
+    <Content Include="Content\webuploader\webuploader.min.js" />
+    <Content Include="Content\webuploader\webuploader.noimage.js" />
+    <Content Include="Content\webuploader\webuploader.noimage.min.js" />
+    <Content Include="Content\webuploader\webuploader.nolog.js" />
+    <Content Include="Content\webuploader\webuploader.nolog.min.js" />
+    <Content Include="Content\webuploader\webuploader.withoutimage.js" />
+    <Content Include="Content\webuploader\webuploader.withoutimage.min.js" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\Form.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\HistoryForm.cshtml" />
+    <Content Include="Views\Home\AdminAccordion\Index.css" />
+    <Content Include="Views\Home\AdminAccordion\Index.js" />
+    <Content Include="Views\Home\AdminDesktopTemp\Index.css" />
+    <Content Include="Views\Home\AdminDesktopTemp\Index.js" />
+    <Content Include="Views\Home\AdminDesktop\Index.css" />
+    <Content Include="Views\Home\AdminDesktop\Index.js" />
+    <Content Include="Views\Home\AdminTop\Index.css" />
+    <Content Include="Views\Home\AdminTop\Index.js" />
+    <Content Include="Views\Home\AdminWindos\Index.css" />
+    <Content Include="Views\Home\AdminWindos\Index.js" />
+    <Content Include="Views\Login\Accordion\Index.css" />
+    <Content Include="Views\Login\Accordion\Index.js" />
+    <Content Include="Views\Login\Default\Index.css" />
+    <Content Include="Views\Login\Default\Index.js" />
+    <Content Include="Views\Login\Top\Index.css" />
+    <Content Include="Views\Login\Top\Index.js" />
+    <Content Include="Views\Login\Window\Index.css" />
+    <Content Include="Views\Login\Window\Index.js" />
+    <Content Include="Views\LR_Content\plugin\contextmenu\lr-contextmenu.css" />
+    <Content Include="Views\LR_Content\plugin\contextmenu\lr-contextmenu.js" />
+    <Content Include="Views\LR_Content\plugin\custmerform\lr-formcomponts.js" />
+    <Content Include="Views\LR_Content\plugin\custmerform\lr-formdesigner.css" />
+    <Content Include="Views\LR_Content\plugin\custmerform\lr-formdesigner.js" />
+    <Content Include="Views\LR_Content\plugin\custmerform\lr-formrender.js" />
+    <Content Include="Views\LR_Content\plugin\grid\jfgrid.css" />
+    <Content Include="Views\LR_Content\plugin\grid\jfgrid.js" />
+    <Content Include="Views\LR_Content\plugin\im\lr-im.css" />
+    <Content Include="Views\LR_Content\plugin\im\lr-im.js" />
+    <Content Include="Views\LR_Content\plugin\custmerquery\lr-custmerquery.css" />
+    <Content Include="Views\LR_Content\plugin\custmerquery\lr-custmerquery.js" />
+    <Content Include="Views\LR_Content\plugin\date\lr-datepicker.css" />
+    <Content Include="Views\LR_Content\plugin\date\lr-datepicker.js" />
+    <Content Include="Views\LR_Content\plugin\formselect\lr-formselect.css" />
+    <Content Include="Views\LR_Content\plugin\formselect\lr-formselect.js" />
+    <Content Include="Views\LR_Content\plugin\inputsearch\lr-isearch.css" />
+    <Content Include="Views\LR_Content\plugin\inputsearch\lr-isearch.js" />
+    <Content Include="Views\LR_Content\plugin\layerselect\lr-layerselect.css" />
+    <Content Include="Views\LR_Content\plugin\layerselect\lr-layerselect.js" />
+    <Content Include="Views\LR_Content\plugin\layout\lr-layout.css" />
+    <Content Include="Views\LR_Content\plugin\layout\lr-layout.js" />
+    <Content Include="Views\LR_Content\plugin\mousewheel\mousewheel.js" />
+    <Content Include="Views\LR_Content\plugin\resize\resize.js" />
+    <Content Include="Views\LR_Content\plugin\scroll\scroll.css" />
+    <Content Include="Views\LR_Content\plugin\scroll\scroll.js" />
+    <Content Include="Views\LR_Content\plugin\select\lr-select.css" />
+    <Content Include="Views\LR_Content\plugin\select\lr-select.js" />
+    <Content Include="Views\LR_Content\plugin\timeline\lr-timeline.css" />
+    <Content Include="Views\LR_Content\plugin\timeline\lr-timeline.js" />
+    <Content Include="Views\LR_Content\plugin\tree\lr-tree.css" />
+    <Content Include="Views\LR_Content\plugin\uploader\lr-uploader.css" />
+    <Content Include="Views\LR_Content\plugin\uploader\lr-uploader.js" />
+    <Content Include="Views\LR_Content\plugin\wizard\wizard.css" />
+    <Content Include="Views\LR_Content\plugin\wizard\wizard.js" />
+    <Content Include="Views\LR_Content\plugin\workflow\lr-workflow-api.js" />
+    <Content Include="Views\LR_Content\plugin\workflow\lr-workflow-ui.css" />
+    <Content Include="Views\LR_Content\plugin\workflow\lr-workflow-ui.js" />
+    <Content Include="Views\LR_Content\script\lr-admin.js" />
+    <Content Include="Views\LR_Content\script\lr-authorize.js" />
+    <Content Include="Views\LR_Content\script\lr-chartshelper.js" />
+    <Content Include="Views\LR_Content\script\lr-date.js" />
+    <Content Include="Views\LR_Content\script\lr-fileupload.js" />
+    <Content Include="Views\LR_Content\script\lr-form.js" />
+    <Content Include="Views\LR_Content\script\lr-iframe-index.js" />
+    <Content Include="Views\LR_Content\script\lr-bootstrap.js" />
+    <Content Include="Views\LR_Content\script\lr-im.js" />
+    <Content Include="Views\LR_Content\script\lr-language.js" />
+    <Content Include="Views\LR_Content\script\lr-tabs.js" />
+    <Content Include="Views\LR_Content\script\lr-validator.js" />
+    <Content Include="Views\LR_Content\script\lr-validator-helper.js" />
+    <Content Include="Views\LR_Content\script\lr-excel.js" />
+    <Content Include="Views\LR_Content\style\lr-admin.css" />
+    <Content Include="Views\LR_Content\style\lr-iframe-form.css" />
+    <Content Include="Views\LR_Content\style\lr-iframe-index.css" />
+    <Content Include="Views\LR_Content\script\lr-ajax.js" />
+    <Content Include="Views\LR_Content\script\lr-base.js" />
+    <Content Include="Views\LR_Content\script\lr-clientdata.js" />
+    <Content Include="Views\LR_Content\style\lr-common.css" />
+    <Content Include="Content\font\learunfont\iconfont.css" />
+    <Content Include="Content\font\learunfont\iconfont.svg" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\jquery\jquery-1.10.2.min.js" />
+    <Content Include="Index.htm" />
+    <Content Include="Content\bootstrap\modernizr-2.6.2.min.js" />
+    <Content Include="Content\bootstrap\respond.min.js" />
+    <Content Include="Content\bootstrap\bootstrap.min.js" />
+    <Content Include="Content\font\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\font\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\font\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\font\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\font\fonts\FontAwesome.otf" />
+    <Content Include="Views\Home\AdminDefault\index.css" />
+    <Content Include="Views\Home\AdminDefault\index.js" />
+    <Content Include="Views\LR_Content\script\lr-layer.js" />
+    <Content Include="Views\LR_Content\plugin\tree\lr-tree.js" />
+    <Content Include="Views\Login\index.css" />
+    <Content Include="Views\Login\index.js" />
+    <Content Include="Areas\LR_SystemModule\Views\web.config" />
+    <Content Include="Areas\LR_OrganizationModule\Views\web.config" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\web.config" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\PluginDemo\Index.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\Area\Index.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\Module\Index.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\Module\Form.cshtml" />
+    <Content Include="Views\LR_Content\style\lr-reportTemplate.css" />
+    <Content Include="Views\Shared\_Form.cshtml" />
+    <Content Include="Content\jquery\plugin\toastr\toastr.min.js" />
+    <Content Include="Areas\LR_SystemModule\Views\Area\Form.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DataItem\Index.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DataItem\ClassifyIndex.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DataItem\ClassifyForm.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DataItem\Form.cshtml" />
+    <Content Include="Areas\LR_OrganizationModule\Views\Company\Index.cshtml" />
+    <Content Include="Areas\LR_OrganizationModule\Views\Company\Form.cshtml" />
+    <Content Include="Areas\LR_OrganizationModule\Views\Department\Index.cshtml" />
+    <Content Include="Areas\LR_OrganizationModule\Views\Department\Form.cshtml" />
+    <Content Include="Areas\LR_OrganizationModule\Views\Role\Index.cshtml" />
+    <Content Include="Areas\LR_OrganizationModule\Views\Role\Form.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\Log\Index.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\CustmerQuery\Index.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\CustmerQuery\Form.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\CustmerQuery\QueryForm.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\Log\Form.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DatabaseLink\Index.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DatabaseLink\Form.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DatabaseTable\Index.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DatabaseTable\Form.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DatabaseTable\TableIndex.cshtml" />
+    <Content Include="Views\Home\AdminAccordion.cshtml" />
+    <Content Include="Views\Home\AdminWindos.cshtml" />
+    <Content Include="Views\Home\AdminTop.cshtml" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\Icon\Index.cshtml" />
+    <Content Include="Areas\LR_OrganizationModule\Views\User\SelectForm.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\CodeRule\Index.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\CodeRule\Form.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\CodeRule\FormatForm.cshtml" />
+    <Content Include="Areas\LR_OrganizationModule\Views\Post\Index.cshtml" />
+    <Content Include="Areas\LR_OrganizationModule\Views\Post\Form.cshtml" />
+    <Content Include="Areas\LR_OrganizationModule\Views\Post\SelectForm.cshtml" />
+    <Content Include="Areas\LR_OrganizationModule\Views\User\Index.cshtml" />
+    <Content Include="Areas\LR_OrganizationModule\Views\User\Form.cshtml" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\web.config" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\FilterIP\Index.cshtml" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\FilterIP\Form.cshtml" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\FilterTime\Form.cshtml" />
+    <Content Include="Content\ueditor\third-party\jquery-1.10.2.min.map" />
+    <Content Include="Content\ueditor\third-party\video-js\font\vjs.eot" />
+    <Content Include="Content\ueditor\third-party\video-js\font\vjs.ttf" />
+    <Content Include="Content\ueditor\third-party\video-js\font\vjs.woff" />
+    <Content Include="Content\ueditor\config\config.json" />
+    <Content Include="Areas\LR_FormModule\Views\web.config" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\Index.cshtml" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\Form.cshtml" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\PreviewForm.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DataSource\Index.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DataSource\Form.cshtml" />
+    <Content Include="Views\Shared\_Admin.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\Annexes\UploadForm.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\Annexes\DownForm.cshtml" />
+    <Content Include="Content\webuploader\README.md" />
+    <Content Include="Areas\LR_SystemModule\Views\ExcelImport\Index.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\ExcelImport\Form.cshtml" />
+    <Content Include="Views\Shared\_CustmerFormDesigner.cshtml" />
+    <Content Include="Content\jquery-ui-1.12.1.custom\package.json" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\DataTableForm.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DataSource\SelectForm.cshtml" />
+    <Content Include="Views\Home\AdminDesktopTemp.cshtml" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\UserRelation\LookForm.cshtml" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\UserRelation\SelectForm.cshtml" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\Authorize\Form.cshtml" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\Index.cshtml" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplateAPP\Index.cshtml" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\FastCodeIndex.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\web.config" />
+    <Content Include="Areas\LR_CRMModule\Views\web.config" />
+    <Content Include="Views\Shared\_CodeBulidForm.cshtml" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\DataAuthorize\QueryForm.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\Index.cshtml" />
+    <Content Include="Views\Shared\_WorkFlowForm.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DataItem\DetailIndex.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\NodeForm.cshtml" />
+    <Content Include="Views\Shared\_CustmerFormPreview.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\Interface\Index.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\Interface\Form.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\Interface\FieldForm.cshtml" />
+    <Content Include="Views\Shared\_ReportTemplate.cshtml" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\HistoryForm.cshtml" />
+    <Content Include="Areas\LR_ReportModule\Views\web.config" />
+    <Content Include="Areas\LR_ReportModule\Views\ReportTemplate\FinanceReport.cshtml" />
+    <Content Include="Areas\LR_ReportModule\Views\ReportTemplate\PurchaseReport.cshtml" />
+    <Content Include="Areas\LR_ReportModule\Views\ReportTemplate\SalesReport.cshtml" />
+    <Content Include="Areas\LR_ReportModule\Views\ReportTemplate\StockReport.cshtml" />
+    <Content Include="Areas\LR_ReportModule\Views\ReportTemplate\ReportData\FinanceReport.xlsx" />
+    <Content Include="Areas\LR_ReportModule\Views\ReportTemplate\ReportData\PurchaseReport.xlsx" />
+    <Content Include="Areas\LR_ReportModule\Views\ReportTemplate\ReportData\SalesReport.xlsx" />
+    <Content Include="Areas\LR_ReportModule\Views\ReportTemplate\ReportData\StockReport.xlsx" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\EntityCodeIndex.cshtml" />
+    <Content Include="Areas\LR_CRMModule\Views\CrmOrder\Form.cshtml" />
+    <Content Include="Areas\LR_CRMModule\Views\CrmOrder\Index.cshtml" />
+    <Content Include="Areas\LR_OAModule\Views\web.config" />
+    <Content Include="Areas\LR_OAModule\Views\News\Form.cshtml" />
+    <Content Include="Areas\LR_OAModule\Views\News\Index.cshtml" />
+    <Content Include="Areas\LR_OAModule\Views\Notice\Form.cshtml" />
+    <Content Include="Areas\LR_OAModule\Views\Notice\Index.cshtml" />
+    <Content Include="Areas\LR_OAModule\Views\Schedule\Index.cshtml" />
+    <Content Include="Content\jquery\plugin\jquery-ui\images\ui-icons_2e83ff_256x240.png.5576_1.1154.partial" />
+    <Content Include="Areas\LR_OAModule\Views\Schedule\Form.cshtml" />
+    <Content Include="Areas\LR_CRMModule\Views\CashBalance\Index.cshtml" />
+    <Content Include="Areas\LR_CRMModule\Views\Chance\Detail.cshtml" />
+    <Content Include="Areas\LR_CRMModule\Views\Chance\Form.cshtml" />
+    <Content Include="Areas\LR_CRMModule\Views\Chance\Index.cshtml" />
+    <Content Include="Areas\LR_CRMModule\Views\CustomerContact\ContactIndex.cshtml" />
+    <Content Include="Areas\LR_CRMModule\Views\CustomerContact\ContactForm.cshtml" />
+    <Content Include="Areas\LR_CRMModule\Views\Customer\Detail.cshtml" />
+    <Content Include="Areas\LR_CRMModule\Views\Customer\Form.cshtml" />
+    <Content Include="Areas\LR_CRMModule\Views\Customer\Index.cshtml" />
+    <Content Include="Areas\LR_CRMModule\Views\Expenses\Index.cshtml" />
+    <Content Include="Areas\LR_CRMModule\Views\Expenses\ExpensesForm.cshtml" />
+    <Content Include="Areas\LR_CRMModule\Views\Invoice\Index.cshtml" />
+    <Content Include="Areas\LR_CRMModule\Views\Invoice\Form.cshtml" />
+    <Content Include="Areas\LR_CRMModule\Views\Receivable\ReportIndex.cshtml" />
+    <Content Include="Areas\LR_CRMModule\Views\Receivable\Index.cshtml" />
+    <Content Include="Areas\LR_CRMModule\Views\Receivable\ReceiptForm.cshtml" />
+    <Content Include="Areas\LR_CRMModule\Views\TrailRecord\Index.cshtml" />
+    <Content Include="Areas\LR_ReportModule\Views\ReportManage\Form.cshtml" />
+    <Content Include="Areas\LR_ReportModule\Views\ReportManage\Index.cshtml" />
+    <Content Include="Areas\LR_ReportModule\Views\ReportManage\Preview.cshtml" />
+    <Content Include="Areas\LR_OAModule\Views\Signet\Index.cshtml" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\SetFieldForm.cshtml" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\SetFieldIndex.cshtml" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\SetSelectFieldForm.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DataSource\TestForm.cshtml" />
+    <Content Include="Areas\LR_WebChatModule\Views\web.config" />
+    <Content Include="Areas\LR_WebChatModule\Views\Token\Index.cshtml" />
+    <Content Include="Areas\LR_FormModule\Views\FormRelation\Index.cshtml" />
+    <Content Include="Areas\LR_FormModule\Views\FormRelation\Form.cshtml" />
+    <Content Include="Areas\LR_FormModule\Views\FormRelation\QueryFieldForm.cshtml" />
+    <Content Include="Areas\LR_FormModule\Views\FormRelation\ColFieldForm.cshtml" />
+    <Content Include="Areas\LR_FormModule\Views\FormRelation\PreviewIndex.cshtml" />
+    <Content Include="Views\Shared\_CustmerIndexPreview.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\PostForm.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\RoleForm.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\UserForm.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\AuthorizeForm.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\ConditionFieldForm.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\FieldSelectForm.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\LineForm.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\PreviewForm.cshtml" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\LayerInstanceForm.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfScheme\WorkformForm.cshtml" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\WorkflowInstanceForm.cshtml" />
+    <Content Include="Areas\LR_FormModule\Views\Custmerform\TabInstanceForm.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfMyTask\Index.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfMyTask\ReleaseForm.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfMyTask\CustmerWorkFlowForm.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfMyTask\WfNodeForm.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfMyTask\ReleaseFlowForm.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfMyTask\AuditFlowForm.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfDelegateRule\Index.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfDelegateRule\Form.cshtml" />
+    <Content Include="Areas\LR_OrganizationModule\Views\User\SelectOnlyForm.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfMyTask\SignFlowForm.cshtml" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\CustmerCodeIndex.cshtml" />
+    <Content Include="Areas\LR_CodeDemo\Views\web.config" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfMonitor\Index.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfSystemDemo\DemoLeaveForm.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\Log\DetailForm.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\ExcelExport\Index.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\ExcelExport\Form.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\ExcelImport\SetFieldForm.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\ExcelImport\ImportForm.cshtml" />
+    <Content Include="Areas\LR_WorkFlowModule\Views\WfSystemDemo\DemoLeaveIndex.cshtml" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\WorkflowCodeIndex.cshtml" />
+    <Content Include="Areas\AppManager\Views\web.config" />
+    <Content Include="Areas\AppManager\Views\FunctionManager\Index.cshtml" />
+    <Content Include="Areas\AppManager\Views\FunctionManager\Form.cshtml" />
+    <Content Include="Content\fontApp\iconfont.eot" />
+    <Content Include="Content\fontApp\iconfont.ttf" />
+    <Content Include="Content\fontApp\iconfont.woff" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\Icon\AppIndex.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DbField\Index.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DbField\Form.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DatabaseTable\EditTableForm.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DatabaseTable\CopyTableForm.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DbField\SelectForm.cshtml" />
+    <Content Include="Areas\LR_SystemModule\Views\DatabaseTable\DraftForm.cshtml" />
+    <Content Include="Areas\LR_CodeDemo\Views\GridDemo\CommonIndex.cshtml" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\AddBtnForm.cshtml" />
+    <Content Include="Areas\LR_CodeDemo\Views\GridDemo\EditIndex.cshtml" />
+    <Content Include="Areas\LR_CodeDemo\Views\GridDemo\ReportIndex.cshtml" />
+    <Content Include="Areas\LR_IM\Views\web.config" />
+    <Content Include="Areas\LR_IM\Views\SysUser\Index.cshtml" />
+    <Content Include="Areas\LR_IM\Views\SysUser\Form.cshtml" />
+    <Content Include="Areas\LR_IM\Views\IMMsg\Index.cshtml" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\Authorize\AppForm.cshtml" />
+    <Content Include="Areas\LR_WebChatModule\Views\Organize\Index.cshtml" />
+    <Content Include="Areas\LR_WebChatModule\Views\Organize\MemberForm.cshtml" />
+    <Content Include="Areas\LR_OAModule\Views\Email\ConfigForm.cshtml" />
+    <Content Include="Areas\LR_OAModule\Views\Email\DetailForm.cshtml" />
+    <Content Include="Areas\LR_OAModule\Views\Email\Form.cshtml" />
+    <Content Include="Areas\LR_OAModule\Views\Email\Index.cshtml" />
+    <Content Include="Areas\LR_OAModule\Views\ResourceFile\FileForm.cshtml" />
+    <Content Include="Areas\LR_OAModule\Views\ResourceFile\FolderForm.cshtml" />
+    <Content Include="Areas\LR_OAModule\Views\ResourceFile\Index.cshtml" />
+    <Content Include="Areas\LR_OAModule\Views\ResourceFile\MoveForm.cshtml" />
+    <Content Include="Areas\LR_OAModule\Views\ResourceFile\UploadifyForm.cshtml" />
+    <Content Include="Content\jquerygantt\res\icons.eot" />
+    <Content Include="Content\jquerygantt\res\icons.ttf" />
+    <Content Include="Content\jquerygantt\res\icons.woff" />
+    <Content Include="Areas\LR_OAModule\Views\ProjectGantt\Form.cshtml" />
+    <Content Include="Areas\LR_OAModule\Views\ProjectGantt\Index.cshtml" />
+    <Content Include="Areas\LR_OAModule\Views\ModuleExport\Index.cshtml" />
+    <Content Include="Areas\AppManager\Views\DTImg\Index.cshtml" />
+    <Content Include="Areas\AppManager\Views\DTImg\Form.cshtml" />
+    <Content Include="Areas\LR_CodeGeneratorModule\Views\TemplatePC\AppCustmerCodeIndex.cshtml" />
+    <None Include="Properties\PublishProfiles\dms6.1.pubxml" />
+    <Content Include="Views\LR_Content\style\lr-layer.css" />
+    <Content Include="Views\UserCenter\ContactForm.css" />
+    <Content Include="Views\UserCenter\ContactForm.js" />
+    <Content Include="Views\UserCenter\HeadForm.css" />
+    <Content Include="Views\UserCenter\HeadForm.js" />
+    <Content Include="Views\UserCenter\Index.css" />
+    <Content Include="Views\UserCenter\Index.js" />
+    <Content Include="Views\UserCenter\LogIndex.css" />
+    <Content Include="Views\UserCenter\LogIndex.js" />
+    <Content Include="Views\UserCenter\PassWordForm.css" />
+    <Content Include="Views\UserCenter\PassWordForm.js" />
+    <Content Include="Views\Utility\AppDevGuideIndex.js" />
+    <Content Include="Views\Utility\EditGridForm.css" />
+    <Content Include="Views\Utility\EditGridForm.js" />
+    <Content Include="Views\Utility\ExcelExportForm.js" />
+    <Content Include="Views\Utility\GirdSelectIndex.css" />
+    <Content Include="Views\Utility\GirdSelectIndex.js" />
+    <Content Include="Views\Utility\JfGirdLayerForm.css" />
+    <Content Include="Views\Utility\JfGirdLayerForm.js" />
+    <Content Include="Views\Utility\ListContentIndex.js" />
+    <Content Include="Views\Utility\PCDevGuideIndex.js" />
+    <Content Include="Views\Utility\PreviewForm.js" />
+    <Content Include="Views\Utility\TreeSelectIndex.css" />
+    <Content Include="Views\Utility\TreeSelectIndex.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Error\ErrorBrowser.cshtml" />
+    <Content Include="Views\Error\ErrorPath404.cshtml" />
+    <Content Include="Views\Utility\Icon.cshtml" />
+    <Content Include="Views\UserCenter\Index.cshtml" />
+    <Content Include="Views\UserCenter\ContactForm.cshtml" />
+    <Content Include="Views\UserCenter\HeadForm.cshtml" />
+    <Content Include="Views\UserCenter\PassWordForm.cshtml" />
+    <Content Include="Views\UserCenter\LogIndex.cshtml" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\DataAuthorize\Index.cshtml" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\DataAuthorize\Index.js" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\DataAuthorize\Form.cshtml" />
+    <Content Include="Areas\LR_AuthorizeModule\Views\DataAuthorize\Form.js" />
+    <Content Include="Views\Utility\ExcelExportForm.cshtml" />
+    <Content Include="Views\Shared\_Index.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Utility\GirdSelectIndex.cshtml" />
+    <Content Include="Views\Utility\AppIcon.cshtml" />
+    <Content Include="Views\Utility\TreeSelectIndex.cshtml" />
+    <Content Include="Views\Utility\PreviewForm.cshtml" />
+    <Content Include="Views\Utility\EditGridForm.cshtml" />
+    <Content Include="Views\Utility\JfGirdLayerForm.cshtml" />
+    <Content Include="Views\Login\Default.cshtml" />
+    <Content Include="Views\Login\Accordion.cshtml" />
+    <Content Include="Views\Login\Top.cshtml" />
+    <Content Include="Views\Login\Window.cshtml" />
+    <Content Include="Views\Utility\ListContentIndex.cshtml" />
+    <Content Include="Views\Utility\PCDevGuideIndex.cshtml" />
+    <Content Include="Views\Utility\AppDevGuideIndex.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\LR_WebChatModule\Views\User\" />
+    <Folder Include="Areas\LR_WorkFlowModule\Views\WfEngine\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Login\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="XmlConfig\database.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XmlConfig\ioc.config" />
+    <Content Include="XmlConfig\log4net.config" />
+    <Content Include="XmlConfig\redis.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XmlConfig\system.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\AdminDefault.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font\learunfont\iconfont.eot" />
+    <Content Include="Content\font\learunfont\iconfont.ttf" />
+    <Content Include="Content\font\learunfont\iconfont.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\AdminDesktop.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Error\ErrorMessage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Learun.Application.Organization\Learun.Application.Organization.csproj">
+      <Project>{e9877a25-801b-4605-ad35-e6306916513c}</Project>
+      <Name>Learun.Application.Organization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\Learun.Application.AppMagager.csproj">
+      <Project>{8f770f8b-06b3-43da-886f-15d41cec62ee}</Project>
+      <Name>Learun.Application.AppMagager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.Base\Learun.Application.Base.csproj">
+      <Project>{0cdd0dc8-74cf-4c71-923c-66204a8923d3}</Project>
+      <Name>Learun.Application.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.CRM\Learun.Application.CRM.csproj">
+      <Project>{81e208bc-39b6-4ca3-81f1-c847d47330d1}</Project>
+      <Name>Learun.Application.CRM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.Excel\Learun.Application.Excel.csproj">
+      <Project>{10baa80b-16f5-4514-902d-f9f7fa608bdd}</Project>
+      <Name>Learun.Application.Excel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.Form\Learun.Application.Form.csproj">
+      <Project>{9164926b-150a-47d6-b384-a41aa4a7bc5d}</Project>
+      <Name>Learun.Application.Form</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.IM\Learun.Application.IM.csproj">
+      <Project>{db34dfc9-7227-41fa-88aa-832dbf247811}</Project>
+      <Name>Learun.Application.IM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.Mapping\Learun.Application.Mapping.csproj">
+      <Project>{79f8e2f1-08e7-4336-93e0-512b39f9dd54}</Project>
+      <Name>Learun.Application.Mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.OA\Learun.Application.OA.csproj">
+      <Project>{5f3fdf79-a47e-4782-a090-dd0dc2d5cdc1}</Project>
+      <Name>Learun.Application.OA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.Report\Learun.Application.Report.csproj">
+      <Project>{886b15b8-7b60-4872-85d1-7f47ac0951ef}</Project>
+      <Name>Learun.Application.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.TwoDevelopment\Learun.Application.TwoDevelopment.csproj">
+      <Project>{56f9a112-fd96-4809-98f4-0d7c5de0711b}</Project>
+      <Name>Learun.Application.TwoDevelopment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.WeChat\Learun.Application.WeChat.csproj">
+      <Project>{36fa9414-767e-4806-9e45-2075216b1070}</Project>
+      <Name>Learun.Application.WeChat</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Application.Module\Learun.Application.WorkFlow\Learun.Application.WorkFlow.csproj">
+      <Project>{88d8e99d-df26-4506-83c5-51e354818bef}</Project>
+      <Name>Learun.Application.WorkFlow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Cache\Learun.Cache.Base\Learun.Cache.Base.csproj">
+      <Project>{975f2cb8-605c-4add-b365-b97bf844f0fe}</Project>
+      <Name>Learun.Cache.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Cache\LeaRun.Cache.Factory\Learun.Cache.Factory.csproj">
+      <Project>{68902fcf-c439-4010-b17b-2499c972ee33}</Project>
+      <Name>Learun.Cache.Factory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Cache\Learun.Cache.Redis\Learun.Cache.Redis.csproj">
+      <Project>{13808645-2013-4896-8ee2-65144e222c69}</Project>
+      <Name>Learun.Cache.Redis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Db\Learun.DataBase.EF.Oracle\Learun.DataBase.Oracle.csproj">
+      <Project>{82069f3a-ab45-4f8b-b2bf-a36b14208f41}</Project>
+      <Name>Learun.DataBase.Oracle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Db\Learun.DataBase.EF.Sqlserver\Learun.DataBase.SqlServer.csproj">
+      <Project>{890532f8-5205-4ee9-965c-84500cad24de}</Project>
+      <Name>Learun.DataBase.SqlServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Db\Learun.DataBase.MySql\Learun.DataBase.MySqlEx.csproj">
+      <Project>{fe4cb79e-7f98-4683-bc4a-5173a5bc5636}</Project>
+      <Name>Learun.DataBase.MySqlEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Log\Learun.Loger.csproj">
+      <Project>{d27e14dc-b68c-408d-a2e3-fdb38665ecbb}</Project>
+      <Name>Learun.Loger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Util\Learun.Util.Operat\Learun.Util.Operat.csproj">
+      <Project>{ad556b7a-e0d1-41bd-9d5b-18f8502e9f33}</Project>
+      <Name>Learun.Util.Operat</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learun.Framework.Module\Learun.Util\Learun.Util\Learun.Util.csproj">
+      <Project>{cf8ae293-88ab-436c-9720-a8386ba5d7b7}</Project>
+      <Name>Learun.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>20472</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:20873/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。启用“NuGet 程序包还原”可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

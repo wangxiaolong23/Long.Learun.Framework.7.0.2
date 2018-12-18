@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "会员信息";
+    Layout = "~/Views/Shared/_GirdForm.cshtml";
+}
+<style>
+    .jfgrid-data-cell {
+        border-bottom: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+</style>
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item"  data-table="LR_Demo_User" >
+        <div class="lr-form-item-title">姓名<font face="宋体">*</font></div>
+        <input id="Name" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="LR_Demo_User" >
+        <div class="lr-form-item-title">性别<font face="宋体">*</font></div>
+        <div id="Sex" isvalid="yes" checkexpession="NotNull" ></div>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="LR_Demo_User" >
+        <div class="lr-form-item-title">年龄<font face="宋体">*</font></div>
+        <input id="Age" type="text" class="form-control" isvalid="yes" checkexpession="Num" />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="LR_Demo_User" >
+        <div class="lr-form-item-title">地址</div>
+        <textarea id="Address" class="form-control" style="height:40px;"  ></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item lr-form-item-grid" >
+        <div id="LR_Demo_OrderList"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/CustomerInfo/Form.js")

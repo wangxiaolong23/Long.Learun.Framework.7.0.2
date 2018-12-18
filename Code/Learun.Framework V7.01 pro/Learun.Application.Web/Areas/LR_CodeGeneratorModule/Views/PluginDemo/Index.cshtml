@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="~/favicon.ico">
+
+    <title>JS插件展示页面|力软信息|快速开发平台|LeaRun敏捷开发框架</title>
+    <link href="~/Content/pace/pace-theme-minimal.css" rel="stylesheet" />
+    <link href="~/Content/font/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    @*<link href="~/Content/jquery/plugin/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet" />*@
+    @*<link href="~/Content/jquery/plugin/jfGrid/jfgrid.css" rel="stylesheet" />*@
+
+    @Html.AppendCssFile(
+
+    "/Views/LR_Content/style/lr-common.css",
+    "/Views/LR_Content/plugin/scroll/scroll.css",
+
+
+    "/Views/LR_Content/plugin/layout/lr-layout.css",
+    "/Views/LR_Content/plugin/tree/lr-tree.css",
+    "/Views/LR_Content/plugin/select/lr-select.css",
+    "/Views/LR_Content/plugin/formselect/lr-formselect.css",
+    "/Views/LR_Content/plugin/layerselect/lr-layerselect.css",
+    "/Views/LR_Content/plugin/uploader/lr-uploader.css",
+    "/Views/LR_Content/style/lr-iframe-index.css",
+    "/Views/LR_Content/plugin/grid/jfgrid.css"
+    )
+    @Html.AppendCssFile(
+    "/Areas/LR_CodeGeneratorModule/Views/PluginDemo/index.css"
+    )
+    <!--[if lt IE 9]>
+      <script src="~/Content/bootstrap/html5shiv.min.js"></script>
+      <script src="~/Content/bootstrap/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="lr-layout lr-layout-left-center" id="lr_layout">
+        <div class="lr-layout-left">
+            <div class="lr-layout-wrap">
+                <div class="lr-layout-title">插件列表</div>
+                <div id="plugin_list" class="lr-panel-content"></div>
+            </div>
+        </div>
+        <div class="lr-layout-center">
+            <div class="lr-layout-wrap">
+                <div class="lr-layout-title">
+                    演示区域 - <span id="title_info">未选择插件</span>
+                </div>
+                <div class="showarea-list">
+                    <div class="showarea-list-item active" style="padding-top:0px;">
+                        <div class="lr-tab-scroll-content">
+                            <div class="alert alert-warning" role="alert">
+                                <p>1.此页面展示一些敏捷框架所使用的部分前端插件!</p>
+                                <p>2.所有插件都是支持主流浏览器的（IE8+、Chrome、Firefox、360浏览器等）!</p>
+                                <p>3.选用的都是一些轻量,开源的插件,方便后续的扩展!</p>
+                            </div>
+                            <div class="lr-portal-panel-title">
+                                <i class="fa fa-tags"></i>&nbsp;&nbsp;框架所使用的一些前端组件列表
+                            </div>
+                            <div class="lr-portal-panel-content" style="padding-top:10px;">
+                                <p>1.JS框架：jquery-1.10.2（考虑到兼容低版本浏览器）、Bootstrap.js</p>
+                                <p>2.CSS框架：Bootstrap v3.3.4</p>
+                                <p>3.在线编辑器：ckeditor、simditor</p>
+                                <p>4.上传文件：WebUploader</p>
+                                <p>5.数据表格：JFGrid</p>
+                                <p>6.对话框：layer.js</p>
+                                <p>7.下拉选择框：learunselect</p>
+                                <p>8.树结构控件：learuntree</p>
+                                <p>9.图表插件：Echarts</p>
+                                <p>10.日期控件： My97DatePicker</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="learun_tree_area" class="showarea-list-item">
+                        <ul class="nav nav-tabs lr-nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#tree_base" aria-controls="home" role="tab" data-toggle="tab">基础信息</a></li>
+                            <li role="presentation"><a href="#tree_ajax" aria-controls="profile" role="tab" data-toggle="tab">获取后端数据</a></li>
+                            <li role="presentation"><a href="#tree_checkbox" aria-controls="settings" role="tab" data-toggle="tab">复选框</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content lr-tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="tree_base">
+                                <div class="lr-tab-scroll-content">
+                                    <div class="alert alert-warning" role="alert">
+                                        <p>1.lrtree是一个基于通过jquery的轻量级树形插件!</p>
+                                        <p>2.通过jquery选择器就可以动态创建出一个树形数据!</p>
+                                        <p>3.支持复选框,ajax后端数据获取,数据懒加载!</p>
+                                        <p>4.兼容目前最流行浏览器（IE8+、Chrome、Firefox、360浏览器）</p>
+                                    </div>
+                                    <div class="lr-portal-panel-title">
+                                        <i class="fa fa-tags"></i>&nbsp;&nbsp;事例
+                                    </div>
+                                    <div class="lr-portal-panel-content">
+                                        <div id="tree_show_base" class="lr-portal-panel-content-right"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="tree_ajax">
+                                <div class="lr-tab-scroll-content">
+                                    <div class="alert alert-warning" role="alert">
+                                        <p>1.可以通过ajax方式获取后台数据!</p>
+                                    </div>
+                                    <div class="lr-portal-panel-title">
+                                        <i class="fa fa-tags"></i>&nbsp;&nbsp;事例
+                                    </div>
+                                    <div class="lr-portal-panel-content">
+                                        <div id="tree_show_ajax" class="lr-portal-panel-content-right"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="tree_checkbox">
+                                <div class="lr-tab-scroll-content">
+                                    <div class="alert alert-warning" role="alert">
+                                        <p>1.可以给给指定的节点添加勾选框!</p>
+                                    </div>
+                                    <div class="lr-portal-panel-title">
+                                        <i class="fa fa-tags"></i>&nbsp;&nbsp;事例
+                                    </div>
+                                    <div class="lr-portal-panel-content">
+                                        <div id="tree_show_checkbox" class="lr-portal-panel-content-right"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="learun_select_area" class="showarea-list-item" style="padding-top:0px;">
+                        <div class="lr-tab-scroll-content">
+                            <div class="alert alert-warning" role="alert">
+                                <p>1.lrselect是一个基于通过jquery的轻量级下拉框插件!</p>
+                                <p>2.支持主流浏览器的（IE8+、Chrome、Firefox、360浏览器等）!</p>
+                                <p>3.基本能满足所有需求,支持普通下拉框，树形下拉框，支持模糊查询和数据动态加载!</p>
+                            </div>
+                            <div class="lr-portal-panel-title">
+                                <i class="fa fa-tags"></i>&nbsp;&nbsp;事例
+                            </div>
+                            <div class="lr-portal-panel-content" style="padding:20px;">
+                                <div id="select1"></div>
+                                <div id="select2" style="margin-top:10px;"></div>
+                                <div id="select3" style="margin-top:10px;"></div>
+                                <div id="select4" style="margin-top:10px;"></div>
+                                <div id="select5" style="margin-top:10px;"></div>
+                                <div id="select6" style="margin-top:10px;"></div>
+                                <div id="select7" style="margin-top:10px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="learun_selectuser_area" class="showarea-list-item" style="padding-top:0px;">
+                        <div class="lr-tab-scroll-content">
+                            <div class="alert alert-warning" role="alert">
+                                <p>1.基于layer弹层和lrselect的人员选择!</p>
+                                <p>2.支持主流浏览器的（IE8+、Chrome、Firefox、360浏览器等）!</p>
+                                <p>3.基本能满足所有需求!</p>
+                            </div>
+                            <div class="lr-portal-panel-title">
+                                <i class="fa fa-tags"></i>&nbsp;&nbsp;事例
+                            </div>
+                            <div class="lr-portal-panel-content" style="padding:20px;">
+                                <div id="selectuser1"></div>
+                                <div id="selectuser2" style="margin-top:10px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="jfgrid_area" class="showarea-list-item" style="padding-top:0px;">
+                        <div class="lr-tab-scroll-content">
+                            <div class="alert alert-warning" role="alert">
+                                <p>1.jfgrid是一个轻量级的表格插件!</p>
+                                <p>2.所有插件都是支持主流浏览器的（IE8+、Chrome、Firefox、360浏览器等）!</p>
+                                <p>3.基本能满足所有需求,最主要的原因是免费的!</p>
+                                <p>4.力软前端开发团队对其做了一定的扩展和封装,方便整体框架的使用!</p>
+                            </div>
+                            <div class="lr-portal-panel-title">
+                                <i class="fa fa-tags"></i>&nbsp;&nbsp;事例
+                            </div>
+                            <div class="lr-portal-panel-content" style="padding:20px;">
+                                <div id="learun_jfgrid"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="uploader_area" class="showarea-list-item" style="padding-top:0px;">
+                        <div class="lr-tab-scroll-content">
+                            <div class="alert alert-warning" role="alert">
+                                <p>1.WebUploader是由Baidu WebFE(FEX)团队开发的一个简单的以HTML5为主，FLASH为辅的现代文件上传组件。</p>
+                                <p>2.在现代的浏览器里面能充分发挥HTML5的优势，同时又不摒弃主流IE浏览器，沿用原来的FLASH运行时，兼容IE6+，iOS 6+, android 4+。两套运行时，同样的调用方式，可供用户任意选用。</p>
+                                <p>3.采用大文件分片并发上传，极大的提高了文件上传效率。</p>
+                                <p>4.力软前端开发团队对其做了一定的扩展和封装,方便整体框架的使用!</p>
+                            </div>
+                            <div class="lr-portal-panel-title">
+                                <i class="fa fa-tags"></i>&nbsp;&nbsp;事例
+                            </div>
+                            <div class="lr-portal-panel-content" style="padding:20px;">
+                                <div id="learun_uploader"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Content/pace/pace.min.js"></script>
+    <script src="~/Content/jquery/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/bootstrap/bootstrap.min.js"></script>
+    @*<script src="~/Content/jquery/plugin/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>*@
+    @*<script src="~/Content/jquery/plugin/jfGrid/jfgrid.min.js"></script>*@
+    <script src="~/Content/jquery/plugin/jqprint/jquery.jqprint-0.3.js"></script>
+    @Html.AppendJsFile(
+    "/Views/LR_Content/plugin/resize/resize.js",
+    "/Views/LR_Content/plugin/mousewheel/mousewheel.js",
+    "/Views/LR_Content/plugin/scroll/scroll.js",
+
+
+    "/Views/LR_Content/plugin/layout/lr-layout.js",
+    "/Views/LR_Content/plugin/tree/lr-tree.js",
+    "/Views/LR_Content/plugin/select/lr-select.js",
+    "/Views/LR_Content/plugin/formselect/lr-formselect.js",
+    "/Views/LR_Content/plugin/layerselect/lr-layerselect.js",
+    "/Views/LR_Content/plugin/uploader/lr-uploader.js",
+
+
+    "/Views/LR_Content/plugin/grid/jfgrid.js",
+    "/Areas/LR_CodeGeneratorModule/Views/PluginDemo/listInfo.js",
+    "/Areas/LR_CodeGeneratorModule/Views/PluginDemo/index.js"
+
+   
+    )
+    <script>
+        $.lrToken = $('@Html.AntiForgeryToken()').val();
+        $(function () {
+            $('#lr_layout').lrLayout();
+            if (!!window.bootstrap) {
+                bootstrap(jQuery, top.learun);
+            }
+        });
+    </script>
+</body>
+</html>

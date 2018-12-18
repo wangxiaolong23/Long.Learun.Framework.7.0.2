@@ -1,0 +1,148 @@
+﻿@{
+    ViewBag.Title = "节点信息配置";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Areas/LR_WorkFlowModule/Views/WfScheme/NodeForm.css")
+<div style="position:relative;width:100%;height:100%;">
+    <div class="lr-form-tabs" id="lr_form_tabs">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-value="baseInfo">基本配置</a></li>
+            <li><a data-value="auditor">审核者</a></li>
+            <li><a data-value="workform">添加表单</a></li>
+            <li><a data-value="formAuthorize">表单权限</a></li>
+            <li><a data-value="methodInfo">绑定方法</a></li>
+            <li><a data-value="sqlSuccessInfo">通过后执行SQL</a></li>
+            <li><a data-value="sqlFailInfo">不通过后执行SQL</a></li>
+
+            <li><a data-value="conditionField">字段条件设置</a></li>
+            <li><a data-value="conditionSqlDiv">sql条件设置</a></li>
+        </ul>
+    </div>
+    <div class="tab-content" id="tab_content">
+        <div id="baseInfo" class="tab-pane  lr-form-wrap active">
+            <div class="col-xs-12 lr-form-item">
+                <div class="lr-form-item-title">节点标识<font face="宋体">*</font></div>
+                <input id="id" type="text" readonly class="form-control" />
+            </div>
+            <div class="col-xs-12 lr-form-item">
+                <div class="lr-form-item-title">节点名称<font face="宋体">*</font></div>
+                <input id="name" type="text" class="form-control" placeholder="请输入名称" isvalid="yes" checkexpession="NotNull" />
+            </div>
+            @*<div class="col-xs-12 lr-form-item">
+                <div class="lr-form-item-title">超时通知时间</div>
+                <input id="timeoutNotice" type="text" class="form-control" />
+            </div>
+            <div class="col-xs-12 lr-form-item">
+                <div class="lr-form-item-title">超时流转时间</div>
+                <input id="timeoutAction" type="text" class="form-control" />
+            </div>*@
+            <div class="col-xs-6 lr-form-item">
+                <div class="lr-form-item-title">会签策略<font face="宋体">*</font></div>
+                <div id="confluenceType"></div>
+            </div>
+            <div class="col-xs-6 lr-form-item">
+                <div class="lr-form-item-title">会签比例</div>
+                <input id="confluenceRate" type="text" class="form-control" value="100" />
+            </div>
+        </div>
+        <div id="auditor" class="tab-pane" style="position:relative;padding:5px;width:100%;height:100%;">
+            <div style="position:relative;width:100%;height:100%;border:1px solid #ddd;padding-bottom:30px;">
+                <div class="lr-form-layout-body-title" style="top:initial;bottom:0;border-bottom:0px;border-top:1px solid #ddd;" >
+                    <div class="lr-form-jfgrid-btns">
+                        <a id="lr_post_auditor" class="btn btn-success"><i class="fa fa-graduation-cap"></i>&nbsp;添加岗位</a>
+                        <a id="lr_role_auditor" class="btn btn-info"><i class="fa fa-paw"></i>&nbsp;添加角色</a>
+                        <a id="lr_user_auditor" class="btn btn-primary"><i class="fa fa-user"></i>&nbsp;添加人员</a>
+
+                        <a id="lr_delete_auditor" class="btn btn-danger"><i class="fa fa-trash-o"></i>&nbsp;移除</a>
+                    </div>
+                </div>
+                <div id="auditor_girdtable"></div>
+            </div>
+        </div>
+        <div id="workform" class="tab-pane" style="position:relative;padding:5px;width:100%;height:100%;">
+            <div style="position:relative;width:100%;height:100%;border:1px solid #ddd;padding-bottom:30px;">
+                <div class="lr-form-layout-body-title" style="top:initial;bottom:0;border-bottom:0px;border-top:1px solid #ddd;">
+                    <div class="lr-form-jfgrid-btns">
+                        <a id="lr_add_workform" class="btn btn-success"><i class="fa fa-plus"></i>&nbsp;添加</a>
+                        <a id="lr_edit_workform" class="btn btn-warning"><i class="fa fa-pencil-square-o"></i>&nbsp;修改</a>
+                        <a id="lr_delete_workform" class="btn btn-danger"><i class="fa fa-trash-o"></i>&nbsp;移除</a>
+                    </div>
+                </div>
+                <div id="workform_girdtable"></div>
+            </div>
+        </div>
+        <div id="formAuthorize" class="tab-pane" style="position:relative;padding:5px;width:100%;height:100%;">
+            <div style="position:relative;width:100%;height:100%;border:1px solid #ddd;padding-bottom:30px;">
+                <div class="lr-form-layout-body-title" style="top:initial;bottom:0;border-bottom:0px;border-top:1px solid #ddd;">
+                    <div class="lr-form-jfgrid-btns">
+                        <a id="lr_add_authorize" class="btn btn-success"><i class="fa fa-plus"></i>&nbsp;添加</a>
+                        <a id="lr_edit_authorize" class="btn btn-warning"><i class="fa fa-pencil-square-o"></i>&nbsp;修改</a>
+                        <a id="lr_delete_authorize" class="btn btn-danger"><i class="fa fa-trash-o"></i>&nbsp;移除</a>
+                    </div>
+                </div>
+                <div id="authorize_girdtable"></div>
+            </div>
+        </div>
+        <div id="methodInfo" class="tab-pane" style="position:relative;width:100%;height:100%;padding-top:54px;">
+            <div style="position:absolute;height:54px;width:100%;padding:5px;top:0;left:0;">
+                <div class="alert alert-danger" style="position:relative;text-align: left;margin:0;">
+                    <i class="fa fa-question-circle alert-dismissible" style="position: relative; top: 1px; font-size: 15px; padding-right: 5px;"></i>
+                    注意：必须要开发人员指导下进行配置注册的IOC方法名(或咨询力软售后人员)！
+                </div>
+            </div>
+            <div class="lr-form-wrap" style="padding:5px;">
+                <textarea id="iocName" class="form-control" placeholder="请填写方法名" style="height: 100%"></textarea>
+            </div>
+
+        </div>
+        <div id="sqlSuccessInfo" class="tab-pane" style="position:relative;width:100%;height:100%;padding-top:54px;">
+            <div style="position:absolute;height:54px;width:100%;padding:5px;top:0;left:0;">
+                <div class="alert alert-danger" style="position:relative;text-align: left;margin:0;">
+                    <i class="fa fa-question-circle alert-dismissible" style="position: relative; top: 1px; font-size: 15px; padding-right: 5px;"></i>
+                    注意：必须要开发人员指导下进行配置，有可能没有配置好SQL语句会导致该功能崩溃({processId}流程发起实例主键)！
+                </div>
+            </div>
+            <div class="lr-form-wrap" style="padding:5px;padding-top:40px;">
+                <div style="position:absolute;left:0;top:5px;width:100%;height:28px;padding:0 5px;"><div id="dbSuccessId" style="position:relative;width:100%;height:100%;"></div></div>
+                <textarea id="dbSuccessSql" class="form-control" style="height: 100%" placeholder="请填写Sql语句"></textarea>
+            </div>
+        </div>
+        <div id="sqlFailInfo" class="tab-pane" style="position:relative;width:100%;height:100%;padding-top:54px;">
+            <div style="position:absolute;height:54px;width:100%;padding:5px;top:0;left:0;">
+                <div class="alert alert-danger" style="position:relative;text-align: left;margin:0;">
+                    <i class="fa fa-question-circle alert-dismissible" style="position: relative; top: 1px; font-size: 15px; padding-right: 5px;"></i>
+                    注意：必须要开发人员指导下进行配置，有可能没有配置好SQL语句会导致该功能崩溃({processId}流程发起实例主键)！
+                </div>
+            </div>
+            <div class="lr-form-wrap" style="padding:5px;padding-top:40px;">
+                <div style="position:absolute;left:0;top:5px;width:100%;height:28px;padding:0 5px;"><div id="dbFailId" style="position:relative;width:100%;height:100%;"></div></div>
+                <textarea id="dbFailSql" class="form-control" style="height: 100%" placeholder="请填写Sql语句"></textarea>
+            </div>
+        </div>
+        <div id="conditionField" class="tab-pane" style="position:relative;padding:5px;width:100%;height:100%;">
+            <div style="position:relative;width:100%;height:100%;border:1px solid #ddd;padding-bottom:30px;">
+                <div class="lr-form-layout-body-title" style="top:initial;bottom:0;border-bottom:0px;border-top:1px solid #ddd;">
+                    <div class="lr-form-jfgrid-btns">
+                        <a id="lr_add_condition" class="btn btn-success"><i class="fa fa-plus"></i>&nbsp;添加</a>
+                        <a id="lr_edit_condition" class="btn btn-warning"><i class="fa fa-pencil-square-o"></i>&nbsp;修改</a>
+                        <a id="lr_delete_condition" class="btn btn-danger"><i class="fa fa-trash-o"></i>&nbsp;移除</a>
+                    </div>
+                </div>
+                <div id="condition_girdtable"></div>
+            </div>
+        </div>
+        <div id="conditionSqlDiv" class="tab-pane" style="position:relative;width:100%;height:100%;padding-top:54px;">
+            <div style="position:absolute;height:54px;width:100%;padding:5px;top:0;left:0;">
+                <div class="alert alert-danger" style="position:relative;text-align: left;margin:0;">
+                    <i class="fa fa-question-circle alert-dismissible" style="position: relative; top: 1px; font-size: 15px; padding-right: 5px;"></i>
+                    注意：请在开发人员指导下进行配置SQL语句（{processId}流程发起实例主键）！
+                </div>
+            </div>
+            <div class="lr-form-wrap" style="padding:5px;padding-top:40px;">
+                <div style="position:absolute;left:0;top:5px;width:100%;height:28px;padding:0 5px;"><div id="dbConditionId" style="position:relative;width:100%;height:100%;"></div></div>
+                <textarea id="conditionSql" class="form-control" style="height: 100%" placeholder="请填写Sql语句"></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_WorkFlowModule/Views/WfScheme/NodeForm.js")

@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "表单权限字段导入";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap">
+    <div class="col-xs-12 lr-form-item lr-form-btnitem">
+        <div class="lr-form-item-title">表单选择<font face="宋体">*</font></div>
+        <div id="FormId" isvalid="yes" checkexpession="NotNull"></div>
+        <a id="lr_preview" class="btn btn-default lr-form-item-btn">预览表单</a>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">字段选择<font face="宋体">*</font></div>
+        <div id="FieldId" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_WorkFlowModule/Views/WfScheme/FieldSelectForm.js")

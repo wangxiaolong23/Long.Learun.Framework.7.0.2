@@ -1,0 +1,27 @@
+﻿.ui-report{display:inline-block;width:100%;position: relative;}
+.ui-report .lr-layout-wrap{border:0px;background-color: #F5F5F5;box-shadow:none;}
+.ui-report .lr-layout-tool{padding: 0;border: 1px solid #cfcfcf;box-shadow: 0 1px 3px rgba(0,0,0,0.2);background-color: #fff;}
+.ui-report .lr-layout-grid{margin-top: 5px;background: #fff;padding: 15px;box-shadow: 0 1px 3px rgba(0,0,0,0.2);border: 1px solid #cfcfcf;}
+.ui-report .lr-layout-grid .grid-title{font-size: 22px;text-align:center;width:100%;color: #444;}
+.ui-report .lr-layout-grid .grid-subtitle{width:100%;text-align:left;padding: 5px 0;}
+.ui-report .jfgrid-layout{border: 1px solid #ccc;}
+.ui-report .jfgrid-border{background-color: #fff;}
+.ui-report .jfgrid-head{background-color: #fff;}
+.ui-report .jfgrid-head-cell{border-bottom: 1px solid #ccc;border-right: 1px solid #ccc;}
+.ui-report .jfgrid-data-cell{border-bottom: 1px solid #ccc;border-right: 1px solid #ccc;}
+.price-box{width:860px;margin-left:auto;margin-right:auto;border: 1px solid #ddd;box-shadow: rgb(189, 189, 189) 0px 0px 10px;background: #fff;padding: 50px;padding-top:20px;margin-top: 25px;padding-bottom:0px;}
+.price-box .price-title{font-size: 28px;text-align: center;line-height:60px;font-weight: bold;color: #333;}
+.price-box .price-subtitle{text-align: center;}
+.price-box .price-info{margin-top:20px;margin-bottom:20px;}
+.price-box .price-info table .formTitle{text-align:left;width:50px;font-size: 12px;}
+.price-box .price-info table .formValue{text-align:left;font-size: 12px;}
+.price-box .price-info table .formValue input{box-shadow:none;border-top:none;border-right:none;border-left:none;height:22px!important;line-height:22px!important;font-size: 12px;}
+.price-box .price-table table{margin: 0px;margin-top:1px;border-collapse: collapse;width: 100%;border-left: 1px solid #ccc;}
+.price-box .price-table table thead tr td{border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;border-right: 1px solid #ccc;padding-top:5px;padding-bottom:5px;text-overflow:ellipsis;word-break:keep-all;overflow:hidden;font-weight:bold;padding-left:5px;padding-right:5px;font-size: 12px;}
+.price-box .price-table table tbody tr td{border-bottom: 1px solid #ccc;border-right: 1px solid #ccc;height:25px;line-height:25px;word-break: break-all;padding-left:5px;padding-right:5px;font-size: 12px;}
+.price-box .form{width:100%;margin:0px;padding:0px;border-collapse:collapse;border-width:3px 1px 1px;table-layout:fixed}
+.price-box .form .formTitle{position:relative;left:0px;text-align:right;white-space:nowrap;font-weight:normal;width:90px;padding-right:10px;}
+.price-box .form .formTitle font{color:red;position:absolute;right:0px;}
+.price-box .form .formTitle-top{vertical-align:top;padding-top:4px;}
+.price-box .form .formValue{position:relative;padding:5px;width:auto;}
+.price-box .form .formValue select{padding: 4px;padding-left:4px;}

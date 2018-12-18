@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "公司添加";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">公司名称<font face="宋体">*</font></div>
+        <input id="F_FullName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">公司性质<font face="宋体">*</font></div>
+        <div id="F_Nature"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">公司编码<font face="宋体">*</font></div>
+        <input id="F_EnCode" type="text" class="form-control" isvalid="yes" checkexpession="Num" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">公司简称<font face="宋体">*</font></div>
+        <input id="F_ShortName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">上级公司</div>
+        <div id="F_ParentId"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">成立时间</div>
+        <input id="F_FoundedTime" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker()" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">负责人</div>
+        <input id="F_Manager" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">电话</div>
+        <input id="F_OuterPhone" type="text" class="form-control" />
+    </div>
+
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">电子邮箱</div>
+        <input id="F_Email" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">传真</div>
+        <input id="F_Fax" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">公司地点</div>
+        <div id="area" class="col-xs-6 lr-form-area">
+            <div id="F_ProvinceId" placeholder="省" class="col-xs-4"></div>
+            <div id="F_CityId" placeholder="市" class="col-xs-4"></div>
+            <div id="F_CountyId" placeholder="县/区" class="col-xs-4"></div>
+        </div>
+        <div class="col-xs-6">
+            <input id="F_Address" type="text" placeholder="请输入详细地址" class="form-control" />
+        </div>
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">邮编</div>
+        <input id="F_Postalcode" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">公司官网</div>
+        <input id="F_WebAddress" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">经营范围</div>
+        <input id="F_BusinessScope" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="F_Description" type="text" class="form-control" style="height:80px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_OrganizationModule/Views/Company/Form.js")

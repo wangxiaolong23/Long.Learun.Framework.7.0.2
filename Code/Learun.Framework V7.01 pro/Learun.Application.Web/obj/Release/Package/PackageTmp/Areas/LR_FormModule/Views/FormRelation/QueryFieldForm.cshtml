@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "查询条件字段添加";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">字段选择<font face="宋体">*</font></div>
+        <div id="fieldId" isvalid="yes" checkexpession="notNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">所在行占比<font face="宋体">*</font></div>
+        <div id="portion" isvalid="yes" checkexpession="notNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">排序号<font face="宋体">*</font></div>
+        <input id="sort" type="text" class="form-control" isvalid="yes" checkexpession="isNum" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_FormModule/Views/FormRelation/QueryFieldForm.js")

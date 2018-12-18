@@ -1,0 +1,68 @@
+﻿.lr-form-layout-body {
+    padding:5px;
+}
+.lr-form-file-queue-wrap {
+    position:relative;
+    width:100%;
+    height:100%;
+    border:1px solid #ddd;
+    border-radius:4px;
+}
+.lr-form-file-queue {
+    position:relative;
+}
+.lr-form-file-queue-item {
+    position:relative;
+    width:100%;
+    height:50px;
+    border-bottom:1px solid #ddd;
+    padding-left:60px;
+
+}
+.lr-file-image {
+    position:absolute;
+    top:5px;
+    left:5px;
+}
+.lr-file-image img {
+    width:40px;
+    height:40px;
+}
+.lr-file-name{
+    line-height:50px;
+
+}
+
+.lr-tool-bar {
+    position:absolute;
+    top:0;
+    right:5px;
+    font-size: 25px;
+    line-height:50px;
+    color:#666;
+    cursor:pointer;
+}
+.lr-tool-bar > i {
+    margin-left:8px;
+}
+
+.lr-tool-bar .fa-cloud-download {
+    color: #3498db;
+}
+.lr-form-file-queue-bg {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:140px;
+    height:30px;
+    line-height:30px;
+    
+    margin:-15px 0 0 -70px;
+}
+.lr-form-file-queue-bg h1 {
+    color: #666;
+    font-size: 20px;
+    font-family: Microsoft Yahei;
+    padding-bottom: 2px;
+    margin: 0;
+}

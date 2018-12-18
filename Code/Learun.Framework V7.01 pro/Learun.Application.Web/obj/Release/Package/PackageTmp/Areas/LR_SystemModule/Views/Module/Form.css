@@ -1,0 +1,11 @@
+﻿.btn-tool-bar {
+    position:absolute;
+    top:0;
+    width:100%;
+    text-align:right;
+    padding:5px;
+    border-bottom:1px solid #ddd;
+}
+.step-gird-pane {
+    padding-top:41px;
+}

@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Form";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Areas/LR_AuthorizeModule/Views/FilterTime/Form.css")
+<div class="alert alert-danger">
+    <i class="fa fa-question-circle"></i>
+    声明：已勾选的时段不允许访问!
+</div>
+<div>
+    <ul class="nav nav-tabs lr-form-tab" id="nav_tabs">
+        <li class="active"><a data-value="WeekDay1">星期一</a></li>
+        <li><a data-value="WeekDay2">星期二</a></li>
+        <li><a data-value="WeekDay3">星期三</a></li>
+        <li><a data-value="WeekDay4">星期四</a></li>
+        <li><a data-value="WeekDay5">星期五</a></li>
+        <li><a data-value="WeekDay6">星期六</a></li>
+        <li><a data-value="WeekDay7">星期日</a></li>
+    </ul>
+    <div class="tab-content" id="tab_content">
+        <div id="WeekDay1" class="tab-pane active"></div>
+        <div id="WeekDay2" class="tab-pane"></div>
+        <div id="WeekDay3" class="tab-pane"></div>
+        <div id="WeekDay4" class="tab-pane"></div>
+        <div id="WeekDay5" class="tab-pane"></div>
+        <div id="WeekDay6" class="tab-pane"></div>
+        <div id="WeekDay7" class="tab-pane"></div>
+    </div>
+</div>
+
+@Html.AppendJsFile("/Areas/LR_AuthorizeModule/Views/FilterTime/Form.js")

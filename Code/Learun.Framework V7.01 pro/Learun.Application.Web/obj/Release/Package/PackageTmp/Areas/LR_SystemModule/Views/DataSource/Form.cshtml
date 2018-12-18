@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "数据源添加";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">名称<font face="宋体">*</font></div>
+        <input id="F_Name" type="text" class="form-control" placeholder="请输入名称" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">编码<font face="宋体">*</font></div>
+        <input id="F_Code" type="text" class="form-control" placeholder="请输入别名" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">数据库<font face="宋体">*</font></div>
+        <div id="F_DbId" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">sql语句<font face="宋体">*</font></div>
+        <textarea id="F_Sql" type="text" class="form-control" style="height:180px;" isvalid="yes" checkexpession="NotNull"></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="F_Description" type="text" class="form-control" style="height:50px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_SystemModule/Views/DataSource/Form.js")

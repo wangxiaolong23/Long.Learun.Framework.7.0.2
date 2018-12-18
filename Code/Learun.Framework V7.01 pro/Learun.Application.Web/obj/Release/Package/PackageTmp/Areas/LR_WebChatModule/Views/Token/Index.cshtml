@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "企业号设置";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Areas/LR_WebChatModule/Views/Token/Index.css")
+<div class="lr-layout">
+    <div class="lr-layout-container">
+        <div class="alert alert-danger" style="text-align: left; margin: 20px;">
+            <i class="fa fa-question-circle" style="position: relative; top: 1px; font-size: 15px; padding-right: 5px;"></i>
+            注：CorpID和管理组密钥关系企业号安全，请不要告诉不信任的人!
+        </div>
+        <div class="lr-form-content" id="form">
+
+            <div class="col-xs-12 lr-form-item">
+                <div class="lr-form-item-title">企业号CorpID<font face="宋体">*</font></div>
+                <input id="CorpId" type="text" class="form-control" placeholder="请输入CorpID" isvalid="yes" checkexpession="NotNull" value="@ViewBag.CorpId" />
+            </div>
+            <div class="col-xs-12 lr-form-item">
+                <div class="lr-form-item-title">管理组凭证密钥<font face="宋体">*</font></div>
+                <input id="CorpSecret" type="text" class="form-control" placeholder="请输入凭证密钥" isvalid="yes" checkexpession="NotNull" value="@ViewBag.CorpSecret" />
+            </div>
+            <div class="col-xs-12 lr-form-item">
+                <a id="btn_RevisePassword" class="btn btn-primary" style="padding: 3px 10px;"><i class="fa fa-save"></i>&nbsp;保&nbsp;存</a>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_WebChatModule/Views/Token/Index.js")

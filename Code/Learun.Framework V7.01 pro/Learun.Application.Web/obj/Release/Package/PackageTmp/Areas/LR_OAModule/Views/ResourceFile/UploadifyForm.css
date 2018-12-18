@@ -1,0 +1,117 @@
+﻿/*
+ * 版 本 Learun-ADMS V6.1.6.0 力软敏捷开发框架(http://www.learun.cn)
+ * Copyright (c) 2013-2017 上海力软信息技术有限公司
+ * 创建人：力软-前端开发组
+ * 日 期：2017.03.22
+ * 描 述：附件上传管理	
+ */
+.lr-form-layout-body {
+    padding:0 5px 5px 5px;
+}
+.lr-form-file-queue-wrap {
+    position:relative;
+    width:100%;
+    height:100%;
+    border:1px solid #ddd;
+    border-radius:4px;
+}
+.lr-form-file-queue {
+    position:relative;
+}
+.lr-form-file-queue-item {
+    position:relative;
+    width:100%;
+    height:50px;
+    border-bottom:1px solid #ddd;
+    padding-left:60px;
+
+}
+.lr-file-image {
+    position:absolute;
+    top:5px;
+    left:5px;
+}
+.lr-file-image img {
+    width:40px;
+    height:40px;
+}
+.lr-file-name{
+    line-height:50px;
+
+}
+.lr-msg {
+    position:absolute;
+    top:0;
+    right:5px;
+    font-size: 25px;
+    line-height:50px;
+}
+.lr-msg .fa-check-circle{
+    color: #5cb85c;
+}
+.lr-msg .fa-exclamation-circle {
+    color: #b94a48;
+}
+
+.lr-tool-bar {
+    position:absolute;
+    top:0;
+    right:35px;
+    font-size: 25px;
+    line-height:50px;
+    color:#666;
+    cursor:pointer;
+}
+.lr-tool-bar > i {
+    margin-left:8px;
+}
+
+.lr-tool-bar .fa-minus-circle {
+    color: #b94a48;
+}
+.lr-tool-bar .fa-cloud-download {
+    color: #3498db;
+}
+
+.lr-uploader-progress {
+    position:absolute;
+    bottom:2px;
+    left:60px;
+    height:4px;
+    width:500px;
+    width:calc(100% - 90px);
+}
+.lr-uploader-progress-bar {
+    position:relative;
+    height:100%;
+    background-color:#039cfd;
+    border-radius:4px;
+}
+
+
+.lr-form-file-queue-bg {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:300px;
+    height:30px;
+    line-height:30px;
+    
+    margin:-15px 0 0 -150px;
+}
+.lr-form-file-queue-bg h1 {
+    color: #666;
+    font-size: 20px;
+    font-family: Microsoft Yahei;
+    padding-bottom: 2px;
+    margin: 0;
+}
+
+/*对百度插件的样式重写*/
+.webuploader-pick {
+    padding:8px 15px;
+    background-color:#039cfd;
+}
+.webuploader-pick-hover {
+    background-color:#027dcb;
+}

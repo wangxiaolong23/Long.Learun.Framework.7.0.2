@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta name=”renderer” content=”webkit|ie-comp|ie-stand” />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <meta name="keywords" content="快速开发平台,Web快速开发平台,ASP.NET快速开发平台,工作流,快速开发框架,软件可视化开发平台,快速开发 开源,快速开发平台 开源,APP快速开发,敏捷开发框架,快速开发" />
+    <meta name="description" content="力软敏捷开发框架，是一个Web可视化开发平台，是一个集PC快速开发、组织架构、工作流、表单设计、自定义报表、APP快速开发等全方位功能于一体的高效、稳定的快速开发平台。" />
+    <link rel="icon" href="~/favicon.ico">
+    <title>敏捷开发框架 - 登录页面</title>
+</head>
+
+<body>
+    @Html.AppendCssFile("/Views/Login/Accordion/Index.css")
+    <input id="errornum" type="hidden" value="@ViewBag.errornum" />
+    <div class="lr-login-logo">
+        <img src="~/Content/images/Login/logow.png" alt="">
+        <div class="lr-login-title">
+            敏捷开发框架系统平台
+        </div>
+    </div>
+    <div class="lr-login-body">
+        <div class="lr-login-prompt">
+            <h4 class="lr-prompt-title">更懂程序员的开发平台 全新上线</h4>
+            <div class="lr-prompt-info">
+                <p>企业级开发框架，支持大并发、分布式集群部署，</p>
+                <p>全程专业售后服务，让开发变得更简单，</p>
+                <p>应对各种需求，适合各类中大型项目、系统</p>
+            </div>
+        </div>
+        <div class="lr-login-main">
+            <!--密码登录-->
+            <div class="lr-login-bypsw noreg">
+                <img class="lr-login-toCode" login-access="psw" src="~/Content/images/Login/default_code.png" alt="">
+                <div class="lr-login-head">密码登录</div>
+                <div class="lr-login-head-sub">欢迎使用力软平台, 请登录</div>
+                <div class="lr-login-warning"><img src="~/Content/images/Login/error.png" alt=""><span>登录帐号或登录密码不正确</span></div>
+                <div class="lr-login-input">
+                    <input id="lr_username" type="text" placeholder="手机号/帐号">
+                </div>
+                <div class="lr-login-input">
+                    <input id="lr_password" type="password" placeholder="密码">
+                    <span id="psw_change"></span>
+                </div>
+                <div class="lr-login-input lr-login-reg">
+                    <input id="lr_verifycode_input" type="text" placeholder="验证码">
+                    <img class="code" id="lr_verifycode_img" src="~/Login/VerifyCode" alt="点击切换验证码" title="点击切换验证码" />
+                </div>
+                <div class="lr-login-btn" id="lr_login_btn"><span>立即登录</span></div>
+            </div>
+
+            <!--二维码登录-->
+            <div class="lr-login-bycode">
+                <img class="lr-login-toCode" src="~/Content/images/Login/windos_pc.png" alt="">
+                <div class="lr-login-head">扫码登录</div>
+                <div class="lr-login-info">
+                    <img src="~/Content/images/Login/qrcode.png" alt="">
+                    <p>微信扫一扫 获体验资格</p>
+                </div>
+            </div>
+            <div class="lr-login-version">版本号：v7.0.0</div>
+        </div>
+    </div>
+    <div class="lr-login-footer"><div><p>Copyright © 2018 上海力软信息技术有限公司 备案号：沪ICP备14034717号 版权所有</p><p>LR-ADMS 敏捷开发框架官方网站：http://www.learun.cn</p></div></div>
+
+    <script src="~/Content/jquery/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/jquery/jquery.md5.min.js"></script>
+    <script>
+        function request(d) { for (var c = location.search.slice(1).split("&"), a = 0; a < c.length; a++) { var b = c[a].split("="); if (b[0] == d) if ("undefined" == unescape(b[1])) break; else return unescape(b[1]) } return "" };
+        $.rootUrl = '@Url.Content("~")'.substr(0, '@Url.Content("~")'.length - 1);
+        $.lrToken = $('@Html.AntiForgeryToken()').val();
+    </script>
+    @Html.AppendJsFile("/Views/Login/Accordion/Index.js")
+</body>
+</html>

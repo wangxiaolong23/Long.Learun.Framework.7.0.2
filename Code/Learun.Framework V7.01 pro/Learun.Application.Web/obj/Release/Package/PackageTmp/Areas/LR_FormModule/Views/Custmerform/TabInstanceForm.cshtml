@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "自定义表单窗口页实例";
+    Layout = "~/Views/Shared/_CustmerFormPreview.cshtml";
+}
+<div class="top-btn-tool">
+    <a id="savaAndAdd" class="btn btn-success">保存并新增</a>
+    <a id="save" class="btn btn-default">保存单据</a>
+</div>
+@Html.AppendCssFile("/Areas/LR_FormModule/Views/Custmerform/TabInstanceForm.css")
+@Html.AppendJsFile("/Areas/LR_FormModule/Views/Custmerform/TabInstanceForm.js")
+
+
+

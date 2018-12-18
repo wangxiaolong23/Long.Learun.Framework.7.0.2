@@ -1,0 +1,22 @@
+﻿/*自定义查询*/
+.lr-custmer-search {
+    position:relative;
+    float:left;
+    width:200px;
+    height:28px;
+}
+.lr-custmer-search-text {
+    position:relative;
+    float:left;
+    width:100%;
+    height:100%;
+    line-height:26px;
+    cursor:pointer;
+    border: 1px solid #ccc;
+    border-radius:4px;
+    padding-left:5px;
+    background:#fff url(/Content/images/learunselect/icon.png) no-repeat right center;
+}
+.lr-custmer-search-text:hover {
+    color:#3498DB;
+}

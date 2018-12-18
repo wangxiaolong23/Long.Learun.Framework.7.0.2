@@ -1,0 +1,74 @@
+﻿@{
+    ViewBag.Title = "PCDevGuideIndex";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+
+<div style="position:relative;width:100%;height:100%;padding:10px;">
+    <div style="position:relative;width:100%;height:100%;background:#fff;border:1px solid #ccc;padding:60px;padding-bottom:300px;">
+        <div style="position:relative;width:100%;height:100%;border-bottom:1px solid #ccc;">
+            <div style="font-size: 36px;color: #333333;position:absolute;top:0;left:0;">移动开发向导</div>
+            <div id="logosetting" style="cursor:pointer;position:absolute;top:50%;left:20px;margin-top:-100px;width:150px;height:200px;text-align:center;z-index:1;">
+                <div style="height:150px;width:150px;overflow:hidden;position:relative;"><img src="~/Content/images/dev.icon.png" style="position:absolute;top:-30px;left:-228px;" /></div>
+                <span style="font-size: 24px;color:#333;">logo设置</span>
+            </div>
+
+            <div id="desktop" style="cursor:pointer;position:absolute;top:50%;left:50%;margin-top:-100px;margin-left:-75px;width:150px;height:200px;text-align:center;z-index:1;">
+                <div style="height:150px;width:150px;overflow:hidden;position:relative;"><img src="~/Content/images/dev.icon.png" style="position:absolute;top:-30px;right:-236px;" /></div>
+                <span style="font-size: 24px;color:#333;">首页设置</span>
+            </div>
+
+            <div id="codecreate" style="cursor:pointer;position:absolute;top:50%;right:20px;margin-top:-187px;width:80px;height:112px;text-align:center;z-index:1;">
+                <div style="height:80px;width:80px;overflow:hidden;position:relative;border-radius:5px;"><img src="~/Content/images/dev.icon.png" style="position:absolute;bottom:-16px;left:-158px;" /></div>
+                <span style="font-size: 16px;color:#282E3B;">功能生成</span>
+            </div>
+
+
+            <div id="formRelease" style="cursor:pointer;position:absolute;top:50%;right:20px;margin-top:35px; width:80px;height:112px;text-align:center;z-index:1;">
+                <div style="height:80px;width:80px;overflow:hidden;position:relative;"><img src="~/Content/images/dev.icon.png" style="position:absolute;bottom:-16px;left:-284px;" /></div>
+                <span style="font-size: 16px;color:#282E3B;">功能发布</span>
+            </div>
+
+            <div style="position:absolute;height:100%;width:50%;top:0;left:0;padding:0 75px 0 170px;">
+                <img src="~/Content/images/guide/arrow.png" style="position:relative;height:15px;width:100%;top:50%;margin-top:-77px;left:0;" />
+            </div>
+
+            <div style="position:absolute;height:100%;width:50%;top:0;right:0;padding:0 60px 0 75px;margin-top:-30px;">
+                <div style="position:relative;width:100%;height:50%;">
+                    <img src="~/Content/images/guide/arrow2.png" style="position:absolute;width:100%;height:55px;bottom:0;left:0;" />
+                </div>
+                <div style="position:relative;width:100%;height:50%;">
+                    <img src="~/Content/images/guide/arrow1.png" style="position:absolute;width:100%;height:55px;top:0;left:0;" />
+                </div>
+            </div>
+
+        </div>
+        <div style="position:absolute;width:100%;height:300px;padding:100px 0;left:0;bottom:0;padding:0 50px; ">
+            <div style="position:relative;width:100%;height:100%">
+                <div style="position:absolute;top:100px;left:0;width:25%;height:80px;">
+                    <div id="dataItem" style="cursor:pointer;position:relative;width:180px;height:100%;color:#fff;text-align:center; border-radius:3px;margin:auto;background:#46BBE7;background: linear-gradient(-180deg, #46BBE7 0%, #3398DC 100%);">
+                        <i class="fa fa-book" style="position:absolute;display:block;top:17px;left:20px;font-size:45px;"></i><span style="font-size:16px;display:block;border-left:1px solid #fff;padding-left:18px;position:absolute;top:29px;left:78px;">数据字典</span>
+                    </div>
+                </div>
+                <div style="position:absolute;top:100px;left:25%;width:25%;height:80px;">
+                    <div id="dataSource" style="cursor:pointer;position:relative;width:180px;height:100%;color:#fff;text-align:center; border-radius:3px;margin:auto;background:#46BBE7;background: linear-gradient(-180deg, #46BBE7 0%, #3398DC 100%);">
+                        <i class="fa fa-bullseye" style="position:absolute;display:block;top:17px;left:20px;font-size:45px;"></i><span style="font-size:16px;display:block;border-left:1px solid #fff;padding-left:18px;position:absolute;top:29px;left:78px;">数据源</span>
+                    </div>
+                </div>
+                <div style="position:absolute;top:100px;left:50%;width:25%;height:80px;">
+                    <div id="formDesign" style="cursor:pointer;position:relative;width:180px;height:100%;color:#fff;text-align:center; border-radius:3px;margin:auto;background:#46BBE7;background: linear-gradient(-180deg, #46BBE7 0%, #3398DC 100%);">
+                        <i class="fa fa-puzzle-piece" style="position:absolute;display:block;top:17px;left:20px;font-size:45px;"></i><span style="font-size:16px;display:block;border-left:1px solid #fff;padding-left:18px;position:absolute;top:29px;left:78px;">表单设计</span>
+                    </div>
+                </div>
+                <div style="position:absolute;top:100px;left:75%;width:25%;height:80px;">
+                    <div id="workflow" style="cursor:pointer;position:relative;width:180px;height:100%;color:#fff;text-align:center; border-radius:3px;margin:auto;background:#46BBE7;background: linear-gradient(-180deg, #46BBE7 0%, #3398DC 100%);">
+                        <i class="fa fa-share-alt" style="position:absolute;display:block;top:17px;left:20px;font-size:45px;"></i><span style="font-size:16px;display:block;border-left:1px solid #fff;padding-left:18px;position:absolute;top:29px;left:78px;">流程设计</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.AppendJsFile("/Views/Utility/AppDevGuideIndex.js")
+
+

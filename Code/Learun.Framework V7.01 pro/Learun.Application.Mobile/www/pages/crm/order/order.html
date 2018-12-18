@@ -1,0 +1,38 @@
+﻿<div class="lr-page lr-crminvoice-page">
+    <div class="lr-page-tool">
+        <div class="lr-tool-left">
+            总共<span class="lr-badge lr-badge-primary">0</span>条
+        </div>
+        <div class="lr-tool-right">
+            <div class="lr-tool-right-btn lr_multiple_search">
+                <i class="iconfont icon-searchlist"></i>
+                <div class="lr-tool-right-btn-content lr-form-container">
+                    <div class="lr-form-row">
+                        <label>单据编号</label>
+                        <input id="orderCode" type="text">
+                    </div>
+                    <div class="lr-form-row">
+                        <label>客户名称</label>
+                        <div id="customerId"></div>
+                    </div>
+                    <div class="lr-form-row">
+                        <label>销售人员</label>
+                        <div id="sellerId"></div>
+                    </div>
+                    <div class="lr-form-row">
+                        <label>收款状态</label>
+                        <div id="paymentState"> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lr-tool-right-btn lr_time_search" >
+                <i class="iconfont icon-time"></i>
+            </div>
+        </div>
+    </div>
+    <div class="lr-page-content" id="lr_crmorder_list">
+    </div>
+    <div class="lr-list-addbtn" id="crm_crmorder_btn">
+        <i class="iconfont icon-add1"></i>
+    </div>
+</div>

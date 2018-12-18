@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "列表";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+<div class="lr-layout" >
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap lr-layout-wrap-notitle">
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                    <div class="lr-layout-tool-item">
+                        <input id="txt_Keyword" type="text" class="form-control" placeholder="请输入要查询关键字" />
+                    </div>
+                    <div class="lr-layout-tool-item">
+                        <a id="btn_Search" class="btn btn-primary btn-sm"><i class="fa fa-search"></i>&nbsp;查询</a>
+                    </div>
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
+                    </div>
+                    <div class=" btn-group btn-group-sm" learun-authorize="yes">
+                        <a id="lr_add" class="btn btn-default"><i class="fa fa-plus lrlg"></i>&nbsp;新增</a>
+                        <a id="lr_edit" class="btn btn-default"><i class="fa fa-pencil-square-o lrlg"></i>&nbsp;编辑</a>
+                        <a id="lr_delete" class="btn btn-default"><i class="fa fa-trash-o lrlg"></i>&nbsp;删除</a>
+                        <a id="lr_more" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-reorder"></i>&nbsp;<span class="lrlg">更多</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu pull-right" aria-labelledby="lr-more">
+                            <li id="lr_enabled"><a><i></i>&nbsp;<span class="lrlg">启用</span></a></li>
+                            <li id="lr_disabled"><a><i></i>&nbsp;<span class="lrlg">禁用</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-body" id="gridtable"></div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/AppManager/Views/DTImg/Index.js") 

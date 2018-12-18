@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name=”renderer” content=”webkit|ie-comp|ie-stand” />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <meta name="keywords" content="快速开发平台,Web快速开发平台,ASP.NET快速开发平台,工作流,快速开发框架,软件可视化开发平台,快速开发 开源,快速开发平台 开源,APP快速开发,敏捷开发框架,快速开发" />
+    <meta name="description" content="力软敏捷开发框架，是一个Web可视化开发平台，是一个集PC快速开发、组织架构、工作流、表单设计、自定义报表、APP快速开发等全方位功能于一体的高效、稳定的快速开发平台。" />
+    <link rel="icon" href="~/favicon.ico">
+    <title>敏捷开发框架 - 登录页面</title>
+   
+</head>
+<body>
+    @Html.AppendCssFile("/Views/Login/index.css")
+    <input id="errornum" type="hidden" value="@ViewBag.errornum" />
+    <div class="lr-layout-block top">
+        <img src="~/Content/images/Login/logo.png" />
+    </div>
+    <div class="lr-layout-block middle">
+        <div class="lr-layout-side left">
+            <img src="~/Content/images/Login/bg_01.png" />
+        </div>
+        <div class="lr-layout-side center">
+            <div class="lr-login-form">
+                <div class="lr-tips" id="lr_tips"></div>
+
+                <div class="lr-input-item ">
+                    <label class="name-label"></label>
+                    <input id="lr_username" type="text" placeholder="账户">
+                </div>
+                <div class="lr-input-item">
+                    <label class="pwd-label"></label>
+                    <input id="lr_password" type="password" placeholder="密码">
+                </div>
+                <div class="lr-input-item" style="display:none;">
+                    <label class="code-label"></label>
+                    <input id="lr_verifycode_input" maxlength="4" type="text" placeholder="图片验证码">
+                    <div style="height: 36px;width: 100px;position: absolute;right: 0px;top: 0px;">
+                        <img id="lr_verifycode_img" src="~/Login/VerifyCode" alt="点击切换验证码" title="点击切换验证码" />
+                    </div>
+                </div>
+                <button id="lr_login_btn" type="button"><span>登录</span></button>
+                <div class="lr-login-links">
+                    <a href="#" onclick="alert('请联系管理员:400-7729-098')">忘记密码</a>
+                </div>
+                <div class="lr-version">当前版本 V6.1.6.2</div>
+            </div>
+        </div>
+        <div class="lr-layout-side right">
+            <img src="~/Content/images/Login/bg_03.png" />
+        </div>
+    </div>
+    <div class="lr-layout-block bottom">上海力软信息技术有限公司出品<br><a href="http://www.learun.cn/adms" title="力软信息,敏捷框架,敏捷开发平台,快速开发平台,快速开发框架" target="_blank" style="color:#828282;">LR-ADMS 敏捷开发框架官方网站：http://www.learun.cn/adms</a></div>
+
+    <script src="~/Content/jquery/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/jquery/jquery.md5.min.js"></script>
+    <script>
+        $.rootUrl = '@Url.Content("~")'.substr(0, '@Url.Content("~")'.length - 1);
+        $.lrToken = $('@Html.AntiForgeryToken()').val();
+    </script>
+    @Html.AppendJsFile("/Views/Login/index.js")
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "附件下载";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile("/Areas/LR_SystemModule/Views/Annexes/DownForm.css")
+<div class="lr-form-layout">
+    <div class="lr-form-layout-body">
+        <div class="lr-form-file-queue-wrap" id="lr_form_file_queue">
+            <div class="lr-form-file-queue" id="lr_form_file_queue_list">
+
+            </div>
+            <div class="lr-form-file-queue-bg">
+                <h1>还没有文件上传</h1>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_SystemModule/Views/Annexes/DownForm.js")
+
