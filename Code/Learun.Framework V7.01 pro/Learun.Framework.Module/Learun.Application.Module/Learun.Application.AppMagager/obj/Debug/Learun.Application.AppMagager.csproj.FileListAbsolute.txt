@@ -288,7 +288,7 @@ D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\ServiceStack.Common.xml
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.csprojResolveAssemblyReference.cache
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.csproj.CoreCompileInputs.cache
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.dll
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.pdb
-D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\obj\Debug\Learun.Application.AppMagager.csprojResolveAssemblyReference.cache

@@ -13,13 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Application 应用界面
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Util 实用类模块", "01 Util 实用类模块", "{5C21750D-4143-4749-9489-F739765F542D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{26CFF3C8-4B33-4588-8787-D631124FD63E}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 SOA 应用服务", "03 SOA 应用服务", "{ED258CD0-0A0C-490B-9D8F-B4CEC4467251}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Ioc 容器模块", "02 Ioc 容器模块", "{0922D521-971B-48E1-A1FF-7AB7B1E8EF61}"
@@ -91,6 +84,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learun.Application.Organization", "Learun.Application.Organization\Learun.Application.Organization.csproj", "{E9877A25-801B-4605-AD35-E6306916513C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learun.Application.AppMagager", "Learun.Framework.Module\Learun.Application.Module\Learun.Application.AppMagager\Learun.Application.AppMagager.csproj", "{8F770F8B-06B3-43DA-886F-15D41CEC62EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0B585536-0D8B-4430-9425-23AE4B2AD6F5}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -848,7 +848,7 @@ Global
 		{8F770F8B-06B3-43DA-886F-15D41CEC62EE} = {16DDB25D-3101-47A2-BDC8-161954FD77FA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
 		SolutionGuid = {968C278F-4142-4DFF-96B0-B3D70A649451}
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
 	EndGlobalSection
 EndGlobal

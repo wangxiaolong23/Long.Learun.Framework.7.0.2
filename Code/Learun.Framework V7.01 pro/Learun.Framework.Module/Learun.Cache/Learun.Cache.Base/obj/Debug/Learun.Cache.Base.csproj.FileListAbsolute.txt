@@ -18,4 +18,3 @@ D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Base\obj\Debug\Learun.Cache.Base.csproj.CoreCompileInputs.cache
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Base\obj\Debug\Learun.Cache.Base.dll
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Base\obj\Debug\Learun.Cache.Base.pdb
-D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Base\obj\Debug\Learun.Cache.Base.csprojResolveAssemblyReference.cache

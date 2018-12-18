@@ -288,7 +288,6 @@ D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.Form\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.Form\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.Form\bin\Debug\Microsoft.Practices.ServiceLocation.xml
-D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.Form\obj\Debug\Learun.Application.Form.csprojResolveAssemblyReference.cache
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.Form\obj\Debug\Learun.Application.Form.csproj.CoreCompileInputs.cache
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.Form\obj\Debug\Learun.Application.Form.dll
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Application.Module\Learun.Application.Form\obj\Debug\Learun.Application.Form.pdb

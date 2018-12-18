@@ -56,4 +56,3 @@ D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Ioc\obj\Debug\Learun.Ioc.csproj.CoreCompileInputs.cache
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Ioc\obj\Debug\Learun.Ioc.dll
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Ioc\obj\Debug\Learun.Ioc.pdb
-D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Ioc\obj\Debug\Learun.Ioc.csprojResolveAssemblyReference.cache

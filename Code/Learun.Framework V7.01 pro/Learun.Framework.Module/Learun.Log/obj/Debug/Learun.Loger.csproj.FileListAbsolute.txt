@@ -25,7 +25,7 @@ D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\bin\Debug\Learun.Loger.pdb
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\bin\Debug\log4net.dll
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\bin\Debug\log4net.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.csprojResolveAssemblyReference.cache
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.csproj.CoreCompileInputs.cache
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.dll
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.pdb
-D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Log\obj\Debug\Learun.Loger.csprojResolveAssemblyReference.cache

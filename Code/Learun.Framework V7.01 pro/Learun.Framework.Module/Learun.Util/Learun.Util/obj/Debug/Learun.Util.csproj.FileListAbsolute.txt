@@ -77,7 +77,7 @@ D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Util\Learun.Util\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Util\Learun.Util\bin\Debug\Newtonsoft.Json.xml
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Util\Learun.Util\bin\Debug\NPOI.xml
+D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Util\Learun.Util\obj\Debug\Learun.Util.csprojResolveAssemblyReference.cache
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Util\Learun.Util\obj\Debug\Learun.Util.csproj.CoreCompileInputs.cache
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Util\Learun.Util\obj\Debug\Learun.Util.dll
 D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Util\Learun.Util\obj\Debug\Learun.Util.pdb
-D:\工作\Long.Framework\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Util\Learun.Util\obj\Debug\Learun.Util.csprojResolveAssemblyReference.cache
