@@ -1,4 +1,0 @@
-E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Base\bin\Release\Learun.Cache.Base.dll
-E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Base\bin\Release\Learun.Cache.Base.pdb
-E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Base\obj\Release\Learun.Cache.Base.dll
-E:\Code\SS-1-238\Code\Learun.Framework V7.01 pro\Learun.Framework.Module\Learun.Cache\Learun.Cache.Base\obj\Release\Learun.Cache.Base.pdb
