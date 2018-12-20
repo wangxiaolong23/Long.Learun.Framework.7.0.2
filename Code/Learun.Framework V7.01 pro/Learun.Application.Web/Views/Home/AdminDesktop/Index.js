@@ -6,7 +6,9 @@
  * 描 述：根据配置动态加载桌面
  */
 (function ($, learun) {
-    "use strict";
+    "use strict"
+    //因为要等异步加载完页面才能实例化滚动条
+    var isScroll = 0;;
 
     function loadDesktop() {
         //获取用户信息
@@ -19,7 +21,7 @@
             };
             learun.httpAsync('GET', top.$.rootUrl + '/LR_FormModule/FormRelation/GetPreviewList', par, function (data) {
                 if (data) {
-                    $("#Target").html("");
+                    $("#lr_target").html("");
                     //数组排序
                     var sortData = data.sort(function (a, b) {
                         if (a.f_sortcode0 < b.f_sortcode0) return -1;
@@ -36,14 +38,14 @@
                     $.each(powerData, function (index, itemobj) {
                         //往桌面添加统计小功能
                         var htmlStr = "";
-                        htmlStr += '<div class="lr-item-20" style="width: ' + parseInt($("#Target").width() / sortData.length) + 'px;">';
+                        htmlStr += '<div class="lr-item-20" style="width: ' + parseInt($("#lr_target").width() / sortData.length) + 'px;">';
                         htmlStr += '<div class="task-stat" style="background-color: ' + itemobj.f_bgcolorcode0 + ';">';
                         htmlStr += '<div class="visual"><i class="' + itemobj.f_icon0 + '"></i></div>';
                         htmlStr += '<div class="details"><div id="' + itemobj.f_targetid0 + 'number" class="number"></div>';
                         htmlStr += '<div class="desc">' + itemobj.f_name0 + '</div></div>';
                         htmlStr += '<a id="' + itemobj.f_targetid0 + 'more" class="more" style="background-color: ' + itemobj.f_morecolorcode0 + ';" href="javascript:;">查看更多 <i class="fa fa-arrow-circle-right"></i></a>';
                         htmlStr += '</div></div>';
-                        $("#Target").append(htmlStr);
+                        $("#lr_target").append(htmlStr);
                         //绑定数值
                         var res = learun.httpGet(top.$.rootUrl + '/LR_SystemModule/Desktop/GetSqlData', { databaseLinkId: itemobj.f_databaselinkid0, sql: itemobj.f_sql0 });
                         if (res) {
@@ -54,6 +56,7 @@
                             learun.frameTab.open({ F_ModuleId: event.data.f_targetid0, F_Icon: event.data.f_icon0, F_FullName: event.data.f_name0, F_UrlAddress: event.data.f_url0 });
                         });
                     });
+                    isScroll++;
                 }
             });
             //消息列表
@@ -163,6 +166,7 @@
                             }
                         }
                     });
+                    isScroll++;
                 }
             });
 
@@ -172,10 +176,20 @@
         }
     }
     loadDesktop();
+
+    function islrscroll() {
+        if (isScroll == 2) {//当isScroll==2时，实例化滚动条
+            $(".lr-desktop-panel").lrscroll();
+        } else {//如果当前没有异步加载完页面，准备下次执行
+            setTimeout(function () { islrscroll(); }, 100);
+        }
+    }
+    islrscroll();
+
     //动态调整指标块宽度
     function targetresize() {
-        $("#Target").find(".lr-item-20").each(function () {
-            var width = parseInt($("#Target").width() / $("#Target").find(".lr-item-20").length);
+        $("#lr_target").find(".lr-item-20").each(function () {
+            var width = parseInt($("#lr_target").width() / $("#lr_target").find(".lr-item-20").length);
             width = width < 150 ? 150 : width;
             $(this).css("width", width + 'px');
         });
@@ -295,12 +309,6 @@
     window.onresize = function (e) {
         pieChart.resize(e);
         lineChart.resize(e);
-        setTimeout(function () { targetresize(); }, 100);
+        setTimeout(function () { targetresize(); }, 100);//自适应重新计算统计指标中各个模块的宽度
     };
-
-    $(".lr-desktop-panel").mCustomScrollbar({ // 优化滚动条
-        theme: "minimal-dark"
-    });
-
-
 })(window.jQuery, top.learun);
