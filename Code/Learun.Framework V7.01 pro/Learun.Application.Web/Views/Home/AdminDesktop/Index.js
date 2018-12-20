@@ -6,9 +6,9 @@
  * 描 述：根据配置动态加载桌面
  */
 (function ($, learun) {
-    "use strict"
+    "use strict";
     //因为要等异步加载完页面才能实例化滚动条
-    var isScroll = 0;;
+    var isScroll = 0;
 
     function loadDesktop() {
         //获取用户信息
