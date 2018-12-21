@@ -1,5 +1,5 @@
 # Long.Learun.Framework.7.0.3
-  1.我的桌面图表配置上线
+  1.我的桌面图表配置上线<br/>
   2.LR_Base_ModuleForm表F_FullName字段类型改为nvarchar(500)避免长度不够报错
   3.LR_Base_Log表F_Module字段类型改为nvarchar(50避免长度不够报错
 # Long.Learun.Framework.7.0.2
