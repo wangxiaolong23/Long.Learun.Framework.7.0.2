@@ -9,7 +9,26 @@
     "use strict";
     //因为要等异步加载完页面才能实例化滚动条
     var isScroll = 0;
-
+    //图表对象数组，用于调整大小
+    var chartArr = [];
+    //排序并设置权限
+    function sortAndPower(loginInfo, data) {
+        //数组排序
+        var sortData = data.sort(function (a, b) {
+            if (a.f_sortcode0 < b.f_sortcode0) return -1;
+            if (a.f_sortcode0 > b.f_sortcode0) return 1;
+            return 0;
+        });
+        //权限过滤
+        var powerData = [];
+        $.each(sortData, function (index, itemobj) {
+            if (loginInfo.userId == "System") {
+                powerData.push(itemobj);
+            }
+        });
+        return powerData;
+    }
+    //动态加载桌面数据
     function loadDesktop() {
         //获取用户信息
         var loginInfo = learun.clientdata.get(['userinfo']);
@@ -22,23 +41,13 @@
             learun.httpAsync('GET', top.$.rootUrl + '/LR_FormModule/FormRelation/GetPreviewList', par, function (data) {
                 if (data) {
                     $("#lr_target").html("");
-                    //数组排序
-                    var sortData = data.sort(function (a, b) {
-                        if (a.f_sortcode0 < b.f_sortcode0) return -1;
-                        if (a.f_sortcode0 > b.f_sortcode0) return 1;
-                        return 0;
-                    });
-                    //权限过滤
-                    var powerData = [];
-                    $.each(sortData, function (index, itemobj) {
-                        if (loginInfo.userId == "System") {
-                            powerData.push(itemobj);
-                        }
-                    });
+                    var powerData = sortAndPower(loginInfo, data);
                     $.each(powerData, function (index, itemobj) {
                         //往桌面添加统计小功能
+                        var width = parseInt($("#lr_target").width() / powerData.length);
+                        width = width < 220 ? 220 : width;
                         var htmlStr = "";
-                        htmlStr += '<div class="lr-item-20" style="width: ' + parseInt($("#lr_target").width() / sortData.length) + 'px;">';
+                        htmlStr += '<div class="lr-item-20" style="width: ' + width + 'px;">';
                         htmlStr += '<div class="task-stat" style="background-color: ' + itemobj.f_bgcolorcode0 + ';">';
                         htmlStr += '<div class="visual"><i class="' + itemobj.f_icon0 + '"></i></div>';
                         htmlStr += '<div class="details"><div id="' + itemobj.f_targetid0 + 'number" class="number"></div>';
@@ -56,6 +65,11 @@
                             learun.frameTab.open({ F_ModuleId: event.data.f_targetid0, F_Icon: event.data.f_icon0, F_FullName: event.data.f_name0, F_UrlAddress: event.data.f_url0 });
                         });
                     });
+                    //添加滚动条
+                    $("#lr_target").lrscroll();
+                    if ($("#lr_target").width() < 1100) {
+                        $("#lr_target_box").css("width", '1100px');
+                    }
                     isScroll++;
                 }
             });
@@ -66,19 +80,7 @@
             };
             learun.httpAsync('GET', top.$.rootUrl + '/LR_FormModule/FormRelation/GetPreviewList', par2, function (data) {
                 if (data) {
-                    //数组排序
-                    var sortData = data.sort(function (a, b) {
-                        if (a.f_sortcode0 < b.f_sortcode0) return -1;
-                        if (a.f_sortcode0 > b.f_sortcode0) return 1;
-                        return 0;
-                    });
-                    //权限过滤
-                    var powerData = [];
-                    $.each(sortData, function (index, itemobj) {
-                        if (loginInfo.userId == "System") {
-                            powerData.push(itemobj);
-                        }
-                    });
+                    var powerData = sortAndPower(loginInfo, data);
                     $.each(powerData, function (index, itemobj) {
                         var htmlStr = "";
                         htmlStr += '<div class="col-xs-6" style="height:281px;">';
@@ -94,8 +96,8 @@
                             if (res) {
                                 for (var j = 0; j < res.data.length; j++) {
                                     res.data[j].f_itemurl = itemobj.f_itemurl0;
-                                    htmlStr += '        <div id="' + res.data[j].f_id + 'item" class="lr-msg-line">';
-                                    htmlStr += '            <a href="#" style="text-decoration: none;">' + res.data[j].f_title + '</a>';
+                                    htmlStr += '        <div class="lr-msg-line">';
+                                    htmlStr += '            <a id="' + res.data[j].f_id + 'item" href="#" title="' + res.data[j].f_title + '" style="text-decoration: none;white-space: nowrap;">' + (res.data[j].f_title.length > 13 ? res.data[j].f_title.substr(0, 13) + "..." : res.data[j].f_title) + '</a>';
                                     htmlStr += '                <label>' + res.data[j].f_time + '</label>';
                                     htmlStr += '        </div>';
                                 }
@@ -115,8 +117,8 @@
                                 for (var j = 0; j < res["data"]["rows"].length; j++) {
                                     res.data.rows[j].f_itemurl = itemobj.f_itemurl0;
                                     var item = res.data.rows[j];
-                                    htmlStr += '        <div id="' + item.F_TaskId + 'item" class="lr-msg-line">';
-                                    htmlStr += '            <a href="#" style="text-decoration: none;">[' + item.F_SchemeName + ']' + item.F_ProcessName + '</a>';
+                                    htmlStr += '        <div class="lr-msg-line">';
+                                    htmlStr += '            <a id="' + item.F_TaskId + 'item" href="#" title="' + item.F_ProcessName + '" style="text-decoration: none;white-space: nowrap;">[' + item.F_SchemeName + ']' + (item.F_ProcessName.length > 13 ? item.F_ProcessName.substr(0, 13) + "..." : item.F_ProcessName) + '</a>';
                                     htmlStr += '                <label>' + item.F_CreateDate + '</label>';
                                     htmlStr += '        </div>';
                                 }
@@ -169,16 +171,115 @@
                     isScroll++;
                 }
             });
-
+            //报表
+            var par3 = {
+                keyValue: '7b334cd7-8d8c-442f-b88f-838241ca83bb',//设计的桌面图表配置表单ID
+                queryJson: '{ F_Enabled: "1" }'//获取有效的数据
+            };
+            learun.httpAsync('GET', top.$.rootUrl + '/LR_FormModule/FormRelation/GetPreviewList', par3, function (data) {
+                if (data) {
+                    var powerData = sortAndPower(loginInfo, data);
+                    $.each(powerData, function (index, itemobj) {
+                        var htmlStr = "";
+                        htmlStr += "<div class=\"col-xs-6\">";
+                        htmlStr += "    <div class=\"portal-panel-title\">";
+                        htmlStr += "        <i class=\"" + itemobj.f_icon0 + "\"></i>&nbsp;&nbsp;" + itemobj.f_name0 + "";
+                        htmlStr += "    </div>";
+                        htmlStr += "    <div class=\"portal-panel-content\">";
+                        htmlStr += "        <div id=\"" + itemobj.f_chartid0 + "chart\" class=\"lr-chart-container\"></div>";
+                        htmlStr += "    </div>";
+                        htmlStr += "</div>";
+                        $("#Charts").append(htmlStr);
+                        //绑定数值
+                        var res = learun.httpGet(top.$.rootUrl + '/LR_SystemModule/Desktop/GetSqlData', { databaseLinkId: itemobj.f_databaselinkid0, sql: itemobj.f_sql0 });
+                        if (res) {
+                            var nameArr = [], valueArr = [];
+                            $.each(res.data, function (index1, itemobj1) {
+                                nameArr.push(itemobj1.name);
+                                valueArr.push(itemobj1.value);
+                            });
+                            // 基于准备好的dom，初始化echarts实例$("#" + itemobj.f_chartid0 + "chart")
+                            var chart = echarts.init(document.getElementById(itemobj.f_chartid0 + "chart"));
+                            // 指定图表的配置项和数据
+                            var option = {
+                                legend: {
+                                    bottom: 'bottom',
+                                    data: nameArr
+                                },
+                                series: [
+                                    {
+                                        name: itemobj.f_name0,
+                                        type: itemobj.f_charttype0,
+                                        data: res.data,
+                                    }
+                                ]
+                            };
+                            switch (itemobj.f_charttype0) {
+                                case "pie"://饼图
+                                    option.tooltip = {
+                                        trigger: 'item',
+                                        formatter: "{a} <br/>{b} : {c} ({d}%)"
+                                    };
+                                    $.each(option.series, function (key, item) {
+                                        item.radius = '75%';
+                                        item.center = ['50%', '50%'];
+                                        item.label = {
+                                            normal: {
+                                                formatter: '{b}:{c}: ({d}%)',
+                                                textStyle: {
+                                                    fontWeight: 'normal',
+                                                    fontSize: 12,
+                                                    color: '#333'
+                                                }
+                                            }
+                                        };
+                                    });
+                                    break;
+                                case "line"://折线图
+                                    option.tooltip = {
+                                        trigger: 'axis'
+                                    };
+                                    option.xAxis = {
+                                        type: 'category',
+                                        boundaryGap: false,
+                                        data: nameArr
+                                    };
+                                    option.yAxis = {
+                                        type: 'value'
+                                    };
+                                    break;
+                                case "bar"://折线图
+                                    option.tooltip = {
+                                        trigger: 'axis'
+                                    };
+                                    option.xAxis = {
+                                        type: 'category',
+                                        boundaryGap: false,
+                                        data: nameArr
+                                    };
+                                    option.yAxis = {
+                                        type: 'value'
+                                    };
+                                    break;
+                                default:
+                            }
+                            // 使用刚指定的配置项和数据显示图表。
+                            chart.setOption(option);
+                            chartArr.push(chart);
+                        }
+                    });
+                    isScroll++;
+                }
+            });
         }
         else {//如果当前没有用户信息，准备下次执行
             setTimeout(function () { loadDesktop(); }, 100);
         }
     }
     loadDesktop();
-
+    //添加滚动条
     function islrscroll() {
-        if (isScroll == 2) {//当isScroll==2时，实例化滚动条
+        if (isScroll == 3) {//当isScroll==3时，实例化滚动条
             $(".lr-desktop-panel").lrscroll();
         } else {//如果当前没有异步加载完页面，准备下次执行
             setTimeout(function () { islrscroll(); }, 100);
@@ -186,129 +287,31 @@
     }
     islrscroll();
 
-    //动态调整指标块宽度
-    function targetresize() {
+    //页面大小调整后，元素自动调整大小
+    window.onresize = function (e) {
+        //动态调整指标块宽度
         $("#lr_target").find(".lr-item-20").each(function () {
             var width = parseInt($("#lr_target").width() / $("#lr_target").find(".lr-item-20").length);
-            width = width < 150 ? 150 : width;
+            width = width < 220 ? 220 : width;
             $(this).css("width", width + 'px');
         });
-    }
-
-    // 基于准备好的dom，初始化echarts实例
-    var pieChart = echarts.init(document.getElementById('piecontainer'));
-    // 指定图表的配置项和数据
-    var pieoption = {
-        tooltip: {
-            trigger: 'item',
-            formatter: "{a} <br/>{b} : {c} ({d}%)"
-        },
-        legend: {
-            bottom: 'bottom',
-            data: ['枢纽楼', 'IDC中心', '端局', '模块局', '营业厅', '办公大楼', 'C网基站']
-        },
-        series: [
-            {
-                name: '用电占比',
-                type: 'pie',
-                radius: '75%',
-                center: ['50%', '50%'],
-                label: {
-                    normal: {
-                        formatter: '{b}:{c}: ({d}%)',
-                        textStyle: {
-                            fontWeight: 'normal',
-                            fontSize: 12,
-                            color: '#333'
-                        }
-                    }
-                },
-                data: [
-                    { value: 10, name: '枢纽楼' },
-                    { value: 10, name: 'IDC中心' },
-                    { value: 10, name: '端局' },
-                    { value: 10, name: '模块局' },
-                    { value: 10, name: '营业厅' },
-                    { value: 10, name: '办公大楼' },
-                    { value: 40, name: 'C网基站' }
-                ],
-                itemStyle: {
-                    emphasis: {
-                        shadowBlur: 10,
-                        shadowOffsetX: 0,
-                        shadowColor: 'rgba(0, 0, 0, 0.5)'
-                    }
-                }
-            }
-        ]
-        ,
-        color: ['#df4d4b', '#304552', '#52bbc8', 'rgb(224,134,105)', '#8dd5b4', '#5eb57d', '#d78d2f']
-    };
-    // 使用刚指定的配置项和数据显示图表。
-    pieChart.setOption(pieoption);
-
-
-    // 基于准备好的dom，初始化echarts实例
-    var lineChart = echarts.init(document.getElementById('linecontainer'));
-    // 指定图表的配置项和数据
-    var lineoption = {
-        tooltip: {
-            trigger: 'axis'
-        },
-        legend: {
-            bottom: 'bottom',
-            data: ['预算', '实际']
-        },
-        grid: {
-            bottom: '8%',
-            containLabel: true
-        },
-        xAxis: {
-            type: 'category',
-            boundaryGap: false,
-            data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
-        },
-        yAxis: {
-            type: 'value'
-        },
-        series: [
-            {
-                name: '预算',
-                type: 'line',
-                stack: '用电量',
-                itemStyle: {
-                    normal: {
-                        color: "#fc0d1b",
-                        lineStyle: {
-                            color: "#fc0d1b"
-                        }
-                    }
-                },
-                data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 23.3, 18.3, 13.9, 9.6, 1]
-            },
-            {
-                name: '实际',
-                type: 'line',
-                stack: '用电量',
-                itemStyle: {
-                    normal: {
-                        color: '#344858',
-                        lineStyle: {
-                            color: '#344858'
-                        }
-                    }
-
-                },
-                data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
-            }
-        ]
-    };
-    // 使用刚指定的配置项和数据显示图表。
-    lineChart.setOption(lineoption);
-
-    window.onresize = function (e) {
-        pieChart.resize(e);
-        lineChart.resize(e);
-        setTimeout(function () { targetresize(); }, 100);//自适应重新计算统计指标中各个模块的宽度
+        //根据页面宽度调整信息列表列是否展示
+        if ($("#lr_target").width() < 700) {
+            $(".lr-msg-line").find("label").each(function () {
+                $(this).css("display", "none");
+            });
+        } else {
+            $(".lr-msg-line").find("label").each(function () {
+                $(this).css("display", "block");
+            });
+        }
+        //动态调整指标块滚动条
+        if ($("#lr_target").width() < 1100) {
+            $("#lr_target_box").css("width", '1100px');
+        }
+        //调整图标大小
+        $.each(chartArr, function (key, chart) {
+            chart.resize(e);
+        });
     };
 })(window.jQuery, top.learun);
