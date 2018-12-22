@@ -1,4 +1,5 @@
 ---修改管理员账号密码为admin
+update [dbo].[LR_Base_DatabaseLink] set [F_ServerAddress]='.',[F_DbConnection] = 'Server=.;Initial Catalog=LongFrameDB;User ID=sa;Password=123456' where [F_ServerAddress] = '192.168.0.12'
 update [LR_Base_User] set [F_Password] = '876ef48ebcc56a3d7b8d462d3bfbc9aa',[F_Secretkey] = '2f84bdf790144f20' where [F_Account] = 'System';
 ---修改部分表字段类型避免长度不不够报错
 alter TABLE LR_Base_ModuleForm ALTER COLUMN F_FullName nvarchar(500);
