@@ -309,9 +309,11 @@
         if ($("#lr_target").width() < 1100) {
             $("#lr_target_box").css("width", '1100px');
         }
-        //调整图标大小
-        $.each(chartArr, function (key, chart) {
-            chart.resize(e);
-        });
+        if ($("#lr_target").width() != 0) {
+            //调整图标大小
+            $.each(chartArr, function (key, chart) {
+                chart.resize(e);
+            });
+        }
     };
 })(window.jQuery, top.learun);
