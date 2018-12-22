@@ -309,7 +309,6 @@
     text-align: center;
     cursor: pointer;
     z-index: 51;
-    display: none;
 }
     .lr-im-bell > i {
         font-size:20px;
