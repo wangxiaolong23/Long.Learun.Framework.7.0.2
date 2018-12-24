@@ -56,6 +56,9 @@
                         htmlStr += '</div></div>';
                         $("#lr_target").append(htmlStr);
                         //绑定数值
+                        //learun.httpAsync('GET', top.$.rootUrl + '/LR_SystemModule/Desktop/GetSqlData', { databaseLinkId: itemobj.f_databaselinkid0, sql: itemobj.f_sql0, context: itemobj.f_targetid0 }, function (data) {
+                        //    $("#" + this.context + "number").html(data[0].value);
+                        //});
                         var res = learun.httpGet(top.$.rootUrl + '/LR_SystemModule/Desktop/GetSqlData', { databaseLinkId: itemobj.f_databaselinkid0, sql: itemobj.f_sql0 });
                         if (res) {
                             $("#" + itemobj.f_targetid0 + "number").html(res.data[0].value);
@@ -289,28 +292,28 @@
 
     //页面大小调整后，元素自动调整大小
     window.onresize = function (e) {
-        //动态调整指标块宽度
-        $("#lr_target").find(".lr-item-20").each(function () {
-            var width = parseInt($("#lr_target").width() / $("#lr_target").find(".lr-item-20").length);
-            width = width < 220 ? 220 : width;
-            $(this).css("width", width + 'px');
-        });
-        //根据页面宽度调整信息列表列是否展示
-        if ($("#lr_target").width() < 700) {
-            $(".lr-msg-line").find("label").each(function () {
-                $(this).css("display", "none");
-            });
-        } else {
-            $(".lr-msg-line").find("label").each(function () {
-                $(this).css("display", "block");
-            });
-        }
-        //动态调整指标块滚动条
-        if ($("#lr_target").width() < 1100) {
-            $("#lr_target_box").css("width", '1100px');
-        }
         //避免火狐乱触发onresize事件导致echart爆错
         if ($("#lr_target").width() != 0) {
+            //动态调整指标块宽度
+            $("#lr_target").find(".lr-item-20").each(function () {
+                var width = parseInt($("#lr_target").width() / $("#lr_target").find(".lr-item-20").length);
+                width = width < 220 ? 220 : width;
+                $(this).css("width", width + 'px');
+            });
+            //根据页面宽度调整信息列表列是否展示
+            if ($("#lr_target").width() < 700) {
+                $(".lr-msg-line").find("label").each(function () {
+                    $(this).css("display", "none");
+                });
+            } else {
+                $(".lr-msg-line").find("label").each(function () {
+                    $(this).css("display", "block");
+                });
+            }
+            //动态调整指标块滚动条
+            if ($("#lr_target").width() < 1100) {
+                $("#lr_target_box").css("width", '1100px');
+            }
             //调整图标大小
             $.each(chartArr, function (key, chart) {
                 chart.resize(e);

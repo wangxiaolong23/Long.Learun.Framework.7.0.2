@@ -133,13 +133,14 @@
                 dataType: "json",
                 async: true,
                 cache: false,
+                context: param,
                 success: function (res) {
                     if (res.code == learun.httpCode.success) {
-                        callback(res.data);
+                        callback.apply(this, [res.data]);
                     }
                     else {
                         learun.httpErrorLog(res.info);
-                        callback(null);
+                        callback.apply(this);
                     }
                 },
                 error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -153,7 +154,7 @@
             });
         },
 
-        deleteForm:function (url, param, callback) {
+        deleteForm: function (url, param, callback) {
             learun.loading(true, '正在删除数据');
             learun.httpAsyncPost(url, param, function (res) {
                 learun.loading(false);
@@ -170,7 +171,7 @@
                 layer.close(layer.index);
             });
         },
-        postForm:function (url, param, callback) {
+        postForm: function (url, param, callback) {
             learun.loading(true, '正在提交数据');
             learun.httpAsyncPost(url, param, function (res) {
                 learun.loading(false);
